@@ -18,6 +18,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -27,11 +28,12 @@ public class EnemyMovement : MonoBehaviour
         if (target == null)
             return;
 
-        distance = Vector3.Distance(target.position, transform.position); //finds the distance from the target location
+        distance = Vector2.Distance(target.position, transform.position); //finds the distance from the target location
         //checks to see if the enemy is within stopping range and returns if so
         if (distance <= targetDist)
             return;
 
-        transform.position = Vector3.MoveTowards(transform.position, target.position, movSpeed * Time.deltaTime); //moves towards the target
+        transform.position = Vector2.MoveTowards(transform.position, target.position, movSpeed * Time.deltaTime); //moves towards the target
+        
     }
 }
