@@ -43,7 +43,6 @@ public class MeleeAttack : MonoBehaviour
             {
                 //enemy is now in the process of atttacking
                 isAttacking = true;
-                print("Starting Charge timer");
             }
         }
 
