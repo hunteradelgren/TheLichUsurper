@@ -20,8 +20,8 @@ public class EnemyRotation : MonoBehaviour
     void Update()
     {
         Vector3 direction = target.position - transform.position; //gets a vector in the direction of the target
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-        Quaternion targetRot = Quaternion.AngleAxis(angle, Vector3.forward); //creates rotation towards target
+        float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; //finds angle to target location
+        Quaternion targetRot = Quaternion.AngleAxis(angle-90, Vector3.up); //creates rotation towards target
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
     }
 }

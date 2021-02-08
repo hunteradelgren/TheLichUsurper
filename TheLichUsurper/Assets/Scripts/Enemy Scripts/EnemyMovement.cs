@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
 
     private float timer = 0f;
     private bool wanderMode;
-    private Vector2 wanderTarget;
+    private Vector3 wanderTarget;
     private float distance; //will hold the distance between the target and the enemy
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class EnemyMovement : MonoBehaviour
             setWanderTarget();
         }
 
-        distance = Vector2.Distance(target.position, transform.position); //finds the distance from the target location
+        distance = Vector3.Distance(target.position, transform.position); //finds the distance from the target location
 
         setWanderMode(); 
 
@@ -78,7 +78,7 @@ public class EnemyMovement : MonoBehaviour
         //resets timer
         timer = 0f;
         //sets the wander target to a random position within a range of -10 to 10 in both directions
-        wanderTarget = new Vector2(transform.position.x + Random.Range(-10, 10), transform.position.y + Random.Range(-10, 10));
+        wanderTarget = new Vector3(transform.position.x + Random.Range(-10, 10), transform.position.y, transform.position.z + Random.Range(-10, 10));
     }
 
     void moveTowardsTarget()
@@ -88,11 +88,11 @@ public class EnemyMovement : MonoBehaviour
         if (distance <= targetDist)
             return;
 
-        transform.position = Vector2.MoveTowards(transform.position, target.position, movSpeed * Time.deltaTime); //moves towards the target
+        transform.position = Vector3.MoveTowards(transform.position, target.position, movSpeed * Time.deltaTime); //moves towards the target
     }
 
     void moveTowardsWanderTarget()
     {
-        transform.position = Vector2.MoveTowards(transform.position, wanderTarget, movSpeed * Time.deltaTime); //moves towards the wander target
+        transform.position = Vector3.MoveTowards(transform.position, wanderTarget, movSpeed * Time.deltaTime); //moves towards the wander target
     }
 }
