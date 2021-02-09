@@ -108,7 +108,7 @@ public class RangedAttack : MonoBehaviour
         //moves the projectile on top of the enemy
         projectile.transform.position = transform.position + transform.forward;
         //rotates projectile to where the enemy is facing
-        projectile.transform.rotation = transform.rotation;
+        projectile.transform.rotation = Quaternion.Euler(90, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
     }
 }
 
