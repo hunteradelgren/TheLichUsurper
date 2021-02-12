@@ -8,6 +8,9 @@ public class basicProjectileBehavior : MonoBehaviour
     [SerializeField]
     float projectileSpeed;
 
+    [SerializeField]
+    float damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,4 +23,16 @@ public class basicProjectileBehavior : MonoBehaviour
         //projectile continues along a straight path at the set speed
         transform.position += transform.right * projectileSpeed * Time.deltaTime;
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        print(collision.gameObject.name);
+        if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null)
+        {
+            print("hit");
+            collision.gameObject.GetComponentInParent<PlayerHealth>().takeDamage(damage);
+            DestroyObject(gameObject);
+        }
+    }
+    
 }
+

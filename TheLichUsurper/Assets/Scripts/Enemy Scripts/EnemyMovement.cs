@@ -24,6 +24,9 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 wanderTarget;
     private float distance; //will hold the distance between the target and the enemy
 
+    //enemy will not move while it swings
+    public bool isAttacking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,24 +36,28 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //new wander target can only be set every 2 seconds
-        timer += Time.deltaTime;
-        if(timer >= 2)
+        //if enemy is not attacking
+        if (!isAttacking)
         {
-            setWanderTarget();
-        }
+            //new wander target can only be set every 2 seconds
+            timer += Time.deltaTime;
+            if (timer >= 2)
+            {
+                setWanderTarget();
+            }
 
-        distance = Vector3.Distance(target.position, transform.position); //finds the distance from the target location
+            distance = Vector3.Distance(target.position, transform.position); //finds the distance from the target location
 
-        setWanderMode(); 
+            setWanderMode();
 
-        if (wanderMode)
-        {
-            moveTowardsWanderTarget();
-        }
-        else
-        {
-            moveTowardsTarget();
+            if (wanderMode)
+            {
+                moveTowardsWanderTarget();
+            }
+            else
+            {
+                moveTowardsTarget();
+            }
         }
     }
 

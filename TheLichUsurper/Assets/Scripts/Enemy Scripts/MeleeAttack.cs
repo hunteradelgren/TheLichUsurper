@@ -16,6 +16,12 @@ public class MeleeAttack : MonoBehaviour
     //time between attacks
     [SerializeField]
     float attackRate;
+    //damage each attack deals
+    [SerializeField]
+    float damage;
+
+    //enemy's movement component
+    private EnemyMovement enemyMove;
 
     private bool isAttacking = false; //the attacj is being done
     private float distance; //distance to target
@@ -23,23 +29,27 @@ public class MeleeAttack : MonoBehaviour
     private bool canAttack = true; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
     private float chargeTimer = 0f; //timer for attack chargeup
+    private bool validTarget = false; //does the target have player health
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemyMove = GetComponent<EnemyMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //enemy movement boolean is synchronized to the attack
+        enemyMove.isAttacking = isAttacking;
         checkCanAttack();
         checkInRange();
+        checkValidTarget();
 
         //enemy is not already attacking
         if (!isAttacking)
         {
-            if (canAttack && inRange)
+            if (canAttack && inRange && validTarget)
             {
                 //enemy is now in the process of atttacking
                 isAttacking = true;
@@ -53,8 +63,7 @@ public class MeleeAttack : MonoBehaviour
 
             if(chargeTimer >= chargeTime)
             {
-                //message will be replaced with actual attack later when player health is made
-                print("Attack has been made");
+                Attack();
                 chargeTimer = 0f;
                 isAttacking = false;
                 canAttack = false;
@@ -63,6 +72,19 @@ public class MeleeAttack : MonoBehaviour
 
 
 
+    }
+
+    void checkValidTarget()
+    {
+        //does the target have a player health component
+        if (target.GetComponent<PlayerHealth>() != null)
+        {
+            validTarget = true;
+        }
+        else
+        {
+            validTarget = false;
+        }
     }
 
     void checkCanAttack()
@@ -92,6 +114,16 @@ public class MeleeAttack : MonoBehaviour
         else //target is out of range
         {
             inRange = false;
+        }
+    }
+
+    void Attack()
+    {
+        checkInRange();
+        checkValidTarget();
+        if(validTarget && inRange)
+        {
+            target.GetComponent<PlayerHealth>().takeDamage(damage);
         }
     }
 }
