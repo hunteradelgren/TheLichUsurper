@@ -106,7 +106,7 @@ public class RangedAttack : MonoBehaviour
         //instantiates the projectile
         GameObject projectile =  Instantiate<GameObject>(projectilePrefab);
         //moves the projectile on top of the enemy
-        projectile.transform.position = transform.position;
+        projectile.transform.position = transform.position + transform.forward;
         //rotates projectile to where the enemy is facing
         projectile.transform.rotation = Quaternion.Euler(90, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
     }

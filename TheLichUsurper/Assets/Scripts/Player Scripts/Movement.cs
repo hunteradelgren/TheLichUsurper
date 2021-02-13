@@ -9,9 +9,7 @@ public class Movement : MonoBehaviour
 
     //stores key inputs
     private float horizontalAxis; 
-    private float verticalAxis;
-
-    
+    private float verticalAxis; 
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +22,6 @@ public class Movement : MonoBehaviour
     {
         horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
         verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
-        transform.Translate(new Vector3(horizontalAxis, 0, verticalAxis) * moveSpeed * Time.deltaTime); //moves in direction of the input
+        transform.Translate(new Vector3(horizontalAxis, verticalAxis, 0 )*moveSpeed*Time.deltaTime); //moves in direction of the input
     }
 }
