@@ -20,6 +20,7 @@ public class RoomSpawner : MonoBehaviour
     {
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         Invoke("Spawn",.1f);
+        
     }
 
     // Update is called once per frame
