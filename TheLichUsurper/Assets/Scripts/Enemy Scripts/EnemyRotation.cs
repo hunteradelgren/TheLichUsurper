@@ -19,9 +19,9 @@ public class EnemyRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = target.position - transform.position; //gets a vector in the direction of the target
-        float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; //finds angle to target location
-        Quaternion targetRot = Quaternion.AngleAxis(angle-90, Vector3.up); //creates rotation towards target
+        Vector2 direction = target.position - transform.position; //gets a vector in the direction of the target
+        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
+        Quaternion targetRot = Quaternion.AngleAxis(angle, Vector3.back); //creates rotation towards target
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
     }
 }

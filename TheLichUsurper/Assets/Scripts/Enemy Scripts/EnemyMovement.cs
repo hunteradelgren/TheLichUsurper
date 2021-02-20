@@ -19,10 +19,14 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     float runDist; //how close to the target before entering wander mode to get away.
 
+    private List<GameObject> colliding = new List<GameObject>();
+
     private float timer = 0f;
-    private bool wanderMode;
-    private Vector3 wanderTarget;
-    private float distance; //will hold the distance between the target and the enemy
+    public bool wanderMode;
+    private Vector2 wanderTarget;
+    public float distance; //will hold the distance between the target and the enemy
+    private Rigidbody2D rb;
+    private Vector2 velocity;
 
     //enemy will not move while it swings
     public bool isAttacking = false;
@@ -31,6 +35,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         setWanderTarget();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -46,17 +51,33 @@ public class EnemyMovement : MonoBehaviour
                 setWanderTarget();
             }
 
-            distance = Vector3.Distance(target.position, transform.position); //finds the distance from the target location
+            distance = Vector2.Distance(target.position, transform.position); //finds the distance from the target location
 
             setWanderMode();
 
             if (wanderMode)
             {
-                moveTowardsWanderTarget();
+                velocityTowardsWanderTarget();
             }
             else
             {
-                moveTowardsTarget();
+                velocityTowardsTarget();
+            }
+
+            if(colliding.Count > 0)
+            avoidObstacle();
+
+            velocity *= movSpeed * Time.deltaTime;
+            if(distance >= targetDist || wanderMode)
+            {
+                print(transform.name + "moved");
+                rb.MovePosition(new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y));
+            }
+            
+            else
+            {
+                rb.MovePosition(new Vector2(transform.position.x,transform.position.y));
+                return;
             }
         }
     }
@@ -85,21 +106,49 @@ public class EnemyMovement : MonoBehaviour
         //resets timer
         timer = 0f;
         //sets the wander target to a random position within a range of -10 to 10 in both directions
-        wanderTarget = new Vector3(transform.position.x + Random.Range(-10, 10), transform.position.y, transform.position.z + Random.Range(-10, 10));
+        wanderTarget = new Vector2(transform.position.x + Random.Range(-10, 10), transform.position.y + Random.Range(-10, 10));
     }
 
-    void moveTowardsTarget()
+    void velocityTowardsTarget()
     {
         
-        //checks to see if the enemy is within stopping range and returns if so
-        if (distance <= targetDist)
-            return;
-
-        transform.position = Vector3.MoveTowards(transform.position, target.position, movSpeed * Time.deltaTime); //moves towards the target
+        velocity = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y);
+        print(transform.name+ "pre " + velocity);
+        velocity = velocity.normalized;
+        print(transform.name + "post "+velocity);
     }
 
-    void moveTowardsWanderTarget()
+    void velocityTowardsWanderTarget()
     {
-        transform.position = Vector3.MoveTowards(transform.position, wanderTarget, movSpeed * Time.deltaTime); //moves towards the wander target
+        velocity = new Vector2(wanderTarget.x - transform.position.x, wanderTarget.y - transform.position.y);
+        velocity = velocity.normalized;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            colliding.Add(collision.gameObject);
+            print(collision.transform.name);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            colliding.Remove(collision.gameObject);
+            print(collision.transform.name);
+        }
+    }
+
+    void avoidObstacle()
+    {
+        foreach(GameObject c in colliding)
+        {
+            Vector2 obstaclePos = c.transform.position;
+            float dist = Vector2.Distance(obstaclePos, transform.position);
+            print(dist);
+            velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x)+Random.Range(-15,15))*dist/100), velocity.y + (((transform.position.y - c.transform.position.y)+Random.Range(-15,15))*dist/100)).normalized;
+        }
     }
 }

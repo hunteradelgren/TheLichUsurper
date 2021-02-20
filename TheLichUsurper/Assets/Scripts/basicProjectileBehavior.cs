@@ -11,6 +11,9 @@ public class basicProjectileBehavior : MonoBehaviour
     [SerializeField]
     float damage;
 
+    public float lifetime;
+    private float timer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,9 @@ public class basicProjectileBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
+        if(timer>=lifetime)
+            DestroyObject(gameObject);
         //projectile continues along a straight path at the set speed
         transform.position += transform.right * projectileSpeed * Time.deltaTime;
     }
