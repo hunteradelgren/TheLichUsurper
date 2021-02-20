@@ -16,7 +16,7 @@ public class RoomTemplate : MonoBehaviour
 
     public Room currentRoom;
 
-    public CameraMechanics camera;
+    public CameraMechanics cam;
 
     void Start()
     {
@@ -41,7 +41,7 @@ public class RoomTemplate : MonoBehaviour
 
     public void OnPlayerEnterRoom(Room room)
     {
-        camera.currentRoom = room;
+        cam.currentRoom = room;
         currentRoom = room;
 
     }

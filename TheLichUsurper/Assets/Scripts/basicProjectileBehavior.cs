@@ -30,7 +30,7 @@ public class basicProjectileBehavior : MonoBehaviour
         {
             print("hit");
             collision.gameObject.GetComponentInParent<PlayerHealth>().takeDamage(damage);
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         }
     }
     

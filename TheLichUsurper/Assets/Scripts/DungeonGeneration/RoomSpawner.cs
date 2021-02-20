@@ -10,6 +10,9 @@ public class RoomSpawner : MonoBehaviour
     //3 is a left door
     //4 is a right door
 
+    
+
+
     private bool spawned = false;
     
     private RoomTemplate template;
@@ -68,7 +71,7 @@ public class RoomSpawner : MonoBehaviour
         {
             Destroy(this);
         }
-
+        
 
     }
 
