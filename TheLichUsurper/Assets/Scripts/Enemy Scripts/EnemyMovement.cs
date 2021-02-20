@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
     private float timer = 0f;
     public bool wanderMode;
     private Vector2 wanderTarget;
-    private float distance; //will hold the distance between the target and the enemy
+    public float distance; //will hold the distance between the target and the enemy
     private Rigidbody2D rb;
     private Vector2 velocity;
 
@@ -63,13 +63,22 @@ public class EnemyMovement : MonoBehaviour
             {
                 velocityTowardsTarget();
             }
-            print("Pre" + velocity);
+
+            if(colliding.Count > 0)
             avoidObstacle();
-            print("Post"+velocity);
 
             velocity *= movSpeed * Time.deltaTime;
-            if(distance >= targetDist)
-            rb.MovePosition(new Vector2(transform.position.x,transform.position.y) + velocity);
+            if(distance >= targetDist || wanderMode)
+            {
+                print(transform.name + "moved");
+                rb.MovePosition(new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y));
+            }
+            
+            else
+            {
+                rb.MovePosition(new Vector2(transform.position.x,transform.position.y));
+                return;
+            }
         }
     }
 
@@ -102,8 +111,11 @@ public class EnemyMovement : MonoBehaviour
 
     void velocityTowardsTarget()
     {
+        
         velocity = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y);
+        print(transform.name+ "pre " + velocity);
         velocity = velocity.normalized;
+        print(transform.name + "post "+velocity);
     }
 
     void velocityTowardsWanderTarget()
@@ -136,7 +148,7 @@ public class EnemyMovement : MonoBehaviour
             Vector2 obstaclePos = c.transform.position;
             float dist = Vector2.Distance(obstaclePos, transform.position);
             print(dist);
-            velocity = new Vector2(velocity.x + ((transform.position.x - c.transform.position.x) * (.1f / dist)), velocity.y + ((transform.position.y - c.transform.position.y) * (.1f / dist))).normalized;
+            velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x)+Random.Range(-15,15))*dist/100), velocity.y + (((transform.position.y - c.transform.position.y)+Random.Range(-15,15))*dist/100)).normalized;
         }
     }
 }
