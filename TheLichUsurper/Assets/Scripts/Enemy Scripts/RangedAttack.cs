@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RangedAttack : MonoBehaviour
 {
+    public bool isActive = false;
+
     //target object
     [SerializeField]
     GameObject target;
@@ -39,36 +41,38 @@ public class RangedAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkCanAttack();
-        checkInRange();
-
-        //enemy is not already attacking
-        if (!isAttacking)
+        if (isActive)
         {
-            if (canAttack && inRange)
+            checkCanAttack();
+            checkInRange();
+
+            //enemy is not already attacking
+            if (!isAttacking)
             {
-                //enemy is now in the process of atttacking
-                isAttacking = true;
+                if (canAttack && inRange)
+                {
+                    //enemy is now in the process of atttacking
+                    isAttacking = true;
+                }
             }
-        }
 
-        //enemy is in the process of attacking
-        if (isAttacking)
-        {
-            chargeTimer += Time.deltaTime;
-            //attack has finished charging
-            if (chargeTimer >= chargeTime)
+            //enemy is in the process of attacking
+            if (isAttacking)
             {
-                ShootProjectile();
-                //resets values
-                chargeTimer = 0f;
-                isAttacking = false;
-                canAttack = false;
+                chargeTimer += Time.deltaTime;
+                //attack has finished charging
+                if (chargeTimer >= chargeTime)
+                {
+                    ShootProjectile();
+                    //resets values
+                    chargeTimer = 0f;
+                    isAttacking = false;
+                    canAttack = false;
+                }
             }
+
+
         }
-
-
-
     }
 
     void checkCanAttack()
