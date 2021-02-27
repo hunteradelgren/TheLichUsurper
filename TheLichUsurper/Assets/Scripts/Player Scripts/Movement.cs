@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
     {
         horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
         verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
-        transform.Translate(new Vector3(horizontalAxis, 0, verticalAxis) * moveSpeed * Time.deltaTime); //moves in direction of the input
+        transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime); //moves in direction of the input
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit floorHit;
         if(Physics.Raycast(camRay, out floorHit, 100f, floor))
