@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     int floor;
     Rigidbody prb;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
