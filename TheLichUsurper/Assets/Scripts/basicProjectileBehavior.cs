@@ -25,7 +25,7 @@ public class basicProjectileBehavior : MonoBehaviour
     {
         timer += Time.deltaTime;
         if(timer>=lifetime)
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         //projectile continues along a straight path at the set speed
         transform.position += transform.right * projectileSpeed * Time.deltaTime;
     }

@@ -13,6 +13,9 @@ public class RoomTemplate : MonoBehaviour
     public int roomRangeMin;
     public int roomRangeMax;
     private GameObject[] roomCount;
+    private GameObject[] EndRooms;
+    public GameObject boss;
+
 
     public Room currentRoom;
 
@@ -21,6 +24,7 @@ public class RoomTemplate : MonoBehaviour
     void Start()
     {
         Invoke("DifficultyTester", 1f); 
+
 
     }
 
@@ -36,6 +40,20 @@ public class RoomTemplate : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
+
+
+        EndRooms = GameObject.FindGameObjectsWithTag("BottomRoom");
+
+         if (EndRooms.Length == 0)
+                {
+                    Scene scene = SceneManager.GetActiveScene();
+                    SceneManager.LoadScene(scene.name);
+                }
+        
+        Instantiate(boss, EndRooms[EndRooms.Length - 1].transform.position, Quaternion.identity);
+        
+        Destroy(EndRooms[EndRooms.Length - 1]);
+    
     }
 
 
