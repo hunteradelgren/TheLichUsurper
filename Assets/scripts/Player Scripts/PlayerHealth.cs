@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 public class PlayerHealth : MonoBehaviour
 {
     //max health while in a living state
@@ -12,12 +13,13 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     float maxSpectreHealth;
     //current health regardless of state
-    private float currentHealth;
+    [SerializeField] float currentHealth;
     //true  if in undead state and false if in living state
     private bool inSpectralForm;
     //References to health Slider bars
     public Slider hpSlider;
     public Slider specSlider;
+    public bool status;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
         specSlider.maxValue = maxSpectreHealth;
         specSlider.value = maxSpectreHealth;
         hpSlider.value = currentHealth;
+        status = false;
     }
 
     // Update is called once per frame
@@ -58,6 +61,38 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+    public void changeHealth()
+    {
+        status = !status;
+        
+        if (status)
+        {
+            maxHealth += 5;
+            maxSpectreHealth += 5;
+            currentHealth += 5;
+            print("health upped");
+        }
+        else if (currentHealth > 5)
+        {
+            maxHealth -= 5;
+            maxSpectreHealth -= 5;
+            currentHealth -= 5;
+            print("health downed");
+        }
+        if (!inSpectralForm)
+        {
+            hpSlider.maxValue = maxHealth;
+            specSlider.maxValue = maxSpectreHealth;
+            specSlider.value = maxSpectreHealth;
+            hpSlider.value = currentHealth;
+        }
+        else
+        {
+            hpSlider.maxValue = maxHealth;
+            specSlider.maxValue = maxSpectreHealth;
+            specSlider.value = currentHealth;
+        }
+    }
     public void takeDamage(float damage)
     {
         //decreases health by recieved amount
