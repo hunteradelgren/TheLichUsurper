@@ -23,17 +23,18 @@ public class FirstBoss : MonoBehaviour
     public float attackDamage = 2f;
     public float lungeDamage = 2f;
     public float attackRate = 2f;
-    public float chargeTime = 2f;
+    public float chargeTime = 3f;
     public float lungeTime = 1f;
     public float attackRange = 5f;
     public float maxLungeTime = 2f;
 
-    private bool isAttacking = false;
-    private bool isLunging = false;
+    public bool isAttacking = false;
+    public bool isLunging = false;
     private float distPlayer;
     private float distPos1;
     private float distPos2;
     private float distPos3;
+    private float rotSpeed = 180;
     private bool inRange = true; //is target in range
     private bool canAttack = true; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
@@ -48,6 +49,7 @@ public class FirstBoss : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Player = FindObjectOfType<PlayerHealth>().gameObject.transform;
     }
 
     // Update is called once per frame
@@ -57,42 +59,107 @@ public class FirstBoss : MonoBehaviour
         {
             //finds the distance from the target location
             distPlayer = Vector2.Distance(Player.position, transform.position); 
-            distPos1 = Vector2.Distance(pos1.position, transform.position); 
-            distPos2 = Vector2.Distance(pos2.position, transform.position); 
-            distPos3 = Vector2.Distance(pos3.position, transform.position);
-
+            //distPos1 = Vector2.Distance(pos1.position, transform.position); 
+           // distPos2 = Vector2.Distance(pos2.position, transform.position); 
+            //distPos3 = Vector2.Distance(pos3.position, transform.position);
+            
             //boss is lunging
             if (isLunging)
             {
+                Vector2 direction = lungeTarget - new Vector2(transform.position.x, transform.position.y); //gets a vector in the direction of the target
+                float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
+                Quaternion targetRot = Quaternion.AngleAxis(angle-90, Vector3.back); //creates rotation towards target
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+
                 //charging up the lunge
                 chargeTimer += Time.deltaTime;
                 if(chargeTimer >= lungeTime)
                 {
                     //lunge is being performed
                     lungeTimer += Time.deltaTime;
-                    rb.MovePosition((new Vector2(lungeTarget.x - transform.position.x, lungeTarget.y - transform.position.y).normalized) * lungeSpeed * Time.deltaTime);
+
+                    rb.MovePosition(((new Vector2(transform.position.x,transform.position.y)+(lungeTarget-new Vector2(transform.position.x,transform.position.y)).normalized * lungeSpeed*Time.deltaTime)));
                     if(lungeTimer >= maxLungeTime)
                     {
                         //lunge is finished
                         chargeTimer = 0;
                         lungeTimer = 0;
                         isLunging = false;
+                        canAttack = false;
                     }
                 }
             }
+            //boss is doing swing attack
             else if (isAttacking)
             {
+                Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
+                float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
+                Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+
                 chargeTimer += Time.deltaTime;
                 if (chargeTimer >= lungeTime)
                 {
                     swingAttack();
                     chargeTimer = 0;
                     isAttacking = false;
+                    canAttack = false;
                 }
             }
+            //boss is not currently attacking and will move towards an attack position
             else
             {
-                //move to an attack position or choose attack to perform
+                checkCanAttack();
+
+                //boss is at an attack position
+                if (distPos1 <= 1.5 || distPos2 <= 1.5 || distPos3 <= 1.5)
+                {
+                    if (canAttack)
+                    {
+                        checkInRange();
+                        checkValidTarget();
+                        if (inRange && validTarget)
+                        {
+                            isAttacking = true;
+                        }
+                        else if (!inRange && validTarget)
+                        {
+                            lungeAttack();
+                        }
+                    }
+                }
+
+                //position 1 is closest
+                else if (distPos1 < distPos2 && distPos1 < distPos3)
+                {
+                    rb.MovePosition(((transform.position + (pos1.position - transform.position).normalized * movSpeed * Time.deltaTime)));
+
+                    Vector2 direction = pos1.position - transform.position; //gets a vector in the direction of the target
+                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
+                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                }
+                //position 2 is closest
+                else if(distPos2 < distPos1 && distPos2 < distPos3)
+                {
+                    rb.MovePosition(((transform.position + (pos2.position - transform.position).normalized * movSpeed * Time.deltaTime)));
+
+                    Vector2 direction = pos2.position - transform.position; //gets a vector in the direction of the target
+                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
+                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                }
+                //position 3 is closest
+                else
+                {
+                    rb.MovePosition(((transform.position + (pos3.position - transform.position).normalized * movSpeed * Time.deltaTime)));
+
+                    Vector2 direction = pos3.position - transform.position; //gets a vector in the direction of the target
+                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
+                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
+                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                }
+                
             }
         }
     }
@@ -146,6 +213,7 @@ public class FirstBoss : MonoBehaviour
         if(colliding.Count == 1)
         {
             Player.GetComponent<PlayerHealth>().takeDamage(attackDamage);
+            print("hit player with swing");
         }
     }
 
@@ -153,21 +221,19 @@ public class FirstBoss : MonoBehaviour
     {
         if(colliding.Count == 0)
         {
-            lungeTarget = (Player.position - transform.position)*2;
+            lungeTarget = (Player.position - transform.position)*1.2f;
             isLunging = true;
         }
     }
 
-
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isLunging)
         {
-            if(collision.otherCollider is BoxCollider2D)
+            if (collision.GetComponentInParent<PlayerHealth>() != null)
             {
                 Player.GetComponent<PlayerHealth>().takeDamage(lungeDamage);
+                print("Lunged into player");
             }
         }
 
@@ -176,7 +242,8 @@ public class FirstBoss : MonoBehaviour
             colliding.Add(collision.gameObject);
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
