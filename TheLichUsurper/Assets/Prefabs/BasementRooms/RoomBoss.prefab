@@ -121,6 +121,36 @@ Transform:
   m_Father: {fileID: 2724029123028736776}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1149862132260857428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7879204656993111910}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7879204656993111910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149862132260857428}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.13, y: -0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2724029123028736776}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2724029123028736777
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +193,7 @@ Transform:
   - {fileID: 5864106726950272447}
   - {fileID: 2865730012415517302}
   - {fileID: 6778612273712032316}
+  - {fileID: 7879204656993111910}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -976,6 +1007,7 @@ GameObject:
   - component: {fileID: 1713833074829853061}
   - component: {fileID: 8381853145603444073}
   - component: {fileID: 1493826790320612129}
+  - component: {fileID: 5825709376273880522}
   m_Layer: 0
   m_Name: BossHolder
   m_TagString: Untagged
@@ -991,7 +1023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6283196860926728995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.92, z: 0}
+  m_LocalPosition: {x: -4.81, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3429562477065081445}
@@ -1061,6 +1093,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &5825709376273880522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6283196860926728995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc93df69e3f7025489c9cac83870f93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  Player: {fileID: 7879204656993111910}
+  pos1: {fileID: 5864106726950272447}
+  pos2: {fileID: 2865730012415517302}
+  pos3: {fileID: 6778612273712032316}
+  movSpeed: 50
+  lungeSpeed: 200
+  attackDamage: 2
+  lungeDamage: 2
+  attackRate: 2
+  chargeTime: 2
+  lungeTime: 1
+  attackRange: 5
+  maxLungeTime: 2
 --- !u!1 &8528612599286149368
 GameObject:
   m_ObjectHideFlags: 0
