@@ -26,14 +26,17 @@ public class RangedAttack : MonoBehaviour
     private bool canAttack = true; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
     private float chargeTimer = 0f; //timer for attack chargeup
-    private GameObject projectilePrefab; 
-
+    private GameObject projectilePrefab;
+    private Room SpawnRoom; //is going to set the room it spawns in as the spawnRoom in order to control movement later
+    private RoomTemplate template; //access the dungeon controller template
 
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player");
         //saves prefab of serialized name in the resources folder as a game object
         projectilePrefab = Resources.Load<GameObject>(projectileName);
+        template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
     }
 
     // Update is called once per frame
@@ -42,6 +45,8 @@ public class RangedAttack : MonoBehaviour
         checkCanAttack();
         checkInRange();
 
+        if (SpawnRoom != template.currentRoom)
+            canAttack = false;
         //enemy is not already attacking
         if (!isAttacking)
         {
@@ -110,5 +115,18 @@ public class RangedAttack : MonoBehaviour
         //rotates projectile to where the enemy is facing
         projectile.transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z+90);
     }
+
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Room")
+            SpawnRoom = other.GetComponent<Room>();
+
+    }
+
+
+
+
+
 }
 

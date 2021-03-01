@@ -27,6 +27,11 @@ public class EnemyMovement : MonoBehaviour
     public float distance; //will hold the distance between the target and the enemy
     private Rigidbody2D rb;
     private Vector2 velocity;
+    private float Speed;
+
+
+    private Room SpawnRoom; //is going to set the room it spawns in as the spawnRoom in order to control movement later
+    private RoomTemplate template; //access the dungeon controller template
 
     //enemy will not move while it swings
     public bool isAttacking = false;
@@ -34,13 +39,27 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         setWanderTarget();
         rb = GetComponent<Rigidbody2D>();
+        template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
+
+        Speed = movSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (SpawnRoom == template.currentRoom) //checks to see if player is in current room. if false enemies cant move
+            movSpeed = Speed;
+        else
+        {
+            movSpeed = 0;
+            transform.rotation = Quaternion.Euler(0, 30, 0);
+        }
+            
+
+
         //if enemy is not attacking
         if (!isAttacking)
         {
@@ -151,4 +170,17 @@ public class EnemyMovement : MonoBehaviour
             velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x)+Random.Range(-15,15))*dist/100), velocity.y + (((transform.position.y - c.transform.position.y)+Random.Range(-15,15))*dist/100)).normalized;
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Room")
+            SpawnRoom = other.GetComponent<Room>();
+
+
+    }
+
+
+
+
+
 }

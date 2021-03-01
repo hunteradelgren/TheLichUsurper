@@ -10,12 +10,11 @@ public class Room : MonoBehaviour
 
     private RoomTemplate template;
 
-    public int WeightForDelete;
+
 
     void Start()
     {
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
-        WeightForDelete = Random.Range(0, 100);
 
     }
 
@@ -35,7 +34,6 @@ public class Room : MonoBehaviour
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
-
     }
 
 
