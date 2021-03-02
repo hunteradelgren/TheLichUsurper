@@ -109,7 +109,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7203231651071004758}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.88, y: -1.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -206,5 +206,8 @@ MonoBehaviour:
   lungeTime: 1
   attackRange: 5
   maxLungeTime: 0.5
+  maxhealth: 50
+  targetChaseDist: 2
+  currentHealth: 0
   isAttacking: 0
   isLunging: 0
