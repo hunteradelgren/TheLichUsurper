@@ -7,6 +7,7 @@ public class pausing : MonoBehaviour
     // Start is called before the first frame update
     public GameObject quitter;
     public GameObject resumer;
+    public GameObject managing;
     float moveTime;
     void Start()
     {
@@ -19,8 +20,7 @@ public class pausing : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale != 0)
         {
-            quitter.SetActive(true);
-            resumer.SetActive(true);
+            managing.SetActive(true);
             Time.timeScale = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0)
@@ -28,8 +28,7 @@ public class pausing : MonoBehaviour
     }
     public void Resume()
     {
-        quitter.SetActive(false);
-        resumer.SetActive(false);
+        managing.SetActive(false);
         Time.timeScale = moveTime;
     }
     public void Quit()

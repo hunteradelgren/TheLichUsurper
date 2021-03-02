@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
+    public bool isActive = false;
+
     //target object
     [SerializeField]
     GameObject target;
@@ -23,7 +25,7 @@ public class MeleeAttack : MonoBehaviour
     //enemy's movement component
     private EnemyMovement enemyMove;
 
-    private bool isAttacking = false; //the attacj is being done
+    private bool isAttacking = false; //the attack is being done
     private float distance; //distance to target
     private bool inRange = true; //is target in range
     private bool canAttack = true; //is attack on cooldown
@@ -40,38 +42,40 @@ public class MeleeAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //enemy movement boolean is synchronized to the attack
-        enemyMove.isAttacking = isAttacking;
-        checkCanAttack();
-        checkInRange();
-        checkValidTarget();
-
-        //enemy is not already attacking
-        if (!isAttacking)
+        if (isActive)
         {
-            if (canAttack && inRange && validTarget)
+            //enemy movement boolean is synchronized to the attack
+            enemyMove.isAttacking = isAttacking;
+            checkCanAttack();
+            checkInRange();
+            checkValidTarget();
+
+            //enemy is not already attacking
+            if (!isAttacking)
             {
-                //enemy is now in the process of atttacking
-                isAttacking = true;
+                if (canAttack && inRange && validTarget)
+                {
+                    //enemy is now in the process of atttacking
+                    isAttacking = true;
+                }
             }
-        }
 
-        //enemy is in the process of attacking
-        if (isAttacking)
-        {
-            chargeTimer += Time.deltaTime;
-
-            if(chargeTimer >= chargeTime)
+            //enemy is in the process of attacking
+            if (isAttacking)
             {
-                Attack();
-                chargeTimer = 0f;
-                isAttacking = false;
-                canAttack = false;
+                chargeTimer += Time.deltaTime;
+
+                if (chargeTimer >= chargeTime)
+                {
+                    Attack();
+                    chargeTimer = 0f;
+                    isAttacking = false;
+                    canAttack = false;
+                }
             }
+
+
         }
-
-
-
     }
 
     void checkValidTarget()

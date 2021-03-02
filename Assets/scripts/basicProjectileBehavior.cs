@@ -11,6 +11,8 @@ public class basicProjectileBehavior : MonoBehaviour
     [SerializeField]
     float damage;
 
+    public bool isPlayerBullet = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +23,27 @@ public class basicProjectileBehavior : MonoBehaviour
     void Update()
     {
         //projectile continues along a straight path at the set speed
-        transform.position += transform.right * projectileSpeed * Time.deltaTime;
+        transform.position += transform.forward.normalized * projectileSpeed * Time.deltaTime;
     }
     void OnCollisionEnter(Collision collision)
     {
-        print(collision.gameObject.name);
-        if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null)
+        
+        if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null && !isPlayerBullet)
         {
-            print("hit");
+            //print("hit");
             collision.gameObject.GetComponentInParent<PlayerHealth>().takeDamage(damage);
             DestroyObject(gameObject);
         }
+        
     }
     
+    void OnTriggerExit(Collider collision)
+    {
+        if (isPlayerBullet && collision.gameObject.GetComponentInParent<PlayerHealth>() == null)
+        {
+            print("exiting " + collision.gameObject.name);
+            DestroyObject(gameObject);
+        }
+    }
 }
 

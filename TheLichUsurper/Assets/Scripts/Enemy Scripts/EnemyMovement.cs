@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public bool isActive = false;
+
     [SerializeField]
     Transform target; //the target object's Transform
 
@@ -27,11 +29,6 @@ public class EnemyMovement : MonoBehaviour
     public float distance; //will hold the distance between the target and the enemy
     private Rigidbody2D rb;
     private Vector2 velocity;
-    private float Speed;
-
-
-    private Room SpawnRoom; //is going to set the room it spawns in as the spawnRoom in order to control movement later
-    private RoomTemplate template; //access the dungeon controller template
 
     //enemy will not move while it swings
     public bool isAttacking = false;
@@ -39,64 +36,55 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
         setWanderTarget();
         rb = GetComponent<Rigidbody2D>();
-        template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
-
-        Speed = movSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (SpawnRoom == template.currentRoom) //checks to see if player is in current room. if false enemies cant move
-            movSpeed = Speed;
-        else
+        if (isActive)
         {
-            movSpeed = 0;
-            transform.rotation = Quaternion.Euler(0, 30, 0);
-        }
-            
-
-
-        //if enemy is not attacking
-        if (!isAttacking)
-        {
-            //new wander target can only be set every 2 seconds
-            timer += Time.deltaTime;
-            if (timer >= 2)
+            //if enemy is not attacking
+            if (!isAttacking)
             {
-                setWanderTarget();
-            }
+                //new wander target can only be set every 2 seconds
+                timer += Time.deltaTime;
+                if (timer >= 2)
+                {
+                    setWanderTarget();
+                }
 
-            distance = Vector2.Distance(target.position, transform.position); //finds the distance from the target location
+                distance = Vector2.Distance(target.position, transform.position); //finds the distance from the target location
 
-            setWanderMode();
+                setWanderMode();
 
-            if (wanderMode)
-            {
-                velocityTowardsWanderTarget();
-            }
-            else
-            {
-                velocityTowardsTarget();
-            }
+                //set velocity towards target or wandertarget
+                if (wanderMode)
+                {
+                    velocityTowardsWanderTarget();
+                }
+                else
+                {
+                    velocityTowardsTarget();
+                }
 
-            if(colliding.Count > 0)
-            avoidObstacle();
+                //is enemy colliding with obstacle
+                if (colliding.Count > 0)
+                    avoidObstacle();
 
-            velocity *= movSpeed * Time.deltaTime;
-            if(distance >= targetDist || wanderMode)
-            {
-                print(transform.name + "moved");
-                rb.MovePosition(new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y));
-            }
-            
-            else
-            {
-                rb.MovePosition(new Vector2(transform.position.x,transform.position.y));
-                return;
+                velocity *= movSpeed * Time.deltaTime;
+                if (distance >= targetDist || wanderMode)
+                {
+                    print(transform.name + "moved");
+                    rb.MovePosition(new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y));
+                }
+
+                else
+                {
+                    rb.MovePosition(new Vector2(transform.position.x, transform.position.y));
+                    return;
+                }
             }
         }
     }
@@ -132,9 +120,7 @@ public class EnemyMovement : MonoBehaviour
     {
         
         velocity = new Vector2(target.position.x - transform.position.x, target.position.y - transform.position.y);
-        print(transform.name+ "pre " + velocity);
         velocity = velocity.normalized;
-        print(transform.name + "post "+velocity);
     }
 
     void velocityTowardsWanderTarget()
@@ -148,7 +134,6 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.tag == "Obstacle")
         {
             colliding.Add(collision.gameObject);
-            print(collision.transform.name);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -156,7 +141,6 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             colliding.Remove(collision.gameObject);
-            print(collision.transform.name);
         }
     }
 
@@ -166,21 +150,8 @@ public class EnemyMovement : MonoBehaviour
         {
             Vector2 obstaclePos = c.transform.position;
             float dist = Vector2.Distance(obstaclePos, transform.position);
-            print(dist);
+            //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
             velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x)+Random.Range(-15,15))*dist/100), velocity.y + (((transform.position.y - c.transform.position.y)+Random.Range(-15,15))*dist/100)).normalized;
         }
     }
-
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Room")
-            SpawnRoom = other.GetComponent<Room>();
-
-
-    }
-
-
-
-
-
 }
