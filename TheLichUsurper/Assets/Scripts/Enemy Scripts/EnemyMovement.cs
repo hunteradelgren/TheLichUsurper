@@ -29,9 +29,13 @@ public class EnemyMovement : MonoBehaviour
     public float distance; //will hold the distance between the target and the enemy
     private Rigidbody2D rb;
     private Vector2 velocity;
+    private RoomTemplate template;
+
 
     //enemy will not move while it swings
     public bool isAttacking = false;
+
+    public Room spawnRoom;
 
     public GameObject playerTarget; //sets up the target to be the player
 
@@ -42,13 +46,13 @@ public class EnemyMovement : MonoBehaviour
         target = playerTarget.transform;
         setWanderTarget();
         rb = GetComponent<Rigidbody2D>();
-       
+        template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isActive)
+        if (spawnRoom == template.currentRoom)
         {
             //if enemy is not attacking
             if (!isAttacking)
@@ -159,4 +163,11 @@ public class EnemyMovement : MonoBehaviour
             velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x)+Random.Range(-15,15))*dist/100), velocity.y + (((transform.position.y - c.transform.position.y)+Random.Range(-15,15))*dist/100)).normalized;
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Room" )
+            spawnRoom = other.GetComponent<Room>();
+    }
+
 }

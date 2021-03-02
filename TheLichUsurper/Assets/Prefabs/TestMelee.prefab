@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e6e96fd832533459c2e6c0a2b1bf75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
   target: {fileID: 0}
   targetDist: 2
   movSpeed: 30
@@ -221,6 +222,8 @@ MonoBehaviour:
   wanderMode: 0
   distance: 0
   isAttacking: 0
+  spawnRoom: {fileID: 0}
+  playerTarget: {fileID: 0}
 --- !u!114 &4913516908430734111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   rotSpeed: 180
+  playerTarget: {fileID: 0}
 --- !u!50 &4913516908430734307
 Rigidbody2D:
   serializedVersion: 4
@@ -243,7 +247,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4913516908430734104}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -284,8 +288,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0642296b959efb3419490d0ab9afa54a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
   target: {fileID: 0}
   attackRange: 3
   chargeTime: 1
   attackRate: 1
   damage: 1
+  playerTarget: {fileID: 0}
