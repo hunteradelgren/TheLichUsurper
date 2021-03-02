@@ -10,10 +10,13 @@ public class EnemyRotation : MonoBehaviour
     [SerializeField]
     float rotSpeed;
 
+    public GameObject playerTarget; //sets up the ranged target to be the player
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerTarget = GameObject.FindGameObjectWithTag("Player");
+        target = playerTarget.transform;
     }
 
     // Update is called once per frame

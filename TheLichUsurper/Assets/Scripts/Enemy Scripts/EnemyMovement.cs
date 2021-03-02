@@ -33,11 +33,16 @@ public class EnemyMovement : MonoBehaviour
     //enemy will not move while it swings
     public bool isAttacking = false;
 
+    public GameObject playerTarget; //sets up the target to be the player
+
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        playerTarget = GameObject.FindGameObjectWithTag("Player");
+        target = playerTarget.transform;
         setWanderTarget();
         rb = GetComponent<Rigidbody2D>();
+       
     }
 
     // Update is called once per frame

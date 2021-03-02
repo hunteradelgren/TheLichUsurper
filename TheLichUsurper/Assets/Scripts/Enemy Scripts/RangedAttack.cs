@@ -28,14 +28,17 @@ public class RangedAttack : MonoBehaviour
     private bool canAttack = true; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
     private float chargeTimer = 0f; //timer for attack chargeup
-    private GameObject projectilePrefab; 
+    private GameObject projectilePrefab;
 
+    public GameObject playerTarget; //sets up the ranged target to be the player
 
     // Start is called before the first frame update
     void Start()
     {
         //saves prefab of serialized name in the resources folder as a game object
         projectilePrefab = Resources.Load<GameObject>(projectileName);
+        playerTarget = GameObject.FindGameObjectWithTag("Player");
+        target = playerTarget;
     }
 
     // Update is called once per frame

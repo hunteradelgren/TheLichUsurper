@@ -33,10 +33,14 @@ public class MeleeAttack : MonoBehaviour
     private float chargeTimer = 0f; //timer for attack chargeup
     private bool validTarget = false; //does the target have player health
 
+    public GameObject playerTarget; //sets up the ranged target to be the player
+
     // Start is called before the first frame update
     void Start()
     {
         enemyMove = GetComponent<EnemyMovement>();
+        playerTarget = GameObject.FindGameObjectWithTag("Player");
+        target = playerTarget;
     }
 
     // Update is called once per frame
