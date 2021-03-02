@@ -23,7 +23,7 @@ public class RoomTemplate : MonoBehaviour
 
     void Start()
     {
-        Invoke("DifficultyTester", 1f); 
+        Invoke("DifficultyTester", 1.5f); 
 
 
     }
