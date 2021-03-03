@@ -22,8 +22,8 @@ public class HeadRotation : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 500))
         {
-            Vector3 direction = new Vector3(hit.point.x,transform.position.y,hit.point.z) - transform.position; //gets a vector in the direction of the target
-            float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; //finds angle to target location
+            Vector3 direction = new Vector3(hit.point.x,hit.point.y,transform.position.z) - transform.position; //gets a vector in the direction of the target
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
             Quaternion targetRot = Quaternion.AngleAxis(angle, Vector3.up); //creates rotation towards target
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
         }
