@@ -28,14 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6242825569144450584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -7.91, y: 2.66, z: 13.93}
   m_LocalScale: {x: 0.88088566, y: 0.11014578, z: -0.39988008}
   m_Children:
   - {fileID: 8915923285455859621}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!33 &1768526360251308093
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -59,7 +59,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -84,7 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!136 &3909929419941665426
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -111,9 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c36312e200282246a833d8a18d1c137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 15
+  projectileSpeed: 3
   damage: 3
-  lifetime: 5
+  isPlayerBullet: 0
 --- !u!54 &5250587827919924010
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,7 +126,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!1 &8749585405914524772
 GameObject:
@@ -176,7 +174,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -201,7 +198,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 85a94d534599ac544b4441bafe9278d5, type: 3}
+  m_Sprite: {fileID: -9095717837082945937, guid: 85a94d534599ac544b4441bafe9278d5,
+    type: 3}
   m_Color: {r: 0.754717, g: 0.05339978, b: 0.5671234, a: 1}
   m_FlipX: 0
   m_FlipY: 0
