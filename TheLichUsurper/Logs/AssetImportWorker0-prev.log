@@ -15,11 +15,19 @@ C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 61202
 Successfully changed project path to: C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
 C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 19.35 ms, found 0 plugins.
+=======
+61243
+Successfully changed project path to: C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 20.34 ms, found 0 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,6 +43,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -42,11 +51,21 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/E
 Registered in 0.001500 seconds.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 20.86 ms, found 0 plugins.
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001736 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.85 ms, found 0 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  0.782 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
@@ -54,12 +73,25 @@ Registered in 0.000475 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+=======
+- Completed reload, in  0.908 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000708 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  0.621 seconds
+=======
+- Completed reload, in  0.676 seconds
+>>>>>>> Stashed changes
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -71,6 +103,7 @@ System memory in use before: 58.2 MB.
 System memory in use after: 58.3 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1595.
+<<<<<<< Updated upstream
 Total: 1.767700 ms (FindLiveObjects: 0.173200 ms CreateObjectMapping: 0.029500 ms MarkObjects: 1.506100 ms  DeleteObjects: 0.056000 ms)
 
 ========================================================================
@@ -103,5 +136,34 @@ Received Import Request.
   artifactKey: Guid(5c66c22c591615248bca84282681b7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/cobblestone_door_locked.png using Guid(5c66c22c591615248bca84282681b7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58f8fced5b3b58e29973c3760f2b013') in 0.010884 seconds
   Import took 0.012401 seconds .
+=======
+Total: 1.594600 ms (FindLiveObjects: 0.166000 ms CreateObjectMapping: 0.026600 ms MarkObjects: 1.342400 ms  DeleteObjects: 0.058500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Enemy Scripts/FirstBoss.cs
+  artifactKey: Guid(fc93df69e3f7025489c9cac83870f93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Scripts/FirstBoss.cs using Guid(fc93df69e3f7025489c9cac83870f93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefe8d4335917b7c0c90a1ba30d86fd7') in 0.016813 seconds
+  Import took 0.018545 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 35.4 MB.
+System memory in use after: 35.5 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1595.
+Total: 1.772300 ms (FindLiveObjects: 0.162600 ms CreateObjectMapping: 0.029300 ms MarkObjects: 1.569700 ms  DeleteObjects: 0.009900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.875326 seconds.
+  path: Assets/Scripts/Enemy Scripts/EnemyRotation.cs
+  artifactKey: Guid(6993843f312a68249b1326af07c62e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Scripts/EnemyRotation.cs using Guid(6993843f312a68249b1326af07c62e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a0539ec125b54989e0557295daea60') in 0.005444 seconds
+  Import took 0.007101 seconds .
+>>>>>>> Stashed changes
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
