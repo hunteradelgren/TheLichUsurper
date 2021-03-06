@@ -23,7 +23,7 @@ public class basicProjectileBehavior : MonoBehaviour
     void Update()
     {
         //projectile continues along a straight path at the set speed
-        transform.position += transform.forward.normalized * projectileSpeed * Time.deltaTime;
+        transform.position += transform.right.normalized * projectileSpeed * Time.deltaTime;
     }
     void OnCollisionEnter(Collision collision)
     {

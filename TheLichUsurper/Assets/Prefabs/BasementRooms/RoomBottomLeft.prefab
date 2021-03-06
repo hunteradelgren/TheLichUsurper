@@ -279,9 +279,10 @@ GameObject:
   - component: {fileID: 6891753683465720395}
   - component: {fileID: 6891753683465720398}
   - component: {fileID: 6891753683465720396}
+  - component: {fileID: 7344050215443539308}
   m_Layer: 0
   m_Name: WallLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -377,6 +378,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9917207}
   m_EdgeRadius: 0
+--- !u!50 &7344050215443539308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891753683465720394}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6891753683945696947
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,9 +649,10 @@ GameObject:
   - component: {fileID: 6891753684525430727}
   - component: {fileID: 6891753684525430746}
   - component: {fileID: 6891753684525430744}
+  - component: {fileID: 4373986654285095596}
   m_Layer: 0
   m_Name: WallBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -725,6 +748,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9978196}
   m_EdgeRadius: 0
+--- !u!50 &4373986654285095596
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891753684525430726}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6891753684738363123
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,9 +856,10 @@ GameObject:
   - component: {fileID: 6891753684766701047}
   - component: {fileID: 6891753684766701046}
   - component: {fileID: 6891753684766701045}
+  - component: {fileID: 4886250139917835246}
   m_Layer: 0
   m_Name: WallTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -936,6 +981,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.41842803}
   m_EdgeRadius: 0
+--- !u!50 &4886250139917835246
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891753684766701043}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6891753684893155339
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,9 +1014,10 @@ GameObject:
   - component: {fileID: 6891753684893155343}
   - component: {fileID: 6891753684893155342}
   - component: {fileID: 6891753684893155341}
+  - component: {fileID: 2562747042814658299}
   m_Layer: 0
   m_Name: WalRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1072,6 +1139,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.3332987}
   m_EdgeRadius: 0
+--- !u!50 &2562747042814658299
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891753684893155339}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &9030119336289618574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1284,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4913516908430734110, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 1908330212106720754}
+    - target: {fileID: 4913516908430734110, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: movSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913516908430734307, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913516908430734307, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
 --- !u!4 &5366610686347940600 stripped
@@ -1261,6 +1365,22 @@ PrefabInstance:
     - target: {fileID: 8554052697694655666, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554052697694655667, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 1908330212106720754}
+    - target: {fileID: 8554052697694655667, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: movSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554052697694655669, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554052697694655669, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8554052697694655672, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: m_Name

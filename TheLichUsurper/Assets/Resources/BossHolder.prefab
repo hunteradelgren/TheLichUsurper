@@ -197,17 +197,18 @@ MonoBehaviour:
   pos1: {fileID: 0}
   pos2: {fileID: 0}
   pos3: {fileID: 0}
-  movSpeed: 100
-  lungeSpeed: 300
+  movSpeed: 10
+  lungeSpeed: 50
   attackDamage: 2
   lungeDamage: 1
   attackRate: 2
   chargeTime: 2
   lungeTime: 1
-  attackRange: 5
+  attackRange: 1
   maxLungeTime: 0.5
   maxhealth: 50
   targetChaseDist: 2
-  currentHealth: 0
+  currentHealth: 50
   isAttacking: 0
   isLunging: 0
+  spawnRoom: {fileID: 0}

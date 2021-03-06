@@ -30,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 velocity;
     private RoomTemplate template;
+    public GameObject center; //uses the center game object in the room
 
 
     //enemy will not move while it swings
@@ -80,19 +81,16 @@ public class EnemyMovement : MonoBehaviour
 
                 //is enemy colliding with obstacle
                 if (colliding.Count > 0)
+                {
                     avoidObstacle();
+                    avoidWall();
+                }
+                    
 
                 velocity *= movSpeed * Time.deltaTime;
                 if (distance >= targetDist || wanderMode)
                 {
-                    print(transform.name + "moved");
-                    rb.MovePosition(new Vector2(transform.position.x + velocity.x, transform.position.y + velocity.y));
-                }
-
-                else
-                {
-                    rb.MovePosition(new Vector2(transform.position.x, transform.position.y));
-                    return;
+                    transform.Translate(velocity,Space.World);
                 }
             }
         }
@@ -140,14 +138,14 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall")
         {
             colliding.Add(collision.gameObject);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall")
         {
             colliding.Remove(collision.gameObject);
         }
@@ -157,10 +155,29 @@ public class EnemyMovement : MonoBehaviour
     {
         foreach(GameObject c in colliding)
         {
-            Vector2 obstaclePos = c.transform.position;
-            float dist = Vector2.Distance(obstaclePos, transform.position);
-            //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
-            velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x)+Random.Range(-15,15))*dist/100), velocity.y + (((transform.position.y - c.transform.position.y)+Random.Range(-15,15))*dist/100)).normalized;
+            if (c.tag == "Obstacle")
+            {
+
+
+                Vector2 obstaclePos = c.transform.position;
+                float dist = Vector2.Distance(obstaclePos, transform.position);
+                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
+                velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x) + Random.Range(-15, 15)) * (1 / dist)), velocity.y + (((transform.position.y - c.transform.position.y) + Random.Range(-15, 15)) * (1 / dist))).normalized;
+            }
+        }
+    }
+
+    void avoidWall()
+    {
+        foreach (GameObject c in colliding)
+        {
+            if (c.tag == "Wall")
+            {
+                Vector2 obstaclePos = c.transform.position;
+                float dist = Vector2.Distance(obstaclePos, transform.position);
+                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
+                velocity = new Vector2(velocity.x + (center.transform.position.x-transform.position.x),velocity.y+(center.transform.position.y-transform.position.y)).normalized;
+            }
         }
     }
 

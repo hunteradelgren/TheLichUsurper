@@ -18,14 +18,14 @@ public class FirstBoss : MonoBehaviour
     [SerializeField]
     Transform pos3;
 
-    public float movSpeed = 50f;
-    public float lungeSpeed = 200f;
+    public float movSpeed = 10f;
+    public float lungeSpeed = 50f;
     public float attackDamage = 2f;
     public float lungeDamage = 2f;
     public float attackRate = 2f;
     public float chargeTime = 3f;
     public float lungeTime = 1f;
-    public float attackRange = 5f;
+    public float attackRange = 1f;
     public float maxLungeTime = 2f;
     public float maxhealth = 50f;
     public float targetChaseDist = 2f;
@@ -40,6 +40,8 @@ public class FirstBoss : MonoBehaviour
     private float distPos2;
     private float distPos3;
 
+    private float maxMoveSpeed;
+    private float maxLungeSpeed;
     private float rotSpeed = 180;
     private bool inRange = true; //is target in range
     private bool canAttack = true; //is attack on cooldown
@@ -51,12 +53,16 @@ public class FirstBoss : MonoBehaviour
     private Vector2 lungeTarget;
     private Rigidbody2D rb;
 
+    private RoomTemplate template;
+    public Room spawnRoom;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        Player = FindObjectOfType<PlayerHealth>().gameObject.transform;
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxhealth;
+        template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
     }
 
     // Update is called once per frame
@@ -66,14 +72,13 @@ public class FirstBoss : MonoBehaviour
         {
             Object.Destroy(gameObject);
         }
-        if (isActive)
-        {
             //finds the distance from the target location
             distPlayer = Vector2.Distance(Player.position, transform.position); 
             distPos1 = Vector2.Distance(pos1.position, transform.position); 
             distPos2 = Vector2.Distance(pos2.position, transform.position); 
             distPos3 = Vector2.Distance(pos3.position, transform.position);
-
+        if (spawnRoom == template.currentRoom)
+        {
 
             //boss is over 30% health and so will use 1st phase of behavior
             if (currentHealth >= maxhealth * .3)
@@ -82,6 +87,8 @@ public class FirstBoss : MonoBehaviour
                 //boss is lunging
                 if (isLunging)
                 {
+                    print("P:"+Player.position);
+                    print(lungeTarget);
                     Vector2 direction = lungeTarget - new Vector2(transform.position.x, transform.position.y); //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
                     Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
@@ -175,7 +182,6 @@ public class FirstBoss : MonoBehaviour
                         Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
                         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
                     }
-
                 }
             }
 
@@ -290,6 +296,7 @@ public class FirstBoss : MonoBehaviour
         currentHealth -= damage;
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isLunging)
@@ -299,12 +306,24 @@ public class FirstBoss : MonoBehaviour
                 Player.GetComponent<PlayerHealth>().takeDamage(lungeDamage);
                 print("Lunged into player");
             }
+            if(collision.tag == "Wall")
+            {
+                //lunge is finished
+                chargeTimer = 0;
+                lungeTimer = 0;
+                isLunging = false;
+                canAttack = false;
+            }
         }
 
         if (collision.gameObject.tag == "Player")
         {
             colliding.Add(collision.gameObject);
         }
+
+
+        if (collision.tag == "EndRoom")
+            spawnRoom = collision.GetComponent<Room>();
     }
 
     private void OnTriggerExit2D(Collider2D collision)
