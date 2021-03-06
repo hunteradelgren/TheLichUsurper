@@ -12,10 +12,16 @@ public class Movement : MonoBehaviour
     private float verticalAxis;
     int floor;
     private Rigidbody prb;
-
+    
+    public Animator animator;
+    
     public float loadingTimer;
 
     public Camera cam;
+
+    public GameObject HitPoint;
+
+    float angle = 270;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +43,16 @@ public class Movement : MonoBehaviour
         mousePos.x = mousePos.x - objectPos.x;
         mousePos.y = mousePos.y - objectPos.y;
 
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle-90));
+        angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+        
 
 
-
+        HitPoint.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle+90));
+        if (angle < 0)
+            animator.SetFloat("PlayerRot", angle + 359);
+        else
+            animator.SetFloat("PlayerRot", angle);
 
         if (loadingTimer <= 0)
         {
