@@ -27,16 +27,18 @@ public class basicProjectileBehavior : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null && !isPlayerBullet)
-        {
-            print("hit");
-            collision.gameObject.GetComponent<PlayerHealth>().takeDamage(damage);
-            GameObject.Destroy(gameObject);
-        }
         if (collision.transform.tag == "Wall")
         {
             GameObject.Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null && !isPlayerBullet)
+        {
+            GameObject.Destroy(gameObject);
+            collision.gameObject.GetComponent<PlayerHealth>().takeDamage(damage);
         }
     }
 
