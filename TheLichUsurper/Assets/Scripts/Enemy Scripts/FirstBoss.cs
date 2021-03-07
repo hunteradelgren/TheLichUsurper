@@ -20,8 +20,8 @@ public class FirstBoss : MonoBehaviour
 
     public float movSpeed = 10f;
     public float lungeSpeed = 50f;
-    public float attackDamage = 2f;
-    public float lungeDamage = 2f;
+    public float attackDamage = 1f;
+    public float lungeDamage = .5f;
     public float attackRate = 2f;
     public float chargeTime = 3f;
     public float lungeTime = 1f;
@@ -42,7 +42,7 @@ public class FirstBoss : MonoBehaviour
 
     private float maxMoveSpeed;
     private float maxLungeSpeed;
-    private float rotSpeed = 180;
+    private float rotSpeed = 360;
     private bool inRange = true; //is target in range
     private bool canAttack = true; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
@@ -52,6 +52,8 @@ public class FirstBoss : MonoBehaviour
     private List<GameObject> colliding = new List<GameObject>();
     private Vector2 lungeTarget;
     private Rigidbody2D rb;
+    private Vector2 velocity;
+    public GameObject center; //uses the center game object in the room
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -87,9 +89,7 @@ public class FirstBoss : MonoBehaviour
                 //boss is lunging
                 if (isLunging)
                 {
-                    print("P:"+Player.position);
-                    print(lungeTarget);
-                    Vector2 direction = lungeTarget - new Vector2(transform.position.x, transform.position.y); //gets a vector in the direction of the target
+                    Vector2 direction = lungeTarget; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
                     Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
@@ -100,8 +100,8 @@ public class FirstBoss : MonoBehaviour
                     {
                         //lunge is being performed
                         lungeTimer += Time.deltaTime;
-
-                        rb.MovePosition(((new Vector2(transform.position.x, transform.position.y) + (lungeTarget - new Vector2(transform.position.x, transform.position.y)).normalized * lungeSpeed * Time.deltaTime)));
+                        velocity = lungeTarget;
+                        transform.Translate(velocity.normalized * lungeSpeed * Time.deltaTime, Space.World);
                         if (lungeTimer >= maxLungeTime)
                         {
                             //lunge is finished
@@ -135,7 +135,7 @@ public class FirstBoss : MonoBehaviour
                     checkCanAttack();
 
                     //boss is at an attack position
-                    if (distPos1 <= 1.5 || distPos2 <= 1.5 || distPos3 <= 1.5)
+                    if (distPos1 <= .5 || distPos2 <= .5 || distPos3 <= .5)
                     {
                         if (canAttack)
                         {
@@ -155,8 +155,8 @@ public class FirstBoss : MonoBehaviour
                     //position 1 is closest
                     else if (distPos1 < distPos2 && distPos1 < distPos3)
                     {
-                        rb.MovePosition(((transform.position + (pos1.position - transform.position).normalized * movSpeed * Time.deltaTime)));
-
+                        velocity = pos1.position - transform.position;
+                        transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos1.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
                         Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
@@ -165,8 +165,8 @@ public class FirstBoss : MonoBehaviour
                     //position 2 is closest
                     else if (distPos2 < distPos1 && distPos2 < distPos3)
                     {
-                        rb.MovePosition(((transform.position + (pos2.position - transform.position).normalized * movSpeed * Time.deltaTime)));
-
+                        velocity = pos2.position - transform.position;
+                        transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos2.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
                         Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
@@ -175,8 +175,8 @@ public class FirstBoss : MonoBehaviour
                     //position 3 is closest
                     else
                     {
-                        rb.MovePosition(((transform.position + (pos3.position - transform.position).normalized * movSpeed * Time.deltaTime)));
-
+                        velocity = pos3.position - transform.position;
+                        transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos3.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
                         Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
@@ -210,7 +210,7 @@ public class FirstBoss : MonoBehaviour
                 //boss is chasing player until reaching the target distance
                 else if (distPlayer >= targetChaseDist)
                 {
-                    rb.MovePosition(((transform.position + (Player.position - transform.position).normalized * movSpeed * Time.deltaTime)));
+                    transform.Translate(velocity.normalized * movSpeed *Time.deltaTime, Space.World);
 
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
@@ -286,7 +286,7 @@ public class FirstBoss : MonoBehaviour
     {
         if(colliding.Count == 0)
         {
-            lungeTarget = (Player.position - transform.position)*1.2f;
+            lungeTarget = (Player.position - transform.position)*1f;
             isLunging = true;
         }
     }
@@ -323,7 +323,14 @@ public class FirstBoss : MonoBehaviour
 
 
         if (collision.tag == "EndRoom")
+        {
             spawnRoom = collision.GetComponent<Room>();
+        }
+            
+        if (collision.tag == "Wall")
+        {
+            avoidWall();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -331,6 +338,20 @@ public class FirstBoss : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             colliding.Remove(collision.gameObject);
+        }
+    }
+
+    void avoidWall()
+    {
+        foreach (GameObject c in colliding)
+        {
+            if (c.tag == "Wall")
+            {
+                Vector2 obstaclePos = c.transform.position;
+                float dist = Vector2.Distance(obstaclePos, transform.position);
+                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
+                velocity = new Vector2(velocity.x + (center.transform.position.x - transform.position.x), velocity.y + (center.transform.position.y - transform.position.y)).normalized;
+            }
         }
     }
 }

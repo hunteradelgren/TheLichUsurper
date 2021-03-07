@@ -315,9 +315,10 @@ GameObject:
   - component: {fileID: 9067622717364512128}
   - component: {fileID: 9067622717364512133}
   - component: {fileID: 9067622717364512135}
+  - component: {fileID: 2811035258523299996}
   m_Layer: 0
   m_Name: WallLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,6 +414,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9876224}
   m_EdgeRadius: 0
+--- !u!50 &2811035258523299996
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067622717364512129}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.005
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &9067622717441677169
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +490,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 12
   height: 8
-  WeightForDelete: 0
 --- !u!61 &5726644733675896502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -527,9 +548,10 @@ GameObject:
   - component: {fileID: 9067622718202102335}
   - component: {fileID: 9067622718202102332}
   - component: {fileID: 9067622718202102334}
+  - component: {fileID: 7666625051825557657}
   m_Layer: 0
   m_Name: WallTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,6 +647,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9970238}
   m_EdgeRadius: 0
+--- !u!50 &7666625051825557657
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067622718202102328}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &9067622718345263040
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,9 +680,10 @@ GameObject:
   - component: {fileID: 9067622718345263044}
   - component: {fileID: 9067622718345263045}
   - component: {fileID: 9067622718345263046}
+  - component: {fileID: 2628428788723374503}
   m_Layer: 0
   m_Name: WalRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -761,6 +805,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.3332987}
   m_EdgeRadius: 0
+--- !u!50 &2628428788723374503
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067622718345263040}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &9067622718443110413
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,9 +837,10 @@ GameObject:
   - component: {fileID: 9067622718443110412}
   - component: {fileID: 9067622718443110417}
   - component: {fileID: 9067622718443110419}
+  - component: {fileID: 221440918884128959}
   m_Layer: 0
   m_Name: WallBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,3 +936,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9996232}
   m_EdgeRadius: 0
+--- !u!50 &221440918884128959
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9067622718443110413}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

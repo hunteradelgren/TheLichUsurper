@@ -173,9 +173,10 @@ GameObject:
   - component: {fileID: 6794591997031195606}
   - component: {fileID: 6794591997031195605}
   - component: {fileID: 6794591997031195604}
+  - component: {fileID: 7420306029544471662}
   m_Layer: 0
   m_Name: WallBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,6 +298,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.41672063}
   m_EdgeRadius: 0
+--- !u!50 &7420306029544471662
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794591997031195594}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6794591997268775943
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,9 +331,10 @@ GameObject:
   - component: {fileID: 6794591997268775939}
   - component: {fileID: 6794591997268775938}
   - component: {fileID: 6794591997268775937}
+  - component: {fileID: 6154249355367746147}
   m_Layer: 0
   m_Name: WalRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,6 +456,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.3332987}
   m_EdgeRadius: 0
+--- !u!50 &6154249355367746147
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794591997268775943}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6794591997310214655
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,9 +488,10 @@ GameObject:
   - component: {fileID: 6794591997310214648}
   - component: {fileID: 6794591997310214651}
   - component: {fileID: 6794591997310214649}
+  - component: {fileID: 911017463173785914}
   m_Layer: 0
   m_Name: WallTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -542,6 +587,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0032187}
   m_EdgeRadius: 0
+--- !u!50 &911017463173785914
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794591997310214655}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6794591998144136774
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,9 +619,10 @@ GameObject:
   - component: {fileID: 6794591998144136775}
   - component: {fileID: 6794591998144136770}
   - component: {fileID: 6794591998144136768}
+  - component: {fileID: 4708395648354986845}
   m_Layer: 0
   m_Name: WallLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -651,6 +718,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9874287}
   m_EdgeRadius: 0
+--- !u!50 &4708395648354986845
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794591998144136774}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6794591998168691894
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 12
   height: 8
-  WeightForDelete: 0
 --- !u!61 &1422775045704692485
 BoxCollider2D:
   m_ObjectHideFlags: 0
