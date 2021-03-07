@@ -25,24 +25,27 @@ public class basicProjectileBehavior : MonoBehaviour
         //projectile continues along a straight path at the set speed
         transform.position += transform.right.normalized * projectileSpeed * Time.deltaTime;
     }
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
 
         if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null && !isPlayerBullet)
         {
-            //print("hit");
-            collision.gameObject.GetComponentInParent<PlayerHealth>().takeDamage(damage);
-            DestroyObject(gameObject);
+            print("hit");
+            collision.gameObject.GetComponent<PlayerHealth>().takeDamage(damage);
+            GameObject.Destroy(gameObject);
         }
-
+        if (collision.transform.tag == "Wall")
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 
-    void OnTriggerExit(Collider collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         if (isPlayerBullet && collision.gameObject.GetComponentInParent<PlayerHealth>() == null)
         {
-            print("exiting " + collision.gameObject.name);
-            DestroyObject(gameObject);
+            GameObject.Destroy(gameObject);
         }
+
     }
 }
