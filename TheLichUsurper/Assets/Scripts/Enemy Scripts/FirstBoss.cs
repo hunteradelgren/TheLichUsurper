@@ -20,8 +20,8 @@ public class FirstBoss : MonoBehaviour
 
     public float movSpeed = 10f;
     public float lungeSpeed = 50f;
-    public float attackDamage = 2f;
-    public float lungeDamage = 2f;
+    public float attackDamage = 1f;
+    public float lungeDamage = .5f;
     public float attackRate = 2f;
     public float chargeTime = 3f;
     public float lungeTime = 1f;
@@ -53,6 +53,7 @@ public class FirstBoss : MonoBehaviour
     private Vector2 lungeTarget;
     private Rigidbody2D rb;
     private Vector2 velocity;
+    public GameObject center; //uses the center game object in the room
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -322,7 +323,14 @@ public class FirstBoss : MonoBehaviour
 
 
         if (collision.tag == "EndRoom")
+        {
             spawnRoom = collision.GetComponent<Room>();
+        }
+            
+        if (collision.tag == "Wall")
+        {
+            avoidWall();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -330,6 +338,20 @@ public class FirstBoss : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             colliding.Remove(collision.gameObject);
+        }
+    }
+
+    void avoidWall()
+    {
+        foreach (GameObject c in colliding)
+        {
+            if (c.tag == "Wall")
+            {
+                Vector2 obstaclePos = c.transform.position;
+                float dist = Vector2.Distance(obstaclePos, transform.position);
+                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
+                velocity = new Vector2(velocity.x + (center.transform.position.x - transform.position.x), velocity.y + (center.transform.position.y - transform.position.y)).normalized;
+            }
         }
     }
 }

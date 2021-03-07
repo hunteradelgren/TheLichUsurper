@@ -23,6 +23,8 @@ public class Movement : MonoBehaviour
 
     float angle = 270;
 
+    public GameObject center; //center of room the player is in
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,7 @@ public class Movement : MonoBehaviour
             horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
             verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
             transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime,Space.World); //moves in direction of the input
+            
             /*Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
             //RaycastHit floorHit;
             Plane groundPlane = new Plane(Vector3.right, Vector3.zero);
@@ -80,6 +83,22 @@ public class Movement : MonoBehaviour
         }
         else
             loadingTimer -= Time.deltaTime;
+    }
+    //moves the player towards the center of the room slightly when they touch a wall
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Wall")
+        {
+            transform.Translate((center.transform.position - transform.position)*moveSpeed/6 * Time.deltaTime,Space.World);
+        }
+    }
+    //updates the center based on what room the player is in
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.transform.tag == "SpawnPoint")
+        {
+            center = collision.gameObject;
+        }
     }
 }
 
