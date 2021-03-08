@@ -15,7 +15,7 @@ public class RoomTemplate : MonoBehaviour
     private GameObject[] roomCount;
     private GameObject[] EndRooms;
     public GameObject boss;
-
+    public GameObject curtain;
 
     public Room currentRoom;
 
@@ -53,7 +53,7 @@ public class RoomTemplate : MonoBehaviour
         Instantiate(boss, EndRooms[EndRooms.Length - 1].transform.position, Quaternion.identity);
         
         Destroy(EndRooms[EndRooms.Length - 1]);
-    
+        curtain.SetActive(false);
     }
 
 

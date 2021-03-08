@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     private float verticalAxis;
     int floor;
     private Rigidbody prb;
-    
+    public bool status;
     public Animator animator;
     
     public float loadingTimer;
@@ -38,39 +38,40 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = 0;
-
-        Vector3 objectPos = cam.WorldToScreenPoint(transform.position);
-        mousePos.x = mousePos.x - objectPos.x;
-        mousePos.y = mousePos.y - objectPos.y;
-
-        angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-
-        
-
-
-        HitPoint.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle+90));
-        if (angle < 0)
-            animator.SetFloat("PlayerRot", angle + 359);
-        else
-            animator.SetFloat("PlayerRot", angle);
-
-        if (loadingTimer <= 0)
+        if (Time.timeScale != 0)
         {
-            horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
-            verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
-            transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime,Space.World); //moves in direction of the input
-            
-            /*Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
-            //RaycastHit floorHit;
-            Plane groundPlane = new Plane(Vector3.right, Vector3.zero);
-            float raylength;
-            if (groundPlane.Raycast(camRay, out raylength))
+            Vector3 mousePos = Input.mousePosition;
+            mousePos.z = 0;
+
+            Vector3 objectPos = cam.WorldToScreenPoint(transform.position);
+            mousePos.x = mousePos.x - objectPos.x;
+            mousePos.y = mousePos.y - objectPos.y;
+
+            angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+
+
+
+            HitPoint.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
+            if (angle < 0)
+                animator.SetFloat("PlayerRot", angle + 359);
+            else
+                animator.SetFloat("PlayerRot", angle);
+
+            if (loadingTimer <= 0)
             {
-                Vector3 pointToLook = camRay.GetPoint(raylength);
-                Debug.DrawLine(camRay.origin, pointToLook, Color.blue);
-                transform.LookAt(pointToLook);
+                horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
+                verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
+                transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime, Space.World); //moves in direction of the input
+                /*Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
+                //RaycastHit floorHit;
+                Plane groundPlane = new Plane(Vector3.right, Vector3.zero);
+                float raylength;
+                if (groundPlane.Raycast(camRay, out raylength))
+                {
+                    Vector3 pointToLook = camRay.GetPoint(raylength);
+                    Debug.DrawLine(camRay.origin, pointToLook, Color.blue);
+                    transform.LookAt(pointToLook);
 
 
 
@@ -80,25 +81,43 @@ public class Movement : MonoBehaviour
                 Quaternion newRot = Quaternion.LookRotation(mousePoint);
                 prb.MoveRotation(newRot);
             }*/
+            }
+            else
+                loadingTimer -= Time.deltaTime;
+        }
+    }
+        //moves the player towards the center of the room slightly when they touch a wall
+        void OnCollisionStay2D(Collision2D collision)
+        {
+            if (collision.transform.tag == "Wall")
+            {
+                transform.Translate((center.transform.position - transform.position) * moveSpeed / 6 * Time.deltaTime, Space.World);
+            }
+        }
+        //updates the center based on what room the player is in
+        void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.transform.tag == "SpawnPoint")
+            {
+                center = collision.gameObject;
+            }
+        }
+    
+    public void upgrade()
+    {
+        status = !status;
+
+        if (status)
+        {
+            moveSpeed += 5;
+            print("speed upped");
         }
         else
-            loadingTimer -= Time.deltaTime;
-    }
-    //moves the player towards the center of the room slightly when they touch a wall
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.transform.tag == "Wall")
         {
-            transform.Translate((center.transform.position - transform.position)*moveSpeed/6 * Time.deltaTime,Space.World);
+            moveSpeed -= 5;
+            print("speed downed");
         }
-    }
-    //updates the center based on what room the player is in
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.transform.tag == "SpawnPoint")
-        {
-            center = collision.gameObject;
-        }
+        
     }
 }
 

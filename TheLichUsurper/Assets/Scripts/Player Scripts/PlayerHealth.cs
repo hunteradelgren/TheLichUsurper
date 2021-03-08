@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider hpSlider;
     public Slider specSlider;
     public bool status;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
