@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider hpSlider;
     public Slider specSlider;
     public bool status;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -106,11 +107,24 @@ public class PlayerHealth : MonoBehaviour
 
     public void gainHealth(float boost)
     {
-        //increases health by received amount
-        currentHealth += boost;
-        if (!inSpectralForm)
+        
+        if (!inSpectralForm && currentHealth+boost <= maxHealth)
+        {
+            //increases health by received amount
+            currentHealth += boost;
             hpSlider.value = currentHealth;
-        else
+        }
+        else if(currentHealth + boost <= maxSpectreHealth)
+        {
+            //increases health by received amount
+            currentHealth += boost;
             specSlider.value = currentHealth;
+        }
+            
+    }
+
+    public void healthUpgrade(float amount)
+    {
+        maxHealth += amount;
     }
 }

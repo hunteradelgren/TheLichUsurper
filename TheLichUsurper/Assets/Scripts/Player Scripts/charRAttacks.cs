@@ -7,6 +7,7 @@ public class charRAttacks : MonoBehaviour
     // Start is called before the first frame update
     float timer;//time tracking field
     public float timeBetweenAttacks = .2f;//constant to track how long should be between each attack
+    public float damage = 1;
     public GameObject dummy;
     [SerializeField] Transform heading;
     /// </summary>
@@ -31,5 +32,10 @@ public class charRAttacks : MonoBehaviour
         {//sets the color of the head back to black to show the end of the attack
             GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 0);
         }*/
+    }
+
+    public void damageUpgrade(float amount)
+    {
+        damage += amount;
     }
 }

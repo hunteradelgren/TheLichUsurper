@@ -171,7 +171,7 @@ public class EnemyMovement : MonoBehaviour
     {
         foreach (GameObject c in colliding)
         {
-            if (c.tag == "Wall")
+            if (c.tag == "Wall" || c.GetComponent<Door>() != null)
             {
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);

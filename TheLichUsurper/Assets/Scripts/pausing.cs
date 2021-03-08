@@ -5,8 +5,8 @@ using UnityEngine;
 public class pausing : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject quitter;
-    public GameObject resumer;
+    ////public GameObject quitter;
+    //public GameObject resumer;
     public GameObject managing;
     float moveTime;
     void Start()
@@ -22,6 +22,7 @@ public class pausing : MonoBehaviour
         {
             managing.SetActive(true);
             Time.timeScale = 0;
+            print("paused");
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0)
             Resume();
@@ -30,6 +31,7 @@ public class pausing : MonoBehaviour
     {
         managing.SetActive(false);
         Time.timeScale = moveTime;
+        print("unpaused");
     }
     public void Quit()
     {//quits the application if given the command
