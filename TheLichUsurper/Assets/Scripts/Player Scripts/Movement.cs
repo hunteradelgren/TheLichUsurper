@@ -23,6 +23,8 @@ public class Movement : MonoBehaviour
 
     float angle = 270;
 
+    public GameObject center; //center of room the player is in
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,16 +76,33 @@ public class Movement : MonoBehaviour
 
 
 
-                    /*Vector3 mousePoint = floorHit.point - transform.position;
-                    mousePoint.y = 0f;
-                    Quaternion newRot = Quaternion.LookRotation(mousePoint);
-                    prb.MoveRotation(newRot);
-                }*/
+                /*Vector3 mousePoint = floorHit.point - transform.position;
+                mousePoint.y = 0f;
+                Quaternion newRot = Quaternion.LookRotation(mousePoint);
+                prb.MoveRotation(newRot);
+            }*/
             }
             else
                 loadingTimer -= Time.deltaTime;
         }
     }
+        //moves the player towards the center of the room slightly when they touch a wall
+        void OnCollisionStay2D(Collision2D collision)
+        {
+            if (collision.transform.tag == "Wall")
+            {
+                transform.Translate((center.transform.position - transform.position) * moveSpeed / 6 * Time.deltaTime, Space.World);
+            }
+        }
+        //updates the center based on what room the player is in
+        void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.transform.tag == "SpawnPoint")
+            {
+                center = collision.gameObject;
+            }
+        }
+    
     public void upgrade()
     {
         status = !status;

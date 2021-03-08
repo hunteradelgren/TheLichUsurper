@@ -46,8 +46,6 @@ public class MeleeAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isActive)
-        {
             //enemy movement boolean is synchronized to the attack
             enemyMove.isAttacking = isAttacking;
             checkCanAttack();
@@ -71,15 +69,12 @@ public class MeleeAttack : MonoBehaviour
 
                 if (chargeTimer >= chargeTime)
                 {
-                    Attack();
-                    chargeTimer = 0f;
                     isAttacking = false;
                     canAttack = false;
+                    chargeTimer = 0f;
+                    Attack();                    
                 }
             }
-
-
-        }
     }
 
     void checkValidTarget()
@@ -131,6 +126,7 @@ public class MeleeAttack : MonoBehaviour
         checkValidTarget();
         if(validTarget && inRange)
         {
+            print("Attacked" + Time.time);
             target.GetComponent<PlayerHealth>().takeDamage(damage);
         }
     }
