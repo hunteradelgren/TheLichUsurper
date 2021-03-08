@@ -27,7 +27,7 @@ public class basicProjectileBehavior : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Wall")
+        if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
         {
             GameObject.Destroy(gameObject);
         }

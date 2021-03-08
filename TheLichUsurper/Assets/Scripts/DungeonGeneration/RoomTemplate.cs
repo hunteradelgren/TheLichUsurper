@@ -25,7 +25,6 @@ public class RoomTemplate : MonoBehaviour
     {
         Invoke("DifficultyTester", 1.5f); 
 
-
     }
 
 
