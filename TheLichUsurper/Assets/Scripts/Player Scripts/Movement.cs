@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     private float verticalAxis;
     int floor;
     private Rigidbody prb;
-    
+    public GameObject arm;
     public Animator animator;
     
     public float loadingTimer;
