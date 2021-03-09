@@ -138,14 +138,14 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
         {
             colliding.Add(collision.gameObject);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
         {
             colliding.Remove(collision.gameObject);
         }

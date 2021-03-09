@@ -1,0 +1,2109 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.804; Version 2009; 64bit' Language: 'en' Physical Memory: 16293 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54143
+Successfully changed project path to: C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 19.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5751
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001530 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 21.03 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.798 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000639 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.614 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.3 MB.
+System memory in use after: 58.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1604.
+Total: 1.598500 ms (FindLiveObjects: 0.155700 ms CreateObjectMapping: 0.026300 ms MarkObjects: 1.370400 ms  DeleteObjects: 0.045300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd695811304de3342d6b4e201f527d414') in 0.083230 seconds
+  Import took 0.085335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.983948 seconds.
+  path: Assets/Scripts/DungeonGeneration
+  artifactKey: Guid(9459e94f5631e684a9e3c9e4003aa3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DungeonGeneration using Guid(9459e94f5631e684a9e3c9e4003aa3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4dda6411f963360a96dbf3a68d8b7c') in 0.006345 seconds
+  Import took 0.008417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.652393 seconds.
+  path: Assets/Scripts/DungeonGeneration/Door.cs
+  artifactKey: Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DungeonGeneration/Door.cs using Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba01f225ea52afd6c1bdcc4864b8e5a') in 0.009876 seconds
+  Import took 0.011666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001235 seconds.
+  path: Assets/Scripts/DungeonGeneration/Door.cs
+  artifactKey: Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DungeonGeneration/Door.cs using Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba01f225ea52afd6c1bdcc4864b8e5a') in 0.002413 seconds
+  Import took 0.004005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.686164 seconds.
+  path: Assets/Sprites/PlayerSprite/IdleAnimation/IdleDiagDown.anim
+  artifactKey: Guid(cc66236dd851b7944a2bfeac2c1c1461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/IdleAnimation/IdleDiagDown.anim using Guid(cc66236dd851b7944a2bfeac2c1c1461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bcd6d315efa1b7d4a6277808269dac') in 0.007500 seconds
+  Import took 0.009452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Sprites/PlayerSprite/IdleAnimation/IdleDiagDown.anim
+  artifactKey: Guid(cc66236dd851b7944a2bfeac2c1c1461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/IdleAnimation/IdleDiagDown.anim using Guid(cc66236dd851b7944a2bfeac2c1c1461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bcd6d315efa1b7d4a6277808269dac') in 0.002912 seconds
+  Import took 0.004406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.866102 seconds.
+  path: Assets/Sprites/PlayerSprite/IdleAnimation/IdleDiagDownRight.anim
+  artifactKey: Guid(26c7918e20dfd4c4b98e550269a25c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/IdleAnimation/IdleDiagDownRight.anim using Guid(26c7918e20dfd4c4b98e550269a25c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922de191ecc27295055282aeafb468b4') in 0.006928 seconds
+  Import took 0.008993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.167530 seconds.
+  path: Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Left_0.controller
+  artifactKey: Guid(ac8a945fcbfc65b4da7b1f08830794f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Left_0.controller using Guid(ac8a945fcbfc65b4da7b1f08830794f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f400dbd782fec4248931f35bf73a53') in 0.008870 seconds
+  Import took 0.010877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.848846 seconds.
+  path: Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Down_0.controller
+  artifactKey: Guid(911d797bad45f3249b212479df4dbff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Down_0.controller using Guid(911d797bad45f3249b212479df4dbff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb10e76c5e7b0ce681554c4c9c8d6fe') in 0.007020 seconds
+  Import took 0.008927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.189834 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180e8fff7a080ab74a6fedecb00189e6') in 0.019851 seconds
+  Import took 0.022028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Prefabs/BasementRooms/DoorTop.prefab
+  artifactKey: Guid(02f16c6c1090d6a47be2739843f8a6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/DoorTop.prefab using Guid(02f16c6c1090d6a47be2739843f8a6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff964db2d601bf58c4d5fe0ea3630159') in 0.012321 seconds
+  Import took 0.013967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e8c054339af96c863513eef420f295') in 0.013859 seconds
+  Import took 0.015690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80573fc5b454a9c57564d5a8bb5ac15') in 0.020618 seconds
+  Import took 0.022471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.994526 seconds.
+  path: Assets/Sprites/Door
+  artifactKey: Guid(ac2600fe25e8fef4590e419a313e20ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door using Guid(ac2600fe25e8fef4590e419a313e20ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2750cfaef0931ca2ba1a7f14bc9661') in 0.002482 seconds
+  Import took 0.004350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.432059 seconds.
+  path: Assets/Sprites/Door/DoorControl.controller
+  artifactKey: Guid(d32ca04cf8cd8904aa223718c7a3191a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/DoorControl.controller using Guid(d32ca04cf8cd8904aa223718c7a3191a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc6822bfdd8547c7db98c9e6260ba86') in 0.006268 seconds
+  Import took 0.008142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 180.351136 seconds.
+  path: Assets/Sprites/Door/ClosedDoor.anim
+  artifactKey: Guid(f8913902fd6f8f74c97f78ce5b05c80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/ClosedDoor.anim using Guid(f8913902fd6f8f74c97f78ce5b05c80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301623d327185c9504d719cdcde5204f') in 0.006221 seconds
+  Import took 0.008171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.955229 seconds.
+  path: Assets/Resources/BossHolder.prefab
+  artifactKey: Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/BossHolder.prefab using Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f06f48b6d2f2d2bddcce7e877ad557') in 0.020192 seconds
+  Import took 0.022193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001778 seconds.
+  path: Assets/Resources/BossHolder.prefab
+  artifactKey: Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/BossHolder.prefab using Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f06f48b6d2f2d2bddcce7e877ad557') in 0.011652 seconds
+  Import took 0.013643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.620131 seconds.
+  path: Assets/Sprites/Door/OpenDoor.anim
+  artifactKey: Guid(61274ca0acd3d4347a0ba77cf010e174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/OpenDoor.anim using Guid(61274ca0acd3d4347a0ba77cf010e174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cb600e32a99ee70f007af8b1205c29') in 0.006351 seconds
+  Import took 0.008143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 319.275614 seconds.
+  path: Assets/Scripts/Player Scripts
+  artifactKey: Guid(f658b7543327bb34084a93f93f963982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts using Guid(f658b7543327bb34084a93f93f963982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996a0114eccbaa2c641e4fb10ddd7c4a') in 0.003343 seconds
+  Import took 0.005869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.513558 seconds.
+  path: Assets/Scripts/Player Scripts/acting.cs
+  artifactKey: Guid(2c91ef86efb95ef4294b6debd77d1159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/acting.cs using Guid(2c91ef86efb95ef4294b6debd77d1159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c8a2ed61fcadf6e33bab6fe1aa4463') in 0.002966 seconds
+  Import took 0.005232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.586632 seconds.
+  path: Assets/Scripts/Player Scripts/Movement.cs
+  artifactKey: Guid(3e659748e04ea6d4fb0ec223cc66f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player Scripts/Movement.cs using Guid(3e659748e04ea6d4fb0ec223cc66f1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b8f113459862447f4e6749746b0b43') in 0.005838 seconds
+  Import took 0.007792 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000488 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.589 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.4 MB.
+System memory in use after: 61.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1613.
+Total: 1.495800 ms (FindLiveObjects: 0.134300 ms CreateObjectMapping: 0.028500 ms MarkObjects: 1.319400 ms  DeleteObjects: 0.013000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000491 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.593 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.6 MB.
+System memory in use after: 61.7 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1615.
+Total: 1.534700 ms (FindLiveObjects: 0.147600 ms CreateObjectMapping: 0.029100 ms MarkObjects: 1.344000 ms  DeleteObjects: 0.013000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000552 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.591 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.7 MB.
+System memory in use after: 61.8 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 1.489400 ms (FindLiveObjects: 0.201100 ms CreateObjectMapping: 0.030600 ms MarkObjects: 1.245000 ms  DeleteObjects: 0.011700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 308.937858 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '6fe046eff10d9b3f01e71ec0f66bd7dd') in 0.066017 seconds
+  Import took 0.068324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Prefabs/BasementRooms/DoorTop.prefab
+  artifactKey: Guid(02f16c6c1090d6a47be2739843f8a6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/DoorTop.prefab using Guid(02f16c6c1090d6a47be2739843f8a6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '5a09582ac108040f0d639de2d33b41f4') in 0.014386 seconds
+  Import took 0.016242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '116a5b906941d5e0446e60f6f075e30c') in 0.022529 seconds
+  Import took 0.024300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+The Animator Controller (DoorControl) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 332]
+
+ -> (artifact id: '4fac6737e2ed2734580765b6c42d5fcd') in 0.011637 seconds
+  Import took 0.013375 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000493 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.605 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.9 MB.
+System memory in use after: 62.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 1.577200 ms (FindLiveObjects: 0.237900 ms CreateObjectMapping: 0.026200 ms MarkObjects: 1.296300 ms  DeleteObjects: 0.016200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000572 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.583 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.0 MB.
+System memory in use after: 62.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1622.
+Total: 1.549500 ms (FindLiveObjects: 0.182700 ms CreateObjectMapping: 0.034500 ms MarkObjects: 1.317500 ms  DeleteObjects: 0.013900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000532 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.583 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.1 MB.
+System memory in use after: 62.2 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1624.
+Total: 1.479300 ms (FindLiveObjects: 0.174900 ms CreateObjectMapping: 0.025300 ms MarkObjects: 1.265600 ms  DeleteObjects: 0.012300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000570 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.589 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 1.415800 ms (FindLiveObjects: 0.170000 ms CreateObjectMapping: 0.026800 ms MarkObjects: 1.207400 ms  DeleteObjects: 0.010800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 682.229444 seconds.
+  path: Assets/Sprites/Door/DoorControl.controller
+  artifactKey: Guid(d32ca04cf8cd8904aa223718c7a3191a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/DoorControl.controller using Guid(d32ca04cf8cd8904aa223718c7a3191a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1d8e6efdd4eb9075430654419b265d') in 0.013756 seconds
+  Import took 0.015831 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000612 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.624 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1628.
+Total: 1.529200 ms (FindLiveObjects: 0.188200 ms CreateObjectMapping: 0.026900 ms MarkObjects: 1.298300 ms  DeleteObjects: 0.014800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 349.130187 seconds.
+  path: Assets/Sprites/Door/OpenDoor.anim
+  artifactKey: Guid(61274ca0acd3d4347a0ba77cf010e174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/OpenDoor.anim using Guid(61274ca0acd3d4347a0ba77cf010e174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5521111d66188ec1ee77fa8b0091da86') in 0.014124 seconds
+  Import took 0.016048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Sprites/Door/OpenDoor.anim
+  artifactKey: Guid(61274ca0acd3d4347a0ba77cf010e174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/OpenDoor.anim using Guid(61274ca0acd3d4347a0ba77cf010e174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5521111d66188ec1ee77fa8b0091da86') in 0.002810 seconds
+  Import took 0.004355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.041961 seconds.
+  path: Assets/Sprites/Door/ClosedDoor.anim
+  artifactKey: Guid(f8913902fd6f8f74c97f78ce5b05c80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Door/ClosedDoor.anim using Guid(f8913902fd6f8f74c97f78ce5b05c80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c217f4b98620b3d73d6959c1bf230f9d') in 0.003027 seconds
+  Import took 0.004932 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000508 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1630.
+Total: 1.667300 ms (FindLiveObjects: 0.160700 ms CreateObjectMapping: 0.025500 ms MarkObjects: 1.466200 ms  DeleteObjects: 0.014000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.207431 seconds.
+  path: Assets/Scripts/Enemy Scripts/EnemyMovement.cs
+  artifactKey: Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Scripts/EnemyMovement.cs using Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e93c32af876022d2c60b547f04069d0') in 0.008194 seconds
+  Import took 0.010148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018313 seconds.
+  path: Assets/Scripts/Enemy Scripts/EnemyMovement.cs
+  artifactKey: Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Scripts/EnemyMovement.cs using Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e93c32af876022d2c60b547f04069d0') in 0.003179 seconds
+  Import took 0.005181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.433226 seconds.
+  path: Assets/Scripts/Enemy Scripts/EnemyMovement.cs
+  artifactKey: Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Scripts/EnemyMovement.cs using Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc38d2b33eabd2496583aa19a6a06cb0') in 0.017545 seconds
+  Import took 0.019338 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000521 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.586 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.5 MB.
+System memory in use after: 62.6 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 1.656800 ms (FindLiveObjects: 0.166500 ms CreateObjectMapping: 0.031700 ms MarkObjects: 1.444100 ms  DeleteObjects: 0.013500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.314714 seconds.
+  path: Assets/Scripts/Enemy Scripts/EnemyMovement.cs
+  artifactKey: Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Enemy Scripts/EnemyMovement.cs using Guid(a0e6e96fd832533459c2e6c0a2b1bf75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c12701d81417ff1c2a13fcabd464d1') in 0.004032 seconds
+  Import took 0.005692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.443438 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab803764225bde99879ed0bdf3372c2') in 0.061694 seconds
+  Import took 0.063948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.762281 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd223709b018d16eb9ec2db71dec3588d') in 0.014798 seconds
+  Import took 0.016987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.344339 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a55717784f24e677583d02fe60c701') in 0.017615 seconds
+  Import took 0.019851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.982663 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5d169e97bfb52db6451923e26e099a') in 0.016331 seconds
+  Import took 0.018549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.214428 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1496a36f3e616f3695a61cfc157d382a') in 0.015561 seconds
+  Import took 0.017734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.430812 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b50b7e059473748e04982efd5e6430e') in 0.016732 seconds
+  Import took 0.019044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.217630 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa036ba8eb4ef413911860d83eb3cf9f') in 0.017943 seconds
+  Import took 0.020110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.179538 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '688c49e3feb3882593d8966aec05ad0f') in 0.016456 seconds
+  Import took 0.018644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.491691 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de99e2804e941072d2e24a0e5d094f52') in 0.018706 seconds
+  Import took 0.020823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.381259 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf8c034cbcc04a077d4af23fa9234bb') in 0.016532 seconds
+  Import took 0.018647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.007856 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa7df642f7cc5ec55a34d51cc20ac42') in 0.013706 seconds
+  Import took 0.015790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.192347 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b79052aeda48d81e0dfd28f8ecfb68') in 0.015191 seconds
+  Import took 0.017638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.013535 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882e01cf26df796328f490f7ba22b9c4') in 0.017616 seconds
+  Import took 0.020209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000523 seconds.
+  path: Assets/Prefabs/BasementRooms/DoorTop.prefab
+  artifactKey: Guid(02f16c6c1090d6a47be2739843f8a6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/DoorTop.prefab using Guid(02f16c6c1090d6a47be2739843f8a6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccb9dd3fe0e3f2c10ec989d40d40302') in 0.017899 seconds
+  Import took 0.019710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71db5d67e3daa934154d141e084bc5d6') in 0.013651 seconds
+  Import took 0.015806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7c2d51b52 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7c2db9662 (Unity) ResolveArtifactV2
+0x00007ff7c2e140ff (Unity) ImportToObjects
+0x00007ff7c2e13353 (Unity) AssetImportWorker::Import
+0x00007ff7c2d72f0a (Unity) <lambda_15460d5f4e3985824d32248de194be11>::operator()
+0x00007ff7c2e3dd82 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7c2e3fee0 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7c2e4366e (Unity) asio::io_service::run
+0x00007ff7c2db9ba0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7c2db9bf0 (Unity) RunAssetImporterV2
+0x00007ff7c22d7ee6 (Unity) Application::InitializeProject
+0x00007ff7c2c4d0b2 (Unity) WinMain
+0x00007ff7c4ab0c66 (Unity) __scrt_common_main_seh
+0x00007ffc40537034 (KERNEL32) BaseThreadInitThunk
+0x00007ffc40bdd241 (ntdll) RtlUserThreadStart
+
+Requesting import of Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/BasementRooms/RoomBase.prefab from editor
+Resuming Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(-1,00000000000000000000000000000000) -> 00000000000000000000000000000000 (aborted)
+Diagnostics callstack to track who triggered the sub-import:
+0x00007ff7c2d51b52 (Unity) ImporterAssetResolver::ResolveAsset
+0x00007ff7c2db9662 (Unity) ResolveArtifactV2
+0x00007ff7c2db4261 (Unity) ProduceArtifactV2
+0x00007ff7c2d2181e (Unity) AssetDatabase::ProduceArtifact
+0x00007ff7c2d076d8 (Unity) PreviewImporter::GenerateAssetData
+0x00007ff7c2e144bf (Unity) ImportToObjects
+0x00007ff7c2e13353 (Unity) AssetImportWorker::Import
+0x00007ff7c2d72f0a (Unity) <lambda_15460d5f4e3985824d32248de194be11>::operator()
+0x00007ff7c2e3dd82 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7c2e3fee0 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7c2e4366e (Unity) asio::io_service::run
+0x00007ff7c2db9ba0 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7c2db9bf0 (Unity) RunAssetImporterV2
+0x00007ff7c22d7ee6 (Unity) Application::InitializeProject
+0x00007ff7c2c4d0b2 (Unity) WinMain
+0x00007ff7c4ab0c66 (Unity) __scrt_common_main_seh
+0x00007ffc40537034 (KERNEL32) BaseThreadInitThunk
+0x00007ffc40bdd241 (ntdll) RtlUserThreadStart
+
+Sub-import of Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(-1,00000000000000000000000000000000), Assets/Prefabs/BasementRooms/RoomBase.prefab skipped because a previous one failed already
+ -> (artifact id: 'fe8b93fd235c67c7852ddeecfac68d79') in 0.349571 seconds
+  Import took 0.350936 seconds (was aborted).
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08916d6427397f2f69fd1eaead9afb42') in 0.009484 seconds
+  Import took 0.011138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.062347 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a774c2e567966de9732b853dc905c6') in 0.016018 seconds
+  Import took 0.018187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.425529 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29d6b3cb3819f78e6bfbcb09b49d92b') in 0.014521 seconds
+  Import took 0.016947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.840465 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376b742666c585c8f3036159a21bd989') in 0.013821 seconds
+  Import took 0.015982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.998931 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e74fa7a097aea7c3d5d24cfd203e40df') in 0.017259 seconds
+  Import took 0.019380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.908344 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4249398d2362776d8dac31d570134c74') in 0.010993 seconds
+  Import took 0.013095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.602328 seconds.
+  path: Assets/Prefabs/BasementRooms/DoorRight Variant.prefab
+  artifactKey: Guid(a16d37340b9a3de46b2df2bf2aeca0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/DoorRight Variant.prefab using Guid(a16d37340b9a3de46b2df2bf2aeca0fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f62534ab66536855f34fe9e2825ebe') in 0.017719 seconds
+  Import took 0.019791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bbc8c446b5e937310b930f8209afb5') in 0.010225 seconds
+  Import took 0.012037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.408384 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504a6ee7449b5cc222bb6fd9eab1b648') in 0.014350 seconds
+  Import took 0.016422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.707724 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c55810b05582ec9ddd996d7035c781') in 0.013399 seconds
+  Import took 0.015621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.232723 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18b6f25a9df266441e588bb01ca8116') in 0.014772 seconds
+  Import took 0.017046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.984064 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f28e7545aed08ce4e5b52cdcbd27d7e') in 0.014809 seconds
+  Import took 0.017031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.996258 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b7ec10775439e06edf850bed62bc7e') in 0.014098 seconds
+  Import took 0.016330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.811065 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fedf89598ba4e4e2f34bd659f6ced69') in 0.017814 seconds
+  Import took 0.019999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.645344 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46313dd11daf3e796227fff1e5b06f9') in 0.021642 seconds
+  Import took 0.024000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.863607 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171beb2a518a0b84ec75b744749f3604') in 0.012985 seconds
+  Import took 0.015184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.218108 seconds.
+  path: Assets/Prefabs/BasementRooms/DoorLeft Variant.prefab
+  artifactKey: Guid(95322818bc3c8724c998c686307028fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/DoorLeft Variant.prefab using Guid(95322818bc3c8724c998c686307028fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9d8da97fa528c9867c56d6e18f115b') in 0.018496 seconds
+  Import took 0.020623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf957181b0b4f7e7e8273cec3621ed6') in 0.011242 seconds
+  Import took 0.013174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.853346 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78ce7edbf1ade55f3532315bcbbc750') in 0.013437 seconds
+  Import took 0.015587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.642615 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190c3d92bfcc7cfb6b33490d2e936de1') in 0.011258 seconds
+  Import took 0.013410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.604330 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5542f58dd94ed7d75a483157af374d') in 0.014552 seconds
+  Import took 0.016702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.399279 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953916d9118d8ff1d93f7bce78d04cd1') in 0.015352 seconds
+  Import took 0.017512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.388106 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adcdae16ea6cba3d6e1ed77841a360c3') in 0.015930 seconds
+  Import took 0.018114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.814520 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718a8ad5ac306b90223d63ccb5e52c44') in 0.014874 seconds
+  Import took 0.017087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.932637 seconds.
+  path: Assets/Prefabs/BasementRooms/DoorBottom Variant.prefab
+  artifactKey: Guid(9ecca3772d141b745ad35b208b0e1c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/DoorBottom Variant.prefab using Guid(9ecca3772d141b745ad35b208b0e1c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5384a750935eabc8181b7b77f6349855') in 0.017819 seconds
+  Import took 0.019949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBase.prefab
+  artifactKey: Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBase.prefab using Guid(7c90d8e3877a7484b99fd58562aa1a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7324aa9a027b00deb135288f184ead') in 0.012458 seconds
+  Import took 0.014417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.821235 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12af7ddbd85b800d1941a246bc20d59e') in 0.017180 seconds
+  Import took 0.019429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.192756 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b535b19de87a805bb12a23430f13d133') in 0.015411 seconds
+  Import took 0.017593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.605973 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c52f63e9535415fe5512e9abcfae15') in 0.015548 seconds
+  Import took 0.017698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.994955 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de56284777d49d762fe14bf5c6532d89') in 0.013953 seconds
+  Import took 0.016122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.759375 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad2cbb67a99791bfe77251d9503d030') in 0.016086 seconds
+  Import took 0.018336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.112382 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c7fa2f19c7757a2484f7de35094f90') in 0.018774 seconds
+  Import took 0.021053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.706872 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c563e181d77bd59dd0e2be22c2f02602') in 0.014226 seconds
+  Import took 0.016415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.435049 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8bea3d20b949e4d6aea64a5e4c5b29') in 0.020885 seconds
+  Import took 0.023105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.960521 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8410d39081d64f13821bee8eedd1cd9c') in 0.014682 seconds
+  Import took 0.017084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.417477 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93db282a9804efac4e5e4cb6e3a88fb5') in 0.015586 seconds
+  Import took 0.017809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.637746 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e5d890e9e6692ce40587e7280d3c966') in 0.015881 seconds
+  Import took 0.018135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.007452 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c8db5183153e0a6468894bc6a867af') in 0.016487 seconds
+  Import took 0.018679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.248563 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7815704fbaa833e3eea1c05f62640fd5') in 0.015465 seconds
+  Import took 0.017841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.617611 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546b377a897601814c4ba0e4ef279d39') in 0.021654 seconds
+  Import took 0.023886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.191969 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cd1661f9374924f90fcd7e74dc9dfa') in 0.015818 seconds
+  Import took 0.018037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.466332 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ed4da8a307369d0665dcc0d39678bb') in 0.021379 seconds
+  Import took 0.023706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.590253 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2942c1a56a49a2bb03f656bfd0b35908') in 0.023239 seconds
+  Import took 0.025466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.176780 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ed57575c8f7026fba22213ebf1dfb0') in 0.021780 seconds
+  Import took 0.024014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.599394 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98acfb9efa91acf6c0bb2c64f11ad9b') in 0.020817 seconds
+  Import took 0.023187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.215874 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '268d8d7d589ef1078afee6f259fcd296') in 0.023444 seconds
+  Import took 0.025660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.581739 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb1f0aadaf088b35b04a355b823ad26') in 0.016716 seconds
+  Import took 0.019000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.245248 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88325a467501bc4195bf231d9b1ae29a') in 0.012677 seconds
+  Import took 0.014893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.996404 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d6863811424295642fa60a5a9ad19f') in 0.015644 seconds
+  Import took 0.017803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.605430 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252f132ceb13964eb859e3e4c83e46e2') in 0.017018 seconds
+  Import took 0.019223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.394427 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ddd8cf0c5e652e9d9b2db4d4482c7ad') in 0.022776 seconds
+  Import took 0.024949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.178072 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a86b58cb947dbb897a78a8fb030d07b') in 0.017247 seconds
+  Import took 0.019408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.603798 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e2e6dc38b994e8b502a288a1cdbf14') in 0.018168 seconds
+  Import took 0.020306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.399211 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513d9652a64e5e49f6231960f506b993') in 0.015517 seconds
+  Import took 0.017657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.598892 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030fb3b8ae4a40e4449877f5610a9360') in 0.015442 seconds
+  Import took 0.017532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.784958 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a96f99be4afefa69447672cac9c049') in 0.022485 seconds
+  Import took 0.025059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.575209 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c145e20bd85ebd33893a0eb715d642') in 0.023080 seconds
+  Import took 0.025208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.652218 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6677e0510229d17bd7591f179dde889') in 0.016555 seconds
+  Import took 0.018664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.019288 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb84cacef73e58c2f27b0854d0586740') in 0.013154 seconds
+  Import took 0.015245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.411939 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30cfe0c1d9544a1a32b63f3016a2d131') in 0.015307 seconds
+  Import took 0.017443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.596131 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff74b20ceb8e91bbc04201879634af6') in 0.016759 seconds
+  Import took 0.018855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.207176 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbf6d04d93716cc45378453a116e433') in 0.012528 seconds
+  Import took 0.014590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.980495 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e5a6cf4c74c322b34c7a161b4703ae1') in 0.016106 seconds
+  Import took 0.018320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.803812 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6088ab44246594ebcc0f4bf9a5949e') in 0.013788 seconds
+  Import took 0.016022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.001131 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa9fa733048da5ec6b60c1c29c4aa22') in 0.022223 seconds
+  Import took 0.024306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.768559 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c4894bad7c088820c6784cf2752fa1') in 0.016149 seconds
+  Import took 0.018233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.149644 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce0b9daefabe00c4b6d4f51a69fad68') in 0.013192 seconds
+  Import took 0.015399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.848746 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ebd46d6811cac438ef6c37fba4ca8b') in 0.015079 seconds
+  Import took 0.017289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.967600 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa6102bf3ad6966557f727b29020c0c') in 0.014607 seconds
+  Import took 0.016807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.217006 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeft.prefab
+  artifactKey: Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeft.prefab using Guid(bfb99b4ecb1aab646af35bce6e9228b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd386cae5e429eaee2f6c2f595e272832') in 0.013846 seconds
+  Import took 0.016043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.963911 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82a6ae0ca52ab310a460a5667ff465f') in 0.016712 seconds
+  Import took 0.018992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.237620 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553f7908d0d8ecd0f7698bd661c7efdf') in 0.014492 seconds
+  Import took 0.016778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.210909 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd993763b599f626f1f5a0e6b125e68e3') in 0.014753 seconds
+  Import took 0.017191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.303942 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c190e9edb47efe841201ae9409b3db6') in 0.014427 seconds
+  Import took 0.016611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.202910 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db57e35a363fd036beace9ff9723c49') in 0.014603 seconds
+  Import took 0.016775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.598453 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41fded1cec1d830bcd676df350af5e69') in 0.013776 seconds
+  Import took 0.015992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.259556 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da7a70614812831be16e432c3a053fd') in 0.015762 seconds
+  Import took 0.018000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.403001 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0f11636db48b9a06e2f139ca140e5f') in 0.015004 seconds
+  Import took 0.017179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.416825 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f181c2384b10231f26a5bd1b95a704a') in 0.016392 seconds
+  Import took 0.018585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.990290 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019399954315525f6d3984fcd748017b') in 0.017342 seconds
+  Import took 0.019519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.238720 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc139118747d67f18e9870d6100c582') in 0.015876 seconds
+  Import took 0.018090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.225235 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd52d350a7ae1d0294cae6fafc5cf25b') in 0.016633 seconds
+  Import took 0.018797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.592356 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024d4e68f6c7317b86bc761cebe5620f') in 0.012818 seconds
+  Import took 0.014886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.016641 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94e01c6f4b69977368f0f95401b48a5') in 0.015501 seconds
+  Import took 0.017603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.609784 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c78bd8c9135cf31c9eac9dee3490eac') in 0.012861 seconds
+  Import took 0.015003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.307988 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e241121d96927a0abfbc49ecedd586') in 0.020259 seconds
+  Import took 0.022434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.620812 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d48726f1521a77c6d30ef1f55e0e69') in 0.014618 seconds
+  Import took 0.016902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.414392 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec69515192668d68a2abf9f5bd92174') in 0.015229 seconds
+  Import took 0.017532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.339818 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80588de07e5359cd40fddff0d30f59d') in 0.015402 seconds
+  Import took 0.017597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.430978 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b092d1f3bde0ada2aedb386572fea95') in 0.014866 seconds
+  Import took 0.017059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.010765 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959d3a727e91afb19fcf715a823836d3') in 0.014421 seconds
+  Import took 0.016668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.818639 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687c415ca1a35af107b4eaee201203fd') in 0.015465 seconds
+  Import took 0.017693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.927712 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1fb6a93b0555b235bc2f8682604777c') in 0.016551 seconds
+  Import took 0.018719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.789424 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdbb0e1d8b3178be3dc570f3cc357bce') in 0.015866 seconds
+  Import took 0.017957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.404939 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9db8a24c6ebfd5c3511d8b8feb419df') in 0.017244 seconds
+  Import took 0.019381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.191912 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0f10f6915d3c986fd4c4658b04f2f9') in 0.014153 seconds
+  Import took 0.016258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.800039 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25147b7fbbf6c7364f57a4bfd9c6629') in 0.014304 seconds
+  Import took 0.016401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.016083 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b963184003b1c31840db6342f43075') in 0.014696 seconds
+  Import took 0.016804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.600395 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6bc715c3caad621fab8a2cf3f58af9') in 0.015535 seconds
+  Import took 0.017656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.009657 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5fa4548ddba759ab6e4fbee6528376') in 0.016133 seconds
+  Import took 0.018199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.594108 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9faaac7dbed91303adf4316458ca37') in 0.016658 seconds
+  Import took 0.018718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.160323 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f43ca64035eba28791e645abf246dd0') in 0.013240 seconds
+  Import took 0.015486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.208066 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab804e7024661a999acd9f1689fc353f') in 0.015025 seconds
+  Import took 0.017236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.981073 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomRight.prefab
+  artifactKey: Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomRight.prefab using Guid(f10f208b58a15084f9c3eb5c7dd16725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0980543a175a0c0519db2a0c1391b4a') in 0.014998 seconds
+  Import took 0.017162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.982197 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d05f74afe36a1f171c4a6cdfefa9a0') in 0.017091 seconds
+  Import took 0.019318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.585998 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1cabe103e0c94526d5ec61d57a4c82') in 0.014430 seconds
+  Import took 0.016484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.603058 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b6b6257d9c84a8157084fecdc0b846') in 0.012971 seconds
+  Import took 0.015072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.001270 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '839c80893fac53a398975532db873ee0') in 0.014093 seconds
+  Import took 0.016387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.537424 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83ef8367ebeb0d63efe359d8d09b901') in 0.012826 seconds
+  Import took 0.015033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.236038 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38771e48293e6cfcaa0995209bc7a727') in 0.019117 seconds
+  Import took 0.021406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.980684 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39388f7df8660f5416f50d8938181dad') in 0.016476 seconds
+  Import took 0.018639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.258083 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e371eda13c8ca7ce2115aa375507df8') in 0.014433 seconds
+  Import took 0.016618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.835185 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa83de2c097b69f3dc38204cd86b251c') in 0.014603 seconds
+  Import took 0.016799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.005772 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopBottom.prefab
+  artifactKey: Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopBottom.prefab using Guid(1517f73f7005e174298e3e5c8307c0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8b92a78f37900b5a1f08f9485b1b5b') in 0.015041 seconds
+  Import took 0.017197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.724419 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091ddcc35499b92c6c9e8a9abd6edc4c') in 0.018679 seconds
+  Import took 0.020809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.588183 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a747a661ad19bdedbe2e23017b9746') in 0.015271 seconds
+  Import took 0.017448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.795790 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5973abae5adecd9cfa4f829a2b81304a') in 0.016318 seconds
+  Import took 0.018419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.801368 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4c9c2c54653bff6c9ee3ea60715c12') in 0.014064 seconds
+  Import took 0.016206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.379042 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4d55b2eb338493cca3c387d32dae20') in 0.019052 seconds
+  Import took 0.021126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.193569 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b92547babf89894e4f1272fb951ec9') in 0.020435 seconds
+  Import took 0.022564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.007617 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a45f166fdd96f86c59280c21dde9cd') in 0.015425 seconds
+  Import took 0.017464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.187968 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc72647fee9efb758de592fd05df9195') in 0.018086 seconds
+  Import took 0.020201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.186297 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f3818567892be2c27de4bce8c878e1') in 0.015415 seconds
+  Import took 0.017514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.812986 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1e51431b1d302e5684806959813d46') in 0.013737 seconds
+  Import took 0.015873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.130238 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa3baa050b08f34ef6db3d80ec753e5') in 0.009264 seconds
+  Import took 0.011417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.629239 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdb9493bd1d43a43c49e8d2a6fbcad6') in 0.013966 seconds
+  Import took 0.016088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.823732 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1c329b8185c0ad266d2280a01d07da') in 0.015649 seconds
+  Import took 0.018105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.600304 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765ef5b3b0b8865b5fbe7ba9d2045e74') in 0.017006 seconds
+  Import took 0.019172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.040716 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c30f3359e9b03848eeb2dd00ac3650') in 0.016260 seconds
+  Import took 0.018423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.407728 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423881fcf9b91294775041cd158475e9') in 0.015712 seconds
+  Import took 0.017865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.856419 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2991d160c49fc8f89f7156b2e3850df4') in 0.013296 seconds
+  Import took 0.015530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.805302 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a3181977a052737d9e17da6c649d23') in 0.018335 seconds
+  Import took 0.020480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.800331 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopLeft.prefab
+  artifactKey: Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopLeft.prefab using Guid(3e5eec89e4904b149b1c1627ec08eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138ab6a77fdef564dfc9c257dcfb4f7a') in 0.016186 seconds
+  Import took 0.018397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.488006 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61cafcd5de5527ce42df1cda4f7163c6') in 0.018636 seconds
+  Import took 0.020778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.785148 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f74234f68286e4b85a0f6c3af5d4e3') in 0.014625 seconds
+  Import took 0.016802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.623358 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0163717733938cc967d631502eda476b') in 0.015700 seconds
+  Import took 0.018013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.190496 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45fe3154b645d49a6551ffe9d51088f5') in 0.021398 seconds
+  Import took 0.023508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.094147 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009078b604102b3dbb27c7728da14493') in 0.013525 seconds
+  Import took 0.015895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.421179 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a006a343be1a4757234ef86052def9d') in 0.016223 seconds
+  Import took 0.018428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.575758 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674ce6526f0b8a63f8209110846c12f3') in 0.015342 seconds
+  Import took 0.017493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.322840 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9720785859e59aa289d49448e038153') in 0.013704 seconds
+  Import took 0.015907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.832101 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18abeb52ea0a644027891790233202e') in 0.017295 seconds
+  Import took 0.019434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.196192 seconds.
+  path: Assets/Prefabs/BasementRooms/RoomTopRight.prefab
+  artifactKey: Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/RoomTopRight.prefab using Guid(8c2b032d0488b2f4a9619a51598e6ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2db7ecbf18784e9fb1a73c1ebfe2a71') in 0.017645 seconds
+  Import took 0.019793 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000516 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.588 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.0 MB.
+System memory in use after: 64.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 1.444600 ms (FindLiveObjects: 0.139100 ms CreateObjectMapping: 0.024600 ms MarkObjects: 1.266300 ms  DeleteObjects: 0.013800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.173957 seconds.
+  path: Assets/Scripts/DungeonGeneration/Door.cs
+  artifactKey: Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DungeonGeneration/Door.cs using Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992993e34ef9fd11a5c17eed94f37912') in 0.004245 seconds
+  Import took 0.006123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018371 seconds.
+  path: Assets/Scripts/DungeonGeneration/Door.cs
+  artifactKey: Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DungeonGeneration/Door.cs using Guid(6575f764d115e354190c32b876fa87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992993e34ef9fd11a5c17eed94f37912') in 0.002138 seconds
+  Import took 0.003656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.350735 seconds.
+  path: Assets/Prefabs/ItemPickups
+  artifactKey: Guid(c204ab7f8ad74ee439d0c0afdd9f0b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups using Guid(c204ab7f8ad74ee439d0c0afdd9f0b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ef68cc50a8cc311922aa9668fe5e81') in 0.007225 seconds
+  Import took 0.009212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/Prefabs/ItemPickups
+  artifactKey: Guid(c204ab7f8ad74ee439d0c0afdd9f0b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups using Guid(c204ab7f8ad74ee439d0c0afdd9f0b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ef68cc50a8cc311922aa9668fe5e81') in 0.002311 seconds
+  Import took 0.003679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034921 seconds.
+  path: Assets/Prefabs/ItemPickups/HealthRestore.prefab
+  artifactKey: Guid(95f024a3e0e88c3428430998cddae92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/HealthRestore.prefab using Guid(95f024a3e0e88c3428430998cddae92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1bc24034923a789bce2bb70c02b101') in 0.055786 seconds
+  Import took 0.057716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Prefabs/ItemPickups/RangeUpgrade.prefab
+  artifactKey: Guid(e9d8f657d4570ba4f907eabcf3b50c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/RangeUpgrade.prefab using Guid(e9d8f657d4570ba4f907eabcf3b50c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096ab9b1bdb9d19986f1ace2b441d909') in 0.015040 seconds
+  Import took 0.016673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Prefabs/ItemPickups/MeleeUpgrade.prefab
+  artifactKey: Guid(6653f61a167c2df488579780cc9dd9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/MeleeUpgrade.prefab using Guid(6653f61a167c2df488579780cc9dd9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0b1b75e76c765313da4c31961e97e5') in 0.023002 seconds
+  Import took 0.024718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Prefabs/ItemPickups/HealthUpgrade.prefab
+  artifactKey: Guid(b46b6e00bada5c44eb985b91de68f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/HealthUpgrade.prefab using Guid(b46b6e00bada5c44eb985b91de68f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ba28dfd78866e74c316a1365797e48') in 0.014203 seconds
+  Import took 0.015929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/Prefabs/ItemPickups/HealthUpgrade.prefab
+  artifactKey: Guid(b46b6e00bada5c44eb985b91de68f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/HealthUpgrade.prefab using Guid(b46b6e00bada5c44eb985b91de68f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ba28dfd78866e74c316a1365797e48') in 0.007711 seconds
+  Import took 0.009362 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

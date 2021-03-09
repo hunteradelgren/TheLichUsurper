@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3831973004749094215}
   - component: {fileID: -8672118476094648060}
   - component: {fileID: 9091464213760318017}
+  - component: {fileID: 5457271154077359554}
   m_Layer: 0
   m_Name: DoorTop
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1298552453334179348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.57, z: 0}
-  m_LocalScale: {x: 1.85, y: 1.7, z: 1}
+  m_LocalScale: {x: 1.85, y: 1.120389, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 0
+  currentRoom: {fileID: 0}
   padlock: {fileID: 9091464213760318017}
+  animator: {fileID: 0}
 --- !u!61 &9091464213760318017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +127,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 0.8}
   m_EdgeRadius: 0
+--- !u!95 &5457271154077359554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298552453334179348}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d32ca04cf8cd8904aa223718c7a3191a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
