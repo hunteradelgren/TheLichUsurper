@@ -51,8 +51,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   target: {fileID: 0}
-  targetDist: 2
-  movSpeed: 30
+  targetDist: 1
+  movSpeed: 5
   chaseDist: 5000
   runDist: 1
   wanderMode: 0
@@ -128,8 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   target: {fileID: 0}
-  attackRange: 3
-  chargeTime: 1
+  attackRange: 1.5
+  chargeTime: 0.5
   attackRate: 1
   damage: 1
   playerTarget: {fileID: 0}

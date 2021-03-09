@@ -138,14 +138,14 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.gameObject.GetComponent<Door>() != null)
         {
             colliding.Add(collision.gameObject);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.gameObject.GetComponent<Door>() != null)
         {
             colliding.Remove(collision.gameObject);
         }
@@ -171,6 +171,7 @@ public class EnemyMovement : MonoBehaviour
     {
         foreach (GameObject c in colliding)
         {
+            print(c.gameObject.name);
             if (c.tag == "Wall" || c.GetComponent<Door>() != null)
             {
                 Vector2 obstaclePos = c.transform.position;

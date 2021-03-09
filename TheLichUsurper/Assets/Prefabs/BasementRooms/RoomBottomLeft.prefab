@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!50 &5846543531235822114
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481236603818119180}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1908330212106720754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1399,15 @@ PrefabInstance:
       objectReference: {fileID: 1908330212106720754}
     - target: {fileID: 4913516908430734110, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
       propertyPath: movSpeed
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913516908430734110, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: targetDist
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913516908430734306, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: attackRange
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4913516908430734307, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
       propertyPath: m_Mass
@@ -1402,6 +1431,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6891753683389735099}
     m_Modifications:
+    - target: {fileID: -8672118476094648060, guid: 02f16c6c1090d6a47be2739843f8a6e5, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 6851329102562513882}
     - target: {fileID: 1298552453334179348, guid: 02f16c6c1090d6a47be2739843f8a6e5, type: 3}
       propertyPath: m_Name
       value: DoorTop
@@ -1452,9 +1485,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02f16c6c1090d6a47be2739843f8a6e5, type: 3}
+--- !u!1 &481236603818119180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1298552453334179348, guid: 02f16c6c1090d6a47be2739843f8a6e5, type: 3}
+  m_PrefabInstance: {fileID: 1488669164201348632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6804160184375277810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5387971004390176490, guid: 02f16c6c1090d6a47be2739843f8a6e5, type: 3}
+  m_PrefabInstance: {fileID: 1488669164201348632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6851329102562513882 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5457271154077359554, guid: 02f16c6c1090d6a47be2739843f8a6e5, type: 3}
   m_PrefabInstance: {fileID: 1488669164201348632}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3390588443969727636
@@ -1512,11 +1555,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorRight Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5951387585923543975, guid: a16d37340b9a3de46b2df2bf2aeca0fa, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3566908361850672117}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a16d37340b9a3de46b2df2bf2aeca0fa, type: 3}
 --- !u!4 &3529063328070072541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2302476716609983561, guid: a16d37340b9a3de46b2df2bf2aeca0fa, type: 3}
+  m_PrefabInstance: {fileID: 3390588443969727636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3566908361850672117 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2201695586219392865, guid: a16d37340b9a3de46b2df2bf2aeca0fa, type: 3}
   m_PrefabInstance: {fileID: 3390588443969727636}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3735087707458426522
