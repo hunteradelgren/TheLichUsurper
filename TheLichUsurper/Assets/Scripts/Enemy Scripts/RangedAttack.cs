@@ -21,6 +21,7 @@ public class RangedAttack : MonoBehaviour
     //name of the projectile in the resources folder
     [SerializeField]
     string projectileName;
+    public float damage;
 
     private bool isAttacking = false; //the attacj is being done
     private float distance; //distance to target
@@ -121,6 +122,8 @@ public class RangedAttack : MonoBehaviour
         projectile.transform.position = transform.position;
         //rotates projectile to where the enemy is facing
         projectile.transform.rotation = Quaternion.Euler(0, 0, animator.GetFloat("EnemyRot"));
+
+        projectile.GetComponent<basicProjectileBehavior>().damage = damage;
     }
 
     public void OnTriggerEnter2D(Collider2D other)

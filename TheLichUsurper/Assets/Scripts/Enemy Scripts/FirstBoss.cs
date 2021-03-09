@@ -210,6 +210,7 @@ public class FirstBoss : MonoBehaviour
                 //boss is chasing player until reaching the target distance
                 else if (distPlayer >= targetChaseDist)
                 {
+                    velocity = Player.position - transform.position;
                     transform.Translate(velocity.normalized * movSpeed *Time.deltaTime, Space.World);
 
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
@@ -353,5 +354,10 @@ public class FirstBoss : MonoBehaviour
                 velocity = new Vector2(velocity.x + (center.transform.position.x - transform.position.x), velocity.y + (center.transform.position.y - transform.position.y)).normalized;
             }
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
     }
 }

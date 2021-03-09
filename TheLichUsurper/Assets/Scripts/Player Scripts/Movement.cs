@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     int floor;
     private Rigidbody prb;
     public bool status;
+    public GameObject arm;
     public Animator animator;
     
     public float loadingTimer;

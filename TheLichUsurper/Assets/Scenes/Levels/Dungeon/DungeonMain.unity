@@ -1520,7 +1520,7 @@ GameObject:
   - component: {fileID: 798945524}
   - component: {fileID: 798945525}
   m_Layer: 0
-  m_Name: HitPoint
+  m_Name: MHitPoint
   m_TagString: HitPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1534,8 +1534,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798945523}
   m_LocalRotation: {x: -0, y: -0, z: 0.00008726013, w: 1}
-  m_LocalPosition: {x: 0.000991275, y: -1.3107692, z: 0}
-  m_LocalScale: {x: 26.666662, y: 6.1538463, z: 1}
+  m_LocalPosition: {x: 0, y: -1.6, z: 0}
+  m_LocalScale: {x: 26.666662, y: 8.74, z: 1}
   m_Children: []
   m_Father: {fileID: 977526961}
   m_RootOrder: 0
@@ -2116,7 +2116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977526959}
-  m_LocalRotation: {x: 0, y: 0, z: 0.25139362, w: 0.9678849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.013, z: 0}
   m_LocalScale: {x: 0.0375, y: 0.1625, z: 1}
   m_Children:
@@ -2873,6 +2873,8 @@ GameObject:
   - component: {fileID: 1470513141}
   - component: {fileID: 1470513147}
   - component: {fileID: 1470513148}
+  - component: {fileID: 1470513150}
+  - component: {fileID: 1470513149}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2960,6 +2962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   status: 0
+  arm: {fileID: 0}
   animator: {fileID: 1470513147}
   loadingTimer: 2
   cam: {fileID: 214899394}
@@ -3076,6 +3079,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1470513149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470513140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4159a32f0d8294380d88f3e03ae3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.2
+  damage: 1
+  projectileName: TestProjectile
+  animator: {fileID: 1470513147}
+--- !u!114 &1470513150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470513140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f982a7da2ed4f1c40b00dd4d5f5353d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.2
+  attackBox: {fileID: 798945523}
+  damage: 1
 --- !u!1 &1480074189
 GameObject:
   m_ObjectHideFlags: 0

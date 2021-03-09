@@ -8,8 +8,7 @@ public class basicProjectileBehavior : MonoBehaviour
     [SerializeField]
     float projectileSpeed;
 
-    [SerializeField]
-    float damage;
+    public float damage;
 
     public bool isPlayerBullet = false;
 
@@ -31,6 +30,7 @@ public class basicProjectileBehavior : MonoBehaviour
         {
             GameObject.Destroy(gameObject);
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,6 +40,17 @@ public class basicProjectileBehavior : MonoBehaviour
             GameObject.Destroy(gameObject);
             collision.gameObject.GetComponent<PlayerHealth>().takeDamage(damage);
         }
+        else if (isPlayerBullet && collision.gameObject.GetComponent<EnemyHealth>() != null)
+        {
+            GameObject.Destroy(gameObject);
+            collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+        }
+        else if (isPlayerBullet && collision.gameObject.GetComponent<FirstBoss>() != null)
+        {
+            GameObject.Destroy(gameObject);
+            collision.gameObject.GetComponent<FirstBoss>().TakeDamage(damage);
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D collision)
