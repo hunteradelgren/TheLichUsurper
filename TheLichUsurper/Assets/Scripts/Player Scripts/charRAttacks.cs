@@ -29,11 +29,17 @@ public class charRAttacks : MonoBehaviour
         if (Input.GetButton("Fire2") && timer >= timeBetweenAttacks && Time.timeScale != 0)//checks if enough time has elapsed when the fire button is clicked
         {
             timer = 0f;//resets the elapsed time and temporarily set the color of the head to red
-           // GameObject b = Instantiate(dummy, heading.transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z));
-           // b.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
-            //b.GetComponent<Rigidbody>().velocity = heading.transform.forward.normalized;
+                       // GameObject b = Instantiate(dummy, heading.transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z));
+                       // b.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
+                       //b.GetComponent<Rigidbody>().velocity = heading.transform.forward.normalized;
 
-
+            animator.SetBool("IsCasting", true);
+            
+            
+        }
+        if (animator.GetBool("IsCasting") && animator.IsInTransition(0))
+        {
+            animator.SetBool("IsCasting", false);
             //instantiates the projectile
             GameObject projectile = Instantiate<GameObject>(projectilePrefab);
             projectile.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
@@ -42,12 +48,8 @@ public class charRAttacks : MonoBehaviour
             projectile.transform.position = transform.position;
             //rotates projectile to where the player is facing
             projectile.transform.rotation = Quaternion.Euler(0, 0, animator.GetFloat("PlayerRot"));
+            
         }
-
-        /*if (timer >= timeBetweenAttacks * .2f)
-        {//sets the color of the head back to black to show the end of the attack
-            GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 0);
-        }*/
     }
 
     public void damageUpgrade(float amount)

@@ -55,7 +55,7 @@ public class basicProjectileBehavior : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (isPlayerBullet && collision.gameObject.GetComponentInParent<PlayerHealth>() == null && collision.gameObject.GetComponent<basicProjectileBehavior>() != null)
+        if (isPlayerBullet && collision.gameObject.GetComponentInParent<PlayerHealth>() == null && collision.gameObject.GetComponent<basicProjectileBehavior>() == null)
         {
             GameObject.Destroy(gameObject);
         }
