@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7261687509472637774}
   - component: {fileID: 7007773119921530240}
   - component: {fileID: 7728922408574081161}
+  - component: {fileID: 8510619005108363876}
   m_Layer: 0
   m_Name: TestTurret
   m_TagString: Enemy
@@ -132,6 +133,7 @@ MonoBehaviour:
   chargeTime: 1
   attackRate: 1
   projectileName: TestProjectile
+  damage: 0
   playerTarget: {fileID: 0}
   spawnRoom: {fileID: 0}
   animator: {fileID: 0}
@@ -205,3 +207,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8510619005108363876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7261687509472637761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5

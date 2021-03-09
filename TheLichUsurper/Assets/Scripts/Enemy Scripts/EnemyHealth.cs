@@ -25,13 +25,13 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float amount)
     {
-        currentHealth--;
+        currentHealth -= amount;
     }
 
-    public void HealDamage()
+    public void HealDamage(float amount)
     {
-        currentHealth++;
+        currentHealth += amount;
     }
 }

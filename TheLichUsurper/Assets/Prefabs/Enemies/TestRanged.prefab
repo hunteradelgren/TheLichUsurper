@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8554052697694655671}
   - component: {fileID: 2985363300453435458}
   - component: {fileID: 4701424482417478631}
+  - component: {fileID: -2353263785133483707}
   m_Layer: 0
   m_Name: TestRanged
   m_TagString: Enemy
@@ -76,6 +77,7 @@ MonoBehaviour:
   target: {fileID: 0}
   rotSpeed: 180
   playerTarget: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!50 &8554052697694655669
 Rigidbody2D:
   serializedVersion: 4
@@ -131,8 +133,10 @@ MonoBehaviour:
   chargeTime: 1
   attackRate: 1
   projectileName: TestProjectile
+  damage: 0
   playerTarget: {fileID: 0}
   spawnRoom: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!212 &2985363300453435458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -203,3 +207,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2353263785133483707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554052697694655672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
