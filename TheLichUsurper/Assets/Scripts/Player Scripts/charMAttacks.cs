@@ -8,6 +8,7 @@ public class charMAttacks : MonoBehaviour
     float timer;//time tracking field
     public float timeBetweenAttacks = .2f;//constant to track how long should be between each attack
     public GameObject attackBox;
+    public float damage = 1;
     /// </summary>
     void Start()
     {
@@ -29,4 +30,9 @@ public class charMAttacks : MonoBehaviour
             GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 255);
         }
     }
+    public void damageUpgrade(float amount) 
+    {
+        damage += amount;
+    }
+
 }

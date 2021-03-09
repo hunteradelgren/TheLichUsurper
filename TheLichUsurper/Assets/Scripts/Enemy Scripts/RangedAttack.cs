@@ -33,6 +33,7 @@ public class RangedAttack : MonoBehaviour
     public GameObject playerTarget; //sets up the ranged target to be the player
     public Room spawnRoom;
     private RoomTemplate template;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,7 @@ public class RangedAttack : MonoBehaviour
         playerTarget = GameObject.FindGameObjectWithTag("Player");
         target = playerTarget;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -118,12 +120,12 @@ public class RangedAttack : MonoBehaviour
         //moves the projectile on top of the enemy
         projectile.transform.position = transform.position;
         //rotates projectile to where the enemy is facing
-        projectile.transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z+90);
+        projectile.transform.rotation = Quaternion.Euler(0, 0, animator.GetFloat("EnemyRot"));
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Room")
+        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
             spawnRoom = other.GetComponent<Room>();
     }
 }

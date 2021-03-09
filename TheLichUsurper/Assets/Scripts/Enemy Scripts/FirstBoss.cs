@@ -299,14 +299,14 @@ public class FirstBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isLunging)
+        if (isLunging && lungeTimer != 0)
         {
             if (collision.GetComponentInParent<PlayerHealth>() != null)
             {
                 Player.GetComponent<PlayerHealth>().takeDamage(lungeDamage);
                 print("Lunged into player");
             }
-            if(collision.tag == "Wall")
+            if(collision.tag == "Wall" || collision.GetComponent<Door>() != null)
             {
                 //lunge is finished
                 chargeTimer = 0;
@@ -327,7 +327,7 @@ public class FirstBoss : MonoBehaviour
             spawnRoom = collision.GetComponent<Room>();
         }
             
-        if (collision.tag == "Wall")
+        if (collision.tag == "Wall" || collision.GetComponent<Door>() != null)
         {
             avoidWall();
         }
@@ -345,7 +345,7 @@ public class FirstBoss : MonoBehaviour
     {
         foreach (GameObject c in colliding)
         {
-            if (c.tag == "Wall")
+            if (c.tag == "Wall" || c.GetComponent<Door>() != null)
             {
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);
