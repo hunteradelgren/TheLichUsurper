@@ -54,9 +54,14 @@ public class Movement : MonoBehaviour
 
             HitPoint.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
             if (angle < 0)
+            {
                 animator.SetFloat("PlayerRot", angle + 359);
+            }
             else
+            {
                 animator.SetFloat("PlayerRot", angle);
+            }
+            setDirection();
 
             if (loadingTimer <= 0)
             {
@@ -118,6 +123,51 @@ public class Movement : MonoBehaviour
             print("speed downed");
         }
         
+    }
+
+    //Sets direction for the animator
+    public void setDirection()
+    {
+        //diag up right
+        if (animator.GetFloat("PlayerRot") < 75 && animator.GetFloat("PlayerRot") > 5)
+        {
+            animator.SetInteger("Direction", 0);
+        }
+        //up
+        else if (animator.GetFloat("PlayerRot") < 105 && animator.GetFloat("PlayerRot") > 75)
+        {
+            animator.SetInteger("Direction", 1);
+        }
+        //diag up left
+        else if (animator.GetFloat("PlayerRot") < 165 && animator.GetFloat("PlayerRot") > 105)
+        {
+            animator.SetInteger("Direction", 2);
+        }
+        //left
+        else if (animator.GetFloat("PlayerRot") < 195 && animator.GetFloat("PlayerRot") > 165)
+        {
+            animator.SetInteger("Direction", 3);
+        }
+        //diag down left
+        else if (animator.GetFloat("PlayerRot") < 255 && animator.GetFloat("PlayerRot") > 195)
+        {
+            animator.SetInteger("Direction", 4);
+        }
+        //down
+        else if (animator.GetFloat("PlayerRot") < 285 && animator.GetFloat("PlayerRot") > 255)
+        {
+            animator.SetInteger("Direction", 5);
+        }
+        //diag down right
+        else if (animator.GetFloat("PlayerRot") < 359 && animator.GetFloat("PlayerRot") > 285)
+        {
+            animator.SetInteger("Direction", 6);
+        }
+        //right
+        else
+        {
+            animator.SetInteger("Direction", 7);
+        }
     }
 }
 
