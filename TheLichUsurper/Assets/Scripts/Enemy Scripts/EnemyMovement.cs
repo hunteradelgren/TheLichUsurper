@@ -183,7 +183,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Room" )
+        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
             spawnRoom = other.GetComponent<Room>();
     }
 
