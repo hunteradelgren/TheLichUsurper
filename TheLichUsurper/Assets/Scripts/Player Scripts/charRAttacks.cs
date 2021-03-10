@@ -34,7 +34,7 @@ public class charRAttacks : MonoBehaviour
                        //b.GetComponent<Rigidbody>().velocity = heading.transform.forward.normalized;
 
             animator.SetBool("IsCasting", true);
-            
+            print("is shooting");
             
         }
         if (animator.GetBool("IsCasting") && animator.IsInTransition(0))
