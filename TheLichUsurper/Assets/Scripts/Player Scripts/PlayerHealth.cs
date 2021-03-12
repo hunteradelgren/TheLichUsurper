@@ -41,12 +41,11 @@ public class PlayerHealth : MonoBehaviour
         //player has run out of health while in the living state
         if (currentHealth <= 0 && !inSpectralForm)
         {
-            //will change the map and character to a more spectral look
-            print("Player has entered Spectral Form");
+            //starts timestop
+            
 
-            //sets the player to spectral state
-            inSpectralForm = true;
-            currentHealth = maxSpectreHealth;
+            StartCoroutine(becomeSpectre());
+            
         }
         //player has run out of health in the undead state
         else if (currentHealth <= 0 && inSpectralForm)
@@ -61,7 +60,20 @@ public class PlayerHealth : MonoBehaviour
             takeDamage(1f);
 
     }
+    IEnumerator becomeSpectre()
+    {
+        Time.timeScale = 0;
+        print("Player has entered Spectral Form");
 
+        //sets the player to spectral state
+        inSpectralForm = true;
+        currentHealth = maxSpectreHealth;
+        //makes character see thru, then waits
+        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
+        yield return new WaitForSecondsRealtime(1f);
+        
+        Time.timeScale = 1;
+    }
     public void changeHealth()
     {
         status = !status;
@@ -101,7 +113,10 @@ public class PlayerHealth : MonoBehaviour
         if (!inSpectralForm)
             hpSlider.value = currentHealth;
         else
+        {
             specSlider.value = currentHealth;
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, ((currentHealth) / maxSpectreHealth));
+        }
 
     }
 
@@ -119,6 +134,7 @@ public class PlayerHealth : MonoBehaviour
             //increases health by received amount
             currentHealth += boost;
             specSlider.value = currentHealth;
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, (currentHealth / maxSpectreHealth));
         }
             
     }
