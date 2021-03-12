@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4854383819284001620}
   - component: {fileID: 5905394413737254747}
   m_Layer: 0
-  m_Name: RoomBottom
+  m_Name: RoomBottom 1
   m_TagString: BottomRoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,6 +230,8 @@ MonoBehaviour:
   isCleared: 0
   enemies: []
   enemyCount: 0
+  item: {fileID: 0}
+  center: {fileID: 4757824035191162904}
 --- !u!61 &4854383819284001620
 BoxCollider2D:
   m_ObjectHideFlags: 0

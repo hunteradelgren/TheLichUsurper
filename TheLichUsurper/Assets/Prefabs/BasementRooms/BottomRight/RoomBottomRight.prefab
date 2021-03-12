@@ -28,7 +28,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5967025792215675786}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3631584308007028371
 GameObject:
@@ -55,11 +55,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3631584308007028371}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0000019073, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5700377, y: 1.5794, z: 1}
   m_Children: []
   m_Father: {fileID: 5967025792215675786}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5088231293209367033
 SpriteRenderer:
@@ -878,8 +878,8 @@ Transform:
   - {fileID: 5967025791118560418}
   - {fileID: 7058279529815140764}
   - {fileID: 1237276090170582879}
-  - {fileID: 714398164065685206}
   - {fileID: 7148813340191505980}
+  - {fileID: 714398164065685206}
   - {fileID: 4695950657294242165}
   - {fileID: 8701763714064574609}
   - {fileID: 5896723359251433071}
@@ -904,6 +904,8 @@ MonoBehaviour:
   isCleared: 0
   enemies: []
   enemyCount: 0
+  item: {fileID: 618084824867251916, guid: 6653f61a167c2df488579780cc9dd9cc, type: 3}
+  center: {fileID: 396781449537201593}
 --- !u!61 &418958504833268704
 BoxCollider2D:
   m_ObjectHideFlags: 0
