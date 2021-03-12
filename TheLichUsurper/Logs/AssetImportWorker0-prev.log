@@ -15,11 +15,11 @@ C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51740
+51817
 Successfully changed project path to: C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
 C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 24.64 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 21.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.6f1 (8a2143876886)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,389 +35,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001617 seconds.
+Registered in 0.001628 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 22.75 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 21.98 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.843 seconds
+- Completed reload, in  0.804 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000574 seconds.
+Registered in 0.000462 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.685 seconds
+- Completed reload, in  0.638 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1163 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 58.5 MB.
 System memory in use after: 58.5 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1606.
-Total: 1.545300 ms (FindLiveObjects: 0.170400 ms CreateObjectMapping: 0.028200 ms MarkObjects: 1.296700 ms  DeleteObjects: 0.049100 ms)
+Total: 1.695900 ms (FindLiveObjects: 0.137100 ms CreateObjectMapping: 0.027200 ms MarkObjects: 1.478800 ms  DeleteObjects: 0.051800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Down.png
-  artifactKey: Guid(e0f74efa59a94da4d8a64ececf3dc242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Down.png using Guid(e0f74efa59a94da4d8a64ececf3dc242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62768daa402aa85bbc552b436040d4bb') in 0.100326 seconds
-  Import took 0.102454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000584 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Down.png
-  artifactKey: Guid(e0f74efa59a94da4d8a64ececf3dc242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Down.png using Guid(e0f74efa59a94da4d8a64ececf3dc242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62768daa402aa85bbc552b436040d4bb') in 0.014841 seconds
-  Import took 0.016398 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.530527 seconds.
-  path: Assets/Scripts/Player Scripts/charMAttacks.cs
-  artifactKey: Guid(f982a7da2ed4f1c40b00dd4d5f5353d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/charMAttacks.cs using Guid(f982a7da2ed4f1c40b00dd4d5f5353d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84eaf24b7ed7525081f3c22f75d1f1f') in 0.005700 seconds
-  Import took 0.007657 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.653932 seconds.
-  path: Assets/Scripts/Player Scripts/charMAttacks.cs
-  artifactKey: Guid(f982a7da2ed4f1c40b00dd4d5f5353d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/charMAttacks.cs using Guid(f982a7da2ed4f1c40b00dd4d5f5353d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a8f1adc41a5ddccd45b305146a4b16') in 0.002613 seconds
-  Import took 0.004605 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000615 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.609 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1157 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.4 MB.
-System memory in use after: 61.5 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1615.
-Total: 1.535500 ms (FindLiveObjects: 0.161900 ms CreateObjectMapping: 0.030000 ms MarkObjects: 1.325000 ms  DeleteObjects: 0.017600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.523823 seconds.
-  path: Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Down.png
-  artifactKey: Guid(c2e14c80fe34f414f8ba75d3b3a39027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Down.png using Guid(c2e14c80fe34f414f8ba75d3b3a39027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23dda9b2076ede5cba325aac869d4f4') in 0.060168 seconds
-  Import took 0.062111 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000459 seconds.
-  path: Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Down.png
-  artifactKey: Guid(c2e14c80fe34f414f8ba75d3b3a39027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/IdleAnimation/Lich_Idle_Down.png using Guid(c2e14c80fe34f414f8ba75d3b3a39027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23dda9b2076ede5cba325aac869d4f4') in 0.018238 seconds
-  Import took 0.019803 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.523063 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownLeft.png
-  artifactKey: Guid(62909e023891cb843ae4ea7fe3e8f723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownLeft.png using Guid(62909e023891cb843ae4ea7fe3e8f723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9459248b4d6f2a6862480058559afe95') in 0.053791 seconds
-  Import took 0.055894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000496 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownLeft.png
-  artifactKey: Guid(62909e023891cb843ae4ea7fe3e8f723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownLeft.png using Guid(62909e023891cb843ae4ea7fe3e8f723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9459248b4d6f2a6862480058559afe95') in 0.036218 seconds
-  Import took 0.037884 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.232898 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownRight.png
-  artifactKey: Guid(2c21645515d025e49bc14e0e6edcc13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownRight.png using Guid(2c21645515d025e49bc14e0e6edcc13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05dcc8ea7adb01e8055b5de342a3f9a') in 0.055346 seconds
-  Import took 0.057306 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000767 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownRight.png
-  artifactKey: Guid(2c21645515d025e49bc14e0e6edcc13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagDownRight.png using Guid(2c21645515d025e49bc14e0e6edcc13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05dcc8ea7adb01e8055b5de342a3f9a') in 0.031000 seconds
-  Import took 0.032894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.995679 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Left.png
-  artifactKey: Guid(9f0f654b505e4ce4b980dc138f4d5cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Left.png using Guid(9f0f654b505e4ce4b980dc138f4d5cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0fc5de80df78c052642a093ae1234f1') in 0.059398 seconds
-  Import took 0.061450 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.492610 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Right.png
-  artifactKey: Guid(e1841fc623cf4d240be2a372fa17581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Right.png using Guid(e1841fc623cf4d240be2a372fa17581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd6d3537472d9d7f76a70221285477f') in 0.056065 seconds
-  Import took 0.058117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001082 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Right.png
-  artifactKey: Guid(e1841fc623cf4d240be2a372fa17581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Right.png using Guid(e1841fc623cf4d240be2a372fa17581f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd6d3537472d9d7f76a70221285477f') in 0.034538 seconds
-  Import took 0.036323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.308260 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Up.png
-  artifactKey: Guid(77f5341f6a5e0b84c84a79e612927170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_Up.png using Guid(77f5341f6a5e0b84c84a79e612927170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59fe054ebbbedf4404c0b5302fe22ec6') in 0.037721 seconds
-  Import took 0.039929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.015864 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagUpLeft.png
-  artifactKey: Guid(538c28888b8965d4ca2d4af40c1c028a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagUpLeft.png using Guid(538c28888b8965d4ca2d4af40c1c028a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e169844226f14e3b2ddd3860a15f0c') in 0.058446 seconds
-  Import took 0.060477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagUpLeft.png
-  artifactKey: Guid(538c28888b8965d4ca2d4af40c1c028a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagUpLeft.png using Guid(538c28888b8965d4ca2d4af40c1c028a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e169844226f14e3b2ddd3860a15f0c') in 0.029076 seconds
-  Import took 0.030626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.990438 seconds.
-  path: Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagUpRight.png
-  artifactKey: Guid(9a729a8f849fae64ba5f9c0a5007e5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Sword/Lich_Sword_DiagUpRight.png using Guid(9a729a8f849fae64ba5f9c0a5007e5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82fe054c20f865ec0b215e97f645ad1') in 0.048072 seconds
-  Import took 0.050116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.703875 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Down.png
-  artifactKey: Guid(6a143e8c105a3d24799965819b933bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Down.png using Guid(6a143e8c105a3d24799965819b933bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6a025aaec79f153c12d8d8419554c7') in 0.028945 seconds
-  Import took 0.031347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000576 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Down.png
-  artifactKey: Guid(6a143e8c105a3d24799965819b933bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Down.png using Guid(6a143e8c105a3d24799965819b933bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6a025aaec79f153c12d8d8419554c7') in 0.016921 seconds
-  Import took 0.018527 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.064153 seconds.
-  path: Assets/Scripts/Player Scripts/charRAttacks.cs
-  artifactKey: Guid(0a4159a32f0d8294380d88f3e03ae3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/charRAttacks.cs using Guid(0a4159a32f0d8294380d88f3e03ae3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6d6c1154450627a8ddf5c46ccb6ff7') in 0.006001 seconds
-  Import took 0.007946 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000681 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.610 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.15 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1157 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.5 MB.
-System memory in use after: 61.6 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1625.
-Total: 1.408800 ms (FindLiveObjects: 0.140700 ms CreateObjectMapping: 0.028000 ms MarkObjects: 1.225000 ms  DeleteObjects: 0.014200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.886618 seconds.
-  path: Assets/Scripts/Player Scripts/charRAttacks.cs
-  artifactKey: Guid(0a4159a32f0d8294380d88f3e03ae3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player Scripts/charRAttacks.cs using Guid(0a4159a32f0d8294380d88f3e03ae3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a3a593aab2962806b46bd857a4c3f3') in 0.003974 seconds
-  Import took 0.005595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.775292 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownLeft.png
-  artifactKey: Guid(00c1d04c18c6b2d47860b0193b41513e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownLeft.png using Guid(00c1d04c18c6b2d47860b0193b41513e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a88db6970e0e6f216975750a91a006') in 0.078794 seconds
-  Import took 0.080821 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000980 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownLeft.png
-  artifactKey: Guid(00c1d04c18c6b2d47860b0193b41513e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownLeft.png using Guid(00c1d04c18c6b2d47860b0193b41513e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a88db6970e0e6f216975750a91a006') in 0.031349 seconds
-  Import took 0.032903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.790701 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownRight.png
-  artifactKey: Guid(7d662b140dd5fec4ab0736c7aba27e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownRight.png using Guid(7d662b140dd5fec4ab0736c7aba27e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85530cc4e3f659072c3903c567f4564b') in 0.046965 seconds
-  Import took 0.048997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000492 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownRight.png
-  artifactKey: Guid(7d662b140dd5fec4ab0736c7aba27e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagDownRight.png using Guid(7d662b140dd5fec4ab0736c7aba27e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85530cc4e3f659072c3903c567f4564b') in 0.027890 seconds
-  Import took 0.029506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.691299 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Left.png
-  artifactKey: Guid(44818532efef864489368aa8a5a39fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Left.png using Guid(44818532efef864489368aa8a5a39fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfafa800d0c3eb8713790261585e4ab') in 0.049234 seconds
-  Import took 0.051274 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001236 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Left.png
-  artifactKey: Guid(44818532efef864489368aa8a5a39fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Left.png using Guid(44818532efef864489368aa8a5a39fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfafa800d0c3eb8713790261585e4ab') in 0.031642 seconds
-  Import took 0.033172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.227619 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Right.png
-  artifactKey: Guid(687047b66840d0f44b2501edce03960b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Right.png using Guid(687047b66840d0f44b2501edce03960b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd658853446ca8f5e2fd3520bb58ea00') in 0.074229 seconds
-  Import took 0.076229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.419850 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Up.png
-  artifactKey: Guid(526a07d1faa8dc94fb11c62a68acaccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_Up.png using Guid(526a07d1faa8dc94fb11c62a68acaccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed285965142068e2548360d7cdf2b749') in 0.022906 seconds
-  Import took 0.025213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.476713 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagUpLeft.png
-  artifactKey: Guid(3ebd251c3c77eaf42beee2f1a3ad56fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagUpLeft.png using Guid(3ebd251c3c77eaf42beee2f1a3ad56fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06d2f3f9d206b260e2109c4f9a545cb') in 0.046198 seconds
-  Import took 0.048273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagUpLeft.png
-  artifactKey: Guid(3ebd251c3c77eaf42beee2f1a3ad56fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagUpLeft.png using Guid(3ebd251c3c77eaf42beee2f1a3ad56fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06d2f3f9d206b260e2109c4f9a545cb') in 0.014496 seconds
-  Import took 0.016033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.625493 seconds.
-  path: Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagUpRight.png
-  artifactKey: Guid(e8163b2230b7acb40878e671e1d0efea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/PlayerSprite/Wand/Lich_Wand_DiagUpRight.png using Guid(e8163b2230b7acb40878e671e1d0efea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78b2aea585f18ddaca733a800dfc060') in 0.063908 seconds
-  Import took 0.066030 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000558 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.592 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1157 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.5 MB.
-System memory in use after: 61.6 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1628.
-Total: 1.432100 ms (FindLiveObjects: 0.148800 ms CreateObjectMapping: 0.028600 ms MarkObjects: 1.240000 ms  DeleteObjects: 0.013900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000471 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.584 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1157 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.5 MB.
-System memory in use after: 61.6 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1630.
-Total: 1.448700 ms (FindLiveObjects: 0.154500 ms CreateObjectMapping: 0.029100 ms MarkObjects: 1.250100 ms  DeleteObjects: 0.014100 ms)
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(855b7d76c34f95d41afe4651bb7d6022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(855b7d76c34f95d41afe4651bb7d6022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d37a911d1732b9c48e595d8474a743') in 0.087795 seconds
+  Import took 0.090360 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
