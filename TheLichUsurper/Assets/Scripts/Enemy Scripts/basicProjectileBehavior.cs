@@ -26,7 +26,7 @@ public class basicProjectileBehavior : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
+        if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null || collision.transform.tag == "Obstacle")
         {
             GameObject.Destroy(gameObject);
         }
@@ -35,7 +35,7 @@ public class basicProjectileBehavior : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponentInParent<PlayerHealth>() != null && !isPlayerBullet)
+        if (collision.gameObject.GetComponent<PlayerHealth>() != null && !isPlayerBullet)
         {
             GameObject.Destroy(gameObject);
             collision.gameObject.GetComponent<PlayerHealth>().takeDamage(damage);
@@ -50,7 +50,7 @@ public class basicProjectileBehavior : MonoBehaviour
             GameObject.Destroy(gameObject);
             collision.gameObject.GetComponent<FirstBoss>().TakeDamage(damage);
         }
-        if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
+        if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null || collision.transform.tag == "Obstacle")
         {
             GameObject.Destroy(gameObject);
         }

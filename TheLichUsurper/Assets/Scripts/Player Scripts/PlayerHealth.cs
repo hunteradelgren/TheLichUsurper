@@ -105,6 +105,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void takeDamage(float damage)
     {
+        animator.SetTrigger("wasHit");
         //decreases health by recieved amount
         currentHealth -= damage;
         if (!inSpectralForm)
