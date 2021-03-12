@@ -42,21 +42,23 @@ public class charRAttacks : MonoBehaviour
         if (animator.GetBool("IsCasting") && animator.IsInTransition(0))
         {
             animator.SetBool("IsCasting", false);
-            //instantiates the projectile
-            GameObject projectile = Instantiate<GameObject>(projectilePrefab);
-            projectile.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
-            projectile.GetComponent<basicProjectileBehavior>().damage = damage;
-            //moves the projectile on top of the player
-            projectile.transform.position = transform.position;
-            //rotates projectile to where the player is facing
-            projectile.transform.rotation = temp;
-
-
         }
     }
 
     public void damageUpgrade(float amount)
     {
         damage += amount;
+    }
+
+    public void Shoot()
+    {
+        //instantiates the projectile
+        GameObject projectile = Instantiate<GameObject>(projectilePrefab);
+        projectile.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
+        projectile.GetComponent<basicProjectileBehavior>().damage = damage;
+        //moves the projectile on top of the player
+        projectile.transform.position = transform.position;
+        //rotates projectile to where the player is facing
+        projectile.transform.rotation = temp;
     }
 }
