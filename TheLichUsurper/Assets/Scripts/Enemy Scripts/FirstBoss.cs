@@ -56,6 +56,7 @@ public class FirstBoss : MonoBehaviour
     private Vector2 velocity;
     public GameObject center; //uses the center game object in the room
     public Animator animator;
+    public bool lungefirst = true;
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -94,6 +95,7 @@ public class FirstBoss : MonoBehaviour
                 //boss is lunging
                 if (isLunging)
                 {
+                    animator.SetBool("isMoving", false);
                     Vector2 direction = lungeTarget; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -107,7 +109,13 @@ public class FirstBoss : MonoBehaviour
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
-                        animator.SetBool("isMoving", true);
+                        if (lungefirst)
+                        {
+                            print("lunging");
+                            animator.SetTrigger("lunging");
+                            lungefirst = false;
+                        }
+                        
                         //lunge is being performed
                         lungeTimer += Time.deltaTime;
                         velocity = lungeTarget;
@@ -119,13 +127,16 @@ public class FirstBoss : MonoBehaviour
                             lungeTimer = 0;
                             isLunging = false;
                             canAttack = false;
-                            animator.SetBool("isMoving", false);
+                            lungefirst = true;
+                            print("endlunge");
+                            animator.SetTrigger("lungeEnd");
                         }
                     }
                 }
                 //boss is doing swing attack
                 else if (isAttacking)
                 {
+                    animator.SetBool("isMoving", false);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -139,7 +150,7 @@ public class FirstBoss : MonoBehaviour
                     if (chargeTimer >= lungeTime)
                     {
                         animator.SetBool("isAttacking", true);
-                        swingAttack();
+                        //swingAttack();
                         chargeTimer = 0;
                         isAttacking = false;
                         canAttack = false;
@@ -181,6 +192,7 @@ public class FirstBoss : MonoBehaviour
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
+                        animator.SetBool("isMoving", true);
                     }
                     //position 2 is closest
                     else if (distPos2 < distPos1 && distPos2 < distPos3)
@@ -195,6 +207,7 @@ public class FirstBoss : MonoBehaviour
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
+                        animator.SetBool("isMoving", true);
                     }
                     //position 3 is closest
                     else
@@ -209,6 +222,7 @@ public class FirstBoss : MonoBehaviour
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
+                        animator.SetBool("isMoving", true);
                     }
                 }
             }
@@ -221,6 +235,7 @@ public class FirstBoss : MonoBehaviour
                 ///boss is doing swing attack
                 if (isAttacking)
                 {
+                    animator.SetBool("isMoving", false);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -231,10 +246,9 @@ public class FirstBoss : MonoBehaviour
                     setDirection();
 
                     chargeTimer += Time.deltaTime;
-                    if (chargeTimer >= lungeTime)
+                    if (chargeTimer >= chargeTime)
                     {
                         print("swinging");
-                        swingAttack();
                         chargeTimer = 0;
                         isAttacking = false;
                         canAttack = false;
@@ -245,7 +259,7 @@ public class FirstBoss : MonoBehaviour
                 {
                     velocity = Player.position - transform.position;
                     transform.Translate(velocity.normalized * movSpeed *Time.deltaTime, Space.World);
-
+                    animator.SetBool("isMoving", true);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -254,9 +268,11 @@ public class FirstBoss : MonoBehaviour
                     else
                         animator.SetFloat("EnemyRot", angle);
                     setDirection();
+                    animator.SetBool("isMoving", true);
                 }
                 else
                 {
+                    animator.SetBool("isMoving", false);
                     //player is inrange
                     if (canAttack && inRange)
                     {
@@ -293,6 +309,7 @@ public class FirstBoss : MonoBehaviour
                 canAttack = true;
                 cooldownTimer = 0f;
             }
+            animator.SetBool("isAttacking", false);
         }
     }
 
@@ -352,6 +369,9 @@ public class FirstBoss : MonoBehaviour
                 lungeTimer = 0;
                 isLunging = false;
                 canAttack = false;
+                print("wall end lunge");
+                animator.SetTrigger("lungeEnd");
+                lungefirst = true;
             }
         }
 
