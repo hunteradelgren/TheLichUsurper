@@ -64,7 +64,7 @@ public class PlayerHealth : MonoBehaviour
 
         //sets the player to spectral state
         inSpectralForm = true;
-        currentHealth = maxSpectreHealth;
+        currentHealth = specSlider.value;
         //makes character see thru, then waits
         GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         yield return new WaitForSecondsRealtime(1f);
@@ -124,6 +124,7 @@ public class PlayerHealth : MonoBehaviour
             inSpectralForm = false;
             currentHealth = boost;
             hpSlider.value = currentHealth;
+            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 100);
         }
         else if (!inSpectralForm && currentHealth+boost <= maxHealth)
         {
@@ -136,5 +137,7 @@ public class PlayerHealth : MonoBehaviour
     public void healthUpgrade(float amount)
     {
         maxHealth += amount;
+        hpSlider.maxValue = maxHealth;
+        gainHealth(amount);
     }
 }

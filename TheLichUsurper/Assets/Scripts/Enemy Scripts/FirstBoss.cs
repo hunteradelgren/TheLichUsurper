@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FirstBoss : MonoBehaviour
 {
@@ -73,6 +74,8 @@ public class FirstBoss : MonoBehaviour
         if(currentHealth <= 0)
         {
             Object.Destroy(gameObject);
+            SceneManager.LoadScene(3);
+
         }
             //finds the distance from the target location
             distPlayer = Vector2.Distance(Player.position, transform.position); 
@@ -201,6 +204,7 @@ public class FirstBoss : MonoBehaviour
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
+                        print("swinging");
                         swingAttack();
                         chargeTimer = 0;
                         isAttacking = false;
@@ -276,7 +280,7 @@ public class FirstBoss : MonoBehaviour
     void swingAttack()
     {
         //player is colliding with capsule collider for swing attack
-        if(colliding.Count == 1)
+        if(colliding.Count != 0)
         {
             Player.GetComponent<PlayerHealth>().takeDamage(attackDamage);
             print("hit player with swing");
@@ -319,6 +323,7 @@ public class FirstBoss : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            print(collision.name);
             colliding.Add(collision.gameObject);
         }
 
