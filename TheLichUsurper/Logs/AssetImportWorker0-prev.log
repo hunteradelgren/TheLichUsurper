@@ -1,195 +1,843 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.6f1 (8a2143876886) revision 9052483'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 18363.1379; Version 1909; 64bit' Language: 'en' Physical Memory: 32666 MB
+OS: 'Windows 10 Education; OS build 17134.2026; Version 1803; 64bit' Language: 'en' Physical Memory: 8072 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.2.6f1\Editor\Unity.exe
+C:\Program Files\2020.2.6f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper
+C:/Users/huadelgren19/Documents/GitHub/TheLichUsurper/TheLichUsurper
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60214
-Successfully changed project path to: C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper
-C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper
+60276
+Successfully changed project path to: C:/Users/huadelgren19/Documents/GitHub/TheLichUsurper/TheLichUsurper
+C:/Users/huadelgren19/Documents/GitHub/TheLichUsurper/TheLichUsurper
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 24.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 32.61 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.6f1 (8a2143876886)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/2020.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/huadelgren19/Documents/GitHub/TheLichUsurper/TheLichUsurper/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Renderer: AMD Radeon R7 M365X (ID=0x6604)
     Vendor:   
-    VRAM:     8172 MB
-    Driver:   26.20.15015.1007
+    VRAM:     1005 MB
+    Driver:   16.300.2201.0
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Mono path[0] = 'C:/Program Files/2020.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/2020.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002003 seconds.
+Register platform support module: C:/Program Files/2020.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005443 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 24.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 32.91 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  1.887 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000764 seconds.
+Registered in 0.001302 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.808 seconds
+- Completed reload, in  1.027 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1163 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 58.8 MB.
-System memory in use after: 58.8 MB.
+System memory in use before: 58.4 MB.
+System memory in use after: 58.5 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1606.
-Total: 1.715800 ms (FindLiveObjects: 0.145900 ms CreateObjectMapping: 0.035600 ms MarkObjects: 1.472100 ms  DeleteObjects: 0.061200 ms)
+Total: 3.278404 ms (FindLiveObjects: 0.355555 ms CreateObjectMapping: 0.096273 ms MarkObjects: 2.696387 ms  DeleteObjects: 0.128365 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/BasementRooms/RoomBottom.prefab
-  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b77b563496b174a8dadc6fd987a1a82') in 0.120178 seconds
-  Import took 0.122821 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab
-  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2842bbd09448eafb552cb9454bc62883') in 0.024290 seconds
-  Import took 0.026631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.786338 seconds.
-  path: Assets/Prefabs/BasementRooms/Doors
-  artifactKey: Guid(9883c9d78eb66274ab7eadd03fb9afcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/Doors using Guid(9883c9d78eb66274ab7eadd03fb9afcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5506e952e62852eff543ab64db249fe1') in 0.007581 seconds
-  Import took 0.009591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.586761 seconds.
   path: Assets/Prefabs/BasementRooms/BossRoom
   artifactKey: Guid(925b30e7cbd3aca469a6b5a6c5c8a4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom using Guid(925b30e7cbd3aca469a6b5a6c5c8a4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520e3f9d36380dda59999c0db4d6dbd9') in 0.007138 seconds
-  Import took 0.009092 seconds .
+Start importing Assets/Prefabs/BasementRooms/BossRoom using Guid(925b30e7cbd3aca469a6b5a6c5c8a4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7e077510546f8d3a0226877e7752b4') in 0.036535 seconds
+  Import took 0.039829 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.913491 seconds.
+  Time since last request: 0.000434 seconds.
   path: Assets/Prefabs/BasementRooms/BaseRoom
   artifactKey: Guid(402ec18d6b3aa294aa1a89d9a9291c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BaseRoom using Guid(402ec18d6b3aa294aa1a89d9a9291c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ed8d0fcd1befa6313e2f2a8b423f56') in 0.010126 seconds
-  Import took 0.012086 seconds .
+Start importing Assets/Prefabs/BasementRooms/BaseRoom using Guid(402ec18d6b3aa294aa1a89d9a9291c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2733924f47b951ddd5fd6e20a65bbe') in 0.047711 seconds
+  Import took 0.050270 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.707290 seconds.
-  path: Assets/Prefabs/BasementRooms/BottomRoom
-  artifactKey: Guid(09d53a1250b40614f8feb94f8b0b0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BottomRoom using Guid(09d53a1250b40614f8feb94f8b0b0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93250af03a39084911750ccebda99ae3') in 0.007464 seconds
-  Import took 0.009715 seconds .
+  Time since last request: 0.000325 seconds.
+  path: Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab
+  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaaf2c4057f37439820607720f090b14') in 0.222383 seconds
+  Import took 0.226042 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.321447 seconds.
+  Time since last request: 2.231353 seconds.
   path: Assets/Prefabs/BasementRooms/BottomLeft
   artifactKey: Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BottomLeft using Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c42b2f4516e5aaa8c28c52dea369fa1') in 0.007626 seconds
-  Import took 0.009618 seconds .
+Start importing Assets/Prefabs/BasementRooms/BottomLeft using Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f98f489f0a5458b9e2b67a2d7f2f1c3') in 0.042386 seconds
+  Import took 0.045504 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.209482 seconds.
+  Time since last request: 0.059783 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c7b6f83e7a975640e73b789f98685f') in 0.285422 seconds
+  Import took 0.290657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.228628 seconds.
   path: Assets/Prefabs/BasementRooms/BottomRight
   artifactKey: Guid(b02e69d78dd72bb4b934de9c799b7143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BottomRight using Guid(b02e69d78dd72bb4b934de9c799b7143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82178839a8f4a19225775841d6421c25') in 0.007650 seconds
-  Import took 0.009743 seconds .
+Start importing Assets/Prefabs/BasementRooms/BottomRight using Guid(b02e69d78dd72bb4b934de9c799b7143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a4efd7f02e617b693ebf8e0aff0409') in 0.042978 seconds
+  Import took 0.047090 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.316392 seconds.
-  path: Assets/Prefabs/BasementRooms/LeftRoom
-  artifactKey: Guid(2cabcfd9a4ebd6f4bbf2cf4cd618738b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/LeftRoom using Guid(2cabcfd9a4ebd6f4bbf2cf4cd618738b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66615a03e026e4321a8d71f94c5e9046') in 0.007706 seconds
-  Import took 0.009640 seconds .
+  Time since last request: 38.973458 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run
+  artifactKey: Guid(b502ef1829533a4419cd72030400cdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run using Guid(b502ef1829533a4419cd72030400cdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9edd8ff946710976516c633e54ef2b2') in 0.032082 seconds
+  Import took 0.035702 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.598540 seconds.
-  path: Assets/Prefabs/BasementRooms/LeftRightRooms
-  artifactKey: Guid(21b50414f3fecc641bb2dfb8e2b89b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/LeftRightRooms using Guid(21b50414f3fecc641bb2dfb8e2b89b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b047e98cf9f0e11c17cb3e470163fe') in 0.007540 seconds
-  Import took 0.009748 seconds .
+  Time since last request: 5.583923 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack
+  artifactKey: Guid(693f77262f1db3d4995255bd8f9c541b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack using Guid(693f77262f1db3d4995255bd8f9c541b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51505e311dc972536a91eac83fc88910') in 0.044684 seconds
+  Import took 0.047888 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.008469 seconds.
-  path: Assets/Prefabs/BasementRooms/RightRooms
-  artifactKey: Guid(008f4e3c31a094b4fa7b94e2881428f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/RightRooms using Guid(008f4e3c31a094b4fa7b94e2881428f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fce4aeb6fdf985beba4e5f0b39c47a7') in 0.007525 seconds
-  Import took 0.009470 seconds .
+  Time since last request: 46.326115 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Hit
+  artifactKey: Guid(428e64b38add81a48b537bc74927e7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Hit using Guid(428e64b38add81a48b537bc74927e7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9564c21aa8f6f5edfff57dcf10f92a92') in 0.042959 seconds
+  Import took 0.045915 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.829715 seconds.
-  path: Assets/Prefabs/BasementRooms/TopBottomRooms
-  artifactKey: Guid(ca83cb39378f82043b2005a4a512462e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/TopBottomRooms using Guid(ca83cb39378f82043b2005a4a512462e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450555a6d02ec221cc0369bfed4ea078') in 0.009299 seconds
-  Import took 0.011254 seconds .
+  Time since last request: 28.183262 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Down.png
+  artifactKey: Guid(31ccd571800149641926edb6898736c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Down.png using Guid(31ccd571800149641926edb6898736c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27cf730bafa8498e1158287fb145130f') in 0.090341 seconds
+  Import took 0.094823 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 71.162243 seconds.
-  path: Assets/Prefabs/BasementRooms/TopLeftRoom
-  artifactKey: Guid(c00ce2a970491384c884cb93e76e3530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/TopLeftRoom using Guid(c00ce2a970491384c884cb93e76e3530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7390850a04a78f482665d47e6077b7c') in 0.007784 seconds
-  Import took 0.009752 seconds .
+  Time since last request: 7.332451 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Down.png
+  artifactKey: Guid(31ccd571800149641926edb6898736c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Down.png using Guid(31ccd571800149641926edb6898736c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ddecf56ecd06096c92e5f732eb28ac') in 0.086549 seconds
+  Import took 0.090385 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.913745 seconds.
-  path: Assets/Prefabs/BasementRooms/RoomTop
-  artifactKey: Guid(18369e3c22cea3944b052dbac208e746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/RoomTop using Guid(18369e3c22cea3944b052dbac208e746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a056099049a9c66c1bfa97532086559') in 0.007396 seconds
-  Import took 0.009376 seconds .
+  Time since last request: 9.232922 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Left.png
+  artifactKey: Guid(a1aa577fa9523644ba421649094e087a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Left.png using Guid(a1aa577fa9523644ba421649094e087a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb6eb2cc6127809d13fd339ff245b64') in 0.069977 seconds
+  Import took 0.075306 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.311711 seconds.
-  path: Assets/Prefabs/BasementRooms/TopRightRooms
-  artifactKey: Guid(9a8ac2f698157db41b192da0d6369507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/TopRightRooms using Guid(9a8ac2f698157db41b192da0d6369507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252d93c410f0c7bf797977a398a5ae52') in 0.008156 seconds
-  Import took 0.010313 seconds .
+  Time since last request: 5.173777 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Left.png
+  artifactKey: Guid(a1aa577fa9523644ba421649094e087a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Left.png using Guid(a1aa577fa9523644ba421649094e087a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e546d005eb9be4db4b7d51613fbb23') in 0.081302 seconds
+  Import took 0.084365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.687633 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Right.png
+  artifactKey: Guid(bf3ea06ccb45afd4bbea2ee9e83aef73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Right.png using Guid(bf3ea06ccb45afd4bbea2ee9e83aef73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d4d0a429d3831088def5ab161e3945') in 0.072769 seconds
+  Import took 0.076966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.062088 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Right.png
+  artifactKey: Guid(bf3ea06ccb45afd4bbea2ee9e83aef73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Right.png using Guid(bf3ea06ccb45afd4bbea2ee9e83aef73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269bb13c1807a634178c40094732a5b4') in 0.080673 seconds
+  Import took 0.084568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.999415 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Up.png
+  artifactKey: Guid(65d70f70f8f7d3949a098875bc4bc0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Up.png using Guid(65d70f70f8f7d3949a098875bc4bc0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e119627b1b2bf093f9c793d34cef30') in 0.074862 seconds
+  Import took 0.079553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.709377 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Up.png
+  artifactKey: Guid(65d70f70f8f7d3949a098875bc4bc0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/Zombie1_Run_Up.png using Guid(65d70f70f8f7d3949a098875bc4bc0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810c08b5f0bb1d021a5891e5eb0f689c') in 0.081335 seconds
+  Import took 0.084828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.228908 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/RunLeft.anim
+  artifactKey: Guid(0c33dc89f44e34546a08a817cc194d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/RunLeft.anim using Guid(0c33dc89f44e34546a08a817cc194d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e46c8af505f8fd15eeeb557b472b32') in 0.052849 seconds
+  Import took 0.057656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001780 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/RunLeft.anim
+  artifactKey: Guid(0c33dc89f44e34546a08a817cc194d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/RunLeft.anim using Guid(0c33dc89f44e34546a08a817cc194d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e46c8af505f8fd15eeeb557b472b32') in 0.039233 seconds
+  Import took 0.043060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.555013 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/RunUp.anim
+  artifactKey: Guid(5fadb65cf6cc65a41905030b96d37321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/RunUp.anim using Guid(5fadb65cf6cc65a41905030b96d37321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62bd10b2b7153b5e4d813e8656ec400a') in 0.049619 seconds
+  Import took 0.053631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.277312 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/RunRight.anim
+  artifactKey: Guid(4e21b08fdcad8b84f973c642f747ff18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/RunRight.anim using Guid(4e21b08fdcad8b84f973c642f747ff18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef190dc4c04258f084c15cb610d218ab') in 0.044001 seconds
+  Import took 0.047363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.688524 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Run/RunDown.anim
+  artifactKey: Guid(d8fcb97716dbf3045b2d0e9fcb4b3780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Run/RunDown.anim using Guid(d8fcb97716dbf3045b2d0e9fcb4b3780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d900f6de311fe08e84ef40f2596f464') in 0.041055 seconds
+  Import took 0.044436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.710394 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/IdleAnimation
+  artifactKey: Guid(14c6cde9cf8d1ed4ebec7a0d0e665aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/IdleAnimation using Guid(14c6cde9cf8d1ed4ebec7a0d0e665aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6da784a0d681f316cf6abda2187b529') in 0.033004 seconds
+  Import took 0.036071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.478481 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/IdleAnimation
+  artifactKey: Guid(210b77cccc24de446a27ce3293a839c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/IdleAnimation using Guid(210b77cccc24de446a27ce3293a839c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a27ec2cb47747a2500e7141a47f3f4e') in 0.050142 seconds
+  Import took 0.053640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.136327 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/IdleAnimation
+  artifactKey: Guid(3c98943b121de824cb596d5604679389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/IdleAnimation using Guid(3c98943b121de824cb596d5604679389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fb18969f59f3a94cd29e1402366212') in 0.051874 seconds
+  Import took 0.055150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.559430 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run
+  artifactKey: Guid(fb6040a3ff7b177419d2e570b0bbc83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run using Guid(fb6040a3ff7b177419d2e570b0bbc83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4111adcf27dcd98b1142162a096018f5') in 0.039306 seconds
+  Import took 0.041872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.324643 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack
+  artifactKey: Guid(a58b99f18bac4d2468b58051679e1428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack using Guid(a58b99f18bac4d2468b58051679e1428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883dca78bd4034a9ed81c9063565f03e') in 0.037214 seconds
+  Import took 0.040976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.523797 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Hit
+  artifactKey: Guid(117e86af890e94c4097209eeca5595f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Hit using Guid(117e86af890e94c4097209eeca5595f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3193cf00cdc5651f1aa1a0766ee1f4c8') in 0.030843 seconds
+  Import took 0.034346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.997182 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack
+  artifactKey: Guid(302118609ae4e894cb641a46e06330ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack using Guid(302118609ae4e894cb641a46e06330ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c782c99888a248c3e273054106b29e') in 0.031678 seconds
+  Import took 0.035079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.327920 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Hit
+  artifactKey: Guid(c74ebaa90ff016c42afcea36cb08055c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Hit using Guid(c74ebaa90ff016c42afcea36cb08055c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a240aeaaae1f9bbb01015e38027195') in 0.034852 seconds
+  Import took 0.038000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.135691 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownLeft.png
+  artifactKey: Guid(94096b072b2dee847951644bdb53baeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownLeft.png using Guid(94096b072b2dee847951644bdb53baeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0280669037bab83787f5d8e0cac5d421') in 0.069630 seconds
+  Import took 0.073812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.487138 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownLeft.png
+  artifactKey: Guid(94096b072b2dee847951644bdb53baeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownLeft.png using Guid(94096b072b2dee847951644bdb53baeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce985170a633cb3a17f7e4823fa26af7') in 0.084080 seconds
+  Import took 0.087046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.884791 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownRight.png
+  artifactKey: Guid(08de39482412746448be5b806c5780d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownRight.png using Guid(08de39482412746448be5b806c5780d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf877be6630d5462d753aa902b81b0a') in 0.076687 seconds
+  Import took 0.081016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000802 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownRight.png
+  artifactKey: Guid(08de39482412746448be5b806c5780d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownRight.png using Guid(08de39482412746448be5b806c5780d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf877be6630d5462d753aa902b81b0a') in 0.057931 seconds
+  Import took 0.062403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.507981 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownRight.png
+  artifactKey: Guid(08de39482412746448be5b806c5780d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagDownRight.png using Guid(08de39482412746448be5b806c5780d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a96c215b076521ddf115cf17fad6491') in 0.088383 seconds
+  Import took 0.091356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.415459 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpLeft.png
+  artifactKey: Guid(dedf182a089615541a1718b477e47f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpLeft.png using Guid(dedf182a089615541a1718b477e47f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dbcfcc60e54284c97eab231025ce31') in 0.070161 seconds
+  Import took 0.073701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.141926 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpLeft.png
+  artifactKey: Guid(dedf182a089615541a1718b477e47f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpLeft.png using Guid(dedf182a089615541a1718b477e47f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8a8f03ab5a9691d70a1b723d65e9bb') in 0.093470 seconds
+  Import took 0.097442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.185874 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpRight.png
+  artifactKey: Guid(f8f0dae2827bdd14cb59a54a895caddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpRight.png using Guid(f8f0dae2827bdd14cb59a54a895caddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436828644d2e760f544068c66026a3ab') in 0.079567 seconds
+  Import took 0.085171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.981503 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpRight.png
+  artifactKey: Guid(f8f0dae2827bdd14cb59a54a895caddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_DiagUpRight.png using Guid(f8f0dae2827bdd14cb59a54a895caddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7c4aa7b11355c1154753af5ebe2bd4') in 0.080546 seconds
+  Import took 0.084209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.720642 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Down.png
+  artifactKey: Guid(37ace5efdc9546d42856e67372c921b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Down.png using Guid(37ace5efdc9546d42856e67372c921b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14a58f8607b0f6e90d75f3acfcd689c') in 0.071159 seconds
+  Import took 0.075928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.252249 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Down.png
+  artifactKey: Guid(37ace5efdc9546d42856e67372c921b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Down.png using Guid(37ace5efdc9546d42856e67372c921b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b80cf60ba26138ada3983bff063643c') in 0.081089 seconds
+  Import took 0.084910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.773605 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Left.png
+  artifactKey: Guid(60cb268787d009e45b2371dd1e9fb8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Left.png using Guid(60cb268787d009e45b2371dd1e9fb8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4c2c5d0d0e5fdf17b91c8ea6afa339') in 0.066260 seconds
+  Import took 0.071621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.556302 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Left.png
+  artifactKey: Guid(60cb268787d009e45b2371dd1e9fb8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Left.png using Guid(60cb268787d009e45b2371dd1e9fb8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db2bab432a62c14fbc5fa46b15581d8') in 0.091510 seconds
+  Import took 0.094453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.189222 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Right.png
+  artifactKey: Guid(b1a13f8cdfa13db43be324c0ec5e040a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Right.png using Guid(b1a13f8cdfa13db43be324c0ec5e040a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '346a51db4d6fd8bd6fe793b5f8f2ccfc') in 0.070838 seconds
+  Import took 0.076013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.605229 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Right.png
+  artifactKey: Guid(b1a13f8cdfa13db43be324c0ec5e040a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Right.png using Guid(b1a13f8cdfa13db43be324c0ec5e040a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753faf276b0000c3a3aaf2363a03d863') in 0.077251 seconds
+  Import took 0.080548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.038168 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Up.png
+  artifactKey: Guid(e0d04991169cebc44be7b235cf3ddcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Up.png using Guid(e0d04991169cebc44be7b235cf3ddcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85269ac52a4c11b3492abbee92574c6') in 0.070210 seconds
+  Import took 0.077287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.506538 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Up.png
+  artifactKey: Guid(e0d04991169cebc44be7b235cf3ddcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Up.png using Guid(e0d04991169cebc44be7b235cf3ddcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e610aa3faafbb484e5cec8c9687cce95') in 0.089730 seconds
+  Import took 0.093543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.306726 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/AttackUp.anim
+  artifactKey: Guid(8c5c0652e88027b4994a38e1c7cb9159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/AttackUp.anim using Guid(8c5c0652e88027b4994a38e1c7cb9159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9039d1fa9c9b844b27ef4c615413a8') in 0.045745 seconds
+  Import took 0.051332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.650661 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/AttackDown.anim
+  artifactKey: Guid(67d8d46c69998a847a709cce8233e0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/AttackDown.anim using Guid(67d8d46c69998a847a709cce8233e0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302d607857cd5417a29ca378b660113a') in 0.042103 seconds
+  Import took 0.045328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001990 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/AttackDown.anim
+  artifactKey: Guid(67d8d46c69998a847a709cce8233e0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/AttackDown.anim using Guid(67d8d46c69998a847a709cce8233e0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302d607857cd5417a29ca378b660113a') in 0.026491 seconds
+  Import took 0.030523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.977783 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/AttackRight.anim
+  artifactKey: Guid(f1aedb780e6a5b44eb1f66c1a9500485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/AttackRight.anim using Guid(f1aedb780e6a5b44eb1f66c1a9500485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7cb7453bfbc9166d6a732579a479be') in 0.043606 seconds
+  Import took 0.047049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.252857 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/AttackLeft.anim
+  artifactKey: Guid(814cf43d25bd56048af9215643ae6c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/AttackLeft.anim using Guid(814cf43d25bd56048af9215643ae6c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8fa14e624d607eb434109ffda6341b6') in 0.040880 seconds
+  Import took 0.045503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.630596 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/ZombieController.controller
+  artifactKey: Guid(85b576a3acfbac247bc32c614de4de33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/ZombieController.controller using Guid(85b576a3acfbac247bc32c614de4de33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c9c4c233d1c70cd1d4303262c3e8e6') in 0.039378 seconds
+  Import took 0.043608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 810.155450 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/ZombieController.controller
+  artifactKey: Guid(85b576a3acfbac247bc32c614de4de33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/ZombieController.controller using Guid(85b576a3acfbac247bc32c614de4de33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505c0dcf112492d17b7e3e10db85f62d') in 0.044851 seconds
+  Import took 0.048543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.698675 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Left.png
+  artifactKey: Guid(60cb268787d009e45b2371dd1e9fb8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Left.png using Guid(60cb268787d009e45b2371dd1e9fb8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b83af712ba215e3b3890a4f45e878e') in 0.082041 seconds
+  Import took 0.085973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.916951 seconds.
+  path: Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Up.png
+  artifactKey: Guid(e0d04991169cebc44be7b235cf3ddcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Zombie/Attack/Zombie1_Attack_Up.png using Guid(e0d04991169cebc44be7b235cf3ddcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed78ab634c0571816936f485195c3c4e') in 0.090447 seconds
+  Import took 0.094820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 473.992501 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/New Animation.anim
+  artifactKey: Guid(1443def878cf18146bb52940433e6a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/New Animation.anim using Guid(1443def878cf18146bb52940433e6a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d7bbb5b18d0ae1b6a021c05be256c9') in 0.046050 seconds
+  Import took 0.050104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.739172 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/AttackLeft.anim
+  artifactKey: Guid(1443def878cf18146bb52940433e6a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/AttackLeft.anim using Guid(1443def878cf18146bb52940433e6a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9a0661d2957928e5486e5162695f0d') in 0.033235 seconds
+  Import took 0.036580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.493269 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/AttackRight.anim
+  artifactKey: Guid(39b0b54c219dbe94d9460bff4cd639fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/AttackRight.anim using Guid(39b0b54c219dbe94d9460bff4cd639fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8da288e64da31d8b5d78745deaafc4') in 0.033753 seconds
+  Import took 0.037173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.286380 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/AttackUp.anim
+  artifactKey: Guid(b2e319ba72bd19f4a8329783f3985b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/AttackUp.anim using Guid(b2e319ba72bd19f4a8329783f3985b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d55b7e5c611b39d4f371751647ab65f') in 0.041044 seconds
+  Import took 0.044172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.620034 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/AttackDown.anim
+  artifactKey: Guid(6527055aaa322a4458f27777cb2d2697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/AttackDown.anim using Guid(6527055aaa322a4458f27777cb2d2697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39e01f7f2a6740b2b72fe7167eeed40') in 0.031453 seconds
+  Import took 0.034652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.462224 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/SkullController.controller
+  artifactKey: Guid(145852db3d4b0754191374ee06fb94e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/SkullController.controller using Guid(145852db3d4b0754191374ee06fb94e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566dd0e5b95ecd49acc0ba13f277e20c') in 0.044839 seconds
+  Import took 0.049091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.243954 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/SkullController.controller
+  artifactKey: Guid(145852db3d4b0754191374ee06fb94e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/SkullController.controller using Guid(145852db3d4b0754191374ee06fb94e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d45dadb5da798e9f082ac28f2e6628b') in 0.039823 seconds
+  Import took 0.043677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.106328 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Up.png
+  artifactKey: Guid(4f93c8516edd1c6428382b455109cf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Up.png using Guid(4f93c8516edd1c6428382b455109cf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8c3f490657f368486d1ea99403a156') in 0.067468 seconds
+  Import took 0.070731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.847454 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Up.png
+  artifactKey: Guid(4f93c8516edd1c6428382b455109cf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Up.png using Guid(4f93c8516edd1c6428382b455109cf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8f9d22423ca1bddbecb37ada85d0bf') in 0.074297 seconds
+  Import took 0.078188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.776399 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Right.png
+  artifactKey: Guid(a17f015b46499bb4e90129950cd93bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Right.png using Guid(a17f015b46499bb4e90129950cd93bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a25d87baf1c6b4d8715c0b0ab13b71') in 0.071170 seconds
+  Import took 0.076478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.272147 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Right.png
+  artifactKey: Guid(a17f015b46499bb4e90129950cd93bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Right.png using Guid(a17f015b46499bb4e90129950cd93bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce772fa423090cc6b07a41c8edc164cf') in 0.076922 seconds
+  Import took 0.081700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.918658 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Left.png
+  artifactKey: Guid(399e9407ff192f14eb068820f42a274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Left.png using Guid(399e9407ff192f14eb068820f42a274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa03eac5538bca750032633a3bd72ad') in 0.069669 seconds
+  Import took 0.074787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.008673 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Left.png
+  artifactKey: Guid(399e9407ff192f14eb068820f42a274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Left.png using Guid(399e9407ff192f14eb068820f42a274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79efe41ef1b69cadbe68a35bba66167c') in 0.081168 seconds
+  Import took 0.087022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.452361 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Down.png
+  artifactKey: Guid(62f6b67a4b38b1e4ab28bace600db260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Down.png using Guid(62f6b67a4b38b1e4ab28bace600db260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efd37996c269d471f57519239555d5a') in 0.074109 seconds
+  Import took 0.080416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.288824 seconds.
+  path: Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Down.png
+  artifactKey: Guid(62f6b67a4b38b1e4ab28bace600db260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skull/Attack/Skull1_Attack_Down.png using Guid(62f6b67a4b38b1e4ab28bace600db260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a51f7d44ff4b09a36971eb9c460da5') in 0.073000 seconds
+  Import took 0.076871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.079821 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Up.png
+  artifactKey: Guid(e90cf8863812e444c89d055af6b707ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Up.png using Guid(e90cf8863812e444c89d055af6b707ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2410bd8daa77c42656c08c5c555d46d4') in 0.080606 seconds
+  Import took 0.085308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.923160 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Up.png
+  artifactKey: Guid(e90cf8863812e444c89d055af6b707ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Up.png using Guid(e90cf8863812e444c89d055af6b707ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c965063a9dfa5c1599cd9de6b475f2f') in 0.083461 seconds
+  Import took 0.087010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.575355 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Right.png
+  artifactKey: Guid(7986be2a116e412408b3ff610cf3ff03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Right.png using Guid(7986be2a116e412408b3ff610cf3ff03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e886b0f628e21ec6218b14c0ddfcdd56') in 0.065888 seconds
+  Import took 0.069855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.635782 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Right.png
+  artifactKey: Guid(7986be2a116e412408b3ff610cf3ff03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Right.png using Guid(7986be2a116e412408b3ff610cf3ff03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da68367fa7716781ad179ddcb32be8f') in 0.077138 seconds
+  Import took 0.080639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.175314 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Left.png
+  artifactKey: Guid(acd2a2ac812b6194bbec065c59f3b4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Left.png using Guid(acd2a2ac812b6194bbec065c59f3b4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83fc11c290ad942eecd8745e00ec281d') in 0.081904 seconds
+  Import took 0.087338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.897398 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Left.png
+  artifactKey: Guid(acd2a2ac812b6194bbec065c59f3b4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Left.png using Guid(acd2a2ac812b6194bbec065c59f3b4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407a5e666ed20a5b5ef6365e49e5bcd0') in 0.088508 seconds
+  Import took 0.091882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.539904 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Down.png
+  artifactKey: Guid(808466c3b76f7a3419087534c4771140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Down.png using Guid(808466c3b76f7a3419087534c4771140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21bbfae5fa4fdd8680e95c299b733e58') in 0.066488 seconds
+  Import took 0.069582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.500384 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Down.png
+  artifactKey: Guid(808466c3b76f7a3419087534c4771140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/Skeleton1_Run_Down.png using Guid(808466c3b76f7a3419087534c4771140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee24beb11b39063d9b30d0c2f4cc79f') in 0.076316 seconds
+  Import took 0.079956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.503617 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/RunLeft.anim
+  artifactKey: Guid(234e3e071dbabb747acfe59886571ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/RunLeft.anim using Guid(234e3e071dbabb747acfe59886571ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b3d11505888a63c267fe5b54d97a16') in 0.029311 seconds
+  Import took 0.033386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.054952 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/RunRight.anim
+  artifactKey: Guid(93190cce8a6ed954e89a3f218ab443e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/RunRight.anim using Guid(93190cce8a6ed954e89a3f218ab443e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f8adbbe8f983c4dab750e9abfbd67b') in 0.032460 seconds
+  Import took 0.035794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.476028 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/RunUp.anim
+  artifactKey: Guid(0ebdab43e2c1ab1488cdf95d8ed7992e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/RunUp.anim using Guid(0ebdab43e2c1ab1488cdf95d8ed7992e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a64667869b0dd64983a2a6f3f8a573') in 0.027872 seconds
+  Import took 0.030764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.489812 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Run/RunDown.anim
+  artifactKey: Guid(989da70dee7b2b846bcc4aa98204c8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Run/RunDown.anim using Guid(989da70dee7b2b846bcc4aa98204c8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e693b9f8b7138e09d9af51004f6832e') in 0.032830 seconds
+  Import took 0.036550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.392707 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/SkeletonController.controller
+  artifactKey: Guid(2d770073e4f187e42a5331a943eb3697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/SkeletonController.controller using Guid(2d770073e4f187e42a5331a943eb3697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa3da6a2c1bb69e916ea8333bac0dae') in 0.050303 seconds
+  Import took 0.054848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 274.151250 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/AttackUp.anim
+  artifactKey: Guid(ebc0010886735344dae7b98dc6ee8673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/AttackUp.anim using Guid(ebc0010886735344dae7b98dc6ee8673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c7b04900be8df65eb67397490c9de6') in 0.031131 seconds
+  Import took 0.034722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.239635 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/AttackDown.anim
+  artifactKey: Guid(a9750ccf9ceb35243a9f6731fd18d732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/AttackDown.anim using Guid(a9750ccf9ceb35243a9f6731fd18d732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56aa0e0a2691a817150661a4fe153d30') in 0.028209 seconds
+  Import took 0.031282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.208390 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/AttackLeft.anim
+  artifactKey: Guid(0d6fc68a47c035841ab9d582d4815ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/AttackLeft.anim using Guid(0d6fc68a47c035841ab9d582d4815ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308205e46e03bd2db14f5398af646609') in 0.031672 seconds
+  Import took 0.035394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.829977 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/AttackRight.anim
+  artifactKey: Guid(4fd1b55f0ed4bd346918d3c5f3e79a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/AttackRight.anim using Guid(4fd1b55f0ed4bd346918d3c5f3e79a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eed5f35f2de330abf23fa9bf9faf9f9') in 0.029540 seconds
+  Import took 0.033099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 193.150458 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Up.png
+  artifactKey: Guid(c2411b6ea15d9054ba9f8447ed7371b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Up.png using Guid(c2411b6ea15d9054ba9f8447ed7371b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca51511d36cb618aa885eefacc690c56') in 0.074343 seconds
+  Import took 0.078828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.552417 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Up.png
+  artifactKey: Guid(c2411b6ea15d9054ba9f8447ed7371b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Up.png using Guid(c2411b6ea15d9054ba9f8447ed7371b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c39ce339b4b07257b3223ac0f56f4a') in 0.079515 seconds
+  Import took 0.082612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.220096 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Right.png
+  artifactKey: Guid(aad165be909c5cf498491ca5bf914cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Right.png using Guid(aad165be909c5cf498491ca5bf914cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f954b26ef795e055f8ade51356ac86d5') in 0.062609 seconds
+  Import took 0.066635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.874517 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Right.png
+  artifactKey: Guid(aad165be909c5cf498491ca5bf914cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Right.png using Guid(aad165be909c5cf498491ca5bf914cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f48849bbe0b3cbef26dabdbc936014') in 0.086335 seconds
+  Import took 0.089448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.622148 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Left.png
+  artifactKey: Guid(82b551a92eafc514ba3e0824a9686ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Left.png using Guid(82b551a92eafc514ba3e0824a9686ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3510fcd6c45123d3ec2855da7ec5e9') in 0.060062 seconds
+  Import took 0.063863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.229570 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Left.png
+  artifactKey: Guid(82b551a92eafc514ba3e0824a9686ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Left.png using Guid(82b551a92eafc514ba3e0824a9686ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1daad51497434a67abd8c5624c6d7ace') in 0.080203 seconds
+  Import took 0.086888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.758743 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Down.png
+  artifactKey: Guid(723ec468cea24e7428bb6562011b0587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Down.png using Guid(723ec468cea24e7428bb6562011b0587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b2d9dab7d177ca76267c7b30646a401') in 0.074759 seconds
+  Import took 0.078852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.076347 seconds.
+  path: Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Down.png
+  artifactKey: Guid(723ec468cea24e7428bb6562011b0587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Skeleton/Attack/Skeleton1_Attack_Down.png using Guid(723ec468cea24e7428bb6562011b0587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c317bf46629140f4ce6daadf1b72ccc7') in 0.085064 seconds
+  Import took 0.088663 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

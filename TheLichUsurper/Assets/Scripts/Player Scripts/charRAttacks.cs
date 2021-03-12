@@ -15,6 +15,8 @@ public class charRAttacks : MonoBehaviour
     string projectileName;
     public Animator animator;
 
+    private Quaternion temp;
+
     /// </summary>
     void Start()
     {
@@ -35,7 +37,7 @@ public class charRAttacks : MonoBehaviour
 
             animator.SetBool("IsCasting", true);
             print("is shooting");
-            
+            temp = Quaternion.Euler(0, 0, animator.GetFloat("PlayerRot"));
         }
         if (animator.GetBool("IsCasting") && animator.IsInTransition(0))
         {
@@ -47,8 +49,9 @@ public class charRAttacks : MonoBehaviour
             //moves the projectile on top of the player
             projectile.transform.position = transform.position;
             //rotates projectile to where the player is facing
-            projectile.transform.rotation = Quaternion.Euler(0, 0, animator.GetFloat("PlayerRot"));
-            
+            projectile.transform.rotation = temp;
+
+
         }
     }
 
