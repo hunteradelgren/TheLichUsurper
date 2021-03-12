@@ -13,12 +13,18 @@ public class Room : MonoBehaviour
     public bool isCleared;
 
     public List<GameObject> enemies= new List<GameObject>();
-    public int enemyCount;
+    public int enemyCount = 1;
+    public GameObject item;
+    public GameObject center;
+    public bool droppedItem;
+    public bool playerInRoom;
 
     void Start()
     {
+        playerInRoom = false;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         isCleared = true;
+        droppedItem = false;
         foreach (Transform child in this.transform)
         {
             if (child.tag == "Enemy")
@@ -47,6 +53,9 @@ public class Room : MonoBehaviour
                 enemies.Remove(enemy);
             }
         }
+        if (template.currentRoom == this)
+            playerInRoom = true;
+        SpawnItem();
 
     }
    
@@ -62,6 +71,16 @@ public class Room : MonoBehaviour
             SceneManager.LoadScene(scene.name);
         }
 
+    }
+    public void SpawnItem()
+    {
+        if (!droppedItem && isCleared && playerInRoom)
+        {
+            droppedItem = true;
+            print("Spawning Item");
+            GameObject pickup = Instantiate<GameObject>(item);
+            pickup.transform.position = center.transform.position;
+        }
     }
 
 
