@@ -50,7 +50,10 @@ public class basicProjectileBehavior : MonoBehaviour
             GameObject.Destroy(gameObject);
             collision.gameObject.GetComponent<FirstBoss>().TakeDamage(damage);
         }
-
+        if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null)
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)

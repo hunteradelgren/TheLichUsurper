@@ -2235,7 +2235,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1470513140}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: 
         m_Mode: 1
@@ -2713,33 +2713,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454294897}
   m_CullTransparentMesh: 0
---- !u!1 &1470513140 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4854067756715089870, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
-  m_PrefabInstance: {fileID: 4854067758096719930}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1470513143 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4854067756715089869, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
-  m_PrefabInstance: {fileID: 4854067758096719930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470513140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ece2655a6893ca84099920d4e1c55fe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1470513144 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4854067756715089858, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
-  m_PrefabInstance: {fileID: 4854067758096719930}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470513140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e659748e04ea6d4fb0ec223cc66f1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1480074189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,7 +3139,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1470513143}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerHealth, Assembly-CSharp
         m_MethodName: changeHealth
         m_Mode: 1
@@ -3446,7 +3419,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1470513144}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
         m_MethodName: upgrade
         m_Mode: 1
@@ -3698,7 +3671,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1470513140}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: 
         m_Mode: 1
