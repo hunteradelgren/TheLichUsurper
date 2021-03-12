@@ -73,7 +73,7 @@ public class RangedAttack : MonoBehaviour
                 //attack has finished charging
                 if (chargeTimer >= chargeTime)
                 {
-                    ShootProjectile();
+                    //ShootProjectile();
                     //resets values
                     chargeTimer = 0f;
                     isAttacking = false;

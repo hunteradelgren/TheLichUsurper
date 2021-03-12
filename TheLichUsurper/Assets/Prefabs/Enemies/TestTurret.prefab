@@ -62,6 +62,7 @@ MonoBehaviour:
   isAttacking: 0
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &7261687509472637773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,9 +132,9 @@ MonoBehaviour:
   target: {fileID: 0}
   attackRange: 50
   chargeTime: 1
-  attackRate: 1
+  attackRate: 2
   projectileName: OrbProjectile
-  damage: 1
+  damage: 2
   playerTarget: {fileID: 0}
   spawnRoom: {fileID: 0}
   animator: {fileID: 0}
