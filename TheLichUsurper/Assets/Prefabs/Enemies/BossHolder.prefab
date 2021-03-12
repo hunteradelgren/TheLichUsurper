@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4654241800049657372}
   - component: {fileID: 2341380092482463828}
   - component: {fileID: 7213764446263746239}
+  - component: {fileID: 5183293658640590762}
   m_Layer: 0
   m_Name: BossHolder
   m_TagString: Untagged
@@ -131,6 +132,25 @@ MonoBehaviour:
   isLunging: 0
   center: {fileID: 0}
   spawnRoom: {fileID: 0}
+--- !u!95 &5183293658640590762
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7203231651071004758}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7cbd84893d8bda4cbaf14c25f60ccfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7651728589920155088
 GameObject:
   m_ObjectHideFlags: 0
