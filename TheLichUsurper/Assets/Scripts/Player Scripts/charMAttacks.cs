@@ -29,9 +29,14 @@ public class charMAttacks : MonoBehaviour
             animator.SetBool("IsAttacking", true);
             
             print("sword swinging");
-            if (target != null)
+            if (target.GetComponent<EnemyHealth>() != null)
             {
                 target.GetComponent<EnemyHealth>().TakeDamage(damage);
+                print("attacking target: " + target.name);
+            }
+            if (target.GetComponent<FirstBoss>() != null)
+            {
+                target.GetComponent<FirstBoss>().TakeDamage(damage);
                 print("attacking target: " + target.name);
             }
         }
@@ -50,6 +55,8 @@ public class charMAttacks : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.GetComponent<EnemyHealth>() != null)
+            target = collision.gameObject;
+        if (collision.gameObject.GetComponent<FirstBoss>() != null)
             target = collision.gameObject;
     }
     private void OnTriggerExit2D(Collider2D collision)

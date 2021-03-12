@@ -34,6 +34,7 @@ public class MeleeAttack : MonoBehaviour
     private bool validTarget = false; //does the target have player health
 
     public GameObject playerTarget; //sets up the ranged target to be the player
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class MeleeAttack : MonoBehaviour
         enemyMove = GetComponent<EnemyMovement>();
         playerTarget = GameObject.FindGameObjectWithTag("Player");
         target = playerTarget;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -59,6 +61,7 @@ public class MeleeAttack : MonoBehaviour
                 {
                     //enemy is now in the process of atttacking
                     isAttacking = true;
+                    animator.SetBool("isAttacking", true);
                 }
             }
 
@@ -66,9 +69,10 @@ public class MeleeAttack : MonoBehaviour
             if (isAttacking)
             {
                 chargeTimer += Time.deltaTime;
-
+                
                 if (chargeTimer >= chargeTime)
                 {
+                    animator.SetBool("isAttacking", false);
                     isAttacking = false;
                     canAttack = false;
                     chargeTimer = 0f;

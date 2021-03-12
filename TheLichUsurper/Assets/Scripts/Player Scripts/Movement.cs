@@ -68,6 +68,14 @@ public class Movement : MonoBehaviour
             {
                 horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
                 verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
+                if (horizontalAxis != 0 || verticalAxis != 0)
+                {
+                    animator.SetBool("isMoving", true);
+                }
+                else 
+                {
+                    animator.SetBool("isMoving", false);
+                }
                 transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime, Space.World); //moves in direction of the input
                 /*Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
                 //RaycastHit floorHit;
