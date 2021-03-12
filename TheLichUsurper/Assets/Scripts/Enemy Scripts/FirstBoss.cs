@@ -55,6 +55,7 @@ public class FirstBoss : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 velocity;
     public GameObject center; //uses the center game object in the room
+    public Animator animator;
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -66,6 +67,7 @@ public class FirstBoss : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxhealth;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -93,14 +95,19 @@ public class FirstBoss : MonoBehaviour
                 if (isLunging)
                 {
                     Vector2 direction = lungeTarget; //gets a vector in the direction of the target
-                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                    if (angle < 0)
+                        animator.SetFloat("EnemyRot", angle + 359);
+                    else
+                        animator.SetFloat("EnemyRot", angle);
+                    setDirection();
 
                     //charging up the lunge
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
+                        animator.SetBool("isMoving", true);
                         //lunge is being performed
                         lungeTimer += Time.deltaTime;
                         velocity = lungeTarget;
@@ -112,6 +119,7 @@ public class FirstBoss : MonoBehaviour
                             lungeTimer = 0;
                             isLunging = false;
                             canAttack = false;
+                            animator.SetBool("isMoving", false);
                         }
                     }
                 }
@@ -119,13 +127,18 @@ public class FirstBoss : MonoBehaviour
                 else if (isAttacking)
                 {
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
-                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                    if (angle < 0)
+                        animator.SetFloat("EnemyRot", angle + 359);
+                    else
+                        animator.SetFloat("EnemyRot", angle);
+                    setDirection();
 
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
+                        animator.SetBool("isAttacking", true);
                         swingAttack();
                         chargeTimer = 0;
                         isAttacking = false;
@@ -161,9 +174,13 @@ public class FirstBoss : MonoBehaviour
                         velocity = pos1.position - transform.position;
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos1.position - transform.position; //gets a vector in the direction of the target
-                        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                        Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                        if (angle < 0)
+                            animator.SetFloat("EnemyRot", angle + 359);
+                        else
+                            animator.SetFloat("EnemyRot", angle);
+                        setDirection();
                     }
                     //position 2 is closest
                     else if (distPos2 < distPos1 && distPos2 < distPos3)
@@ -171,9 +188,13 @@ public class FirstBoss : MonoBehaviour
                         velocity = pos2.position - transform.position;
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos2.position - transform.position; //gets a vector in the direction of the target
-                        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                        Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                        if (angle < 0)
+                            animator.SetFloat("EnemyRot", angle + 359);
+                        else
+                            animator.SetFloat("EnemyRot", angle);
+                        setDirection();
                     }
                     //position 3 is closest
                     else
@@ -181,9 +202,13 @@ public class FirstBoss : MonoBehaviour
                         velocity = pos3.position - transform.position;
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos3.position - transform.position; //gets a vector in the direction of the target
-                        float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                        Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                        if (angle < 0)
+                            animator.SetFloat("EnemyRot", angle + 359);
+                        else
+                            animator.SetFloat("EnemyRot", angle);
+                        setDirection();
                     }
                 }
             }
@@ -197,9 +222,13 @@ public class FirstBoss : MonoBehaviour
                 if (isAttacking)
                 {
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
-                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                    if (angle < 0)
+                        animator.SetFloat("EnemyRot", angle + 359);
+                    else
+                        animator.SetFloat("EnemyRot", angle);
+                    setDirection();
 
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
@@ -218,9 +247,13 @@ public class FirstBoss : MonoBehaviour
                     transform.Translate(velocity.normalized * movSpeed *Time.deltaTime, Space.World);
 
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
-                    float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg; //finds angle to target location
-                    Quaternion targetRot = Quaternion.AngleAxis(angle - 90, Vector3.back); //creates rotation towards target
-                    transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * rotSpeed); //rotates to target rotation
+                    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                    if (angle < 0)
+                        animator.SetFloat("EnemyRot", angle + 359);
+                    else
+                        animator.SetFloat("EnemyRot", angle);
+                    setDirection();
                 }
                 else
                 {
@@ -284,6 +317,7 @@ public class FirstBoss : MonoBehaviour
         {
             Player.GetComponent<PlayerHealth>().takeDamage(attackDamage);
             print("hit player with swing");
+            animator.SetBool("isAttacking", false);
         }
     }
 
@@ -364,5 +398,49 @@ public class FirstBoss : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
+    }
+
+    public void setDirection()
+    {
+        //diag up right
+        if (animator.GetFloat("EnemyRot") < 75 && animator.GetFloat("EnemyRot") > 5)
+        {
+            animator.SetInteger("Direction", 0);
+        }
+        //up
+        else if (animator.GetFloat("EnemyRot") < 105 && animator.GetFloat("EnemyRot") > 75)
+        {
+            animator.SetInteger("Direction", 1);
+        }
+        //diag up left
+        else if (animator.GetFloat("EnemyRot") < 165 && animator.GetFloat("EnemyRot") > 105)
+        {
+            animator.SetInteger("Direction", 2);
+        }
+        //left
+        else if (animator.GetFloat("EnemyRot") < 195 && animator.GetFloat("EnemyRot") > 165)
+        {
+            animator.SetInteger("Direction", 3);
+        }
+        //diag down left
+        else if (animator.GetFloat("EnemyRot") < 255 && animator.GetFloat("EnemyRot") > 195)
+        {
+            animator.SetInteger("Direction", 4);
+        }
+        //down
+        else if (animator.GetFloat("EnemyRot") < 285 && animator.GetFloat("EnemyRot") > 255)
+        {
+            animator.SetInteger("Direction", 5);
+        }
+        //diag down right
+        else if (animator.GetFloat("EnemyRot") < 359 && animator.GetFloat("EnemyRot") > 285)
+        {
+            animator.SetInteger("Direction", 6);
+        }
+        //right
+        else
+        {
+            animator.SetInteger("Direction", 7);
+        }
     }
 }
