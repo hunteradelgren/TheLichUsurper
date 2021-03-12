@@ -62,6 +62,7 @@ public class RangedAttack : MonoBehaviour
                 {
                     //enemy is now in the process of atttacking
                     isAttacking = true;
+                    animator.SetBool("isAttacking", true);
                 }
             }
 
@@ -124,6 +125,7 @@ public class RangedAttack : MonoBehaviour
         projectile.transform.rotation = Quaternion.Euler(0, 0, animator.GetFloat("EnemyRot"));
 
         projectile.GetComponent<basicProjectileBehavior>().damage = damage;
+        animator.SetBool("isAttacking", false);
     }
 
     public void OnTriggerEnter2D(Collider2D other)

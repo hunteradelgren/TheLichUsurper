@@ -39,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
     public Room spawnRoom;
 
     public GameObject playerTarget; //sets up the target to be the player
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,7 @@ public class EnemyMovement : MonoBehaviour
         setWanderTarget();
         rb = GetComponent<Rigidbody2D>();
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -58,6 +60,7 @@ public class EnemyMovement : MonoBehaviour
             //if enemy is not attacking
             if (!isAttacking)
             {
+                animator.SetBool("isMoving", true);
                 //new wander target can only be set every 2 seconds
                 timer += Time.deltaTime;
                 if (timer >= 2)
@@ -93,6 +96,10 @@ public class EnemyMovement : MonoBehaviour
                     transform.Translate(velocity,Space.World);
                 }
             }
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
         }
     }
 

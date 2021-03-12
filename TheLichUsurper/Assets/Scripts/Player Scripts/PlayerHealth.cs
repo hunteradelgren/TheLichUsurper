@@ -51,13 +51,10 @@ public class PlayerHealth : MonoBehaviour
         else if (currentHealth <= 0 && inSpectralForm)
         {
             //player is dead so game will end
-            print("Player has Died in Spectral Form");
             Object.Destroy(gameObject);
             SceneManager.LoadScene(2);
 
         }
-        if (Input.GetButtonDown("Jump"))
-            takeDamage(1f);
 
     }
     IEnumerator becomeSpectre()
@@ -122,21 +119,18 @@ public class PlayerHealth : MonoBehaviour
 
     public void gainHealth(float boost)
     {
-        
-        if (!inSpectralForm && currentHealth+boost <= maxHealth)
+        if (inSpectralForm)
+        {
+            inSpectralForm = false;
+            currentHealth = boost;
+            hpSlider.value = currentHealth;
+        }
+        else if (!inSpectralForm && currentHealth+boost <= maxHealth)
         {
             //increases health by received amount
             currentHealth += boost;
             hpSlider.value = currentHealth;
         }
-        else if(currentHealth + boost <= maxSpectreHealth)
-        {
-            //increases health by received amount
-            currentHealth += boost;
-            specSlider.value = currentHealth;
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, (currentHealth / maxSpectreHealth));
-        }
-            
     }
 
     public void healthUpgrade(float amount)
