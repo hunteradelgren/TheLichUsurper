@@ -86,17 +86,17 @@ public class FirstBoss : MonoBehaviour
             distPos3 = Vector2.Distance(pos3.position, transform.position);
         if (spawnRoom == template.currentRoom)
         {
-
+           // animator.SetBool("isMoving", false);
             //boss is over 30% health and so will use 1st phase of behavior
             if (currentHealth >= maxhealth * .3)
             {
 
+                animator.ResetTrigger("lungeEnd");
                 //boss is lunging
                 if (isLunging)
                 {
                     Vector2 direction = lungeTarget; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -107,7 +107,8 @@ public class FirstBoss : MonoBehaviour
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
-                        animator.SetBool("isMoving", true);
+                        print("lunging");
+                        animator.SetTrigger("lunging");
                         //lunge is being performed
                         lungeTimer += Time.deltaTime;
                         velocity = lungeTarget;
@@ -119,7 +120,8 @@ public class FirstBoss : MonoBehaviour
                             lungeTimer = 0;
                             isLunging = false;
                             canAttack = false;
-                            animator.SetBool("isMoving", false);
+                            print("endlunge");
+                            animator.SetTrigger("lungeEnd");
                         }
                     }
                 }
@@ -128,7 +130,6 @@ public class FirstBoss : MonoBehaviour
                 {
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -175,7 +176,6 @@ public class FirstBoss : MonoBehaviour
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos1.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
                         else
@@ -189,7 +189,6 @@ public class FirstBoss : MonoBehaviour
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos2.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
                         else
@@ -203,7 +202,6 @@ public class FirstBoss : MonoBehaviour
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos3.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
                         else
@@ -223,7 +221,6 @@ public class FirstBoss : MonoBehaviour
                 {
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -245,10 +242,10 @@ public class FirstBoss : MonoBehaviour
                 {
                     velocity = Player.position - transform.position;
                     transform.Translate(velocity.normalized * movSpeed *Time.deltaTime, Space.World);
-
+                    animator.SetBool("isMoving", true);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-
+                    
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -257,6 +254,7 @@ public class FirstBoss : MonoBehaviour
                 }
                 else
                 {
+                    animator.SetBool("isMoving", false);
                     //player is inrange
                     if (canAttack && inRange)
                     {
@@ -352,6 +350,8 @@ public class FirstBoss : MonoBehaviour
                 lungeTimer = 0;
                 isLunging = false;
                 canAttack = false;
+                print("wall end lunge");
+                animator.SetTrigger("lungeEnd");
             }
         }
 
@@ -389,7 +389,6 @@ public class FirstBoss : MonoBehaviour
             {
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);
-                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
                 velocity = new Vector2(velocity.x + (center.transform.position.x - transform.position.x), velocity.y + (center.transform.position.y - transform.position.y)).normalized;
             }
         }
