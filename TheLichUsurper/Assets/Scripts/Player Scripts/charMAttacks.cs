@@ -29,16 +29,7 @@ public class charMAttacks : MonoBehaviour
             animator.SetBool("IsAttacking", true);
             
             print("sword swinging");
-            if (target.GetComponent<EnemyHealth>() != null)
-            {
-                target.GetComponent<EnemyHealth>().TakeDamage(damage);
-                print("attacking target: " + target.name);
-            }
-            if (target.GetComponent<FirstBoss>() != null)
-            {
-                target.GetComponent<FirstBoss>().TakeDamage(damage);
-                print("attacking target: " + target.name);
-            }
+            
         }
 
         if (animator.GetBool("IsAttacking") && animator.IsInTransition(0))
@@ -64,6 +55,19 @@ public class charMAttacks : MonoBehaviour
         if(target == collision.gameObject)
         {
             target = null;
+        }
+    }
+    public void SwingSword()
+    {
+        if (target.GetComponent<EnemyHealth>() != null)
+        {
+            target.GetComponent<EnemyHealth>().TakeDamage(damage);
+            print("attacking target: " + target.name);
+        }
+        if (target.GetComponent<FirstBoss>() != null)
+        {
+            target.GetComponent<FirstBoss>().TakeDamage(damage);
+            print("attacking target: " + target.name);
         }
     }
 }

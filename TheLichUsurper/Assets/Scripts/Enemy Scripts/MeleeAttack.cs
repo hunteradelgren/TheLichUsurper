@@ -76,7 +76,7 @@ public class MeleeAttack : MonoBehaviour
                     isAttacking = false;
                     canAttack = false;
                     chargeTimer = 0f;
-                    Attack();                    
+                    //Attack();                    
                 }
             }
     }
