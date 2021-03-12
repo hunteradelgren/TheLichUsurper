@@ -35,6 +35,8 @@ public class FirstBoss : MonoBehaviour
 
     public bool isAttacking = false;
     public bool isLunging = false;
+    public bool lungeFirst = false;
+
 
     private float distPlayer;
     private float distPos1;
@@ -91,7 +93,7 @@ public class FirstBoss : MonoBehaviour
             if (currentHealth >= maxhealth * .3)
             {
 
-                animator.ResetTrigger("lungeEnd");
+                //animator.ResetTrigger("lungeEnd");
                 //boss is lunging
                 if (isLunging)
                 {
@@ -108,10 +110,15 @@ public class FirstBoss : MonoBehaviour
                     if (chargeTimer >= lungeTime)
                     {
                         print("lunging");
-                        animator.SetTrigger("lunging");
+                        if (lungeFirst == true)
+                        { 
+                            animator.SetTrigger("lunging");
+                            lungeFirst = false;
+                        }
                         //lunge is being performed
                         lungeTimer += Time.deltaTime;
                         velocity = lungeTarget;
+                        //animator.SetTrigger("lunging");
                         transform.Translate(velocity.normalized * lungeSpeed * Time.deltaTime, Space.World);
                         if (lungeTimer >= maxLungeTime)
                         {
@@ -122,6 +129,7 @@ public class FirstBoss : MonoBehaviour
                             canAttack = false;
                             print("endlunge");
                             animator.SetTrigger("lungeEnd");
+                            lungeFirst = true;
                         }
                     }
                 }

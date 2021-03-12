@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.6f1 (8a2143876886) revision 9052483'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 16293 MB
+OS: 'Windows 10 Home; OS build 18363.1440; Version 1909; 64bit' Language: 'en' Physical Memory: 32666 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,102 +11,130 @@ C:\Program Files\Unity\Hub\Editor\2020.2.6f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49791
-Successfully changed project path to: C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
-C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper
+50206
+Successfully changed project path to: C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper
+C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 22.93 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 25.63 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.6f1 (8a2143876886)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/hunte/Documents/TheLichUsurper/TheLichUsurper/Assets
+[Subsystems] Discovering subsystems at path C:/Users/hohnj/OneDrive/Desktop/GameDesignFinalClass/TheLichUsurper/TheLichUsurper/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Renderer: Radeon RX 570 Series (ID=0x67df)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.5751
+    VRAM:     8172 MB
+    Driver:   26.20.15015.1007
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001576 seconds.
+Registered in 0.001935 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 22.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 25.93 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
+- Completed reload, in  1.053 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000645 seconds.
+Registered in 0.000793 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001CF04A0E030 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02A90F90 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04EACA30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04F76000 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05D20080 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04F76000 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04FA5030 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04F76000 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05026A30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04EACA30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.631 seconds
+- Completed reload, in  0.812 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1164 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 58.5 MB.
-System memory in use after: 58.6 MB.
+System memory in use before: 58.9 MB.
+System memory in use after: 59.0 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1607.
-Total: 1.812700 ms (FindLiveObjects: 0.174500 ms CreateObjectMapping: 0.034300 ms MarkObjects: 1.537200 ms  DeleteObjects: 0.066000 ms)
+Total: 1.672100 ms (FindLiveObjects: 0.132500 ms CreateObjectMapping: 0.028300 ms MarkObjects: 1.448400 ms  DeleteObjects: 0.062000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Enemies/TestMelee.prefab
-  artifactKey: Guid(4adc01e72cf53ed4eb7dc795c327c194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/TestMelee.prefab using Guid(4adc01e72cf53ed4eb7dc795c327c194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e30f6d5771e45ad17b8f7e8070f220') in 0.082412 seconds
-  Import took 0.084470 seconds .
+  path: Assets/Resources/TestRanged.prefab
+  artifactKey: Guid(6a3679e4e62a1804e8a28c3d03657346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/TestRanged.prefab using Guid(6a3679e4e62a1804e8a28c3d03657346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97da756f187d8331126f9fcc3b79f82') in 0.120921 seconds
+  Import took 0.123684 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Prefabs/Enemies/TestTurret.prefab
-  artifactKey: Guid(750028fa0054cfd449f602a7099235c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/TestTurret.prefab using Guid(750028fa0054cfd449f602a7099235c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5823cadabadf4be503acd41071605763') in 0.018629 seconds
-  Import took 0.020867 seconds .
+  Time since last request: 0.000295 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(855b7d76c34f95d41afe4651bb7d6022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(855b7d76c34f95d41afe4651bb7d6022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753da62887e2b5156dd5c4cf4dcb0a8d') in 0.050835 seconds
+  Import took 0.054039 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Prefabs/Enemies/TestRanged.prefab
-  artifactKey: Guid(327130d04c9f05344980c3900813b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/TestRanged.prefab using Guid(327130d04c9f05344980c3900813b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52af9790b85095b409ecb2f12553d06') in 0.018785 seconds
-  Import took 0.020628 seconds .
+  Time since last request: 0.000189 seconds.
+  path: Assets/Resources/TestObstacle.prefab
+  artifactKey: Guid(10e4e29a4555ba6438cded13d9226f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/TestObstacle.prefab using Guid(10e4e29a4555ba6438cded13d9226f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89642aad788864f89a2a8687109cbfab') in 0.016681 seconds
+  Import took 0.018470 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Prefabs/Enemies/Spikes.prefab
-  artifactKey: Guid(2227159fcc9406b4fa264c8c809bfd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Spikes.prefab using Guid(2227159fcc9406b4fa264c8c809bfd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b41846b467e099e9b6de410bdfb129') in 0.013018 seconds
-  Import took 0.014597 seconds .
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/TestTurret.prefab
+  artifactKey: Guid(63a278ead832b224c886e76032c7d629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/TestTurret.prefab using Guid(63a278ead832b224c886e76032c7d629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99d674a42c8067d08369ba031c763dd') in 0.016427 seconds
+  Import took 0.018221 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000145 seconds.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Resources/BoneProjectile.prefab
+  artifactKey: Guid(619e22f2b334da24d9ff9df8d11b6e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/BoneProjectile.prefab using Guid(619e22f2b334da24d9ff9df8d11b6e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed5e2b29d2d23ce9c24fb6609cab6cc') in 0.017995 seconds
+  Import took 0.020082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
   path: Assets/Prefabs/Enemies/BossHolder.prefab
   artifactKey: Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Enemies/BossHolder.prefab using Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
@@ -122,510 +150,128 @@ UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityE
 
 [C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
 
- -> (artifact id: '9298c346c1df71b125616393abe7f205') in 0.026539 seconds
-  Import took 0.028688 seconds .
+ -> (artifact id: '5cd99c2fe4bc85fe13dcc863477b4c29') in 0.039608 seconds
+  Import took 0.042487 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Prefabs/Enemies/Spikes Variant.prefab
-  artifactKey: Guid(7824cc2e75fc0fa43a51680d45dff11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/Spikes Variant.prefab using Guid(7824cc2e75fc0fa43a51680d45dff11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059b19c67a75ab1fefd1ee9af75cda26') in 0.013166 seconds
-  Import took 0.014862 seconds .
+  Time since last request: 0.000257 seconds.
+  path: Assets/Resources/OrbProjectile.prefab
+  artifactKey: Guid(0a6eca5d9ab486e4d9e5b2cc774b72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/OrbProjectile.prefab using Guid(0a6eca5d9ab486e4d9e5b2cc774b72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081eba6e22331113464fcffcd27c60fd') in 0.018877 seconds
+  Import took 0.021174 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.575119 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(0e908c6e570bd4343a40fb297219b6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(0e908c6e570bd4343a40fb297219b6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f4590994e19025571f0de3c1e4bcc3') in 0.006437 seconds
-  Import took 0.008297 seconds .
+  Time since last request: 0.000238 seconds.
+  path: Assets/Resources/TestMelee.prefab
+  artifactKey: Guid(5c5d0dbae424abf45b379800ef94a175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/TestMelee.prefab using Guid(5c5d0dbae424abf45b379800ef94a175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d69ac1e1b5657f90c37b015cd6cd4a3') in 0.019680 seconds
+  Import took 0.021774 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.049962 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(855b7d76c34f95d41afe4651bb7d6022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(855b7d76c34f95d41afe4651bb7d6022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c53e1640315e5b0958c53b4c808f64a') in 0.029129 seconds
-  Import took 0.032125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.800963 seconds.
-  path: Assets/Prefabs/BasementRooms
-  artifactKey: Guid(bcc5e606577c2f149890110b44233bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms using Guid(bcc5e606577c2f149890110b44233bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5c03d7338a47c5f640fb217813666e') in 0.006192 seconds
-  Import took 0.008111 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.901747 seconds.
-  path: Assets/Prefabs/BasementRooms/BossRoom
-  artifactKey: Guid(925b30e7cbd3aca469a6b5a6c5c8a4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom using Guid(925b30e7cbd3aca469a6b5a6c5c8a4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7e077510546f8d3a0226877e7752b4') in 0.005316 seconds
-  Import took 0.007079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.133758 seconds.
-  path: Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab
-  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '87c3ec23817b1a3ac4ad84d5a9fb1699') in 0.029303 seconds
-  Import took 0.032162 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000531 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.588 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1616.
-Total: 1.342100 ms (FindLiveObjects: 0.125400 ms CreateObjectMapping: 0.029500 ms MarkObjects: 1.174900 ms  DeleteObjects: 0.011400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.184880 seconds.
-  path: Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab
-  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'f3cf5d4a959b02d84a3eb0d986c8d4d9') in 0.063635 seconds
-  Import took 0.066191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.865581 seconds.
-  path: Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab
-  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: '2626419ec744c3d8c066cad561232443') in 0.027737 seconds
-  Import took 0.030482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.160725 seconds.
-  path: Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab
-  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'ab1fdfe1cd1096b4d39d25cafdd89a64') in 0.027739 seconds
-  Import took 0.030414 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.671223 seconds.
-  path: Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab
-  artifactKey: Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BasementRooms/BossRoom/BossRoom.prefab using Guid(06f073f4bd58bd940a6771cc65100ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
-
- -> (artifact id: 'db9656bea927bcb256fd9622f7695104') in 0.031451 seconds
-  Import took 0.034154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 170.112206 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/FirstBoss.controller
-  artifactKey: Guid(c7cbd84893d8bda4cbaf14c25f60ccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/FirstBoss.controller using Guid(c7cbd84893d8bda4cbaf14c25f60ccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3952a2492c5ed61e259a9e5d77cdc3d7') in 0.018483 seconds
-  Import took 0.020964 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000559 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.599 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1619.
-Total: 1.466800 ms (FindLiveObjects: 0.145800 ms CreateObjectMapping: 0.029700 ms MarkObjects: 1.279600 ms  DeleteObjects: 0.010900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000506 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.587 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1621.
-Total: 1.433200 ms (FindLiveObjects: 0.139600 ms CreateObjectMapping: 0.025100 ms MarkObjects: 1.255100 ms  DeleteObjects: 0.012600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000592 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.601 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1623.
-Total: 1.477900 ms (FindLiveObjects: 0.198300 ms CreateObjectMapping: 0.027100 ms MarkObjects: 1.235200 ms  DeleteObjects: 0.015700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000540 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.588 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1625.
-Total: 1.324700 ms (FindLiveObjects: 0.128500 ms CreateObjectMapping: 0.025000 ms MarkObjects: 1.159500 ms  DeleteObjects: 0.011100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000577 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.582 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1627.
-Total: 1.582900 ms (FindLiveObjects: 0.269000 ms CreateObjectMapping: 0.046400 ms MarkObjects: 1.255200 ms  DeleteObjects: 0.010900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000609 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.588 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.9 MB.
-System memory in use after: 62.0 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1629.
-Total: 1.357800 ms (FindLiveObjects: 0.138900 ms CreateObjectMapping: 0.025800 ms MarkObjects: 1.180100 ms  DeleteObjects: 0.012000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1970.668123 seconds.
-  path: Assets/Sprites
-  artifactKey: Guid(8377b12d48a660444a44228430f7d4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites using Guid(8377b12d48a660444a44228430f7d4c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98dc6128b9b1964e49ddf368c383e24c') in 0.007914 seconds
-  Import took 0.009832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.302664 seconds.
-  path: Assets/Sprites/EnemySprites
-  artifactKey: Guid(021a07b9aa1c11c47ba5cbff6b865f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites using Guid(021a07b9aa1c11c47ba5cbff6b865f94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5498e1801589647ba2ce6ec3ed944abf') in 0.006913 seconds
-  Import took 0.008700 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.927258 seconds.
-  path: Assets/Sprites/EnemySprites/Boss
-  artifactKey: Guid(5e270ff2ce1ccb14e82b88900d988dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss using Guid(5e270ff2ce1ccb14e82b88900d988dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b809f29418e0f9595183364747b723') in 0.005766 seconds
-  Import took 0.007592 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.058914 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Boss1_Placeholder.png
-  artifactKey: Guid(2e35a95c5b6fd7f489fe9133fce336a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Boss1_Placeholder.png using Guid(2e35a95c5b6fd7f489fe9133fce336a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d59426e22337b4eb2aedf0e376ac62') in 0.079541 seconds
-  Import took 0.081410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
+  Time since last request: 6.445828 seconds.
   path: Assets/Sprites/EnemySprites/Boss/BossWolf-1_Howl_Down.png
   artifactKey: Guid(15117547eaf094c46b28e883789b27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/BossWolf-1_Howl_Down.png using Guid(15117547eaf094c46b28e883789b27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca3df5bf20ca0adb4181d8c2b0941e21') in 0.041187 seconds
-  Import took 0.042785 seconds .
+Start importing Assets/Sprites/EnemySprites/Boss/BossWolf-1_Howl_Down.png using Guid(15117547eaf094c46b28e883789b27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5083348897e9662d5aec5eb4edd8f3f8') in 0.083619 seconds
+  Import took 0.086165 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.168865 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Idle
-  artifactKey: Guid(aeb56b5bc7ee8004b854214f732bbe69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Idle using Guid(aeb56b5bc7ee8004b854214f732bbe69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d05784c272ad4cd2fcc186bf68bea7b') in 0.005709 seconds
-  Import took 0.007545 seconds .
+  Time since last request: 0.003579 seconds.
+  path: Assets/Sprites/EnemySprites/Boss/BossWolf-1_Howl_Down.png
+  artifactKey: Guid(15117547eaf094c46b28e883789b27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Boss/BossWolf-1_Howl_Down.png using Guid(15117547eaf094c46b28e883789b27fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5083348897e9662d5aec5eb4edd8f3f8') in 0.021122 seconds
+  Import took 0.022902 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.064647 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Down.png
-  artifactKey: Guid(ad29e5675b7b51742a36098db3398586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Down.png using Guid(ad29e5675b7b51742a36098db3398586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ad0cf6452c99348510148c847beb9b') in 0.017349 seconds
-  Import took 0.019217 seconds .
+  Time since last request: 0.821431 seconds.
+  path: Assets/Sprites/EnemySprites/Boss/FirstBoss.controller
+  artifactKey: Guid(c7cbd84893d8bda4cbaf14c25f60ccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/EnemySprites/Boss/FirstBoss.controller using Guid(c7cbd84893d8bda4cbaf14c25f60ccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907839c73b2d8838f6020e5112d888e6') in 0.030496 seconds
+  Import took 0.033500 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Left.png
-  artifactKey: Guid(0112857561d9547468b9bbf049db3db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Left.png using Guid(0112857561d9547468b9bbf049db3db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151fb6d85f35bd04bd383c9d2de23ec3') in 0.022395 seconds
-  Import took 0.023980 seconds .
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 40.8 MB.
+System memory in use after: 40.9 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Right.png
-  artifactKey: Guid(bcdf01e187d692647924e42ec7a558d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Right.png using Guid(bcdf01e187d692647924e42ec7a558d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4affe594393a42a703b3577f794422f5') in 0.030173 seconds
-  Import took 0.031730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Up.png
-  artifactKey: Guid(7e7a90500177c4a47a7c879bb3a9a801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Idle/BossWolf-1_Idle_Up.png using Guid(7e7a90500177c4a47a7c879bb3a9a801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f3e22211a1a82634207074968e887c') in 0.026212 seconds
-  Import took 0.027797 seconds .
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1622.
+Total: 2.120000 ms (FindLiveObjects: 0.157500 ms CreateObjectMapping: 0.035200 ms MarkObjects: 1.913900 ms  DeleteObjects: 0.012500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000469 seconds.
+Registered in 0.000798 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001CF076BE020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02FD4020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF077A0030 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07376010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05117020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02BAD020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06710010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07376010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF049FE020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06735E20 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.585 seconds
+- Completed reload, in  0.866 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.0 MB.
-System memory in use after: 62.1 MB.
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1666.
-Total: 1.415800 ms (FindLiveObjects: 0.138800 ms CreateObjectMapping: 0.030100 ms MarkObjects: 1.235000 ms  DeleteObjects: 0.011000 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1624.
+Total: 1.616200 ms (FindLiveObjects: 0.167300 ms CreateObjectMapping: 0.027900 ms MarkObjects: 1.406200 ms  DeleteObjects: 0.013600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000505 seconds.
+Registered in 0.000799 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.581 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.0 MB.
-System memory in use after: 62.1 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1668.
-Total: 1.548300 ms (FindLiveObjects: 0.133400 ms CreateObjectMapping: 0.030700 ms MarkObjects: 1.368000 ms  DeleteObjects: 0.014900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 506.821432 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Blank.anim
-  artifactKey: Guid(8b897d958ed86e242b5036907cab8b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Blank.anim using Guid(8b897d958ed86e242b5036907cab8b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee8e20b6b1e7452dd948ab61069dd51') in 0.014575 seconds
-  Import took 0.016582 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.346227 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Attack
-  artifactKey: Guid(a7cbc05a67158054baced3e1223114f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Attack using Guid(a7cbc05a67158054baced3e1223114f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15cf23f6ec89abd3f2787c51aab532a2') in 0.006748 seconds
-  Import took 0.008678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.063483 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Down.png
-  artifactKey: Guid(130af77cf890ad7488e7cf331386c4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Down.png using Guid(130af77cf890ad7488e7cf331386c4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079a45e5645e38a44b794da539cf6f11') in 0.060037 seconds
-  Import took 0.061962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Left.png
-  artifactKey: Guid(4d6b6703d615d2f44bdc8f9ad76c63d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Left.png using Guid(4d6b6703d615d2f44bdc8f9ad76c63d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee611fd455c505df41fc9629ac63ba8') in 0.029280 seconds
-  Import took 0.031163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Up.png
-  artifactKey: Guid(b8c3536c626152146843840fc8bf1b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Up.png using Guid(b8c3536c626152146843840fc8bf1b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4850785dd9a0ed3854e811f37c6c174') in 0.030709 seconds
-  Import took 0.032313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Right.png
-  artifactKey: Guid(5d1826781bf46e84e9829a0ca6f08683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Attack/BossWolf-1_Bite_Right.png using Guid(5d1826781bf46e84e9829a0ca6f08683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0c0106945ced2d26ba0d4738b39f48') in 0.031140 seconds
-  Import took 0.032738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.140710 seconds.
-  path: Assets/Prefabs/Enemies
-  artifactKey: Guid(f7e7834795d5757438ba4ac3268eabf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies using Guid(f7e7834795d5757438ba4ac3268eabf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2be963c4cac6126c6577b7fabd8005c') in 0.021034 seconds
-  Import took 0.022796 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000565 seconds.
-Begin MonoManager ReloadAssembly
+Symbol file data-000001CF05F0E040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF060E9020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02EB9460 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02BAD020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05117020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02E8A450 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07780020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07376010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF049FE020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF060F1030 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -633,173 +279,689 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.582 seconds
+- Completed reload, in  0.740 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.0 MB.
-System memory in use after: 62.1 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1684.
-Total: 1.419600 ms (FindLiveObjects: 0.135200 ms CreateObjectMapping: 0.030700 ms MarkObjects: 1.241000 ms  DeleteObjects: 0.011800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 360.588973 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Moving
-  artifactKey: Guid(439e16291976b82458e48e8e67f5c671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Moving using Guid(439e16291976b82458e48e8e67f5c671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b34ba26f966d1828f0b985604df488') in 0.008960 seconds
-  Import took 0.011010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.075839 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Down.png
-  artifactKey: Guid(3b9687d12bfb9a546848af6c5c5ececa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Down.png using Guid(3b9687d12bfb9a546848af6c5c5ececa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57fc64c7080e8a77b39b0f75bbeaeee8') in 0.049734 seconds
-  Import took 0.051684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Left.png
-  artifactKey: Guid(814470b1a21d892488c4daa9c23c5d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Left.png using Guid(814470b1a21d892488c4daa9c23c5d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883197255b8a818c3b1355637dc8d310') in 0.019482 seconds
-  Import took 0.021135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Up.png
-  artifactKey: Guid(700312902c280c94eb5889b026b7af88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Up.png using Guid(700312902c280c94eb5889b026b7af88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6347b67af2fa16e38ef971cb87383e0e') in 0.018176 seconds
-  Import took 0.020072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Right.png
-  artifactKey: Guid(efbedaefa4aaaad4c97479bc85a0e6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Moving/BossWolf-1_Run_Right.png using Guid(efbedaefa4aaaad4c97479bc85a0e6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313edf00f9a349061aace789d41917ba') in 0.042602 seconds
-  Import took 0.044231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.710458 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge
-  artifactKey: Guid(34d2383f2786b9c4ea8acad3712681c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge using Guid(34d2383f2786b9c4ea8acad3712681c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e43bad1f5a7d0abbbb50725061b01a7b') in 0.021997 seconds
-  Import took 0.023959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.030920 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagDownLeft.png
-  artifactKey: Guid(9cc6f5ae3a3682548b5085606a1be57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagDownLeft.png using Guid(9cc6f5ae3a3682548b5085606a1be57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb9f109cf21567ffa1cd673aa5d0d34') in 0.021656 seconds
-  Import took 0.023656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagDownRight.png
-  artifactKey: Guid(62d1c54b24bbeb747b14ca8bf9a67ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagDownRight.png using Guid(62d1c54b24bbeb747b14ca8bf9a67ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e2582794ee7faa6c031459cea42a64') in 0.017852 seconds
-  Import took 0.019533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Up.png
-  artifactKey: Guid(df6a0d8ac1b04314886d08a26b7911ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Up.png using Guid(df6a0d8ac1b04314886d08a26b7911ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2091b97ec1a8c435037264ed8b9777') in 0.023700 seconds
-  Import took 0.025653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Down.png
-  artifactKey: Guid(82edb4cb200e1cf49b40e20716574f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Down.png using Guid(82edb4cb200e1cf49b40e20716574f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95116a825cb3f17e2508324f2a32f31e') in 0.023453 seconds
-  Import took 0.025079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Left.png
-  artifactKey: Guid(8364046a9bab03f46a6ccee341f3fcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Left.png using Guid(8364046a9bab03f46a6ccee341f3fcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9a32afee3c8e086a461e53b86780f1') in 0.020155 seconds
-  Import took 0.021809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Right.png
-  artifactKey: Guid(d489212356700954d93f1b4d72d1f628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_Right.png using Guid(d489212356700954d93f1b4d72d1f628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55550613ac7d3472cabfbd0455c9c83') in 0.021367 seconds
-  Import took 0.023270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagUpRight.png
-  artifactKey: Guid(38965715b38dcbf4d879a825b491edd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagUpRight.png using Guid(38965715b38dcbf4d879a825b491edd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21884a8bac985994fd8514cfacb3dd5c') in 0.024258 seconds
-  Import took 0.025941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagUpLeft.png
-  artifactKey: Guid(51f4ec839491f1949ac7e09ea0172493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/EnemySprites/Boss/Lunge/BossWolf-1_Lunge_DiagUpLeft.png using Guid(51f4ec839491f1949ac7e09ea0172493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638a6cac3f287b869a6a04fa093eca85') in 0.021752 seconds
-  Import took 0.023857 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000552 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.588 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 62.2 MB.
 System memory in use after: 62.3 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1756.
-Total: 1.716400 ms (FindLiveObjects: 0.175000 ms CreateObjectMapping: 0.026200 ms MarkObjects: 1.501000 ms  DeleteObjects: 0.012900 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 1.754100 ms (FindLiveObjects: 0.175000 ms CreateObjectMapping: 0.040100 ms MarkObjects: 1.521800 ms  DeleteObjects: 0.016000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000607 seconds.
+Registered in 0.000796 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001CF087A8020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF060E9020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04ECD9E0 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06326A30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07C7BDE0 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF08162020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07780020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07376010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02FD4020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04920460 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.584 seconds
+- Completed reload, in  0.854 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 62.2 MB.
 System memory in use after: 62.3 MB.
 
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1758.
-Total: 1.427700 ms (FindLiveObjects: 0.151300 ms CreateObjectMapping: 0.031200 ms MarkObjects: 1.231700 ms  DeleteObjects: 0.012200 ms)
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1628.
+Total: 1.959500 ms (FindLiveObjects: 0.215900 ms CreateObjectMapping: 0.032700 ms MarkObjects: 1.696500 ms  DeleteObjects: 0.013300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000758 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001CF051A7030 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02D70010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF077A2010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07376010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07D839F0 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF08162020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF0582A440 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07376010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05117020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05850250 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.764 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.2 MB.
+System memory in use after: 62.3 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1630.
+Total: 1.574700 ms (FindLiveObjects: 0.150000 ms CreateObjectMapping: 0.027700 ms MarkObjects: 1.381800 ms  DeleteObjects: 0.013300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000931 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001CF05037020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02D70010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF0816A030 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06326A30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05682010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF02BAD020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF048B0080 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04F0D010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07B93100 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 1.574400 ms (FindLiveObjects: 0.147800 ms CreateObjectMapping: 0.034700 ms MarkObjects: 1.377200 ms  DeleteObjects: 0.013000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000758 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001D0DB03B120 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07276210 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06326A30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05682010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF08162020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07780020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04BE4E10 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07B93100 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.744 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1634.
+Total: 1.728400 ms (FindLiveObjects: 0.170200 ms CreateObjectMapping: 0.029800 ms MarkObjects: 1.510800 ms  DeleteObjects: 0.016800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000849 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001CF0737FE40 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04FD3250 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06720020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF0504D020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF08162020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07780020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06720020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07B93100 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1636.
+Total: 1.676600 ms (FindLiveObjects: 0.181600 ms CreateObjectMapping: 0.029900 ms MarkObjects: 1.446700 ms  DeleteObjects: 0.017300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000780 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001CF02E96470 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07276210 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04BE4E10 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF0504D020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF08162020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF048B0080 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04BE4E10 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07B93100 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05029040 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.727 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.3 MB.
+System memory in use after: 62.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1638.
+Total: 1.748200 ms (FindLiveObjects: 0.168100 ms CreateObjectMapping: 0.027800 ms MarkObjects: 1.532800 ms  DeleteObjects: 0.017700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1785.089498 seconds.
+  path: Assets/Prefabs/Obstacles
+  artifactKey: Guid(91db10e50e629814bb87fd3f23b90250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles using Guid(91db10e50e629814bb87fd3f23b90250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bfad162a15781f379602644ec7bb81a') in 0.012702 seconds
+  Import took 0.016008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022684 seconds.
+  path: Assets/Prefabs/Obstacles/Bolder1.prefab
+  artifactKey: Guid(cdf2e7e507278844da7b95c77f2841a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/Bolder1.prefab using Guid(cdf2e7e507278844da7b95c77f2841a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2823d5ae812f2907f2951efa4139a6a3') in 0.067334 seconds
+  Import took 0.069512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Prefabs/Obstacles/Bolder3.prefab
+  artifactKey: Guid(b6c8190e0a85f0f45b8b9350604f0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/Bolder3.prefab using Guid(b6c8190e0a85f0f45b8b9350604f0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ffa3b7589a2fe1b15a818b33a4ba91') in 0.019524 seconds
+  Import took 0.021749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Prefabs/Obstacles/Bolder2.prefab
+  artifactKey: Guid(ea898d7fcdce1bc459581e2fae17f917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/Bolder2.prefab using Guid(ea898d7fcdce1bc459581e2fae17f917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455f9c576bdb738f761ec8dad62fe2c5') in 0.017605 seconds
+  Import took 0.019884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.015055 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft
+  artifactKey: Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft using Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f98f489f0a5458b9e2b67a2d7f2f1c3') in 0.007253 seconds
+  Import took 0.009254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000925 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft
+  artifactKey: Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft using Guid(05425fc4e078d2b4cb0866eab9593089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f98f489f0a5458b9e2b67a2d7f2f1c3') in 0.002827 seconds
+  Import took 0.004580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071430 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0e6af90b116b4fa591aa4c02f42dd4') in 0.050809 seconds
+  Import took 0.054959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000615 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 2.prefab
+  artifactKey: Guid(30c0eb96052870746b05f26155ba9b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 2.prefab using Guid(30c0eb96052870746b05f26155ba9b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1402425f0dd66cac49b890ecfe77ef30') in 0.033076 seconds
+  Import took 0.035727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft.prefab
+  artifactKey: Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft.prefab using Guid(babba8383d70f7a40813f39444e35634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ec0d28e5d747f5bea734f34c914746') in 0.033588 seconds
+  Import took 0.036326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.461283 seconds.
+  path: Assets/Prefabs/ItemPickups/HealthRestore.prefab
+  artifactKey: Guid(95f024a3e0e88c3428430998cddae92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/HealthRestore.prefab using Guid(95f024a3e0e88c3428430998cddae92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbef7dc0c688ab8178475fcd3138a59f') in 0.021438 seconds
+  Import took 0.023652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000614 seconds.
+  path: Assets/Prefabs/ItemPickups/RangeUpgrade.prefab
+  artifactKey: Guid(e9d8f657d4570ba4f907eabcf3b50c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/RangeUpgrade.prefab using Guid(e9d8f657d4570ba4f907eabcf3b50c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cea4075f7dce36f0bcf4dd098eee146') in 0.017954 seconds
+  Import took 0.019817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Prefabs/ItemPickups/MeleeUpgrade.prefab
+  artifactKey: Guid(6653f61a167c2df488579780cc9dd9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/MeleeUpgrade.prefab using Guid(6653f61a167c2df488579780cc9dd9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023e6a026ca3891d9c2e54818e9f21fc') in 0.016927 seconds
+  Import took 0.018974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Prefabs/ItemPickups/HealthUpgrade.prefab
+  artifactKey: Guid(b46b6e00bada5c44eb985b91de68f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ItemPickups/HealthUpgrade.prefab using Guid(b46b6e00bada5c44eb985b91de68f5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc0baa575f5d5881a1057771c53d277') in 0.017207 seconds
+  Import took 0.019141 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000762 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001D0DB03B120 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF04FD3250 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05E70E40 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF06326A30 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF054FF010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF0533F010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07780020 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF05794500 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF07B93100 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001CF0886E010 doesn't match image C:\Users\hohnj\OneDrive\Desktop\GameDesignFinalClass\TheLichUsurper\TheLichUsurper\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.731 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1158 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.4 MB.
+System memory in use after: 62.5 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 1.563300 ms (FindLiveObjects: 0.133100 ms CreateObjectMapping: 0.028100 ms MarkObjects: 1.388300 ms  DeleteObjects: 0.013100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 59.634135 seconds.
+  path: Assets/Prefabs/Enemies/BossHolder.prefab
+  artifactKey: Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemies/BossHolder.prefab using Guid(66a9ec299e01e034faf63469af290529) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'FirstBoss': Transition 'LungeRight -> IdleRight' in state 'LungeRight' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/Animation/StateMachine.cpp line 1847]
+
+ -> (artifact id: '28ed5359ed958e535d93a15a6b0f8bce') in 0.076568 seconds
+  Import took 0.080812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.816378 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 2.prefab
+  artifactKey: Guid(30c0eb96052870746b05f26155ba9b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 2.prefab using Guid(30c0eb96052870746b05f26155ba9b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebedae08cbf3cf2473f1f89139051534') in 0.040905 seconds
+  Import took 0.044311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.570293 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fec74765cf01a9e111439aaf8a5ff2') in 0.024965 seconds
+  Import took 0.027704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.357697 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c388c5031147779d35f6474978ee8e7f') in 0.020973 seconds
+  Import took 0.024606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.500293 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0868336f3ee13db76d01b3f10f85c908') in 0.029433 seconds
+  Import took 0.032423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003172 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0868336f3ee13db76d01b3f10f85c908') in 0.023092 seconds
+  Import took 0.026001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.850388 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6da2ecc8f793669e427c392dc24c86') in 0.043582 seconds
+  Import took 0.047121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.633808 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight
+  artifactKey: Guid(b02e69d78dd72bb4b934de9c799b7143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight using Guid(b02e69d78dd72bb4b934de9c799b7143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82178839a8f4a19225775841d6421c25') in 0.008445 seconds
+  Import took 0.010461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046187 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 1.prefab
+  artifactKey: Guid(0d89045764649b649a3511e09ff52626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 1.prefab using Guid(0d89045764649b649a3511e09ff52626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de761bf811a48d40845e0e2bbbb086d1') in 0.025710 seconds
+  Import took 0.028550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 2.prefab
+  artifactKey: Guid(314f1d740e6c5dd4c9cff262538b1395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 2.prefab using Guid(314f1d740e6c5dd4c9cff262538b1395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ea1704dd4cd5aba64532add5b6fd71') in 0.018248 seconds
+  Import took 0.020406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6541dc3305b5136e30daf86b0bc42f') in 0.018054 seconds
+  Import took 0.020272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.894073 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight.prefab
+  artifactKey: Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight.prefab using Guid(06eadacf8561f234ebf0af2f00b001a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b141ce2015e05811f7e9144d14bcf6') in 0.035968 seconds
+  Import took 0.039601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.971850 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 2.prefab
+  artifactKey: Guid(314f1d740e6c5dd4c9cff262538b1395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 2.prefab using Guid(314f1d740e6c5dd4c9cff262538b1395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d7088fd2c4836e61063060c3dec9a1') in 0.038352 seconds
+  Import took 0.041877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 185.594296 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55bd65f8923001a61f00ee2c8de1bbf') in 0.032018 seconds
+  Import took 0.035593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.851634 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5742404de2b07b574c2769262f1811') in 0.033717 seconds
+  Import took 0.037306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.212552 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c3399b707e0dccb6249afb4f06028f') in 0.029867 seconds
+  Import took 0.033454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.815434 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd047f2a52effde46ade9b3ae0473d0') in 0.037529 seconds
+  Import took 0.041115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.768345 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab
+  artifactKey: Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomLeft/RoomBottomLeft 1.prefab using Guid(01b0748020eb80b418013b39cfcf2be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185fc021ca93783acba1a795ae610c66') in 0.033867 seconds
+  Import took 0.037608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.845639 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 1.prefab
+  artifactKey: Guid(0d89045764649b649a3511e09ff52626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRight/RoomBottomRight 1.prefab using Guid(0d89045764649b649a3511e09ff52626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e62c9bf7775ec234e234e759a9b9cd') in 0.042421 seconds
+  Import took 0.045964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.206761 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom
+  artifactKey: Guid(09d53a1250b40614f8feb94f8b0b0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom using Guid(09d53a1250b40614f8feb94f8b0b0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93250af03a39084911750ccebda99ae3') in 0.006981 seconds
+  Import took 0.009045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002268 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom
+  artifactKey: Guid(09d53a1250b40614f8feb94f8b0b0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom using Guid(09d53a1250b40614f8feb94f8b0b0664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93250af03a39084911750ccebda99ae3') in 0.002794 seconds
+  Import took 0.004797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049341 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 1.prefab
+  artifactKey: Guid(dc120eccc7c98544d9d054a426e9ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 1.prefab using Guid(dc120eccc7c98544d9d054a426e9ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b491a51d2bef5dd7d58b72faf02fe4b7') in 0.033808 seconds
+  Import took 0.036433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd12c239455f4758529ddca8fcde487') in 0.023460 seconds
+  Import took 0.025814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 2.prefab
+  artifactKey: Guid(8edfc0dac7e06ac4093f83acc21e6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 2.prefab using Guid(8edfc0dac7e06ac4093f83acc21e6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a45aedf7b4de0cca6b8c5c9862b0d01') in 0.024385 seconds
+  Import took 0.026724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom.prefab
+  artifactKey: Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom.prefab using Guid(be4dfba9b1ccab74ab1a1e72e668c69d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd12c239455f4758529ddca8fcde487') in 0.019557 seconds
+  Import took 0.022580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.438050 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 2.prefab
+  artifactKey: Guid(8edfc0dac7e06ac4093f83acc21e6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 2.prefab using Guid(8edfc0dac7e06ac4093f83acc21e6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e19b1742fd1f3836ef539d453e13622') in 0.020890 seconds
+  Import took 0.023797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 479.460480 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 2.prefab
+  artifactKey: Guid(8edfc0dac7e06ac4093f83acc21e6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 2.prefab using Guid(8edfc0dac7e06ac4093f83acc21e6e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01229da3c4730badba84a5ab81f6be00') in 0.042989 seconds
+  Import took 0.046866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.568361 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 1.prefab
+  artifactKey: Guid(dc120eccc7c98544d9d054a426e9ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 1.prefab using Guid(dc120eccc7c98544d9d054a426e9ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf820d7b090d55e33ea4b288967dcc21') in 0.015543 seconds
+  Import took 0.018886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 184.326034 seconds.
+  path: Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 1.prefab
+  artifactKey: Guid(dc120eccc7c98544d9d054a426e9ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/BottomRoom/RoomBottom 1.prefab using Guid(dc120eccc7c98544d9d054a426e9ac3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1a53dd5cf7c2db98773c715d09f5c3') in 0.027643 seconds
+  Import took 0.030415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.138390 seconds.
+  path: Assets/Prefabs/BasementRooms/LeftRightRooms/RoomLeftRight 1.prefab
+  artifactKey: Guid(c3bc27ea010619a4cad5a72e6637037b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/LeftRightRooms/RoomLeftRight 1.prefab using Guid(c3bc27ea010619a4cad5a72e6637037b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df5269acdcc97255d030d7171212334') in 0.020945 seconds
+  Import took 0.023362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Prefabs/BasementRooms/LeftRightRooms/RoomLeftRight.prefab
+  artifactKey: Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/LeftRightRooms/RoomLeftRight.prefab using Guid(9fea8b5d6ca2e7244843315313356d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b171b0f996fa8615af4973ce9eaf77') in 0.018732 seconds
+  Import took 0.020936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Prefabs/BasementRooms/LeftRightRooms/RoomLeftRight 2.prefab
+  artifactKey: Guid(616d6a647daa6b64fa3288e241fe3054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BasementRooms/LeftRightRooms/RoomLeftRight 2.prefab using Guid(616d6a647daa6b64fa3288e241fe3054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa030b7aa3157ac503eaf5abfa888936') in 0.018769 seconds
+  Import took 0.020949 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
