@@ -24,7 +24,7 @@ public class Door : MonoBehaviour
         currentRoom = this.transform.parent.gameObject.GetComponent<Room>();
         isLocked = false;
         animator = GetComponent<Animator>();
-        
+        padlock.isTrigger = !isLocked;
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class Door : MonoBehaviour
             Invoke("LockDoor",1f);
         }
 
-        padlock.isTrigger = !isLocked;
+        
     }
 
 
@@ -45,6 +45,7 @@ public class Door : MonoBehaviour
 
         if (currentRoom.isCleared == false)
         {
+            
             isLocked = true;
             animator.SetBool("isOpen", !isLocked);
         }
