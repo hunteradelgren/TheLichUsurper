@@ -28,7 +28,6 @@ public class charMAttacks : MonoBehaviour
             //GetComponentInChildren<SpriteRenderer>().color = new Color(255,0,0);
             animator.SetBool("IsAttacking", true);
             
-            print("sword swinging");
             
         }
 
@@ -62,12 +61,10 @@ public class charMAttacks : MonoBehaviour
         if (target.GetComponent<EnemyHealth>() != null)
         {
             target.GetComponent<EnemyHealth>().TakeDamage(damage);
-            print("attacking target: " + target.name);
         }
         if (target.GetComponent<FirstBoss>() != null)
         {
             target.GetComponent<FirstBoss>().TakeDamage(damage);
-            print("attacking target: " + target.name);
         }
     }
 }

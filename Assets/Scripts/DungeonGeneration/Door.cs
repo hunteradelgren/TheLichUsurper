@@ -30,29 +30,34 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Invoke("LockDoor", 1f);
         if (template.currentRoom == currentRoom)
         {
             Invoke("LockDoor",1f);
         }
-
-        
     }
 
 
     private void LockDoor()
     {
-
-        if (currentRoom.isCleared == false)
+        if (animator.GetBool("ForceLock") && currentRoom.isCleared == true)
         {
-            
+            print(1);
             isLocked = true;
             animator.SetBool("isOpen", !isLocked);
+            padlock.isTrigger = false;
+        }
+        else if (currentRoom.isCleared == false)
+        {
+            isLocked = true;
+            animator.SetBool("isOpen", !isLocked);
+            padlock.isTrigger = false;
         }
         else
         {
             isLocked = false;
             animator.SetBool("isOpen", !isLocked);
+            padlock.isTrigger = true;
 
         }
 

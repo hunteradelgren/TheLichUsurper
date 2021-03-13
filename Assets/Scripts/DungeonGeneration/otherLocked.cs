@@ -17,8 +17,6 @@ public class otherLocked : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(colliding.Count);
-        a = animator.GetBool("ForceLock");
         if(colliding.Count > 0)
         {
             animator.SetBool("ForceLock", false);
@@ -35,7 +33,6 @@ public class otherLocked : MonoBehaviour
         if (collision.GetComponent<Door>() != null)
         {
             colliding.Add(collision.gameObject);
-            print(colliding);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -43,7 +40,6 @@ public class otherLocked : MonoBehaviour
         if (collision.gameObject.GetComponent<Door>() != null)
         {
             colliding.Add(collision.gameObject);
-            print(colliding);
         }
     }
 }
