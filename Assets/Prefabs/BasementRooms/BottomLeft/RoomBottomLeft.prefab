@@ -1403,7 +1403,7 @@ PrefabInstance:
       objectReference: {fileID: 1908330212106720754}
     - target: {fileID: 4913516908430734110, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
       propertyPath: movSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4913516908430734110, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
       propertyPath: targetDist
@@ -1640,7 +1640,7 @@ PrefabInstance:
       objectReference: {fileID: 1908330212106720754}
     - target: {fileID: 8554052697694655667, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: movSpeed
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8554052697694655669, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: m_Mass
@@ -1649,6 +1649,10 @@ PrefabInstance:
     - target: {fileID: 8554052697694655669, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: m_BodyType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554052697694655671, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: chargeTime
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8554052697694655672, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: m_Name

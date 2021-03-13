@@ -53,9 +53,9 @@ MonoBehaviour:
   isActive: 0
   target: {fileID: 0}
   targetDist: 8
-  movSpeed: 8
+  movSpeed: 2
   chaseDist: 5000
-  runDist: 5
+  runDist: 3
   wanderMode: 0
   distance: 0
   center: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   isActive: 0
   target: {fileID: 0}
   attackRange: 10
-  chargeTime: 1
+  chargeTime: 2
   attackRate: 1
   projectileName: BoneProjectile
   damage: 0.5
@@ -221,3 +221,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  animator: {fileID: 0}
