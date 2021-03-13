@@ -66,7 +66,7 @@ public class PlayerHealth : MonoBehaviour
         inSpectralForm = true;
         currentHealth = specSlider.value;
         //makes character see thru, then waits
-        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
+        GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         yield return new WaitForSecondsRealtime(1f);
         
         Time.timeScale = 1;
@@ -113,7 +113,7 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             specSlider.value = currentHealth;
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, ((currentHealth) / maxSpectreHealth));
+            GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
         }
 
     }
