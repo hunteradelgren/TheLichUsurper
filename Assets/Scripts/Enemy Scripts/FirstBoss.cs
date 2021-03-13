@@ -89,7 +89,7 @@ public class FirstBoss : MonoBehaviour
         {
 
             //boss is over 30% health and so will use 1st phase of behavior
-            if (currentHealth >= maxhealth * .9)
+            if (currentHealth >= maxhealth * .4)
             {
 
                 //boss is lunging
