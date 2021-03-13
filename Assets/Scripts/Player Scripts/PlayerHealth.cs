@@ -21,6 +21,10 @@ public class PlayerHealth : MonoBehaviour
     public Slider specSlider;
     public bool status;
     public Animator animator;
+
+    public float invulnerable;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
         specSlider.value = maxSpectreHealth;
         hpSlider.value = currentHealth;
         status = false;
+        invulnerable = 0;
     }
 
     // Update is called once per frame
@@ -55,7 +60,10 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene(2);
 
         }
-
+        if(invulnerable>0)
+        {
+            invulnerable -= Time.deltaTime;
+        }
     }
     IEnumerator becomeSpectre()
     {
@@ -107,15 +115,27 @@ public class PlayerHealth : MonoBehaviour
     {
         animator.SetTrigger("wasHit");
         //decreases health by recieved amount
-        currentHealth -= damage;
-        if (!inSpectralForm)
-            hpSlider.value = currentHealth;
-        else
-        {
-            specSlider.value = currentHealth;
-            GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
-        }
+        
+        if(invulnerable<=0)
+        {  
+             currentHealth -= damage;
+             if (!inSpectralForm)
+            {
+                hpSlider.value = currentHealth;
+            }
+                        
+             
+            else
+             {
+              specSlider.value = currentHealth;
+              GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
+             }
 
+            invulnerable = 1;
+        }
+       
+
+    
     }
 
     public void gainHealth(float boost)
