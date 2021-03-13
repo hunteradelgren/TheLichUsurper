@@ -1659,6 +1659,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8554052697694655667, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: runDist
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554052697694655667, guid: 327130d04c9f05344980c3900813b125, type: 3}
+      propertyPath: movSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8554052697694655672, guid: 327130d04c9f05344980c3900813b125, type: 3}
       propertyPath: m_Name
       value: TestRanged (1)
@@ -2005,6 +2013,10 @@ PrefabInstance:
     - target: {fileID: 7261687509472637771, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261687509472637774, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
+      propertyPath: chargeTime
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 750028fa0054cfd449f602a7099235c6, type: 3}

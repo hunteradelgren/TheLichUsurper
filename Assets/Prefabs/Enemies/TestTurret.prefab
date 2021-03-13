@@ -130,11 +130,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   target: {fileID: 0}
-  attackRange: 50
-  chargeTime: 1
+  attackRange: 12
+  chargeTime: 2.5
   attackRate: 2
   projectileName: OrbProjectile
-  damage: 2
+  damage: 1
   playerTarget: {fileID: 0}
   spawnRoom: {fileID: 0}
   animator: {fileID: 0}
@@ -221,3 +221,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  animator: {fileID: 0}

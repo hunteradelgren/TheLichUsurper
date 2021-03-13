@@ -14,6 +14,8 @@ public class Door : MonoBehaviour
 
     public Animator animator;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class Door : MonoBehaviour
         currentRoom = this.transform.parent.gameObject.GetComponent<Room>();
         isLocked = false;
         animator = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -54,7 +57,7 @@ public class Door : MonoBehaviour
 
     }
 
-
+   
 
 
 
