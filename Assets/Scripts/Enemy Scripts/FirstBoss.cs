@@ -31,12 +31,10 @@ public class FirstBoss : MonoBehaviour
     public float maxhealth = 50f;
     public float targetChaseDist = 2f;
     public float currentHealth = 50f;
-    
+
 
     public bool isAttacking = false;
     public bool isLunging = false;
-    public bool lungeFirst = false;
-
 
     private float distPlayer;
     private float distPos1;
@@ -58,6 +56,7 @@ public class FirstBoss : MonoBehaviour
     private Vector2 velocity;
     public GameObject center; //uses the center game object in the room
     public Animator animator;
+    public bool lungefirst = true;
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -75,30 +74,31 @@ public class FirstBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Object.Destroy(gameObject);
             SceneManager.LoadScene(3);
 
         }
-            //finds the distance from the target location
-            distPlayer = Vector2.Distance(Player.position, transform.position); 
-            distPos1 = Vector2.Distance(pos1.position, transform.position); 
-            distPos2 = Vector2.Distance(pos2.position, transform.position); 
-            distPos3 = Vector2.Distance(pos3.position, transform.position);
+        //finds the distance from the target location
+        distPlayer = Vector2.Distance(Player.position, transform.position);
+        distPos1 = Vector2.Distance(pos1.position, transform.position);
+        distPos2 = Vector2.Distance(pos2.position, transform.position);
+        distPos3 = Vector2.Distance(pos3.position, transform.position);
         if (spawnRoom == template.currentRoom)
         {
-           // animator.SetBool("isMoving", false);
+
             //boss is over 30% health and so will use 1st phase of behavior
-            if (currentHealth >= maxhealth * .3)
+            if (currentHealth >= maxhealth * .9)
             {
 
-                //animator.ResetTrigger("lungeEnd");
                 //boss is lunging
                 if (isLunging)
                 {
+                    animator.SetBool("isMoving", false);
                     Vector2 direction = lungeTarget; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -109,16 +109,16 @@ public class FirstBoss : MonoBehaviour
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
-                        print("lunging");
-                        if (lungeFirst == true)
-                        { 
+                        if (lungefirst)
+                        {
+                            print("lunging");
                             animator.SetTrigger("lunging");
-                            lungeFirst = false;
+                            lungefirst = false;
                         }
+
                         //lunge is being performed
                         lungeTimer += Time.deltaTime;
                         velocity = lungeTarget;
-                        //animator.SetTrigger("lunging");
                         transform.Translate(velocity.normalized * lungeSpeed * Time.deltaTime, Space.World);
                         if (lungeTimer >= maxLungeTime)
                         {
@@ -127,17 +127,19 @@ public class FirstBoss : MonoBehaviour
                             lungeTimer = 0;
                             isLunging = false;
                             canAttack = false;
+                            lungefirst = true;
                             print("endlunge");
                             animator.SetTrigger("lungeEnd");
-                            lungeFirst = true;
                         }
                     }
                 }
                 //boss is doing swing attack
                 else if (isAttacking)
                 {
+                    animator.SetBool("isMoving", false);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -148,7 +150,7 @@ public class FirstBoss : MonoBehaviour
                     if (chargeTimer >= lungeTime)
                     {
                         animator.SetBool("isAttacking", true);
-                        swingAttack();
+                        //swingAttack();
                         chargeTimer = 0;
                         isAttacking = false;
                         canAttack = false;
@@ -184,11 +186,13 @@ public class FirstBoss : MonoBehaviour
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos1.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
+                        animator.SetBool("isMoving", true);
                     }
                     //position 2 is closest
                     else if (distPos2 < distPos1 && distPos2 < distPos3)
@@ -197,11 +201,13 @@ public class FirstBoss : MonoBehaviour
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos2.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
+                        animator.SetBool("isMoving", true);
                     }
                     //position 3 is closest
                     else
@@ -210,11 +216,13 @@ public class FirstBoss : MonoBehaviour
                         transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                         Vector2 direction = pos3.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
+                        animator.SetBool("isMoving", true);
                     }
                 }
             }
@@ -222,13 +230,16 @@ public class FirstBoss : MonoBehaviour
             //boss is below health threshold and is using second phase of behavior
             else
             {
+                animator.SetBool("Phase2", true);
                 checkCanAttack();
                 checkInRange();
                 ///boss is doing swing attack
                 if (isAttacking)
                 {
+                    animator.SetBool("isMoving", false);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
@@ -238,8 +249,8 @@ public class FirstBoss : MonoBehaviour
                     chargeTimer += Time.deltaTime;
                     if (chargeTimer >= lungeTime)
                     {
-                        print("swinging");
-                        swingAttack();
+                        print("swinging2");
+                        animator.SetBool("isAttacking", true);
                         chargeTimer = 0;
                         isAttacking = false;
                         canAttack = false;
@@ -249,20 +260,20 @@ public class FirstBoss : MonoBehaviour
                 else if (distPlayer >= targetChaseDist)
                 {
                     velocity = Player.position - transform.position;
-                    transform.Translate(velocity.normalized * movSpeed *Time.deltaTime, Space.World);
+                    transform.Translate(velocity.normalized * movSpeed * Time.deltaTime, Space.World);
                     animator.SetBool("isMoving", true);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
-                    
+
                     if (angle < 0)
                         animator.SetFloat("EnemyRot", angle + 359);
                     else
                         animator.SetFloat("EnemyRot", angle);
                     setDirection();
+                    animator.SetBool("isMoving", true);
                 }
                 else
                 {
-                    animator.SetBool("isMoving", false);
                     //player is inrange
                     if (canAttack && inRange)
                     {
@@ -299,6 +310,7 @@ public class FirstBoss : MonoBehaviour
                 canAttack = true;
                 cooldownTimer = 0f;
             }
+            animator.SetBool("isAttacking", false);
         }
     }
 
@@ -319,7 +331,7 @@ public class FirstBoss : MonoBehaviour
     void swingAttack()
     {
         //player is colliding with capsule collider for swing attack
-        if(colliding.Count != 0)
+        if (colliding.Count != 0)
         {
             Player.GetComponent<PlayerHealth>().takeDamage(attackDamage);
             print("hit player with swing");
@@ -329,9 +341,9 @@ public class FirstBoss : MonoBehaviour
 
     void lungeAttack()
     {
-        if(colliding.Count == 0)
+        if (colliding.Count == 0)
         {
-            lungeTarget = (Player.position - transform.position)*1f;
+            lungeTarget = (Player.position - transform.position) * 1f;
             isLunging = true;
         }
     }
@@ -351,7 +363,7 @@ public class FirstBoss : MonoBehaviour
                 Player.GetComponent<PlayerHealth>().takeDamage(lungeDamage);
                 print("Lunged into player");
             }
-            if(collision.tag == "Wall" || collision.GetComponent<Door>() != null)
+            if (collision.tag == "Wall" || collision.GetComponent<Door>() != null)
             {
                 //lunge is finished
                 chargeTimer = 0;
@@ -360,6 +372,7 @@ public class FirstBoss : MonoBehaviour
                 canAttack = false;
                 print("wall end lunge");
                 animator.SetTrigger("lungeEnd");
+                lungefirst = true;
             }
         }
 
@@ -374,7 +387,7 @@ public class FirstBoss : MonoBehaviour
         {
             spawnRoom = collision.GetComponent<Room>();
         }
-            
+
         if (collision.tag == "Wall" || collision.GetComponent<Door>() != null)
         {
             avoidWall();
@@ -397,6 +410,7 @@ public class FirstBoss : MonoBehaviour
             {
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);
+                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
                 velocity = new Vector2(velocity.x + (center.transform.position.x - transform.position.x), velocity.y + (center.transform.position.y - transform.position.y)).normalized;
             }
         }
