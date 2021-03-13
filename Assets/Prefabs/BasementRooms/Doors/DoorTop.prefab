@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9091464213760318017}
   - component: {fileID: 5457271154077359554}
   - component: {fileID: 1875815252167793568}
+  - component: {fileID: 7834875376067833048}
   m_Layer: 0
   m_Name: DoorTop
   m_TagString: Untagged
@@ -115,7 +116,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.43}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -126,7 +127,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 0.8}
+  m_Size: {x: 1.29, y: 1.66}
   m_EdgeRadius: 0
 --- !u!95 &5457271154077359554
 Animator:
@@ -168,3 +169,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &7834875376067833048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298552453334179348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ef913b01d067144b7280e1403f8221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

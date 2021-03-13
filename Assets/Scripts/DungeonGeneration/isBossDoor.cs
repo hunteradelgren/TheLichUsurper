@@ -22,11 +22,4 @@ public class isBossDoor : MonoBehaviour
             transform.GetComponent<SpriteRenderer>().color = Color.red;
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.GetComponent<Room>().enemies.Contains(GameObject.Find("BossHolder")))
-        {
-            transform.GetComponent<SpriteRenderer>().color = Color.red;
-        }
-    }
 }
