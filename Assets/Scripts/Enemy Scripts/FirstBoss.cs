@@ -128,7 +128,6 @@ public class FirstBoss : MonoBehaviour
                             isLunging = false;
                             canAttack = false;
                             lungefirst = true;
-                            print("endlunge");
                             animator.SetTrigger("lungeEnd");
                         }
                     }
@@ -383,7 +382,7 @@ public class FirstBoss : MonoBehaviour
         }
 
 
-        if (collision.tag == "EndRoom")
+        if (collision.tag == "Boss")
         {
             spawnRoom = collision.GetComponent<Room>();
         }

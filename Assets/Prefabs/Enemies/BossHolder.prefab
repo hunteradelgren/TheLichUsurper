@@ -105,13 +105,13 @@ MonoBehaviour:
   attackRange: 1
   maxLungeTime: 0.5
   maxhealth: 50
-  targetChaseDist: 2
+  targetChaseDist: 0.5
   currentHealth: 50
   isAttacking: 0
   isLunging: 0
-  lungeFirst: 0
   center: {fileID: 0}
   animator: {fileID: 0}
+  lungefirst: 1
   spawnRoom: {fileID: 0}
 --- !u!95 &5183293658640590762
 Animator:
