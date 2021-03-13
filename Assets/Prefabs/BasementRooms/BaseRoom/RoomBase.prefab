@@ -134,6 +134,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &4888505063134248355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5045996074677202415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398b1c8b6d4bb5f47bd805c466eca54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5558370199161780730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1381,8 @@ MonoBehaviour:
   enemyCount: 0
   item: {fileID: 0}
   center: {fileID: 1455195651229904336}
+  droppedItem: 0
+  playerInRoom: 0
 --- !u!61 &3875343618365402208
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1613,6 +1627,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorBottom
       objectReference: {fileID: 0}
+    - target: {fileID: 6478165994605812746, guid: 9ecca3772d141b745ad35b208b0e1c10, type: 3}
+      propertyPath: m_Size.y
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6478165994605812746, guid: 9ecca3772d141b745ad35b208b0e1c10, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.42
+      objectReference: {fileID: 0}
     - target: {fileID: 7856991595783352481, guid: 9ecca3772d141b745ad35b208b0e1c10, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1659,6 +1681,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ecca3772d141b745ad35b208b0e1c10, type: 3}
+--- !u!1 &5045996074677202415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3875679244538386527, guid: 9ecca3772d141b745ad35b208b0e1c10, type: 3}
+  m_PrefabInstance: {fileID: 8345125085026645424}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2217586544553985297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7856991595783352481, guid: 9ecca3772d141b745ad35b208b0e1c10, type: 3}
