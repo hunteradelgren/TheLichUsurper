@@ -26,7 +26,7 @@ public class RangedAttack : MonoBehaviour
     private bool isAttacking = false; //the attacj is being done
     private float distance; //distance to target
     private bool inRange = true; //is target in range
-    private bool canAttack = true; //is attack on cooldown
+    private bool canAttack = false; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
     private float chargeTimer = 0f; //timer for attack chargeup
     private GameObject projectilePrefab;
