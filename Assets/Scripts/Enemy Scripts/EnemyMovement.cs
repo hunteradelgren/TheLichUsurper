@@ -29,6 +29,8 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 velocity;
     private RoomTemplate template;
+    private bool hitObstacle = false;
+    private float obsTimer = 0f;
 
 
     //enemy will not move while it swings
@@ -61,11 +63,21 @@ public class EnemyMovement : MonoBehaviour
                 animator.SetBool("isMoving", true);
                 //new wander target can only be set every 2 seconds
                 timer += Time.deltaTime;
-                if (timer >= 2)
+                if (timer >= 1)
                 {
                     setWanderTarget();
                 }
-
+                if (hitObstacle)
+                {
+                    obsTimer += Time.deltaTime;
+                    wanderMode = true;
+                    if(obsTimer >= .5)
+                    {
+                        wanderMode = false;
+                        hitObstacle = false;
+                        obsTimer = 0f;
+                    }
+                }
                 distance = Vector2.Distance(target.position, transform.position); //finds the distance from the target location
 
                 setWanderMode();
@@ -103,7 +115,7 @@ public class EnemyMovement : MonoBehaviour
 
     void setWanderMode()
     {
-        if (target == null)
+        if (target == null || hitObstacle)
         {
             //no target exists. Stay in wander mode
             wanderMode = true;
@@ -162,12 +174,13 @@ public class EnemyMovement : MonoBehaviour
         {
             if (c.tag == "Obstacle")
             {
-
-
+                hitObstacle = true;
+                setWanderTarget();
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);
                 //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
-                velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x) + Random.Range(-15, 15)) * (1 / dist)), velocity.y + (((transform.position.y - c.transform.position.y) + Random.Range(-15, 15)) * (1 / dist))).normalized;
+                velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x) + Random.Range(-15, 15)) * (100)), velocity.y + (((transform.position.y - c.transform.position.y) + Random.Range(-15, 15)) * (100))).normalized;
+                
             }
         }
     }
