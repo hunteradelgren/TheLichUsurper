@@ -9,8 +9,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     Transform target; //the target object's Transform
 
-    [SerializeField]
-    float targetDist; //how close to the target will the enemy try to get
+    public float targetDist; //how close to the target will the enemy try to get
 
     [SerializeField]
     float movSpeed; //movement speed
@@ -30,7 +29,6 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 velocity;
     private RoomTemplate template;
-    public GameObject center; //uses the center game object in the room
 
 
     //enemy will not move while it swings
@@ -184,7 +182,7 @@ public class EnemyMovement : MonoBehaviour
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);
                 //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
-                velocity = new Vector2(velocity.x + (center.transform.position.x-transform.position.x),velocity.y+(center.transform.position.y-transform.position.y)).normalized;
+                velocity = new Vector2(velocity.x + (spawnRoom.transform.position.x-transform.position.x),velocity.y+(spawnRoom.transform.position.y-transform.position.y)).normalized;
             }
         }
     }
@@ -193,6 +191,18 @@ public class EnemyMovement : MonoBehaviour
     {
         if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
             spawnRoom = other.GetComponent<Room>();
+
+        else if (other.tag == "Wall" || other.GetComponent<Door>() != null)
+        {
+            colliding.Add(other.gameObject);
+        }
     }
 
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Obstacle" || collision.tag == "Wall" || collision.GetComponent<Door>() != null)
+        {
+            colliding.Remove(collision.gameObject);
+        }
+    }
 }

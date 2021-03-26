@@ -57,7 +57,7 @@ public class MeleeAttack : MonoBehaviour
             //enemy is not already attacking
             if (!isAttacking)
             {
-                if (canAttack && inRange && validTarget)
+                if (canAttack && inRange && validTarget && distance <= enemyMove.targetDist)
                 {
                     //enemy is now in the process of atttacking
                     isAttacking = true;
