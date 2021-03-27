@@ -57,6 +57,9 @@ public class FirstBoss : MonoBehaviour
     public GameObject center; //uses the center game object in the room
     public Animator animator;
     public bool lungefirst = true;
+    public SpriteRenderer bossSprite;
+    public float hitTimer = 0f;
+    public bool wasHit = false;
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -69,6 +72,7 @@ public class FirstBoss : MonoBehaviour
         currentHealth = maxhealth;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
+        bossSprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -78,8 +82,18 @@ public class FirstBoss : MonoBehaviour
         {
             Object.Destroy(gameObject);
             SceneManager.LoadScene(3);
-
         }
+        if (wasHit)
+        {
+            hitTimer += Time.deltaTime;
+            if(hitTimer >= .15)
+            {
+                bossSprite.color = new Color(1, 1, 1);
+                wasHit = false;
+                hitTimer = 0;
+            }
+        }
+
         //finds the distance from the target location
         distPlayer = Vector2.Distance(Player.position, transform.position);
         distPos1 = Vector2.Distance(pos1.position, transform.position);
@@ -350,6 +364,8 @@ public class FirstBoss : MonoBehaviour
     public void takeDamage(float damage)
     {
         currentHealth -= damage;
+        bossSprite.color = new Color(1, 0, 0);
+        wasHit = true;
     }
 
 
@@ -418,6 +434,8 @@ public class FirstBoss : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
+        bossSprite.color = new Color(1, 0, 0);
+        wasHit = true;
     }
 
     public void setDirection()
