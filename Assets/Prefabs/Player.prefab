@@ -111,6 +111,8 @@ MonoBehaviour:
   cam: {fileID: 0}
   HitPoint: {fileID: 4854067757463617685}
   center: {fileID: 0}
+  sound: {fileID: 0}
+  footsteps: {fileID: 8300000, guid: 1e6216d2d5f0d6e4c9f32eea8c189d66, type: 3}
 --- !u!114 &4854067756715089869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +243,8 @@ MonoBehaviour:
   animator: {fileID: 4854067756715089857}
   target: {fileID: 0}
   hitSomething: 0
+  sword: {fileID: 8300000, guid: b94cfbc471f46e349b52f8bc4307e136, type: 3}
+  sound: {fileID: 0}
 --- !u!114 &4854067756715089863
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -26,10 +26,13 @@ public class Movement : MonoBehaviour
 
     public GameObject center; //center of room the player is in
 
+    public AudioSource sound;
+    public AudioClip footsteps;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        sound = GetComponent<AudioSource>();
     }
     void Awake()
     {
@@ -177,6 +180,11 @@ public class Movement : MonoBehaviour
         {
             animator.SetInteger("Direction", 7);
         }
+    }
+    public void playFootstepSound()
+    {
+        sound.clip = footsteps;
+        sound.PlayOneShot(footsteps, .1f);
     }
 }
 

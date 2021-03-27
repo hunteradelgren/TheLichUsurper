@@ -12,10 +12,12 @@ public class charMAttacks : MonoBehaviour
     public Animator animator;
     public GameObject target;
     public bool hitSomething;
+    public AudioClip sword;
+    public AudioSource sound;
     /// </summary>
     void Start()
     {
-        
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -66,5 +68,10 @@ public class charMAttacks : MonoBehaviour
         {
             target.GetComponent<FirstBoss>().TakeDamage(damage);
         }
+    }
+    public void playSwordSound()
+    {
+        sound.clip = sword;
+        sound.PlayOneShot(sword,1);
     }
 }

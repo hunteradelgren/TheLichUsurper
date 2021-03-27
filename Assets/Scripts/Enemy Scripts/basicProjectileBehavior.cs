@@ -12,12 +12,22 @@ public class basicProjectileBehavior : MonoBehaviour
 
     public bool isPlayerBullet = false;
 
+
+    public AudioSource sound;
+    public AudioClip fire;
+    public float volume = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
+        sound = GetComponent<AudioSource>();
 
+        sound.clip = fire;
+        sound.PlayOneShot(fire,volume);
     }
-
+    private void Awake()
+    {
+    }
     // Update is called once per frame
     void Update()
     {

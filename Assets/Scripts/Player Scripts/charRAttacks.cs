@@ -15,6 +15,7 @@ public class charRAttacks : MonoBehaviour
     string projectileName;
     public Animator animator;
 
+
     private Quaternion temp;
 
     /// </summary>
