@@ -53,6 +53,8 @@ MonoBehaviour:
   isPlayerBullet: 0
   sound: {fileID: 0}
   fire: {fileID: 8300000, guid: 5cb184f36ef893d419c6bbfbe45a458e, type: 3}
+  volume: 1
+  loopSound: 0
 --- !u!70 &3052531047157314082
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -172,13 +174,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.754
+  m_Pitch: 1.26
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 124
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

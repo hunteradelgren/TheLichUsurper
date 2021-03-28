@@ -105,7 +105,6 @@ public class FirstBoss : MonoBehaviour
             //boss is over 30% health and so will use 1st phase of behavior
             if (currentHealth >= maxhealth * .4)
             {
-
                 //boss is lunging
                 if (isLunging)
                 {
@@ -149,7 +148,7 @@ public class FirstBoss : MonoBehaviour
                 //boss is doing swing attack
                 else if (isAttacking)
                 {
-                    animator.SetBool("isMoving", false);
+                    //animator.SetBool("isMoving", false);
                     Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -160,8 +159,9 @@ public class FirstBoss : MonoBehaviour
                     setDirection();
 
                     chargeTimer += Time.deltaTime;
-                    if (chargeTimer >= lungeTime)
+                    if (chargeTimer >= chargeTime)
                     {
+                        
                         animator.SetBool("isAttacking", true);
                         //swingAttack();
                         chargeTimer = 0;
@@ -177,6 +177,7 @@ public class FirstBoss : MonoBehaviour
                     //boss is at an attack position
                     if (distPos1 <= .5 || distPos2 <= .5 || distPos3 <= .5)
                     {
+                        animator.SetBool("isMoving", false);
                         if (canAttack)
                         {
                             checkInRange();

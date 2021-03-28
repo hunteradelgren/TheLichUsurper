@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 0.65}
   m_EdgeRadius: 0
 --- !u!114 &7213764446263746239
 MonoBehaviour:
@@ -100,7 +100,7 @@ MonoBehaviour:
   attackDamage: 2
   lungeDamage: 1
   attackRate: 2
-  chargeTime: 2
+  chargeTime: 1
   lungeTime: 1
   attackRange: 1
   maxLungeTime: 0.5
@@ -112,6 +112,9 @@ MonoBehaviour:
   center: {fileID: 0}
   animator: {fileID: 0}
   lungefirst: 1
+  bossSprite: {fileID: 0}
+  hitTimer: 0
+  wasHit: 0
   spawnRoom: {fileID: 0}
 --- !u!95 &5183293658640590762
 Animator:

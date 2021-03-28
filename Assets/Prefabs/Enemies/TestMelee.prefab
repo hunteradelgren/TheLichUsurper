@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9145237321325489343}
   - component: {fileID: 6614282642674443242}
   - component: {fileID: 1232631061073334505}
+  - component: {fileID: -3965376418490007857}
   m_Layer: 0
   m_Name: TestMelee
   m_TagString: Enemy
@@ -58,7 +59,6 @@ MonoBehaviour:
   runDist: 0.3
   wanderMode: 0
   distance: 0
-  center: {fileID: 0}
   isAttacking: 0
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
@@ -220,3 +220,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   animator: {fileID: 0}
+--- !u!58 &-3965376418490007857
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4913516908430734104}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.21

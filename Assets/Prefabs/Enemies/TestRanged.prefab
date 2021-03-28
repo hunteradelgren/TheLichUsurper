@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2985363300453435458}
   - component: {fileID: 4701424482417478631}
   - component: {fileID: -2353263785133483707}
+  - component: {fileID: 6560605934848613853}
   m_Layer: 0
   m_Name: TestRanged
   m_TagString: Enemy
@@ -58,7 +59,6 @@ MonoBehaviour:
   runDist: 3
   wanderMode: 0
   distance: 0
-  center: {fileID: 0}
   isAttacking: 0
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
@@ -222,3 +222,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   animator: {fileID: 0}
+--- !u!58 &6560605934848613853
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554052697694655672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.19

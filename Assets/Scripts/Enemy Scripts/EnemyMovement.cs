@@ -60,7 +60,7 @@ public class EnemyMovement : MonoBehaviour
             //if enemy is not attacking
             if (!isAttacking)
             {
-                animator.SetBool("isMoving", true);
+                
                 //new wander target can only be set every 2 seconds
                 timer += Time.deltaTime;
                 if (timer >= 1)
@@ -101,9 +101,15 @@ public class EnemyMovement : MonoBehaviour
                     
 
                 velocity *= movSpeed * Time.deltaTime;
+               
                 if (distance >= targetDist || wanderMode)
                 {
                     transform.Translate(velocity,Space.World);
+                    animator.SetBool("isMoving", true);
+                }
+                else
+                {
+                    animator.SetBool("isMoving", false);
                 }
             }
         }
@@ -155,14 +161,14 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.gameObject.GetComponent<Door>() != null)
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.gameObject.GetComponent<Door>() != null || collision.gameObject.tag == "Enemy")
         {
             colliding.Add(collision.gameObject);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.gameObject.GetComponent<Door>() != null)
+        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Wall" || collision.gameObject.GetComponent<Door>() != null || collision.gameObject.tag == "Enemy")
         {
             colliding.Remove(collision.gameObject);
         }
@@ -172,7 +178,8 @@ public class EnemyMovement : MonoBehaviour
     {
         foreach(GameObject c in colliding)
         {
-            if (c.tag == "Obstacle")
+            print(c.name);
+            if (c.tag == "Obstacle" || c.tag == "Enemy")
             {
                 hitObstacle = true;
                 setWanderTarget();
@@ -205,7 +212,7 @@ public class EnemyMovement : MonoBehaviour
         if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
             spawnRoom = other.GetComponent<Room>();
 
-        else if (other.tag == "Wall" || other.GetComponent<Door>() != null)
+        else if (other.tag == "Wall" || other.GetComponent<Door>() != null || other.tag == "Enemy")
         {
             colliding.Add(other.gameObject);
         }
@@ -213,7 +220,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Obstacle" || collision.tag == "Wall" || collision.GetComponent<Door>() != null)
+        if (collision.tag == "Obstacle" || collision.tag == "Wall" || collision.GetComponent<Door>() != null || collision.tag == "Enemy")
         {
             colliding.Remove(collision.gameObject);
         }

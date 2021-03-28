@@ -16,6 +16,7 @@ public class basicProjectileBehavior : MonoBehaviour
     public AudioSource sound;
     public AudioClip fire;
     public float volume = 1f;
+    public bool loopSound = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,13 @@ public class basicProjectileBehavior : MonoBehaviour
         sound = GetComponent<AudioSource>();
 
         sound.clip = fire;
-        sound.PlayOneShot(fire,volume);
+        if (loopSound)
+            sound.Play();
+        else
+        {
+            sound.PlayOneShot(fire, volume);
+        }
+            
     }
     private void Awake()
     {
