@@ -179,15 +179,20 @@ public class EnemyMovement : MonoBehaviour
         foreach(GameObject c in colliding)
         {
             print(c.name);
-            if (c.tag == "Obstacle" || c.tag == "Enemy")
+            if (c.tag == "Obstacle")
             {
                 hitObstacle = true;
                 setWanderTarget();
                 Vector2 obstaclePos = c.transform.position;
                 float dist = Vector2.Distance(obstaclePos, transform.position);
                 //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
-                velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x) + Random.Range(-15, 15)) * (100)), velocity.y + (((transform.position.y - c.transform.position.y) + Random.Range(-15, 15)) * (100))).normalized;
+                //velocity = new Vector2(velocity.x + (((transform.position.x - c.transform.position.x) + Random.Range(-15, 15)) * (100)), velocity.y + (((transform.position.y - c.transform.position.y) + Random.Range(-15, 15)) * (100))).normalized;
                 
+            }
+            if(c.tag == "Enemy")
+            {
+                hitObstacle = true;
+                setWanderTarget();
             }
         }
     }

@@ -16,6 +16,7 @@ public class RoomTemplate : MonoBehaviour
     private GameObject[] EndRooms;
     public GameObject boss;
     public GameObject curtain;
+    public playerStatsManager pStats;
 
     public Room currentRoom;
 
@@ -23,6 +24,8 @@ public class RoomTemplate : MonoBehaviour
 
     void Start()
     {
+        pStats = FindObjectOfType<playerStatsManager>();
+        pStats.doneLoading = false;
         Invoke("DifficultyTester", 1.5f); 
 
     }
@@ -53,6 +56,7 @@ public class RoomTemplate : MonoBehaviour
         
         Destroy(EndRooms[EndRooms.Length - 1]);
         curtain.SetActive(false);
+        pStats.doneLoading = true;
     }
 
 

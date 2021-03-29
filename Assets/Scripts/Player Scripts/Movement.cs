@@ -10,11 +10,12 @@ public class Movement : MonoBehaviour
     //stores key inputs
     private float horizontalAxis; 
     private float verticalAxis;
-    int floor;
     private Rigidbody prb;
     public bool status;
     public GameObject arm;
     public Animator animator;
+
+    public float floor;
     
     public float loadingTimer;
 

@@ -36,6 +36,10 @@ public class MeleeAttack : MonoBehaviour
     public GameObject playerTarget; //sets up the ranged target to be the player
     public Animator animator;
 
+    public AudioClip swingHit;
+    public AudioClip swingMiss;
+    public AudioSource sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,7 @@ public class MeleeAttack : MonoBehaviour
         playerTarget = GameObject.FindGameObjectWithTag("Player");
         target = playerTarget;
         animator = GetComponent<Animator>();
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -130,8 +135,13 @@ public class MeleeAttack : MonoBehaviour
         checkValidTarget();
         if(validTarget && inRange)
         {
+            sound.PlayOneShot(swingHit, .4f);
             print("Attacked" + Time.time);
             target.GetComponent<PlayerHealth>().takeDamage(damage);
+        }
+        else
+        {
+            sound.PlayOneShot(swingMiss, .4f);
         }
     }
 }

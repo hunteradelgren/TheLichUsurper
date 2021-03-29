@@ -41,9 +41,6 @@ public class FirstBoss : MonoBehaviour
     private float distPos2;
     private float distPos3;
 
-    private float maxMoveSpeed;
-    private float maxLungeSpeed;
-    private float rotSpeed = 360;
     private bool inRange = true; //is target in range
     private bool canAttack = true; //is attack on cooldown
     private float cooldownTimer = 0f; //timer for cooldown
@@ -244,6 +241,7 @@ public class FirstBoss : MonoBehaviour
             //boss is below health threshold and is using second phase of behavior
             else
             {
+                movSpeed = 20f; //phase 2 movement spped
                 animator.SetBool("Phase2", true);
                 checkCanAttack();
                 checkInRange();

@@ -7,20 +7,19 @@ using UnityEngine.Events;
 public class PlayerHealth : MonoBehaviour
 {
     //max health while in a living state
-    [SerializeField]
-    float maxHealth;
+    public float maxHealth;
     //max health in the undead state
-    [SerializeField]
-    float maxSpectreHealth;
+    public float maxSpectreHealth;
     //current health regardless of state
-    [SerializeField] float currentHealth;
+    public float currentHealth;
     //true  if in undead state and false if in living state
-    private bool inSpectralForm;
+    public bool inSpectralForm;
     //References to health Slider bars
     public Slider hpSlider;
     public Slider specSlider;
     public bool status;
     public Animator animator;
+    public playerStatsManager stats;
 
     public float invulnerable;
 
@@ -28,14 +27,15 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stats = FindObjectOfType<playerStatsManager>();
         //starts the player off in living state with the associated max health 
-        inSpectralForm = false;
-        currentHealth = maxHealth;
+        //inSpectralForm = false;
+        //currentHealth = maxHealth;
         //sets live and spectre hp bars to current max values
-        hpSlider.maxValue = maxHealth;
-        specSlider.maxValue = maxSpectreHealth;
-        specSlider.value = maxSpectreHealth;
-        hpSlider.value = currentHealth;
+        //hpSlider.maxValue = maxHealth;
+        //specSlider.maxValue = maxSpectreHealth;
+        //specSlider.value = maxSpectreHealth;
+        //hpSlider.value = currentHealth;
         status = false;
         invulnerable = 0;
     }
@@ -131,7 +131,7 @@ public class PlayerHealth : MonoBehaviour
               GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
              }
 
-            invulnerable = 1;
+            invulnerable = .5f;
         }
        
 
@@ -152,6 +152,10 @@ public class PlayerHealth : MonoBehaviour
             //increases health by received amount
             currentHealth += boost;
             hpSlider.value = currentHealth;
+        }
+        else
+        {
+            hpSlider.value = maxHealth;
         }
     }
 

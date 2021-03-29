@@ -59,7 +59,6 @@ MonoBehaviour:
   runDist: 0
   wanderMode: 0
   distance: 0
-  center: {fileID: 0}
   isAttacking: 0
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
@@ -132,8 +131,8 @@ MonoBehaviour:
   isActive: 0
   target: {fileID: 0}
   attackRange: 12
-  chargeTime: 2.5
-  attackRate: 2
+  chargeTime: 0
+  attackRate: 1.5
   projectileName: OrbProjectile
   damage: 1
   playerTarget: {fileID: 0}
