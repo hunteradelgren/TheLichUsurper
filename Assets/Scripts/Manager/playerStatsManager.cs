@@ -17,11 +17,13 @@ public class playerStatsManager : MonoBehaviour
     public float rangeD = 1; //range damage
     public bool inSpectre = false;
 
+    public int currency = 0;
+
     static playerStatsManager manager;
 
     public bool levelchanged;
     public bool doneLoading;
-    private bool first = true;
+    public bool first = true;
     public Scene cScene;
 
     // Start is called before the first frame update
@@ -159,4 +161,13 @@ public class playerStatsManager : MonoBehaviour
         }
     }
 
+    public void increaseCurrency(int change)
+    {
+        currency += change;
+    }
+
+    public void decreaseCurrency(int change)
+    {
+        currency -= change;
+    }
 }
