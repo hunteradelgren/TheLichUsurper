@@ -16,7 +16,7 @@ public class charRAttacks : MonoBehaviour
     string projectileName;
     public Animator animator;
     public Text display;
-
+    public bool started;
     private Quaternion temp;
 
     /// </summary>
@@ -25,26 +25,30 @@ public class charRAttacks : MonoBehaviour
         projectilePrefab = Resources.Load<GameObject>(projectileName);
         animator = GetComponent<Animator>();
         display.text = ("RA = " + damage);
+        started = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;//tracks time elapsed
-        if (Input.GetButton("Fire2") && timer >= timeBetweenAttacks && Time.timeScale != 0)//checks if enough time has elapsed when the fire button is clicked
+        if (started)
         {
-            timer = 0f;//resets the elapsed time and temporarily set the color of the head to red
-                       // GameObject b = Instantiate(dummy, heading.transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z));
-                       // b.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
-                       //b.GetComponent<Rigidbody>().velocity = heading.transform.forward.normalized;
+            timer += Time.deltaTime;//tracks time elapsed
+            if (Input.GetButton("Fire2") && timer >= timeBetweenAttacks && Time.timeScale != 0)//checks if enough time has elapsed when the fire button is clicked
+            {
+                timer = 0f;//resets the elapsed time and temporarily set the color of the head to red
+                           // GameObject b = Instantiate(dummy, heading.transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z));
+                           // b.GetComponent<basicProjectileBehavior>().isPlayerBullet = true;
+                           //b.GetComponent<Rigidbody>().velocity = heading.transform.forward.normalized;
 
-            animator.SetBool("IsCasting", true);
-            print("is shooting");
-            temp = Quaternion.Euler(0, 0, animator.GetFloat("PlayerRot"));
-        }
-        if (animator.GetBool("IsCasting") && animator.IsInTransition(0))
-        {
-            animator.SetBool("IsCasting", false);
+                animator.SetBool("IsCasting", true);
+                print("is shooting");
+                temp = Quaternion.Euler(0, 0, animator.GetFloat("PlayerRot"));
+            }
+            if (animator.GetBool("IsCasting") && animator.IsInTransition(0))
+            {
+                animator.SetBool("IsCasting", false);
+            }
         }
     }
 

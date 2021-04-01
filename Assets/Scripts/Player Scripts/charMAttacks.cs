@@ -16,30 +16,35 @@ public class charMAttacks : MonoBehaviour
     public AudioClip sword;
     public AudioSource sound;
     public Text display;
+    public bool started;
     /// </summary>
     void Start()
     {
         sound = GetComponent<AudioSource>();
         display.text = ("MA = " + damage);
+        started = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;//tracks time elapsed
-        if (Input.GetButton("Fire1") && timer >= timeBetweenAttacks && Time.timeScale != 0)//checks if enough time has elapsed when the fire button is clicked
+        if (started)
         {
-            timer = 0f;//resets the elapsed time and temporarily set the color of the head to red
-            //GetComponentInChildren<SpriteRenderer>().color = new Color(255,0,0);
-            animator.SetBool("IsAttacking", true);
-            
-            
-        }
+            timer += Time.deltaTime;//tracks time elapsed
+            if (Input.GetButton("Fire1") && timer >= timeBetweenAttacks && Time.timeScale != 0)//checks if enough time has elapsed when the fire button is clicked
+            {
+                timer = 0f;//resets the elapsed time and temporarily set the color of the head to red
+                           //GetComponentInChildren<SpriteRenderer>().color = new Color(255,0,0);
+                animator.SetBool("IsAttacking", true);
 
-        if (animator.GetBool("IsAttacking") && animator.IsInTransition(0))
-        {
-            animator.SetBool("IsAttacking", false);  
-            //GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 255);
+
+            }
+
+            if (animator.GetBool("IsAttacking") && animator.IsInTransition(0))
+            {
+                animator.SetBool("IsAttacking", false);
+                //GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 255);
+            }
         }
     }
     public void damageUpgrade(float amount) 

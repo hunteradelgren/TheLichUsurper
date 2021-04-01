@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     private float horizontalAxis; 
     private float verticalAxis;
     private Rigidbody prb;
-    public bool status;
+    public bool started;
     public GameObject arm;
     public Animator animator;
 
@@ -34,74 +34,79 @@ public class Movement : MonoBehaviour
     void Start()
     {
         sound = GetComponent<AudioSource>();
+        started = false;
     }
     void Awake()
     {
         floor = LayerMask.GetMask("Quad");
         prb = GetComponent<Rigidbody>();
+        
     }
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale != 0)
+        if (started)
         {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 0;
-
-            Vector3 objectPos = cam.WorldToScreenPoint(transform.position);
-            mousePos.x = mousePos.x - objectPos.x;
-            mousePos.y = mousePos.y - objectPos.y;
-
-            angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-
-
-
-
-            HitPoint.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
-            if (angle < 0)
+            if (Time.timeScale != 0)
             {
-                animator.SetFloat("PlayerRot", angle + 359);
-            }
-            else
-            {
-                animator.SetFloat("PlayerRot", angle);
-            }
-            setDirection();
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 0;
 
-            if (loadingTimer <= 0)
-            {
-                horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
-                verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
-                if (horizontalAxis != 0 || verticalAxis != 0)
+                Vector3 objectPos = cam.WorldToScreenPoint(transform.position);
+                mousePos.x = mousePos.x - objectPos.x;
+                mousePos.y = mousePos.y - objectPos.y;
+
+                angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+
+
+
+                HitPoint.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle + 90));
+                if (angle < 0)
                 {
-                    animator.SetBool("isMoving", true);
+                    animator.SetFloat("PlayerRot", angle + 359);
                 }
-                else 
+                else
                 {
-                    animator.SetBool("isMoving", false);
+                    animator.SetFloat("PlayerRot", angle);
                 }
-                transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime, Space.World); //moves in direction of the input
-                /*Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
-                //RaycastHit floorHit;
-                Plane groundPlane = new Plane(Vector3.right, Vector3.zero);
-                float raylength;
-                if (groundPlane.Raycast(camRay, out raylength))
+                setDirection();
+
+                if (loadingTimer <= 0)
                 {
-                    Vector3 pointToLook = camRay.GetPoint(raylength);
-                    Debug.DrawLine(camRay.origin, pointToLook, Color.blue);
-                    transform.LookAt(pointToLook);
+                    horizontalAxis = Input.GetAxis("Horizontal"); //gets the horizontal input
+                    verticalAxis = Input.GetAxis("Vertical"); //gets the vertical input
+                    if (horizontalAxis != 0 || verticalAxis != 0)
+                    {
+                        animator.SetBool("isMoving", true);
+                    }
+                    else
+                    {
+                        animator.SetBool("isMoving", false);
+                    }
+                    transform.Translate(new Vector2(horizontalAxis, verticalAxis) * moveSpeed * Time.deltaTime, Space.World); //moves in direction of the input
+                    /*Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
+                    //RaycastHit floorHit;
+                    Plane groundPlane = new Plane(Vector3.right, Vector3.zero);
+                    float raylength;
+                    if (groundPlane.Raycast(camRay, out raylength))
+                    {
+                        Vector3 pointToLook = camRay.GetPoint(raylength);
+                        Debug.DrawLine(camRay.origin, pointToLook, Color.blue);
+                        transform.LookAt(pointToLook);
 
 
 
 
-                /*Vector3 mousePoint = floorHit.point - transform.position;
-                mousePoint.y = 0f;
-                Quaternion newRot = Quaternion.LookRotation(mousePoint);
-                prb.MoveRotation(newRot);
-            }*/
+                    /*Vector3 mousePoint = floorHit.point - transform.position;
+                    mousePoint.y = 0f;
+                    Quaternion newRot = Quaternion.LookRotation(mousePoint);
+                    prb.MoveRotation(newRot);
+                }*/
+                }
+                else
+                    loadingTimer -= Time.deltaTime;
             }
-            else
-                loadingTimer -= Time.deltaTime;
         }
     }
         //moves the player towards the center of the room slightly when they touch a wall
@@ -121,20 +126,11 @@ public class Movement : MonoBehaviour
             }
         }
     
-    public void upgrade()
+    public void upgrade(float amount)
     {
-        status = !status;
-
-        if (status)
-        {
-            moveSpeed += 5;
-            print("speed upped");
-        }
-        else
-        {
-            moveSpeed -= 5;
-            print("speed downed");
-        }
+        
+            moveSpeed += amount;
+            
         
     }
 

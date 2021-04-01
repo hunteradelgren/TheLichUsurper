@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RoomTemplate : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class RoomTemplate : MonoBehaviour
     public GameObject LoadCanv;
     public GameObject player;
     public playerStatsManager pStats;
-
+    public Text LoadLabel;
     public Room currentRoom;
 
     public CameraMechanics cam;
@@ -28,7 +29,7 @@ public class RoomTemplate : MonoBehaviour
     {
         pStats = FindObjectOfType<playerStatsManager>();
         pStats.doneLoading = false;
-        player.SetActive(false);
+        //player.SetActive(false);
         LoadCanv.SetActive(true);
         //Time.timeScale = 0;
         Invoke("DifficultyTester", 1.5f); 
@@ -63,11 +64,13 @@ public class RoomTemplate : MonoBehaviour
         print("Loaded");
         pStats.doneLoading = true;
         StartCoroutine(delay());
-        startButton.SetActive(true);
+        
     }
     IEnumerator delay()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(3f);
+        startButton.SetActive(true);
+        LoadLabel.text = "Loaded";
     }
 
     public void OnPlayerEnterRoom(Room room)
@@ -81,5 +84,8 @@ public class RoomTemplate : MonoBehaviour
     {
         player.SetActive(true);
         LoadCanv.SetActive(false);
+        player.GetComponent<charMAttacks>().started = true;
+        player.GetComponent<charRAttacks>().started = true;
+        player.GetComponent<Movement>().started = true;
     }
 }
