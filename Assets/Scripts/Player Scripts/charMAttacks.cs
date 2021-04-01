@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class charMAttacks : MonoBehaviour
 {
@@ -8,16 +9,18 @@ public class charMAttacks : MonoBehaviour
     float timer;//time tracking field
     public float timeBetweenAttacks = .2f;//constant to track how long should be between each attack
     public GameObject attackBox;
-    public float damage = 1;
+    public float damage;//Now relies totally on the reference in the public inspector
     public Animator animator;
     public GameObject target;
     public bool hitSomething;
     public AudioClip sword;
     public AudioSource sound;
+    public Text display;
     /// </summary>
     void Start()
     {
         sound = GetComponent<AudioSource>();
+        display.text = ("MA = " + damage);
     }
 
     // Update is called once per frame
@@ -42,6 +45,7 @@ public class charMAttacks : MonoBehaviour
     public void damageUpgrade(float amount) 
     {
         damage += amount;
+        display.text = ("MA = " + damage);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

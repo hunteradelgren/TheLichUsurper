@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class charRAttacks : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class charRAttacks : MonoBehaviour
     [SerializeField]
     string projectileName;
     public Animator animator;
-
+    public Text display;
 
     private Quaternion temp;
 
@@ -23,6 +24,7 @@ public class charRAttacks : MonoBehaviour
     {
         projectilePrefab = Resources.Load<GameObject>(projectileName);
         animator = GetComponent<Animator>();
+        display.text = ("RA = " + damage);
     }
 
     // Update is called once per frame
@@ -49,6 +51,7 @@ public class charRAttacks : MonoBehaviour
     public void damageUpgrade(float amount)
     {
         damage += amount;
+        display.text = ("RA = " + damage);
     }
 
     public void Shoot()

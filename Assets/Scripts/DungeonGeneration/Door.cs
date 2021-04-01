@@ -42,7 +42,7 @@ public class Door : MonoBehaviour
     {
         if (animator.GetBool("ForceLock") && currentRoom.isCleared == true)
         {
-            print(1);
+            //print(1);//comment this line out unless using it for debugging
             isLocked = true;
             animator.SetBool("isOpen", !isLocked);
             padlock.isTrigger = false;
