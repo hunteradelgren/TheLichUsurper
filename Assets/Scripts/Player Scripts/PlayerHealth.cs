@@ -23,7 +23,8 @@ public class PlayerHealth : MonoBehaviour
 
     public float invulnerable;
 
-
+    public Text liveText;
+    public Text specText;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,18 @@ public class PlayerHealth : MonoBehaviour
         //hpSlider.value = currentHealth;
         status = false;
         invulnerable = 0;
+        if (inSpectralForm)
+        {
+            specText.text = stats.healthSC + "/" + stats.healthSM;
+            liveText.text = 0 + "/" + stats.healthM;
+            print("Showing dead health");
+        }
+        else
+        {
+            specText.text = maxSpectreHealth + "/" + stats.healthSM;
+            liveText.text = stats.healthC + "/" + stats.healthM;
+            print("Showing alive health");
+        }
     }
 
     // Update is called once per frame
@@ -73,6 +86,7 @@ public class PlayerHealth : MonoBehaviour
         //sets the player to spectral state
         inSpectralForm = true;
         currentHealth = specSlider.value;
+        liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
         GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         yield return new WaitForSecondsRealtime(1f);
@@ -122,13 +136,16 @@ public class PlayerHealth : MonoBehaviour
              if (!inSpectralForm)
             {
                 hpSlider.value = currentHealth;
+                
+                liveText.text = currentHealth + "/" + maxHealth;
             }
                         
              
             else
              {
               specSlider.value = currentHealth;
-              GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
+                specText.text = currentHealth + "/" + maxSpectreHealth;
+                GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
              }
 
             invulnerable = .5f;

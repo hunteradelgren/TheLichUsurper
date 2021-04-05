@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RoomTemplate : MonoBehaviour
 {
@@ -15,17 +16,22 @@ public class RoomTemplate : MonoBehaviour
     private GameObject[] roomCount;
     private GameObject[] EndRooms;
     public GameObject boss;
-    public GameObject curtain;
+    public GameObject startButton;
+    public GameObject LoadCanv;
+    public GameObject player;
     public playerStatsManager pStats;
-
+    public Text LoadLabel;
     public Room currentRoom;
 
     public CameraMechanics cam;
-
+    Time time;
     void Start()
     {
         pStats = FindObjectOfType<playerStatsManager>();
         pStats.doneLoading = false;
+        //player.SetActive(false);
+        LoadCanv.SetActive(true);
+        //Time.timeScale = 0;
         Invoke("DifficultyTester", 1.5f); 
 
     }
@@ -33,8 +39,8 @@ public class RoomTemplate : MonoBehaviour
 
     private void DifficultyTester()
     {
-        
 
+        //Time.timeScale = 0;
         roomCount = GameObject.FindGameObjectsWithTag("Room");
 
         if(roomCount.Length < roomRangeMin || roomCount.Length > roomRangeMax)
@@ -55,10 +61,17 @@ public class RoomTemplate : MonoBehaviour
         Instantiate(boss, EndRooms[EndRooms.Length - 1].transform.position, Quaternion.identity);
         
         Destroy(EndRooms[EndRooms.Length - 1]);
-        curtain.SetActive(false);
+        print("Loaded");
         pStats.doneLoading = true;
+        StartCoroutine(delay());
+        
     }
-
+    IEnumerator delay()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        startButton.SetActive(true);
+        LoadLabel.text = "Loaded";
+    }
 
     public void OnPlayerEnterRoom(Room room)
     {
@@ -67,6 +80,12 @@ public class RoomTemplate : MonoBehaviour
 
     }
 
-   
-
+    public void goLevel()
+    {
+        player.SetActive(true);
+        LoadCanv.SetActive(false);
+        player.GetComponent<charMAttacks>().started = true;
+        player.GetComponent<charRAttacks>().started = true;
+        player.GetComponent<Movement>().started = true;
+    }
 }
