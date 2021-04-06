@@ -23,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
 
     public float invulnerable;
 
+    public AudioSource heartbeat;
+
     public Text liveText;
     public Text specText;
     // Start is called before the first frame update
@@ -80,6 +82,7 @@ public class PlayerHealth : MonoBehaviour
     }
     IEnumerator becomeSpectre()
     {
+        heartbeat.Stop();
         Time.timeScale = 0;
         print("Player has entered Spectral Form");
 
@@ -150,9 +153,17 @@ public class PlayerHealth : MonoBehaviour
 
             invulnerable = .5f;
         }
-       
 
-    
+        if((hpSlider.value/hpSlider.maxValue)<= .25f && !inSpectralForm)
+        {
+            print("Play1");
+            heartbeat.Play();
+        }
+        else
+        {
+            print("Stop1");
+            heartbeat.Stop();
+        }
     }
 
     public void gainHealth(float boost)
@@ -173,6 +184,17 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             hpSlider.value = maxHealth;
+        }
+
+        if (hpSlider.value / hpSlider.maxValue <= .25f && !inSpectralForm)
+        {
+            print("Play");
+            heartbeat.Play();
+        }
+        else
+        {
+            print("Stop");
+            heartbeat.Stop();
         }
     }
 
