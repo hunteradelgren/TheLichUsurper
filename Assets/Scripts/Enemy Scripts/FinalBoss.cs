@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class FinalBoss : MonoBehaviour
 {
-    public GameObject portals;
     public playerStatsManager stats;
 
     public Transform Player;
+
+    [SerializeField]
+    string portalName;
+    public GameObject portals;
 
     public float Maxhealth = 200f;
     public float currentHealth;
@@ -30,12 +33,10 @@ public class FinalBoss : MonoBehaviour
     public bool canAttack;
     public bool validTarget;
     public float Timer = 0f;
+    public bool spawnedPortals = false;
 
     public float vulnerableTimer = 0f;
     public bool isVulnerable = false;
-
-    public List<EnemyHealth> spawnedEnemies;
-    public List<GameObject> spawnedPortals;
 
     private List<GameObject> colliding = new List<GameObject>();
 
@@ -51,6 +52,11 @@ public class FinalBoss : MonoBehaviour
 
     private Vector2 wanderTarget;
 
+    public Vector2 leftPortal;
+    public Vector2 rightPortal;
+    public Vector2 upPortal;
+    public Vector2 downPortal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +65,13 @@ public class FinalBoss : MonoBehaviour
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
+
+        portals = Resources.Load<GameObject>(portalName);
+
+        leftPortal = new Vector2(center.transform.position.x + 2, center.transform.position.y);
+        rightPortal = new Vector2(center.transform.position.x - 2, center.transform.position.y);
+        upPortal = new Vector2(center.transform.position.x, center.transform.position.y + 2);
+        downPortal = new Vector2(center.transform.position.x, center.transform.position.y - 2);
     }
 
     // Update is called once per frame
@@ -88,7 +101,6 @@ public class FinalBoss : MonoBehaviour
         /////////////////////////////////////////////////////////////
         if(spawnRoom == template.currentRoom)
         {
-
             //boss switches stances every 10 seconds
             stanceTimer += Time.deltaTime;
             if (stanceTimer >= 10)
@@ -97,6 +109,15 @@ public class FinalBoss : MonoBehaviour
                 stanceTimer = 0;
             }
 
+            if(spawnRoom.enemyCount == 1 && spawnedPortals)
+            {
+                isVulnerable = true;
+                vulnerableTimer = 0;
+                spawnedPortals = false;
+            }
+
+
+
             //boss is in vulnerable stance
             //stays still and is damageable. summons pillars to spawn enemies when leaving this state
             if (isVulnerable)
@@ -104,11 +125,30 @@ public class FinalBoss : MonoBehaviour
                 return;
             }
 
+            //else if (!spawnedPortals)
+            //{
+            //    animator.SetTrigger("SpawnPortals");
+
+            //    GameObject portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = leftPortal;
+
+            //    portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = rightPortal;
+
+            //    portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = upPortal;
+
+            //    portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = downPortal;
+
+            //    spawnedPortals = true;
+            //}
+
             //boss is in melee stance
             //chases player swinging sword
             else if (meleeStance)
             {
-                    moveSpeed = 20f; //phase 2 movement spped
+                    moveSpeed = 20f; //melee stance movement spped
                     checkCanAttack();
                     checkInRange();
                     ///boss is doing swing attack
@@ -155,6 +195,7 @@ public class FinalBoss : MonoBehaviour
             //wanders around shooting
             else
             {
+                moveSpeed = 10f; //ranged stance move speed
                 if (Vector2.Distance(wanderTarget, transform.position) < 1 || wanderTarget == null)
                 {
                     wanderTarget = new Vector2(transform.position.x + Random.Range(-5, 5), transform.position.y + Random.Range(-5, 5));
