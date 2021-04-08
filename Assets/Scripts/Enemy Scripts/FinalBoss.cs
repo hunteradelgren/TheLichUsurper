@@ -1,0 +1,360 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class FinalBoss : MonoBehaviour
+{
+    public playerStatsManager stats;
+
+    public Transform Player;
+
+    [SerializeField]
+    string portalName;
+    public GameObject portals;
+
+    public float Maxhealth = 200f;
+    public float currentHealth;
+    public float moveSpeed;
+
+    public Vector2 velocity;
+    public bool wasHit = false;
+    public float hitTimer = 0f;
+
+    public int numPortals = 2;
+
+    public float attackRate = 1f;
+    public float swingDist = 2f;
+    public float targetChaseDist = 1f;
+    public float swingDamage = 10f;
+    public float rangeDamage = 10f;
+    public bool isAttacking = false;
+    public bool inRange;
+    public bool canAttack;
+    public bool validTarget;
+    public float Timer = 0f;
+    public bool spawnedPortals = false;
+
+    public float vulnerableTimer = 0f;
+    public bool isVulnerable = false;
+
+    private List<GameObject> colliding = new List<GameObject>();
+
+    private RoomTemplate template;
+    public Room spawnRoom;
+
+    public GameObject center; //uses the center game object in the room
+    public Animator animator;
+    public SpriteRenderer bossSprite;
+
+    public float stanceTimer = 0f;
+    public bool meleeStance = true;
+
+    private Vector2 wanderTarget;
+
+    public Vector2 leftPortal;
+    public Vector2 rightPortal;
+    public Vector2 upPortal;
+    public Vector2 downPortal;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
+        currentHealth = Maxhealth;
+        template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
+        animator = GetComponent<Animator>();
+        bossSprite = GetComponent<SpriteRenderer>();
+
+        portals = Resources.Load<GameObject>(portalName);
+
+        leftPortal = new Vector2(center.transform.position.x + 2, center.transform.position.y);
+        rightPortal = new Vector2(center.transform.position.x - 2, center.transform.position.y);
+        upPortal = new Vector2(center.transform.position.x, center.transform.position.y + 2);
+        downPortal = new Vector2(center.transform.position.x, center.transform.position.y - 2);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //is boss dead
+        if (currentHealth <= 0)
+        {
+            Object.Destroy(gameObject);
+            SceneManager.LoadScene(3);
+        }
+        //boss sprite is colored red if hit
+        if (wasHit)
+        {
+            hitTimer += Time.deltaTime;
+            if (hitTimer >= .15)
+            {
+                bossSprite.color = new Color(1, 1, 1);
+                wasHit = false;
+                hitTimer = 0;
+            }
+        }
+
+
+        /////////////////////////////////////////////////////////////
+        ///Boss is Active
+        /////////////////////////////////////////////////////////////
+        if(spawnRoom == template.currentRoom)
+        {
+            //boss switches stances every 10 seconds
+            stanceTimer += Time.deltaTime;
+            if (stanceTimer >= 10)
+            {
+                meleeStance = !meleeStance;
+                stanceTimer = 0;
+            }
+
+            if(spawnRoom.enemyCount == 1 && spawnedPortals)
+            {
+                isVulnerable = true;
+                vulnerableTimer = 0;
+                spawnedPortals = false;
+            }
+
+
+
+            //boss is in vulnerable stance
+            //stays still and is damageable. summons pillars to spawn enemies when leaving this state
+            if (isVulnerable)
+            {
+                return;
+            }
+
+            //else if (!spawnedPortals)
+            //{
+            //    animator.SetTrigger("SpawnPortals");
+
+            //    GameObject portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = leftPortal;
+
+            //    portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = rightPortal;
+
+            //    portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = upPortal;
+
+            //    portal = Instantiate<GameObject>(portals);
+            //    portal.transform.position = downPortal;
+
+            //    spawnedPortals = true;
+            //}
+
+            //boss is in melee stance
+            //chases player swinging sword
+            else if (meleeStance)
+            {
+                    moveSpeed = 20f; //melee stance movement spped
+                    checkCanAttack();
+                    checkInRange();
+                    ///boss is doing swing attack
+                    if (isAttacking)
+                    {
+                        animator.SetBool("isMoving", false);
+                        Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
+                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                        if (angle < 0)
+                            animator.SetFloat("EnemyRot", angle + 359);
+                        else
+                            animator.SetFloat("EnemyRot", angle);
+                        setDirection();
+                        animator.SetBool("isAttacking", true);
+                    }
+                    //boss is chasing player until reaching the target distance
+                    else if (Vector2.Distance(Player.transform.position, transform.position) >= targetChaseDist)
+                    {
+                        velocity = Player.position - transform.position;
+                        transform.Translate(velocity.normalized * moveSpeed * Time.deltaTime, Space.World);
+                        animator.SetBool("isMoving", true);
+                        Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
+                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+                        if (angle < 0)
+                            animator.SetFloat("EnemyRot", angle + 359);
+                        else
+                            animator.SetFloat("EnemyRot", angle);
+                        setDirection();
+                        animator.SetBool("isMoving", true);
+                    }
+                    else
+                    {
+                        //player is inrange
+                        if (canAttack && inRange)
+                        {
+                            isAttacking = true;
+                        }
+                    }
+            }
+
+            //boss is in range stance
+            //wanders around shooting
+            else
+            {
+                moveSpeed = 10f; //ranged stance move speed
+                if (Vector2.Distance(wanderTarget, transform.position) < 1 || wanderTarget == null)
+                {
+                    wanderTarget = new Vector2(transform.position.x + Random.Range(-5, 5), transform.position.y + Random.Range(-5, 5));
+                }
+                velocity = new Vector2(wanderTarget.x - transform.position.x, wanderTarget.y - transform.position.y);
+                velocity = velocity.normalized;
+            }
+        }
+        /////////////////////////////////////////////////////////////
+        ///
+        /////////////////////////////////////////////////////////////
+    }
+
+    void checkValidTarget()
+    {
+        //does the target have a player health component
+        if (Player.GetComponent<PlayerHealth>() != null)
+        {
+            validTarget = true;
+        }
+        else
+        {
+            validTarget = false;
+        }
+    }
+
+    void checkCanAttack()
+    {
+        //enemy's attack is on cooldown
+        if (!canAttack)
+        {
+            Timer += Time.deltaTime; //adds to the timer
+            //cooldown time is finished
+            if (Timer >= attackRate)
+            {
+                //allow enemy to attack
+                canAttack = true;
+                Timer = 0f;
+            }
+            animator.SetBool("isAttacking", false);
+        }
+    }
+
+    void checkInRange()
+    {
+        if (Vector2.Distance(Player.transform.position, transform.position) <= swingDist) //target is in range
+        {
+            inRange = true;
+        }
+        else //target is out of range
+        {
+            inRange = false;
+        }
+    }
+
+    public void swingAttack()
+    {
+        //player is in range for swing attack
+        if (Vector2.Distance(Player.transform.position,transform.position)<=swingDist)
+        {
+            Player.GetComponent<PlayerHealth>().takeDamage(swingDamage);
+            print("hit player with swing");
+        }
+        animator.SetBool("isAttacking", false);
+        isAttacking = false;
+        canAttack = false;
+        Timer = 0f;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            colliding.Add(collision.gameObject);
+        }
+        if (collision.tag == "Boss")
+        {
+            spawnRoom = collision.GetComponent<Room>();
+        }
+
+        if (collision.tag == "Wall" || collision.GetComponent<Door>() != null)
+        {
+            avoidWall();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            colliding.Remove(collision.gameObject);
+        }
+    }
+
+    void avoidWall()
+    {
+        foreach (GameObject c in colliding)
+        {
+            if (c.tag == "Wall" || c.GetComponent<Door>() != null)
+            {
+                wanderTarget = new Vector2(transform.position.x + Random.Range(-5, 5), transform.position.y + Random.Range(-5, 5));
+                Vector2 obstaclePos = c.transform.position;
+                float dist = Vector2.Distance(obstaclePos, transform.position);
+                //velocity  = current velocity + ((position - obstacle position) + Random(-15,15)) * distance/100)
+                velocity = new Vector2(velocity.x + (center.transform.position.x - transform.position.x), velocity.y + (center.transform.position.y - transform.position.y)).normalized;
+            }
+        }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        if (isVulnerable)
+        {
+            currentHealth -= amount;
+            bossSprite.color = new Color(1, 0, 0);
+            wasHit = true;
+        }
+    }
+
+    public void setDirection()
+    {
+        //diag up right
+        if (animator.GetFloat("EnemyRot") < 75 && animator.GetFloat("EnemyRot") > 5)
+        {
+            animator.SetInteger("Direction", 0);
+        }
+        //up
+        else if (animator.GetFloat("EnemyRot") < 105 && animator.GetFloat("EnemyRot") > 75)
+        {
+            animator.SetInteger("Direction", 1);
+        }
+        //diag up left
+        else if (animator.GetFloat("EnemyRot") < 165 && animator.GetFloat("EnemyRot") > 105)
+        {
+            animator.SetInteger("Direction", 2);
+        }
+        //left
+        else if (animator.GetFloat("EnemyRot") < 195 && animator.GetFloat("EnemyRot") > 165)
+        {
+            animator.SetInteger("Direction", 3);
+        }
+        //diag down left
+        else if (animator.GetFloat("EnemyRot") < 255 && animator.GetFloat("EnemyRot") > 195)
+        {
+            animator.SetInteger("Direction", 4);
+        }
+        //down
+        else if (animator.GetFloat("EnemyRot") < 285 && animator.GetFloat("EnemyRot") > 255)
+        {
+            animator.SetInteger("Direction", 5);
+        }
+        //diag down right
+        else if (animator.GetFloat("EnemyRot") < 359 && animator.GetFloat("EnemyRot") > 285)
+        {
+            animator.SetInteger("Direction", 6);
+        }
+        //right
+        else
+        {
+            animator.SetInteger("Direction", 7);
+        }
+    }
+}
