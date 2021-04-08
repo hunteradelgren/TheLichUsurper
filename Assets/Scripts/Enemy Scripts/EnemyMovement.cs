@@ -32,7 +32,9 @@ public class EnemyMovement : MonoBehaviour
     private bool hitObstacle = false;
     private float obsTimer = 0f;
 
+    public EnemyHealth hp;
 
+    RaycastHit hit;
     //enemy will not move while it swings
     public bool isAttacking = false;
 
@@ -50,13 +52,22 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (spawnRoom == template.currentRoom)
+        if(hp.IsStunned)
         {
+            animator.SetBool("isMoving", false);
+            Debug.Log("stunned");
+        }
+        
+        else if (spawnRoom == template.currentRoom)
+        {
+            
             //if enemy is not attacking
             if (!isAttacking)
             {
@@ -129,8 +140,10 @@ public class EnemyMovement : MonoBehaviour
         else if (distance <= chaseDist && distance >= runDist) 
         {
             //target is within the preferred range
-            wanderMode = false;
+            Vector3 directionToTarget = (target.position - transform.position).normalized;
+            wanderMode = Physics.Raycast(transform.position, directionToTarget, out hit, targetDist);
         }
+      
         else
         {
             //there is a target but the target is outside the preferred range
@@ -230,4 +243,17 @@ public class EnemyMovement : MonoBehaviour
             colliding.Remove(collision.gameObject);
         }
     }
+
+    
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -36,6 +36,8 @@ public class RangedAttack : MonoBehaviour
     private RoomTemplate template;
     public Animator animator;
 
+    public EnemyHealth hp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,12 +47,17 @@ public class RangedAttack : MonoBehaviour
         target = playerTarget;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
+        //Stunned = EnemyHealth.GetComponent<IsStunned>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (spawnRoom == template.currentRoom)
+        if (hp.IsStunned) 
+        {
+
+        }
+        else if (spawnRoom == template.currentRoom)
         {
             checkCanAttack();
             checkInRange();

@@ -137,6 +137,7 @@ MonoBehaviour:
   animator: {fileID: 4854067756715089857}
   stats: {fileID: 0}
   invulnerable: 0
+  heartbeat: {fileID: 0}
   liveText: {fileID: 0}
   specText: {fileID: 0}
 --- !u!50 &4854067756715089868
@@ -265,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4159a32f0d8294380d88f3e03ae3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 0.3
   damage: 1
   projectileName: PlayerBullet
   animator: {fileID: 4854067756715089857}

@@ -49,7 +49,7 @@ public class charMAttacks : MonoBehaviour
     }
     public void damageUpgrade(float amount) 
     {
-        damage += amount;
+        damage = damage + amount;
         display.text = ("MA = " + damage);
     }
 

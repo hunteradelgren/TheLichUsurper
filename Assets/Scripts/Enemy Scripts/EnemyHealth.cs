@@ -10,11 +10,19 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;
     public Animator animator;
 
+    public float HitStunTime;
+    float hitStun;
+
+    public bool IsStunned;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+        hitStun = 0;
+        IsStunned = false;
+        
     }
 
     // Update is called once per frame
@@ -25,16 +33,44 @@ public class EnemyHealth : MonoBehaviour
         {
             Object.Destroy(gameObject);
         }
+    
+        if(hitStun>0)
+        {
+            IsStunned = true;
+            hitStun -= Time.deltaTime;
+        }
+    
+        else if(hitStun<=0)
+        {
+            IsStunned = false;
+        }
+    
+    
     }
 
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
         animator.SetTrigger("wasHit");
+        hitStun = HitStunTime;
     }
-
+    .
+    public void TakeTrapDamage(float amount)
+    {
+        currentHealth -= amount;
+        animator.SetTrigger("wasHit");
+        
+    }
     public void HealDamage(float amount)
     {
         currentHealth += amount;
     }
+
+    public bool GetIsStunned()
+    {
+        return IsStunned;
+    }
+
+
+
 }

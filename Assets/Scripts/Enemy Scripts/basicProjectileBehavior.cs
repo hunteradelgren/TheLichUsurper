@@ -47,7 +47,9 @@ public class basicProjectileBehavior : MonoBehaviour
         {
             GameObject.Destroy(gameObject);
         }
+
         
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -71,14 +73,21 @@ public class basicProjectileBehavior : MonoBehaviour
         {
             GameObject.Destroy(gameObject);
         }
+
+        if (collision.transform.tag == "Playerprojectile")
+        {
+            GameObject.Destroy(gameObject);
+        }
+
+
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    /*void OnTriggerExit2D(Collider2D collision)
     {
         if (isPlayerBullet && collision.gameObject.GetComponentInParent<PlayerHealth>() == null && collision.gameObject.GetComponent<basicProjectileBehavior>() == null)
         {
             GameObject.Destroy(gameObject);
         }
 
-    }
+    }*/
 }

@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8554052697694655666}
   - component: {fileID: 8554052697694655667}
+  - component: {fileID: -2353263785133483707}
   - component: {fileID: 8554052697694655668}
+  - component: {fileID: 8554052697694655671}
   - component: {fileID: 8554052697694655669}
   - component: {fileID: 8554052697694655670}
-  - component: {fileID: 8554052697694655671}
   - component: {fileID: 2985363300453435458}
   - component: {fileID: 4701424482417478631}
-  - component: {fileID: -2353263785133483707}
   - component: {fileID: 6560605934848613853}
   - component: {fileID: -3986533503362952871}
   m_Layer: 0
@@ -60,10 +60,27 @@ MonoBehaviour:
   runDist: 3
   wanderMode: 0
   distance: 0
+  hp: {fileID: -2353263785133483707}
   isAttacking: 0
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &-2353263785133483707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554052697694655672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  animator: {fileID: 0}
+  HitStunTime: 1
+  IsStunned: 0
 --- !u!114 &8554052697694655668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +97,29 @@ MonoBehaviour:
   rotSpeed: 180
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &8554052697694655671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554052697694655672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a09b332ec50a04caea12af62e5af22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  target: {fileID: 0}
+  attackRange: 10
+  chargeTime: 0
+  attackRate: 1.5
+  projectileName: BoneProjectile
+  damage: 0.5
+  playerTarget: {fileID: 0}
+  spawnRoom: {fileID: 0}
+  animator: {fileID: 0}
+  hp: {fileID: -2353263785133483707}
 --- !u!50 &8554052697694655669
 Rigidbody2D:
   serializedVersion: 4
@@ -117,28 +157,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.19
---- !u!114 &8554052697694655671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554052697694655672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a09b332ec50a04caea12af62e5af22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActive: 0
-  target: {fileID: 0}
-  attackRange: 10
-  chargeTime: 0
-  attackRate: 1.5
-  projectileName: BoneProjectile
-  damage: 0.5
-  playerTarget: {fileID: 0}
-  spawnRoom: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!212 &2985363300453435458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -209,20 +227,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-2353263785133483707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554052697694655672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 5
-  animator: {fileID: 0}
 --- !u!58 &6560605934848613853
 CircleCollider2D:
   m_ObjectHideFlags: 0
