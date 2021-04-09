@@ -30,7 +30,7 @@ public class SpikeTrap : MonoBehaviour
         if (collision.tag == "Enemy")
         {
             timer = 0;
-            collision.GetComponent<EnemyHealth>().TakeTrapDamage(damage*.4);
+            collision.GetComponent<EnemyHealth>().TakeTrapDamage(damage*.4f);
         }
 
 

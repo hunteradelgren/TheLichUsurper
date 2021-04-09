@@ -174,16 +174,19 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = boost;
             hpSlider.value = currentHealth;
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 100);
+            liveText.text = currentHealth + "/" + maxHealth;
         }
         else if (!inSpectralForm && currentHealth+boost <= maxHealth)
         {
             //increases health by received amount
             currentHealth += boost;
             hpSlider.value = currentHealth;
+            liveText.text = currentHealth + "/" + maxHealth;
         }
         else
         {
             hpSlider.value = maxHealth;
+            liveText.text = currentHealth + "/" + maxHealth;
         }
 
         if (hpSlider.value / hpSlider.maxValue <= .25f && !inSpectralForm)

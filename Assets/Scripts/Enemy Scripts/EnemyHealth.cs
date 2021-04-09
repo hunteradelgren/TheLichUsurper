@@ -54,7 +54,6 @@ public class EnemyHealth : MonoBehaviour
         animator.SetTrigger("wasHit");
         hitStun = HitStunTime;
     }
-    .
     public void TakeTrapDamage(float amount)
     {
         currentHealth -= amount;

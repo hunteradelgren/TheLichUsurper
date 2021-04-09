@@ -6,7 +6,7 @@ public class MeleeUpgrade : MonoBehaviour
 {
     private charMAttacks player;
     [SerializeField]
-    float damageGain = .4;
+    float damageGain = .4f;
     // Start is called before the first frame update
     void Start()
     {
