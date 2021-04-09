@@ -10,8 +10,17 @@ public class FinalBoss : MonoBehaviour
     public Transform Player;
 
     [SerializeField]
-    string portalName;
-    public GameObject portals;
+    string portalName1;
+    [SerializeField]
+    string portalName2;
+    [SerializeField]
+    string portalName3;
+    [SerializeField]
+    string portalName4;
+    public GameObject portal1;
+    public GameObject portal2;
+    public GameObject portal3;
+    public GameObject portal4;
 
     public float Maxhealth = 200f;
     public float currentHealth;
@@ -66,7 +75,10 @@ public class FinalBoss : MonoBehaviour
         animator = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
 
-        portals = Resources.Load<GameObject>(portalName);
+        portal1 = Resources.Load<GameObject>(portalName1);
+        portal2 = Resources.Load<GameObject>(portalName2);
+        portal3 = Resources.Load<GameObject>(portalName3);
+        portal4 = Resources.Load<GameObject>(portalName4);
 
         leftPortal = new Vector2(center.transform.position.x + 2, center.transform.position.y);
         rightPortal = new Vector2(center.transform.position.x - 2, center.transform.position.y);
@@ -125,24 +137,24 @@ public class FinalBoss : MonoBehaviour
                 return;
             }
 
-            //else if (!spawnedPortals)
-            //{
-            //    animator.SetTrigger("SpawnPortals");
+            else if (!spawnedPortals)
+            {
+                animator.SetTrigger("SpawnPortals");
 
-            //    GameObject portal = Instantiate<GameObject>(portals);
-            //    portal.transform.position = leftPortal;
+                GameObject portal = Instantiate<GameObject>(portal1);
+                portal.transform.position = leftPortal;
 
-            //    portal = Instantiate<GameObject>(portals);
-            //    portal.transform.position = rightPortal;
+                portal = Instantiate<GameObject>(portal2);
+                portal.transform.position = rightPortal;
 
-            //    portal = Instantiate<GameObject>(portals);
-            //    portal.transform.position = upPortal;
+                portal = Instantiate<GameObject>(portal3);
+                portal.transform.position = upPortal;
 
-            //    portal = Instantiate<GameObject>(portals);
-            //    portal.transform.position = downPortal;
+                portal = Instantiate<GameObject>(portal4);
+                portal.transform.position = downPortal;
 
-            //    spawnedPortals = true;
-            //}
+                spawnedPortals = true;
+            }
 
             //boss is in melee stance
             //chases player swinging sword
