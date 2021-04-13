@@ -22,7 +22,7 @@ public class RoomTemplate : MonoBehaviour
     public playerStatsManager pStats;
     public Text LoadLabel;
     public Room currentRoom;
-
+    public Text currencyText;
     public CameraMechanics cam;
     Time time;
     void Start()
@@ -82,7 +82,9 @@ public class RoomTemplate : MonoBehaviour
 
     public void goLevel()
     {
-        player.SetActive(true);
+        pStats.currencyText = currencyText;
+        pStats.currencyText.text = "X " + pStats.currency;
+        //player.SetActive(true);
         LoadCanv.SetActive(false);
         player.GetComponent<charMAttacks>().started = true;
         player.GetComponent<charRAttacks>().started = true;

@@ -20,11 +20,14 @@ public class PlayerHealth : MonoBehaviour
     public bool status;
     public Animator animator;
     public playerStatsManager stats;
-
+    public Image healthBar;
     public float invulnerable;
-
+    
     public Text liveText;
     public Text specText;
+
+    Color livecolor;
+    Color specColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,8 @@ public class PlayerHealth : MonoBehaviour
             liveText.text = stats.healthC + "/" + stats.healthM;
             print("Showing alive health");
         }
+        livecolor = new Color(245, 101, 101, 255);
+        specColor = new Color(160, 141, 141, 255);
     }
 
     // Update is called once per frame
@@ -85,10 +90,13 @@ public class PlayerHealth : MonoBehaviour
 
         //sets the player to spectral state
         inSpectralForm = true;
-        currentHealth = specSlider.value;
+        //currentHealth = specSlider.value;
+        currentHealth = stats.healthSM;
+        healthBar.fillAmount = (currentHealth / maxSpectreHealth);
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
         GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
+        healthBar.GetComponent<Image>().color = specColor;
         yield return new WaitForSecondsRealtime(1f);
         
         Time.timeScale = 1;
@@ -135,16 +143,17 @@ public class PlayerHealth : MonoBehaviour
              currentHealth -= damage;
              if (!inSpectralForm)
             {
-                hpSlider.value = currentHealth;
-                
+                //hpSlider.value = currentHealth;
+                healthBar.fillAmount = (currentHealth / maxHealth);
                 liveText.text = currentHealth + "/" + maxHealth;
             }
                         
              
             else
              {
-              specSlider.value = currentHealth;
+                //specSlider.value = currentHealth;
                 specText.text = currentHealth + "/" + maxSpectreHealth;
+                healthBar.fillAmount = (currentHealth / maxSpectreHealth);
                 GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
              }
 
@@ -161,18 +170,22 @@ public class PlayerHealth : MonoBehaviour
         {
             inSpectralForm = false;
             currentHealth = boost;
-            hpSlider.value = currentHealth;
+            //hpSlider.value = currentHealth;
+            healthBar.fillAmount = (currentHealth / maxSpectreHealth);
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 100);
+            healthBar.GetComponent<Image>().color = livecolor;
         }
         else if (!inSpectralForm && currentHealth+boost <= maxHealth)
         {
             //increases health by received amount
             currentHealth += boost;
-            hpSlider.value = currentHealth;
+            //hpSlider.value = currentHealth;
+            healthBar.fillAmount = (currentHealth / maxHealth);
         }
         else
         {
-            hpSlider.value = maxHealth;
+            //hpSlider.value = maxHealth;
+            healthBar.fillAmount = (currentHealth / maxHealth);
         }
     }
 
