@@ -77,6 +77,10 @@ public class charMAttacks : MonoBehaviour
         {
             target.GetComponent<FirstBoss>().TakeDamage(damage);
         }
+        if (target.GetComponent<FinalBoss>() != null)
+        {
+            target.GetComponent<FinalBoss>().TakeDamage(damage);
+        }
     }
     public void playSwordSound()
     {

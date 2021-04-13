@@ -959,8 +959,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1047,7 +1047,7 @@ PrefabInstance:
     - target: {fileID: -1388335241529686543, guid: 4d45c258698da584c82082ef8650512f, type: 3}
       propertyPath: spawnRoom
       value: 
-      objectReference: {fileID: 411625963058913215}
+      objectReference: {fileID: 0}
     - target: {fileID: 4117600260635603390, guid: 4d45c258698da584c82082ef8650512f, type: 3}
       propertyPath: m_RootOrder
       value: 9

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4987305794020553522}
   - component: {fileID: 1161091705673846982}
-  - component: {fileID: 4987305794020553521}
   - component: {fileID: 4987305794020553677}
   - component: {fileID: 4987305794020553520}
   - component: {fileID: 4987305794020553676}
@@ -19,6 +18,7 @@ GameObject:
   - component: {fileID: 6542761242989192133}
   - component: {fileID: 5331714961922408160}
   - component: {fileID: 651864435220601339}
+  - component: {fileID: 6384596849769850331}
   m_Layer: 0
   m_Name: PortalZombie
   m_TagString: Enemy
@@ -56,31 +56,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   HitStunTime: 1
   IsStunned: 0
---- !u!114 &4987305794020553521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4987305794020553527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e6e96fd832533459c2e6c0a2b1bf75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActive: 0
-  target: {fileID: 0}
-  targetDist: 0.5
-  movSpeed: 2
-  chaseDist: 6
-  runDist: 0.3
-  wanderMode: 0
-  distance: 0
-  hp: {fileID: 1161091705673846982}
-  isAttacking: 0
-  spawnRoom: {fileID: 0}
-  playerTarget: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!114 &4987305794020553677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,3 +315,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6384596849769850331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987305794020553527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766fc4d81829ed44ea72a123bb9df203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  target: {fileID: 0}
+  targetDist: 0.5
+  movSpeed: 2
+  chaseDist: 6
+  runDist: 0.3
+  wanderMode: 0
+  distance: 0
+  hp: {fileID: 1161091705673846982}
+  isAttacking: 0
+  spawnRoom: {fileID: 0}
+  playerTarget: {fileID: 0}
+  animator: {fileID: 0}

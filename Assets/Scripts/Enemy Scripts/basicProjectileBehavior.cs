@@ -69,6 +69,11 @@ public class basicProjectileBehavior : MonoBehaviour
             GameObject.Destroy(gameObject);
             collision.gameObject.GetComponent<FirstBoss>().TakeDamage(damage);
         }
+        else if (isPlayerBullet && collision.gameObject.GetComponent<FinalBoss>() != null)
+        {
+            GameObject.Destroy(gameObject);
+            collision.gameObject.GetComponent<FirstBoss>().TakeDamage(damage);
+        }
         if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null || collision.transform.tag == "Obstacle")
         {
             GameObject.Destroy(gameObject);

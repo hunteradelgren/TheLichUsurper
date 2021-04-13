@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class PortalEnemyMovement : MonoBehaviour
 {
     public bool isActive = false;
 
@@ -225,10 +225,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom" || other.tag == "Boss")
-            spawnRoom = other.GetComponent<Room>();
-
-        else if (other.tag == "Wall" || other.GetComponent<Door>() != null || other.tag == "Enemy")
+        if (other.tag == "Wall" || other.GetComponent<Door>() != null || other.tag == "Enemy")
         {
             colliding.Add(other.gameObject);
         }

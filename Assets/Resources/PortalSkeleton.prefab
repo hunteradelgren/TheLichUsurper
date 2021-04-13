@@ -9,15 +9,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324903827732886146}
-  - component: {fileID: 324903827732886147}
   - component: {fileID: 3270691787612815221}
   - component: {fileID: 324903827732886148}
-  - component: {fileID: 324903827732886151}
   - component: {fileID: 324903827732886149}
   - component: {fileID: 324903827732886150}
   - component: {fileID: 6582705535947304562}
   - component: {fileID: 3677896616296099287}
   - component: {fileID: 2972278458892794861}
+  - component: {fileID: 4603018310615451611}
+  - component: {fileID: 243161000028616427}
   m_Layer: 0
   m_Name: PortalSkeleton
   m_TagString: Enemy
@@ -39,31 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &324903827732886147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324903827732886152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e6e96fd832533459c2e6c0a2b1bf75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActive: 0
-  target: {fileID: 0}
-  targetDist: 8
-  movSpeed: 2
-  chaseDist: 5000
-  runDist: 3
-  wanderMode: 0
-  distance: 0
-  hp: {fileID: 3270691787612815221}
-  isAttacking: 0
-  spawnRoom: {fileID: 0}
-  playerTarget: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!114 &3270691787612815221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,29 +71,6 @@ MonoBehaviour:
   rotSpeed: 180
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
---- !u!114 &324903827732886151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324903827732886152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a09b332ec50a04caea12af62e5af22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActive: 0
-  target: {fileID: 0}
-  attackRange: 10
-  chargeTime: 0
-  attackRate: 1.5
-  projectileName: BoneProjectile
-  damage: 0.5
-  playerTarget: {fileID: 0}
-  spawnRoom: {fileID: 0}
-  animator: {fileID: 0}
-  hp: {fileID: 3270691787612815221}
 --- !u!50 &324903827732886149
 Rigidbody2D:
   serializedVersion: 4
@@ -242,3 +194,51 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.19
+--- !u!114 &4603018310615451611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324903827732886152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766fc4d81829ed44ea72a123bb9df203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  target: {fileID: 0}
+  targetDist: 8
+  movSpeed: 2
+  chaseDist: 5000
+  runDist: 3
+  wanderMode: 0
+  distance: 0
+  hp: {fileID: 3270691787612815221}
+  isAttacking: 0
+  spawnRoom: {fileID: 0}
+  playerTarget: {fileID: 0}
+  animator: {fileID: 0}
+--- !u!114 &243161000028616427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324903827732886152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800fbff63774af54f92050c020c77bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  target: {fileID: 0}
+  attackRange: 10
+  chargeTime: 0
+  attackRate: 1.5
+  projectileName: BoneProjectile
+  damage: 0.5
+  playerTarget: {fileID: 0}
+  spawnRoom: {fileID: 0}
+  animator: {fileID: 0}
+  hp: {fileID: 3270691787612815221}
