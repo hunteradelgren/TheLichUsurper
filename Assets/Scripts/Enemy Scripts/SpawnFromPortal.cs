@@ -13,14 +13,14 @@ public class SpawnFromPortal : MonoBehaviour
     void Start()
     {
         enemy = Resources.Load<GameObject>(enemyName);
-        Spawnenemy();
+        //Spawnenemy();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (spawnroom != null)
-        //Spawnenemy();
+        if (spawnroom != null)
+            Spawnenemy();
     }
 
     public void Spawnenemy()
