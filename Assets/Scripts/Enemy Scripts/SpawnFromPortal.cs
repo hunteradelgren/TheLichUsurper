@@ -8,6 +8,7 @@ public class SpawnFromPortal : MonoBehaviour
 
     GameObject enemy;
     public string enemyName;
+    public Room spawnroom = null;
 
     void Start()
     {
@@ -18,12 +19,18 @@ public class SpawnFromPortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if (spawnroom != null)
+        //Spawnenemy();
     }
 
     public void Spawnenemy()
     {
-        GameObject e = Instantiate<GameObject>(enemy);
-        e.transform.position = transform.position;
+        GameObject e = Instantiate<GameObject>(enemy,transform.position,Quaternion.identity);
+        e.GetComponent<EnemyMovement>().spawnRoom = spawnroom;
+        destroyPortal();
+    }
+    public void destroyPortal()
+    {
+        DestroyObject(gameObject);
     }
 }

@@ -66,10 +66,16 @@ public class FinalBoss : MonoBehaviour
     public Vector2 upPortal;
     public Vector2 downPortal;
 
+    //name of the projectile in the resources folder
+    [SerializeField]
+    string projectileName;
+    private GameObject projectilePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
+        projectilePrefab = Resources.Load<GameObject>(projectileName);
         currentHealth = Maxhealth;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
@@ -137,21 +143,25 @@ public class FinalBoss : MonoBehaviour
                 return;
             }
 
-            else if (!spawnedPortals)
+            else if (!spawnedPortals && !meleeStance)
             {
                 animator.SetTrigger("SpawnPortals");
 
                 GameObject portal = Instantiate<GameObject>(portal1);
                 portal.transform.position = leftPortal;
+                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
                 portal = Instantiate<GameObject>(portal2);
                 portal.transform.position = rightPortal;
+                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
                 portal = Instantiate<GameObject>(portal3);
                 portal.transform.position = upPortal;
+                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
                 portal = Instantiate<GameObject>(portal4);
                 portal.transform.position = downPortal;
+                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
                 spawnedPortals = true;
             }
@@ -275,6 +285,19 @@ public class FinalBoss : MonoBehaviour
         isAttacking = false;
         canAttack = false;
         Timer = 0f;
+    }
+
+    void ShootProjectile()
+    {
+        //instantiates the projectile
+        GameObject projectile = Instantiate<GameObject>(projectilePrefab);
+        //moves the projectile on top of the enemy
+        projectile.transform.position = transform.position;
+        //rotates projectile to where the enemy is facing
+        projectile.transform.rotation = Quaternion.Euler(0, 0, animator.GetFloat("EnemyRot"));
+
+        projectile.GetComponent<basicProjectileBehavior>().damage = rangeDamage;
+        animator.SetBool("isAttacking", false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

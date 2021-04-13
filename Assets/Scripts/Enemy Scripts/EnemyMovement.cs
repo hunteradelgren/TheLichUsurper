@@ -52,8 +52,6 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
-
-        
     }
 
     // Update is called once per frame
@@ -227,7 +225,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
+        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom" || other.tag == "Boss")
             spawnRoom = other.GetComponent<Room>();
 
         else if (other.tag == "Wall" || other.GetComponent<Door>() != null || other.tag == "Enemy")
@@ -244,7 +242,7 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    
+
 
 
 

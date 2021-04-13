@@ -137,7 +137,7 @@ public class RangedAttack : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
+        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom" || other.tag == "Boss")
             spawnRoom = other.GetComponent<Room>();
     }
 }
