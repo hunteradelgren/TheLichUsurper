@@ -20,6 +20,7 @@ public class FirstBoss : MonoBehaviour
     Transform pos3;
 
     public float movSpeed = 10f;
+    public float moveSpeed2 = 6f;
     public float lungeSpeed = 50f;
     public float attackDamage = 1f;
     public float lungeDamage = .5f;
@@ -31,7 +32,7 @@ public class FirstBoss : MonoBehaviour
     public float maxhealth = 50f;
     public float targetChaseDist = 2f;
     public float currentHealth = 50f;
-
+    
 
     public bool isAttacking = false;
     public bool isLunging = false;
@@ -60,6 +61,8 @@ public class FirstBoss : MonoBehaviour
 
     private RoomTemplate template;
     public Room spawnRoom;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -241,7 +244,7 @@ public class FirstBoss : MonoBehaviour
             //boss is below health threshold and is using second phase of behavior
             else
             {
-                movSpeed = 20f; //phase 2 movement spped
+                movSpeed = moveSpeed2; //phase 2 movement spped
                 animator.SetBool("Phase2", true);
                 checkCanAttack();
                 checkInRange();

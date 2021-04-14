@@ -105,9 +105,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  status: 0
+  started: 0
   arm: {fileID: 4854067757463617685}
   animator: {fileID: 4854067756715089857}
+  floor: 0
   loadingTimer: 2
   cam: {fileID: 0}
   HitPoint: {fileID: 4854067757463617685}
@@ -129,11 +130,16 @@ MonoBehaviour:
   maxHealth: 10
   maxSpectreHealth: 10
   currentHealth: 0
+  inSpectralForm: 0
   hpSlider: {fileID: 0}
   specSlider: {fileID: 0}
   status: 0
   animator: {fileID: 4854067756715089857}
+  stats: {fileID: 0}
   invulnerable: 0
+  heartbeat: {fileID: 0}
+  liveText: {fileID: 0}
+  specText: {fileID: 0}
 --- !u!50 &4854067756715089868
 Rigidbody2D:
   serializedVersion: 4
@@ -246,6 +252,8 @@ MonoBehaviour:
   hitSomething: 0
   sword: {fileID: 8300000, guid: b94cfbc471f46e349b52f8bc4307e136, type: 3}
   sound: {fileID: 0}
+  display: {fileID: 0}
+  started: 0
 --- !u!114 &4854067756715089863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,10 +266,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a4159a32f0d8294380d88f3e03ae3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 0.3
   damage: 1
   projectileName: PlayerBullet
   animator: {fileID: 4854067756715089857}
+  display: {fileID: 0}
+  started: 0
 --- !u!82 &5949065663416887812
 AudioSource:
   m_ObjectHideFlags: 0

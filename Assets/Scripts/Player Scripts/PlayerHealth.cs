@@ -22,7 +22,9 @@ public class PlayerHealth : MonoBehaviour
     public playerStatsManager stats;
     public Image healthBar;
     public float invulnerable;
-    
+
+    public AudioSource heartbeat;
+
     public Text liveText;
     public Text specText;
 
@@ -85,6 +87,7 @@ public class PlayerHealth : MonoBehaviour
     }
     IEnumerator becomeSpectre()
     {
+        heartbeat.Stop();
         Time.timeScale = 0;
         print("Player has entered Spectral Form");
 
@@ -159,9 +162,17 @@ public class PlayerHealth : MonoBehaviour
 
             invulnerable = .5f;
         }
-       
 
-    
+        if((hpSlider.value/hpSlider.maxValue)<= .25f && !inSpectralForm)
+        {
+            print("Play1");
+            heartbeat.Play();
+        }
+        else
+        {
+            print("Stop1");
+            heartbeat.Stop();
+        }
     }
 
     public void gainHealth(float boost)
@@ -174,6 +185,7 @@ public class PlayerHealth : MonoBehaviour
             healthBar.fillAmount = (currentHealth / maxSpectreHealth);
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 100);
             healthBar.GetComponent<Image>().color = livecolor;
+            liveText.text = currentHealth + "/" + maxHealth;
         }
         else if (!inSpectralForm && currentHealth+boost <= maxHealth)
         {
@@ -181,11 +193,25 @@ public class PlayerHealth : MonoBehaviour
             currentHealth += boost;
             //hpSlider.value = currentHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
+            liveText.text = currentHealth + "/" + maxHealth;
         }
         else
         {
             //hpSlider.value = maxHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
+            liveText.text = currentHealth + "/" + maxHealth;
+        }
+
+        if (hpSlider.value / hpSlider.maxValue <= .25f && !inSpectralForm)
+        {
+            print("Play");
+            heartbeat.Play();
+        }
+        else
+        {
+            print("Stop");
+            heartbeat.Stop();
+            
         }
     }
 

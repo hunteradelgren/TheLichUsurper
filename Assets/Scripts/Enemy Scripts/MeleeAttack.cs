@@ -40,6 +40,8 @@ public class MeleeAttack : MonoBehaviour
     public AudioClip swingMiss;
     public AudioSource sound;
 
+    public EnemyHealth hp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,7 @@ public class MeleeAttack : MonoBehaviour
         target = playerTarget;
         animator = GetComponent<Animator>();
         sound = GetComponent<AudioSource>();
+        //Stunned = EnemyHealth.GetComponent<IsStunned>();
     }
 
     // Update is called once per frame
@@ -58,9 +61,12 @@ public class MeleeAttack : MonoBehaviour
             checkCanAttack();
             checkInRange();
             checkValidTarget();
+        if (hp.IsStunned)
+        {
 
+        }
             //enemy is not already attacking
-            if (!isAttacking)
+            else if (!isAttacking)
             {
                 if (canAttack && inRange && validTarget && distance <= enemyMove.targetDist)
                 {

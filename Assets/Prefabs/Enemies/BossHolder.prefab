@@ -96,13 +96,14 @@ MonoBehaviour:
   pos1: {fileID: 0}
   pos2: {fileID: 0}
   pos3: {fileID: 0}
-  movSpeed: 10
-  lungeSpeed: 50
+  movSpeed: 3
+  moveSpeed2: 5
+  lungeSpeed: 15
   attackDamage: 2
-  lungeDamage: 1
+  lungeDamage: 2
   attackRate: 2
   chargeTime: 1
-  lungeTime: 1
+  lungeTime: 0.8
   attackRange: 1
   maxLungeTime: 0.5
   maxhealth: 50

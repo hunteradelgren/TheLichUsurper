@@ -36,6 +36,8 @@ public class RangedAttack : MonoBehaviour
     private RoomTemplate template;
     public Animator animator;
 
+    public EnemyHealth hp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,12 +47,17 @@ public class RangedAttack : MonoBehaviour
         target = playerTarget;
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
+        //Stunned = EnemyHealth.GetComponent<IsStunned>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (spawnRoom == template.currentRoom)
+        if (hp.IsStunned) 
+        {
+
+        }
+        else if (spawnRoom == template.currentRoom)
         {
             checkCanAttack();
             checkInRange();
@@ -130,7 +137,7 @@ public class RangedAttack : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom")
+        if (other.tag == "Room" || other.tag == "EndRoom" || other.tag == "BottomRoom" || other.tag == "Boss")
             spawnRoom = other.GetComponent<Room>();
     }
 }

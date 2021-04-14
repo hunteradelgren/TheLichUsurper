@@ -17,7 +17,7 @@ public class isBossDoor : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Room>().enemies.Contains(GameObject.Find("BossHolder")))
+        if (collision.GetComponent<Room>().enemies.Contains(GameObject.Find("BossHolder")) || collision.GetComponent<Room>().enemies.Contains(GameObject.Find("FinalBoss")))
         {
             transform.GetComponent<SpriteRenderer>().color = Color.red;
         }

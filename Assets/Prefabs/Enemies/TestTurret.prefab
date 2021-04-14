@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 7261687509472637771}
   - component: {fileID: 7261687509472637770}
+  - component: {fileID: 8510619005108363876}
+  - component: {fileID: 7261687509472637774}
   - component: {fileID: 7261687509472637773}
   - component: {fileID: 7261687509472637772}
   - component: {fileID: 7261687509472637775}
-  - component: {fileID: 7261687509472637774}
   - component: {fileID: 7007773119921530240}
   - component: {fileID: 7728922408574081161}
-  - component: {fileID: 8510619005108363876}
   - component: {fileID: 1483206400300135959}
   - component: {fileID: 4753795694746045586}
   m_Layer: 0
@@ -54,16 +54,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   target: {fileID: 0}
-  targetDist: 8
+  targetDist: 12
   movSpeed: 0
   chaseDist: 5000
   runDist: 0
   wanderMode: 0
   distance: 0
+  hp: {fileID: 8510619005108363876}
   isAttacking: 0
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &8510619005108363876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7261687509472637761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  animator: {fileID: 0}
+  HitStunTime: 1
+  IsStunned: 0
+--- !u!114 &7261687509472637774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7261687509472637761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a09b332ec50a04caea12af62e5af22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  target: {fileID: 0}
+  attackRange: 12
+  chargeTime: 0
+  attackRate: 2
+  projectileName: OrbProjectile
+  damage: 1
+  playerTarget: {fileID: 0}
+  spawnRoom: {fileID: 0}
+  animator: {fileID: 0}
+  hp: {fileID: 8510619005108363876}
 --- !u!114 &7261687509472637773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,28 +157,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.03}
   serializedVersion: 2
   m_Radius: 0.13
---- !u!114 &7261687509472637774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7261687509472637761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a09b332ec50a04caea12af62e5af22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActive: 0
-  target: {fileID: 0}
-  attackRange: 12
-  chargeTime: 0
-  attackRate: 1.5
-  projectileName: OrbProjectile
-  damage: 1
-  playerTarget: {fileID: 0}
-  spawnRoom: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!95 &7007773119921530240
 Animator:
   serializedVersion: 3
@@ -209,20 +227,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8510619005108363876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7261687509472637761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 5
-  animator: {fileID: 0}
 --- !u!61 &1483206400300135959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -236,7 +240,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0012216568, y: 0.014660358}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -247,7 +251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.07, y: 0.52}
+  m_Size: {x: 0.3900814, y: 0.6226225}
   m_EdgeRadius: 0
 --- !u!114 &4753795694746045586
 MonoBehaviour:

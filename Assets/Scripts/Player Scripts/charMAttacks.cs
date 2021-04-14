@@ -49,7 +49,7 @@ public class charMAttacks : MonoBehaviour
     }
     public void damageUpgrade(float amount) 
     {
-        damage += amount;
+        damage = damage + amount;
         display.text = ("MA = " + damage);
     }
 
@@ -76,6 +76,10 @@ public class charMAttacks : MonoBehaviour
         if (target.GetComponent<FirstBoss>() != null)
         {
             target.GetComponent<FirstBoss>().TakeDamage(damage);
+        }
+        if (target.GetComponent<FinalBoss>() != null)
+        {
+            target.GetComponent<FinalBoss>().TakeDamage(damage);
         }
     }
     public void playSwordSound()

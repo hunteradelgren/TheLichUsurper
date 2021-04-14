@@ -26,6 +26,14 @@ public class SpikeTrap : MonoBehaviour
                 timer = 0;
                 collision.GetComponent<PlayerHealth>().takeDamage(damage);
         }
+
+        if (collision.tag == "Enemy")
+        {
+            timer = 0;
+            collision.GetComponent<EnemyHealth>().TakeTrapDamage(damage*.4f);
+        }
+
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
