@@ -123,15 +123,23 @@ public class FinalBoss : MonoBehaviour
             stanceTimer += Time.deltaTime;
             if (stanceTimer >= 10)
             {
+                print("stance switch");
                 meleeStance = !meleeStance;
                 stanceTimer = 0;
             }
 
             if(spawnRoom.enemyCount == 1 && spawnedPortals)
             {
-                isVulnerable = true;
-                vulnerableTimer = 0;
-                spawnedPortals = false;
+                vulnerableTimer += Time.deltaTime;
+                if (vulnerableTimer > 1)
+                {
+
+                    isVulnerable = true;
+                    vulnerableTimer = 0;
+                    spawnedPortals = false;
+                    print("isvulnerable");
+                }
+                print("vulnerable buffer not reached");
             }
 
 
@@ -140,26 +148,34 @@ public class FinalBoss : MonoBehaviour
             //stays still and is damageable. summons pillars to spawn enemies when leaving this state
             if (isVulnerable)
             {
-                return;
+                vulnerableTimer += Time.deltaTime;
+                if(vulnerableTimer >= 10)
+                {
+                    print("is not vulnerable");
+                    spawnedPortals = false;
+                    vulnerableTimer = 0;
+                    isVulnerable = false;
+                }
             }
 
-            else if (!spawnedPortals && !meleeStance)
+            else if (!spawnedPortals)
             {
+                print("spawn portals");
                 animator.SetTrigger("SpawnPortals");
 
-                GameObject portal = Instantiate<GameObject>(portal1);
+                GameObject portal = Instantiate<GameObject>(portal1, transform.parent);
                 portal.transform.position = leftPortal;
                 portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
-                portal = Instantiate<GameObject>(portal2);
+                portal = Instantiate<GameObject>(portal2, transform.parent);
                 portal.transform.position = rightPortal;
                 portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
-                portal = Instantiate<GameObject>(portal3);
+                portal = Instantiate<GameObject>(portal3, transform.parent);
                 portal.transform.position = upPortal;
                 portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
-                portal = Instantiate<GameObject>(portal4);
+                portal = Instantiate<GameObject>(portal4, transform.parent);
                 portal.transform.position = downPortal;
                 portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
 
@@ -170,6 +186,7 @@ public class FinalBoss : MonoBehaviour
             //chases player swinging sword
             else if (meleeStance)
             {
+                print("melee stance");
                     moveSpeed = 20f; //melee stance movement spped
                     checkCanAttack();
                     checkInRange();
@@ -217,6 +234,7 @@ public class FinalBoss : MonoBehaviour
             //wanders around shooting
             else
             {
+                print("Range stance");
                 moveSpeed = 10f; //ranged stance move speed
                 if (Vector2.Distance(wanderTarget, transform.position) < 1 || wanderTarget == null)
                 {

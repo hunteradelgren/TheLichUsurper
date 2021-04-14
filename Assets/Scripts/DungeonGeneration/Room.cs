@@ -83,6 +83,16 @@ public class Room : MonoBehaviour
         }
     }
 
+    public void updateEnemyList()
+    {
+        enemies = new List<GameObject>();
+        foreach (Transform child in this.transform)
+        {
+            if (child.tag == "Enemy")
+                enemies.Add(child.gameObject);
+        }
+    }
+
 
 
 

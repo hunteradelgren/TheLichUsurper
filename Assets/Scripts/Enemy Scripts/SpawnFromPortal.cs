@@ -25,10 +25,11 @@ public class SpawnFromPortal : MonoBehaviour
 
     public void Spawnenemy()
     {
-        GameObject e = Instantiate<GameObject>(enemy,transform.position,Quaternion.identity);
+        GameObject e = Instantiate<GameObject>(enemy,transform.position,Quaternion.identity, transform.parent);
         e.GetComponent<PortalEnemyMovement>().spawnRoom = spawnroom;
         if (e.GetComponent<PortalRangedAttack>())
             e.GetComponent<PortalRangedAttack>().spawnRoom = spawnroom;
+        spawnroom.updateEnemyList();
         DestroyPortal();
     }
     public void DestroyPortal()
