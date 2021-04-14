@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class playerStatsManager : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class playerStatsManager : MonoBehaviour
     public bool inSpectre = false;
 
     public int currency = 0;
-
+    public Text currencyText;
     static playerStatsManager manager;
 
     public bool levelchanged;
@@ -39,7 +40,7 @@ public class playerStatsManager : MonoBehaviour
         manager = this;
         DontDestroyOnLoad(gameObject);
 
-
+        
         pHealth = FindObjectOfType<PlayerHealth>();
         pMelee = FindObjectOfType<charMAttacks>();
         pRange = FindObjectOfType<charRAttacks>();
@@ -64,6 +65,7 @@ public class playerStatsManager : MonoBehaviour
             pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
             pHealth.hpSlider.value = 0f;
         }
+        
     }
 
     // Update is called once per frame
@@ -164,10 +166,12 @@ public class playerStatsManager : MonoBehaviour
     public void increaseCurrency(int change)
     {
         currency += change;
+        currencyText.text = "X " + currency;
     }
 
     public void decreaseCurrency(int change)
     {
         currency -= change;
+        currencyText.text = "X " + currency;
     }
 }
