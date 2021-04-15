@@ -23,7 +23,7 @@ public class MeleeUpgrade : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            GameObject.Destroy(gameObject);
+            Destroy(gameObject);
             player.damageUpgrade(damageGain);
         }
     }
