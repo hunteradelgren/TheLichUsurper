@@ -1,28 +1,43 @@
 fileFormatVersion: 2
-guid: 2f48ea8519a861c4b8344fbc57937506
+guid: 6d37174fe9148534e8899b81bd2b97ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9210810538532428413
-    second: Enemy_Zombie1_Death_0
+      213: 3844099915063395706
+    second: BossWolf-2_Death_0
   - first:
-      213: -4485492675118683696
-    second: Enemy_Zombie1_Death_1
+      213: 4611740766755107003
+    second: BossWolf-2_Death_1
   - first:
-      213: 8013387399335557160
-    second: Enemy_Zombie1_Death_2
+      213: -8745891273508552552
+    second: BossWolf-2_Death_2
   - first:
-      213: -8214950146404901898
-    second: Enemy_Zombie1_Death_3
+      213: -8034521543861681549
+    second: BossWolf-2_Death_3
   - first:
-      213: -8242781908185862622
-    second: Enemy_Zombie1_Death_4
+      213: 8145105149830018686
+    second: BossWolf-2_Death_5
   - first:
-      213: -8898783250449683318
-    second: Enemy_Zombie1_Death_5
+      213: -927030395007766074
+    second: BossWolf-2_Death_6
   - first:
-      213: -6470440498688976804
-    second: Enemy_Zombie1_Death_6
+      213: -6778233065529845771
+    second: BossWolf-2_Death_7
+  - first:
+      213: 9204754827203309137
+    second: BossWolf-2_Death_8
+  - first:
+      213: -8713872821760164375
+    second: BossWolf-2_Death_9
+  - first:
+      213: 362941198727359845
+    second: BossWolf-2_Death_10
+  - first:
+      213: -1500438674365738744
+    second: BossWolf-2_Death_11
+  - first:
+      213: -3160664061395673228
+    second: BossWolf-2_Death_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_Zombie1_Death_0
+      name: BossWolf-2_Death_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 6
-        width: 41
-        height: 48
+        x: 15
+        y: 5
+        width: 33
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 385a95dbd90ac2080800000000000000
-      internalID: -9210810538532428413
+      spriteID: a75867e718cf85530800000000000000
+      internalID: 3844099915063395706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Zombie1_Death_1
+      name: BossWolf-2_Death_1
       rect:
         serializedVersion: 2
         x: 79
-        y: 6
-        width: 39
-        height: 48
+        y: 5
+        width: 33
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,83 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d92fe85d2450c1c0800000000000000
-      internalID: -4485492675118683696
+      spriteID: bb030a61bc1300040800000000000000
+      internalID: 4611740766755107003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Zombie1_Death_2
+      name: BossWolf-2_Death_2
       rect:
         serializedVersion: 2
         x: 143
-        y: 6
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 828bcf80265453f60800000000000000
-      internalID: 8013387399335557160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Zombie1_Death_3
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 6
-        width: 39
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fb1ef3dd52aefd80800000000000000
-      internalID: -8214950146404901898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Zombie1_Death_4
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 6
-        width: 43
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22ea091d681cb9d80800000000000000
-      internalID: -8242781908185862622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Zombie1_Death_5
-      rect:
-        serializedVersion: 2
-        x: 325
         y: 5
-        width: 54
-        height: 25
+        width: 33
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8c20cf08cb218480800000000000000
-      internalID: -8898783250449683318
+      spriteID: 8908556793a50a680800000000000000
+      internalID: -8745891273508552552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_Zombie1_Death_6
+      name: BossWolf-2_Death_3
       rect:
         serializedVersion: 2
-        x: 393
+        x: 207
         y: 4
-        width: 46
-        height: 29
+        width: 33
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,8 +204,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c589757f5a06436a0800000000000000
-      internalID: -6470440498688976804
+      spriteID: 372c6ed7935af7090800000000000000
+      internalID: -8034521543861681549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 5
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76b2d9aaf9390170800000000000000
+      internalID: 8145105149830018686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_6
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 5
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1729174c68223f0800000000000000
+      internalID: -927030395007766074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 5
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7594480f0eee1a0800000000000000
+      internalID: -6778233065529845771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 5
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ee3081fbbddbf70800000000000000
+      internalID: 9204754827203309137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_9
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 5
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edfd0136da121780800000000000000
+      internalID: -8713872821760164375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_10
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 4
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56daf78e81d690500800000000000000
+      internalID: 362941198727359845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_11
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 3
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8011c2fa9fe5d2be0800000000000000
+      internalID: -1500438674365738744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossWolf-2_Death_12
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 2
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fda2638c01324d0800000000000000
+      internalID: -3160664061395673228
       vertices: []
       indices: 
       edges: []
@@ -261,7 +381,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ef6d7ab53c404de40b5ad276f0233d27
+    spriteID: 2f93a952c1538914093a46214c93a527
     internalID: 0
     vertices: []
     indices: 

@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
     float hitStun;
 
     public bool IsStunned;
+    bool hasDied = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,6 @@ public class EnemyHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         hitStun = 0;
         IsStunned = false;
-        
     }
 
     // Update is called once per frame
@@ -31,7 +31,15 @@ public class EnemyHealth : MonoBehaviour
         //enemy is out of health
         if(currentHealth <= 0)
         {
-            Object.Destroy(gameObject);
+            if (!hasDied)
+            {
+                animator.SetTrigger("Died");
+                hasDied = true;
+            }
+            else
+            {
+                return;
+            }
         }
     
         if(hitStun>0)
@@ -70,6 +78,9 @@ public class EnemyHealth : MonoBehaviour
         return IsStunned;
     }
 
-
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
 
 }
