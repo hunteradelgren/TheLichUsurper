@@ -9,9 +9,11 @@ public class SpawnFromPortal : MonoBehaviour
     GameObject enemy;
     public string enemyName;
     public Room spawnroom = null;
+    public Animator portal;
 
     void Start()
     {
+        portal = GetComponent<Animator>();
         enemy = Resources.Load<GameObject>(enemyName);
         //Spawnenemy();
     }
@@ -19,8 +21,7 @@ public class SpawnFromPortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnroom != null)
-            Spawnenemy();
+
     }
 
     public void Spawnenemy()
@@ -30,7 +31,6 @@ public class SpawnFromPortal : MonoBehaviour
         if (e.GetComponent<PortalRangedAttack>())
             e.GetComponent<PortalRangedAttack>().spawnRoom = spawnroom;
         spawnroom.updateEnemyList();
-        DestroyPortal();
     }
     public void DestroyPortal()
     {
