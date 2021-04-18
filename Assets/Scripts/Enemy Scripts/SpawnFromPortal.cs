@@ -10,6 +10,9 @@ public class SpawnFromPortal : MonoBehaviour
     public string enemyName;
     public Room spawnroom = null;
     public Animator portal;
+    public AudioSource sound;
+    public AudioClip open;
+    public AudioClip spin;
 
     void Start()
     {
@@ -26,7 +29,7 @@ public class SpawnFromPortal : MonoBehaviour
 
     public void Spawnenemy()
     {
-        GameObject e = Instantiate<GameObject>(enemy,transform.position,Quaternion.identity, transform.parent);
+        GameObject e = Instantiate<GameObject>(enemy, transform.position, Quaternion.identity, transform.parent);
         e.GetComponent<PortalEnemyMovement>().spawnRoom = spawnroom;
         if (e.GetComponent<PortalRangedAttack>())
             e.GetComponent<PortalRangedAttack>().spawnRoom = spawnroom;
@@ -36,4 +39,13 @@ public class SpawnFromPortal : MonoBehaviour
     {
         Object.Destroy(gameObject);
     }
+    public void playOpen()
+    {
+        sound.PlayOneShot(open);
+    }
+    public void playSpin()
+    {
+        sound.PlayOneShot(spin);
+    }
 }
+
