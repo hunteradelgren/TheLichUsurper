@@ -75,7 +75,7 @@ public class charMAttacks : MonoBehaviour
         }
         if (target.GetComponent<FirstBoss>() != null)
         {
-            target.GetComponent<FirstBoss>().TakeDamage(damage);
+            target.GetComponent<FirstBoss>().takeDamage(damage);
         }
         if (target.GetComponent<FinalBoss>() != null)
         {

@@ -15,6 +15,9 @@ public class EnemyHealth : MonoBehaviour
 
     public bool IsStunned;
     bool hasDied = false;
+    public AudioSource sound;
+    public AudioClip hit;
+    public AudioClip poof;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,7 @@ public class EnemyHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         hitStun = 0;
         IsStunned = false;
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -61,12 +65,13 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= amount;
         animator.SetTrigger("wasHit");
         hitStun = HitStunTime;
+        sound.PlayOneShot(hit);
     }
     public void TakeTrapDamage(float amount)
     {
         currentHealth -= amount;
         animator.SetTrigger("wasHit");
-        
+        sound.PlayOneShot(hit);
     }
     public void HealDamage(float amount)
     {
@@ -83,4 +88,8 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void playPoof()
+    {
+        sound.PlayOneShot(poof);
+    }
 }
