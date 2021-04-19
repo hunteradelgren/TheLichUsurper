@@ -21,22 +21,24 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Time.timeScale != 0)
-        {
-            shopping.SetActive(true);
-            Time.timeScale = 0;
-            shopOpen = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.E) && Time.timeScale == 0)
-        {
-            shopping.SetActive(false);
-            Time.timeScale = moveTime;
-            shopOpen = false;
-        }
         if (shopOpen)
         {
             currentGold.text = "Current Gold: " + stats.currency;
         }
+    }
+
+    public void openShopMenu()
+    {
+        shopping.SetActive(true);
+        Time.timeScale = 0;
+        shopOpen = true;
+    }
+
+    public void closeShopMenu()
+    {
+        shopping.SetActive(false);
+        Time.timeScale = moveTime;
+        shopOpen = false;
     }
 
     public void buyHealthRestore()
