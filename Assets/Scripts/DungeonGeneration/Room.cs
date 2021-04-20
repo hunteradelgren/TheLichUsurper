@@ -77,7 +77,7 @@ public class Room : MonoBehaviour
         if (!droppedItem && isCleared && playerInRoom)
         {
             droppedItem = true;
-            print("Spawning Item");
+            //print("Spawning Item");
             GameObject pickup = Instantiate<GameObject>(item);
             pickup.transform.position = center.transform.position;
         }

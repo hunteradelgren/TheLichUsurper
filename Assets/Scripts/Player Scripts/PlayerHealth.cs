@@ -48,13 +48,13 @@ public class PlayerHealth : MonoBehaviour
         {
             specText.text = stats.healthSC + "/" + stats.healthSM;
             liveText.text = 0 + "/" + stats.healthM;
-            print("Showing dead health");
+            //print("Showing dead health");
         }
         else
         {
             specText.text = maxSpectreHealth + "/" + stats.healthSM;
             liveText.text = stats.healthC + "/" + stats.healthM;
-            print("Showing alive health");
+            //print("Showing alive health");
         }
         livecolor = new Color(245, 101, 101, 255);
         specColor = new Color(160, 141, 141, 255);

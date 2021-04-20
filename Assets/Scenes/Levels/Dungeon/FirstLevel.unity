@@ -1851,9 +1851,8 @@ MonoBehaviour:
   m_Text: "Having heard the tales of the powers of the Elder Phylactory this \npowerful\r
     fledgling Lich seeked to seize the powers for itself. It searched \nthrough dusty\r
     tomes until it discovovered an old account of a brutal war \nwaged at a now deserted\r
-    castle. Stories circulated about \nhorrors unknown lurking within the musty\n
-    stone\r halls of the descerated keep and the \nLich knew that is where it must
-    go search."
+    castle. Stories circulated about \nhorrors unknown lurking within the musty\nstone\r
+    halls of the descerated keep and the \nLich knew that is where it must go search."
 --- !u!222 &523785853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4592,13 +4591,14 @@ MonoBehaviour:
   roomRangeMin: 8
   roomRangeMax: 15
   boss: {fileID: 5226369739275038655, guid: 06f073f4bd58bd940a6771cc65100ea9, type: 3}
+  shop: {fileID: 2724029123028736777, guid: 7437e76cb170d9a4f887b8e5267d5bcb, type: 3}
   startButton: {fileID: 1518862787}
   LoadCanv: {fileID: 634772345}
+  LoadLabel: {fileID: 2004845602}
   player: {fileID: 1170758989}
   pStats: {fileID: 0}
-  LoadLabel: {fileID: 2004845602}
-  currentRoom: {fileID: 0}
   currencyText: {fileID: 1624651177}
+  currentRoom: {fileID: 0}
   cam: {fileID: 214899392}
 --- !u!4 &1398109518
 Transform:
