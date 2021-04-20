@@ -3533,7 +3533,6 @@ MonoBehaviour:
   - {fileID: 2724029123028736777, guid: dd15d2af1befadb4e8ccaf9337ee88fa, type: 3}
   - {fileID: 9190512894558581388, guid: 75db1a84030c2dc45b70171bf4af4e19, type: 3}
   - {fileID: 9190512894558581388, guid: 0d1352548765198438afe76625346f86, type: 3}
-  - {fileID: 2724029123028736777, guid: 7437e76cb170d9a4f887b8e5267d5bcb, type: 3}
   leftDoorRooms:
   - {fileID: 6794591998168691894, guid: 3e5eec89e4904b149b1c1627ec08eaf4, type: 3}
   - {fileID: 831339192956681084, guid: 9fea8b5d6ca2e7244843315313356d6e, type: 3}
@@ -3562,13 +3561,14 @@ MonoBehaviour:
   roomRangeMin: 12
   roomRangeMax: 20
   boss: {fileID: 5226369739275038655, guid: f681cc7cee95a1d479d3f878ce2205eb, type: 3}
+  shop: {fileID: 2724029123028736777, guid: 7437e76cb170d9a4f887b8e5267d5bcb, type: 3}
   startButton: {fileID: 1518862787}
   LoadCanv: {fileID: 634772345}
+  LoadLabel: {fileID: 2004845602}
   player: {fileID: 1170758989}
   pStats: {fileID: 0}
-  LoadLabel: {fileID: 2004845602}
-  currentRoom: {fileID: 0}
   currencyText: {fileID: 1710440015}
+  currentRoom: {fileID: 0}
   cam: {fileID: 214899392}
 --- !u!4 &1398109518
 Transform:
