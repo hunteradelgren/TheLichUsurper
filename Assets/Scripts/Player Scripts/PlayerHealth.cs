@@ -85,6 +85,7 @@ public class PlayerHealth : MonoBehaviour
             invulnerable -= Time.deltaTime;
         }
     }
+   
     IEnumerator becomeSpectre()
     {
         heartbeat.Stop();
@@ -104,6 +105,7 @@ public class PlayerHealth : MonoBehaviour
         
         Time.timeScale = 1;
     }
+   
     public void changeHealth()
     {
         status = !status;
@@ -136,6 +138,7 @@ public class PlayerHealth : MonoBehaviour
             specSlider.value = currentHealth;
         }
     }
+    
     public void takeDamage(float damage)
     {
         animator.SetTrigger("wasHit");
@@ -198,7 +201,7 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             //hpSlider.value = maxHealth;
-            healthBar.fillAmount = (currentHealth / maxHealth);
+            healthBar.fillAmount = (maxHealth / maxHealth);
             liveText.text = currentHealth + "/" + maxHealth;
         }
 

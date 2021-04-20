@@ -5,17 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class Room : MonoBehaviour
 {
+    //sets room scale
     public int width = 12;
     public int height = 8;
 
+    //hold the dungeon controller
     private RoomTemplate template;
 
+    //checks if a room has been cleared
     public bool isCleared;
 
     public List<GameObject> enemies= new List<GameObject>();
     public int enemyCount = 1;
+    
+    //holds the powerup object
     public GameObject item;
     public GameObject center;
+    
+    //checks if a powerup has been drooped
     public bool droppedItem;
     public bool playerInRoom;
 
@@ -38,6 +45,7 @@ public class Room : MonoBehaviour
     {
         enemyCount = enemies.Count;
         
+        //checks to see if player is in this room and is there are any enemies
         if (template.currentRoom == this)
         {
             if (enemyCount != 0)
@@ -46,6 +54,7 @@ public class Room : MonoBehaviour
                 isCleared = true;
         }
 
+        //removes dead enemies from the array
         foreach(GameObject enemy in enemies)
         {
             if(enemy == null)
@@ -53,8 +62,10 @@ public class Room : MonoBehaviour
                 enemies.Remove(enemy);
             }
         }
+
         if (template.currentRoom == this)
             playerInRoom = true;
+        
         SpawnItem();
 
     }
@@ -74,6 +85,7 @@ public class Room : MonoBehaviour
     }
     public void SpawnItem()
     {
+        //drops item when all enemies are dead
         if (!droppedItem && isCleared && playerInRoom)
         {
             droppedItem = true;
