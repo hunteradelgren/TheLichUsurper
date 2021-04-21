@@ -72,7 +72,7 @@ public class basicProjectileBehavior : MonoBehaviour
         else if (isPlayerBullet && collision.gameObject.GetComponent<FinalBoss>() != null)
         {
             GameObject.Destroy(gameObject);
-            collision.gameObject.GetComponent<FirstBoss>().takeDamage(damage);
+            collision.gameObject.GetComponent<FinalBoss>().TakeDamage(damage);
         }
         if (collision.transform.tag == "Wall" || collision.transform.GetComponent<Door>() != null || collision.transform.tag == "Obstacle")
         {

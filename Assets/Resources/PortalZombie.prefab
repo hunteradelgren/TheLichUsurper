@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4987305794020553522}
   - component: {fileID: 1161091705673846982}
-  - component: {fileID: 4987305794020553677}
   - component: {fileID: 4987305794020553520}
   - component: {fileID: 4987305794020553676}
   - component: {fileID: 4987305794020553523}
@@ -19,6 +18,7 @@ GameObject:
   - component: {fileID: 5331714961922408160}
   - component: {fileID: 651864435220601339}
   - component: {fileID: 6384596849769850331}
+  - component: {fileID: 6687274105605360081}
   m_Layer: 0
   m_Name: PortalZombie
   m_TagString: Enemy
@@ -59,30 +59,6 @@ MonoBehaviour:
   sound: {fileID: 0}
   hit: {fileID: 8300000, guid: 5b5c9f6365ca91e4ab493527380eeab3, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
---- !u!114 &4987305794020553677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4987305794020553527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0642296b959efb3419490d0ab9afa54a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActive: 0
-  target: {fileID: 0}
-  attackRange: 0.8
-  chargeTime: 0.4
-  attackRate: 1
-  damage: 0.5
-  playerTarget: {fileID: 0}
-  animator: {fileID: 0}
-  swingHit: {fileID: 8300000, guid: 7282ca5a2495791438d14a92c68afd17, type: 3}
-  swingMiss: {fileID: 8300000, guid: 6b50bafaa2ac38c43a8bd2a002b7cfe0, type: 3}
-  sound: {fileID: 0}
-  hp: {fileID: 1161091705673846982}
 --- !u!114 &4987305794020553520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,3 +319,27 @@ MonoBehaviour:
   spawnRoom: {fileID: 0}
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &6687274105605360081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987305794020553527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefa5093bd6a5c44d9dd260d34cce18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  target: {fileID: 0}
+  attackRange: 0.8
+  chargeTime: 0.4
+  attackRate: 1
+  damage: 0.5
+  playerTarget: {fileID: 0}
+  animator: {fileID: 0}
+  swingHit: {fileID: 8300000, guid: 7282ca5a2495791438d14a92c68afd17, type: 3}
+  swingMiss: {fileID: 8300000, guid: 6b50bafaa2ac38c43a8bd2a002b7cfe0, type: 3}
+  sound: {fileID: 0}
+  hp: {fileID: 1161091705673846982}

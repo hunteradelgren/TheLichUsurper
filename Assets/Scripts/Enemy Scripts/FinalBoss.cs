@@ -113,11 +113,19 @@ public class FinalBoss : MonoBehaviour
             }
         }
 
+        Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+
+        if (angle < 0)
+            animator.SetFloat("EnemyRot", angle + 359);
+        else
+            animator.SetFloat("EnemyRot", angle);
+        setDirection();
 
         /////////////////////////////////////////////////////////////
         ///Boss is Active
         /////////////////////////////////////////////////////////////
-        if(spawnRoom == template.currentRoom)
+        if (spawnRoom == template.currentRoom)
         {
             //boss switches stances every 10 seconds
             stanceTimer += Time.deltaTime;
@@ -128,16 +136,15 @@ public class FinalBoss : MonoBehaviour
                 stanceTimer = 0;
             }
 
-            if(spawnRoom.enemyCount == 1 && spawnedPortals)
+            if(spawnRoom.enemyCount == 1 && spawnedPortals && !isVulnerable)
             {
                 vulnerableTimer += Time.deltaTime;
-                if (vulnerableTimer > 1)
+                if (vulnerableTimer > 3)
                 {
-
                     isVulnerable = true;
                     vulnerableTimer = 0;
-                    spawnedPortals = false;
                     print("isvulnerable");
+                    animator.SetBool("isVulnerable", true);
                 }
                 print("vulnerable buffer not reached");
             }
@@ -148,11 +155,12 @@ public class FinalBoss : MonoBehaviour
             //stays still and is damageable. summons pillars to spawn enemies when leaving this state
             if (isVulnerable)
             {
+                spawnedPortals = false;
                 vulnerableTimer += Time.deltaTime;
                 if(vulnerableTimer >= 10)
                 {
+                    animator.SetBool("isVulnerable", false);
                     print("is not vulnerable");
-                    spawnedPortals = false;
                     vulnerableTimer = 0;
                     isVulnerable = false;
                 }
@@ -162,23 +170,6 @@ public class FinalBoss : MonoBehaviour
             {
                 print("spawn portals");
                 animator.SetTrigger("SpawnPortals");
-
-                GameObject portal = Instantiate<GameObject>(portal1, transform.parent);
-                portal.transform.position = leftPortal;
-                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
-
-                portal = Instantiate<GameObject>(portal2, transform.parent);
-                portal.transform.position = rightPortal;
-                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
-
-                portal = Instantiate<GameObject>(portal3, transform.parent);
-                portal.transform.position = upPortal;
-                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
-
-                portal = Instantiate<GameObject>(portal4, transform.parent);
-                portal.transform.position = downPortal;
-                portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
-
                 spawnedPortals = true;
             }
 
@@ -187,14 +178,14 @@ public class FinalBoss : MonoBehaviour
             else if (meleeStance)
             {
                 print("melee stance");
-                    moveSpeed = 20f; //melee stance movement spped
+                    moveSpeed = 5f; //melee stance movement spped
                     checkCanAttack();
                     checkInRange();
                     ///boss is doing swing attack
                     if (isAttacking)
                     {
-                        Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
-                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+                        direction = Player.position - transform.position; //gets a vector in the direction of the target
+                        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
@@ -208,8 +199,8 @@ public class FinalBoss : MonoBehaviour
                     {
                         velocity = Player.position - transform.position;
                         transform.Translate(velocity.normalized * moveSpeed * Time.deltaTime, Space.World);
-                        Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
-                        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
+                        direction = Player.position - transform.position; //gets a vector in the direction of the target
+                        angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
                         if (angle < 0)
                             animator.SetFloat("EnemyRot", angle + 359);
@@ -232,13 +223,20 @@ public class FinalBoss : MonoBehaviour
             else
             {
                 print("Range stance");
-                moveSpeed = 10f; //ranged stance move speed
+                moveSpeed = 2f; //ranged stance move speed
                 if (Vector2.Distance(wanderTarget, transform.position) < 1 || wanderTarget == null)
                 {
                     wanderTarget = new Vector2(transform.position.x + Random.Range(-5, 5), transform.position.y + Random.Range(-5, 5));
                 }
                 velocity = new Vector2(wanderTarget.x - transform.position.x, wanderTarget.y - transform.position.y);
                 velocity = velocity.normalized;
+                checkCanAttack();
+                if (canAttack)
+                {
+                    animator.SetTrigger("Shoot");
+                    canAttack = false;
+                }
+                
             }
         }
         /////////////////////////////////////////////////////////////
@@ -406,5 +404,24 @@ public class FinalBoss : MonoBehaviour
         {
             animator.SetInteger("Direction", 7);
         }
+    }
+
+    public void spawnPortals()
+    {
+        GameObject portal = Instantiate<GameObject>(portal1, transform.parent);
+        portal.transform.position = leftPortal;
+        portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
+
+        portal = Instantiate<GameObject>(portal2, transform.parent);
+        portal.transform.position = rightPortal;
+        portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
+
+        portal = Instantiate<GameObject>(portal3, transform.parent);
+        portal.transform.position = upPortal;
+        portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
+
+        portal = Instantiate<GameObject>(portal4, transform.parent);
+        portal.transform.position = downPortal;
+        portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
     }
 }
