@@ -193,7 +193,6 @@ public class FinalBoss : MonoBehaviour
                     ///boss is doing swing attack
                     if (isAttacking)
                     {
-                        animator.SetBool("isMoving", false);
                         Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -209,7 +208,6 @@ public class FinalBoss : MonoBehaviour
                     {
                         velocity = Player.position - transform.position;
                         transform.Translate(velocity.normalized * moveSpeed * Time.deltaTime, Space.World);
-                        animator.SetBool("isMoving", true);
                         Vector2 direction = Player.position - transform.position; //gets a vector in the direction of the target
                         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //finds angle to target location
 
@@ -218,7 +216,6 @@ public class FinalBoss : MonoBehaviour
                         else
                             animator.SetFloat("EnemyRot", angle);
                         setDirection();
-                        animator.SetBool("isMoving", true);
                     }
                     else
                     {
