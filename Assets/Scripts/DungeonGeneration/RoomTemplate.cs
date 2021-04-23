@@ -24,6 +24,7 @@ public class RoomTemplate : MonoBehaviour
     public Room currentRoom;
     public Text currencyText;
     public CameraMechanics cam;
+    public AudioSource sounder;
     Time time;
     void Start()
     {
@@ -32,6 +33,7 @@ public class RoomTemplate : MonoBehaviour
         //player.SetActive(false);
         LoadCanv.SetActive(true);
         //Time.timeScale = 0;
+        sounder = LoadCanv.GetComponent<AudioSource>();
         Invoke("DifficultyTester", 1.5f); 
 
     }
@@ -85,6 +87,7 @@ public class RoomTemplate : MonoBehaviour
         pStats.currencyText = currencyText;
         pStats.currencyText.text = "X " + pStats.currency;
         //player.SetActive(true);
+        sounder.Play();
         LoadCanv.SetActive(false);
         player.GetComponent<charMAttacks>().started = true;
         player.GetComponent<charRAttacks>().started = true;

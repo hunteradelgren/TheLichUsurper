@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class gameoverScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public AudioSource sounder;
+    public AudioClip click;
     void Start()
     {
         
@@ -19,6 +21,10 @@ public class gameoverScript : MonoBehaviour
 
     public void ClickToStart()
     {
+        sounder.Stop();
+        sounder.clip = click;
+        sounder.loop = false;
+        sounder.Play();
         SceneManager.LoadScene(0);
     }
 }

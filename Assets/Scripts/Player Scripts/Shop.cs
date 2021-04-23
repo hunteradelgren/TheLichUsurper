@@ -10,12 +10,14 @@ public class Shop : MonoBehaviour
     public float moveTime;
     public GameObject shopping;
     public Text currentGold;
-
+    public AudioClip click;
+    public AudioSource sounder;
     // Start is called before the first frame update
     void Start()
     {
         stats = FindObjectOfType<playerStatsManager>();
         moveTime = Time.timeScale;
+        
     }
 
     // Update is called once per frame
@@ -38,13 +40,19 @@ public class Shop : MonoBehaviour
             currentGold.text = "Current Gold: " + stats.currency;
         }
     }
-
+    IEnumerator stopTime()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+    }
     public void buyHealthRestore()
     {
         if(stats.currency >= 5)
         {
             stats.pHealth.gainHealth(10);
             stats.decreaseCurrency(5);
+            sounder.Play();
+            stopTime();
+            sounder.Stop();
         }
     }
     public void buyHealthUpgrade()
@@ -53,6 +61,9 @@ public class Shop : MonoBehaviour
         {
             stats.pHealth.healthUpgrade(5);
             stats.decreaseCurrency(10);
+            sounder.Play();
+            stopTime();
+            sounder.Stop();
         }
     }
     public void buyMeleeUpgrade()
@@ -61,6 +72,9 @@ public class Shop : MonoBehaviour
         {
             stats.pMelee.damageUpgrade(1);
             stats.decreaseCurrency(15);
+            sounder.Play();
+            stopTime();
+            sounder.Stop();
         }
     }
     public void buyRangeUpgrade()
@@ -69,6 +83,9 @@ public class Shop : MonoBehaviour
         {
             stats.pRange.damageUpgrade(1);
             stats.decreaseCurrency(15);
+            sounder.Play();
+            stopTime();
+            sounder.Stop();
         }
     }
 }

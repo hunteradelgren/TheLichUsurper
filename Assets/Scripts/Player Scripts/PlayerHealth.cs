@@ -21,10 +21,11 @@ public class PlayerHealth : MonoBehaviour
     public Animator animator;
     public playerStatsManager stats;
     public Image healthBar;
+    public Image healthBarBottom;
     public float invulnerable;
 
     public AudioSource heartbeat;
-
+    public AudioClip scream;
     public Text liveText;
     public Text specText;
 
@@ -77,6 +78,8 @@ public class PlayerHealth : MonoBehaviour
         {
             //player is dead so game will end
             Object.Destroy(gameObject);
+            heartbeat.clip = scream;
+            StartCoroutine(dramaticDeathPause());
             SceneManager.LoadScene(2);
 
         }
@@ -84,6 +87,10 @@ public class PlayerHealth : MonoBehaviour
         {
             invulnerable -= Time.deltaTime;
         }
+    }
+    IEnumerator dramaticDeathPause()
+    {
+        yield return new WaitForSecondsRealtime(5f);
     }
     IEnumerator becomeSpectre()
     {
@@ -96,10 +103,14 @@ public class PlayerHealth : MonoBehaviour
         //currentHealth = specSlider.value;
         currentHealth = stats.healthSM;
         healthBar.fillAmount = (currentHealth / maxSpectreHealth);
+        
+            healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth);
+        
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
         GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         healthBar.GetComponent<Image>().color = specColor;
+        healthBarBottom.GetComponent<Image>().color = specColor;
         yield return new WaitForSecondsRealtime(1f);
         
         Time.timeScale = 1;
@@ -148,6 +159,10 @@ public class PlayerHealth : MonoBehaviour
             {
                 //hpSlider.value = currentHealth;
                 healthBar.fillAmount = (currentHealth / maxHealth);
+                if (healthBar.fillAmount <= .3)
+                {
+                    healthBarBottom.fillAmount = (currentHealth / maxHealth) / .3f;
+                }
                 liveText.text = currentHealth + "/" + maxHealth;
             }
                         
@@ -157,6 +172,10 @@ public class PlayerHealth : MonoBehaviour
                 //specSlider.value = currentHealth;
                 specText.text = currentHealth + "/" + maxSpectreHealth;
                 healthBar.fillAmount = (currentHealth / maxSpectreHealth);
+                if (healthBar.fillAmount <= .3)
+                {
+                    healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth) / .3f;
+                }
                 GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
              }
 
@@ -183,8 +202,13 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = boost;
             //hpSlider.value = currentHealth;
             healthBar.fillAmount = (currentHealth / maxSpectreHealth);
+            if (healthBar.fillAmount <= .3)
+            {
+                healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth) / .3f;
+            }
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 100);
             healthBar.GetComponent<Image>().color = livecolor;
+            healthBarBottom.GetComponent<Image>().color = livecolor;
             liveText.text = currentHealth + "/" + maxHealth;
         }
         else if (!inSpectralForm && currentHealth+boost <= maxHealth)
@@ -193,12 +217,20 @@ public class PlayerHealth : MonoBehaviour
             currentHealth += boost;
             //hpSlider.value = currentHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
+            if (healthBar.fillAmount <= .3)
+            {
+                healthBarBottom.fillAmount = (currentHealth / maxHealth) / .3f;
+            }
             liveText.text = currentHealth + "/" + maxHealth;
         }
         else
         {
             //hpSlider.value = maxHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
+            if (healthBar.fillAmount <= .3)
+            {
+                healthBarBottom.fillAmount = (currentHealth / maxHealth) / .3f;
+            }
             liveText.text = currentHealth + "/" + maxHealth;
         }
 
