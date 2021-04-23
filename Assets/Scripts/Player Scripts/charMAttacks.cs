@@ -59,6 +59,8 @@ public class charMAttacks : MonoBehaviour
             target = collision.gameObject;
         if (collision.gameObject.GetComponent<FirstBoss>() != null)
             target = collision.gameObject;
+        if (collision.gameObject.GetComponent<FinalBoss>() != null)
+            target = collision.gameObject;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -75,7 +77,7 @@ public class charMAttacks : MonoBehaviour
         }
         if (target.GetComponent<FirstBoss>() != null)
         {
-            target.GetComponent<FirstBoss>().TakeDamage(damage);
+            target.GetComponent<FirstBoss>().takeDamage(damage);
         }
         if (target.GetComponent<FinalBoss>() != null)
         {

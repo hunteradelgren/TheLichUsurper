@@ -49,13 +49,13 @@ public class PlayerHealth : MonoBehaviour
         {
             specText.text = stats.healthSC + "/" + stats.healthSM;
             liveText.text = 0 + "/" + stats.healthM;
-            print("Showing dead health");
+            //print("Showing dead health");
         }
         else
         {
             specText.text = maxSpectreHealth + "/" + stats.healthSM;
             liveText.text = stats.healthC + "/" + stats.healthM;
-            print("Showing alive health");
+            //print("Showing alive health");
         }
         livecolor = new Color(245, 101, 101, 255);
         specColor = new Color(160, 141, 141, 255);
@@ -115,6 +115,7 @@ public class PlayerHealth : MonoBehaviour
         
         Time.timeScale = 1;
     }
+   
     public void changeHealth()
     {
         status = !status;
@@ -147,6 +148,7 @@ public class PlayerHealth : MonoBehaviour
             specSlider.value = currentHealth;
         }
     }
+    
     public void takeDamage(float damage)
     {
         animator.SetTrigger("wasHit");

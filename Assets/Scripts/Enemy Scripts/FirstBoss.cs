@@ -58,11 +58,19 @@ public class FirstBoss : MonoBehaviour
     public SpriteRenderer bossSprite;
     public float hitTimer = 0f;
     public bool wasHit = false;
+    public bool hasDied = false;
 
     private RoomTemplate template;
     public Room spawnRoom;
+    public bool transitioning = false;
 
-    
+    public AudioSource sound;
+    [SerializeField]
+    AudioClip growl;
+    public AudioClip bite;
+    public AudioClip hit;
+    public AudioClip miss;
+    public AudioClip poof;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +81,7 @@ public class FirstBoss : MonoBehaviour
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -80,9 +89,24 @@ public class FirstBoss : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            Object.Destroy(gameObject);
-            SceneManager.LoadScene(3);
+            if (!hasDied)
+            {
+                bossSprite.color = new Color(1, 1, 1);
+                animator.SetTrigger("Died");
+                hasDied = true;
+            }
+            else
+            {
+                return;
+            }
         }
+
+        if (transitioning)
+        {
+            bossSprite.color = new Color(1, 1, 1);
+            return;
+        }
+
         if (wasHit)
         {
             hitTimer += Time.deltaTime;
@@ -103,7 +127,7 @@ public class FirstBoss : MonoBehaviour
         {
 
             //boss is over 30% health and so will use 1st phase of behavior
-            if (currentHealth >= maxhealth * .4)
+            if (currentHealth >= maxhealth * .3)
             {
                 //boss is lunging
                 if (isLunging)
@@ -348,9 +372,14 @@ public class FirstBoss : MonoBehaviour
         //player is colliding with capsule collider for swing attack
         if (colliding.Count != 0)
         {
+            sound.PlayOneShot(bite);
             Player.GetComponent<PlayerHealth>().takeDamage(attackDamage);
             print("hit player with swing");
             animator.SetBool("isAttacking", false);
+        }
+        else
+        {
+            sound.PlayOneShot(miss);
         }
     }
 
@@ -365,7 +394,10 @@ public class FirstBoss : MonoBehaviour
 
     public void takeDamage(float damage)
     {
+        if (transitioning)
+            return;
         currentHealth -= damage;
+        sound.PlayOneShot(hit);
         bossSprite.color = new Color(1, 0, 0);
         wasHit = true;
     }
@@ -433,12 +465,6 @@ public class FirstBoss : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float amount)
-    {
-        currentHealth -= amount;
-        bossSprite.color = new Color(1, 0, 0);
-        wasHit = true;
-    }
 
     public void setDirection()
     {
@@ -482,5 +508,21 @@ public class FirstBoss : MonoBehaviour
         {
             animator.SetInteger("Direction", 7);
         }
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene(3);
+    }
+
+    public void Transition()
+    {
+        transitioning = !transitioning;
+    }
+    
+    public void playPoof()
+    {
+        sound.PlayOneShot(poof);
     }
 }

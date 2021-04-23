@@ -9,9 +9,14 @@ public class SpawnFromPortal : MonoBehaviour
     GameObject enemy;
     public string enemyName;
     public Room spawnroom = null;
+    public Animator portal;
+    public AudioSource sound;
+    public AudioClip open;
+    public AudioClip spin;
 
     void Start()
     {
+        portal = GetComponent<Animator>();
         enemy = Resources.Load<GameObject>(enemyName);
         //Spawnenemy();
     }
@@ -19,20 +24,28 @@ public class SpawnFromPortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnroom != null)
-            Spawnenemy();
+
     }
 
     public void Spawnenemy()
     {
-        GameObject e = Instantiate<GameObject>(enemy,transform.position,Quaternion.identity);
+        GameObject e = Instantiate<GameObject>(enemy, transform.position, Quaternion.identity, transform.parent);
         e.GetComponent<PortalEnemyMovement>().spawnRoom = spawnroom;
         if (e.GetComponent<PortalRangedAttack>())
             e.GetComponent<PortalRangedAttack>().spawnRoom = spawnroom;
-        DestroyPortal();
+        spawnroom.updateEnemyList();
     }
     public void DestroyPortal()
     {
         Object.Destroy(gameObject);
     }
+    public void playOpen()
+    {
+        sound.PlayOneShot(open);
+    }
+    public void playSpin()
+    {
+        sound.PlayOneShot(spin);
+    }
 }
+

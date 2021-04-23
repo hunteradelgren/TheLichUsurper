@@ -25,8 +25,9 @@ public class HealthUpgrade : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            player.healthUpgrade(healthGain);
             Object.Destroy(gameObject);
+            player.healthUpgrade(healthGain);
+            
         }
     }
 }
