@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     public Animator animator;
     public playerStatsManager stats;
     public Image healthBar;
-    public Image healthBarBottom;
+    //public Image healthBarBottom;
     public float invulnerable;
 
     public AudioSource heartbeat;
@@ -104,13 +104,13 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = stats.healthSM;
         healthBar.fillAmount = (currentHealth / maxSpectreHealth);
         
-            healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth);
+            //healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth);
         
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
         GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         healthBar.GetComponent<Image>().color = specColor;
-        healthBarBottom.GetComponent<Image>().color = specColor;
+        //healthBarBottom.GetComponent<Image>().color = specColor;
         yield return new WaitForSecondsRealtime(1f);
         
         Time.timeScale = 1;
@@ -161,10 +161,6 @@ public class PlayerHealth : MonoBehaviour
             {
                 //hpSlider.value = currentHealth;
                 healthBar.fillAmount = (currentHealth / maxHealth);
-                if (healthBar.fillAmount <= .3)
-                {
-                    healthBarBottom.fillAmount = (currentHealth / maxHealth) / .3f;
-                }
                 liveText.text = currentHealth + "/" + maxHealth;
             }
                         
@@ -174,17 +170,13 @@ public class PlayerHealth : MonoBehaviour
                 //specSlider.value = currentHealth;
                 specText.text = currentHealth + "/" + maxSpectreHealth;
                 healthBar.fillAmount = (currentHealth / maxSpectreHealth);
-                if (healthBar.fillAmount <= .3)
-                {
-                    healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth) / .3f;
-                }
                 GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, ((currentHealth) / maxSpectreHealth));
              }
 
             invulnerable = .5f;
         }
 
-        if((hpSlider.value/hpSlider.maxValue)<= .25f && !inSpectralForm)
+        if(healthBar.fillAmount < .25f && !inSpectralForm)
         {
             print("Play1");
             heartbeat.Play();
@@ -204,13 +196,8 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = boost;
             //hpSlider.value = currentHealth;
             healthBar.fillAmount = (currentHealth / maxSpectreHealth);
-            if (healthBar.fillAmount <= .3)
-            {
-                healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth) / .3f;
-            }
             GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 100);
             healthBar.GetComponent<Image>().color = livecolor;
-            healthBarBottom.GetComponent<Image>().color = livecolor;
             liveText.text = currentHealth + "/" + maxHealth;
         }
         else if (!inSpectralForm && currentHealth+boost <= maxHealth)
@@ -219,24 +206,16 @@ public class PlayerHealth : MonoBehaviour
             currentHealth += boost;
             //hpSlider.value = currentHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
-            if (healthBar.fillAmount <= .3)
-            {
-                healthBarBottom.fillAmount = (currentHealth / maxHealth) / .3f;
-            }
             liveText.text = currentHealth + "/" + maxHealth;
         }
         else
         {
-            //hpSlider.value = maxHealth;
+            currentHealth = maxHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
-            if (healthBar.fillAmount <= .3)
-            {
-                healthBarBottom.fillAmount = (currentHealth / maxHealth) / .3f;
-            }
             liveText.text = currentHealth + "/" + maxHealth;
         }
 
-        if (hpSlider.value / hpSlider.maxValue <= .25f && !inSpectralForm)
+        if (healthBar.fillAmount < .25f && !inSpectralForm)
         {
             print("Play");
             heartbeat.Play();

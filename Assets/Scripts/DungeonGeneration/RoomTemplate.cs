@@ -39,6 +39,7 @@ public class RoomTemplate : MonoBehaviour
     
     public CameraMechanics cam;
     public AudioSource sounder;
+    public AudioClip clip;
     Time time;
     void Start()
     {
@@ -48,7 +49,7 @@ public class RoomTemplate : MonoBehaviour
         //player.SetActive(false);
         LoadCanv.SetActive(true);
         //Time.timeScale = 0;
-        sounder = LoadCanv.GetComponent<AudioSource>();
+        sounder = GetComponent<AudioSource>();
         
         //checks to see if the dungeon has the required amount of rooms after 1.5 seconds
         Invoke("DifficultyTester", 1.5f); 
@@ -116,10 +117,10 @@ public class RoomTemplate : MonoBehaviour
         pStats.currencyText = currencyText;
         pStats.currencyText.text = "X " + pStats.currency;
         //player.SetActive(true);
-        sounder.Play();
-        LoadCanv.SetActive(false);
+        sounder.PlayOneShot(clip);
         player.GetComponent<charMAttacks>().started = true;
         player.GetComponent<charRAttacks>().started = true;
         player.GetComponent<Movement>().started = true;
+        LoadCanv.SetActive(false);
     }
 }

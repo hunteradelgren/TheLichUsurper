@@ -166,7 +166,8 @@ public class playerStatsManager : MonoBehaviour
     public void increaseCurrency(int change)
     {
         currency += change;
-        currencyText.text = "X " + currency;
+        if (currencyText != null)
+            currencyText.text = "X " + currency;
     }
 
     public void decreaseCurrency(int change)

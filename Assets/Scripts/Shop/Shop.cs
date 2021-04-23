@@ -40,6 +40,7 @@ public class Shop : MonoBehaviour
     {
         shopping.SetActive(false);
         Time.timeScale = moveTime;
+        sounder.PlayOneShot(click);
         shopOpen = false;
     }
 
@@ -54,9 +55,10 @@ public class Shop : MonoBehaviour
         {
             stats.pHealth.gainHealth(10);
             stats.decreaseCurrency(5);
-            sounder.Play();
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
             stopTime();
-            sounder.Stop();
+            Time.timeScale = 0;
         }
     }
     public void buyHealthUpgrade()
@@ -65,9 +67,10 @@ public class Shop : MonoBehaviour
         {
             stats.pHealth.healthUpgrade(5);
             stats.decreaseCurrency(10);
-            sounder.Play();
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
             stopTime();
-            sounder.Stop();
+            Time.timeScale = 0;
         }
     }
     public void buyMeleeUpgrade()
@@ -76,9 +79,10 @@ public class Shop : MonoBehaviour
         {
             stats.pMelee.damageUpgrade(1);
             stats.decreaseCurrency(15);
-            sounder.Play();
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
             stopTime();
-            sounder.Stop();
+            Time.timeScale = 0;
         }
     }
     public void buyRangeUpgrade()
@@ -87,9 +91,10 @@ public class Shop : MonoBehaviour
         {
             stats.pRange.damageUpgrade(1);
             stats.decreaseCurrency(15);
-            sounder.Play();
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
             stopTime();
-            sounder.Stop();
+            Time.timeScale = 0;
         }
     }
 }
