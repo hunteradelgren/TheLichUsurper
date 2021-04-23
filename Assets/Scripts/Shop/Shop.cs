@@ -10,12 +10,14 @@ public class Shop : MonoBehaviour
     public float moveTime;
     public GameObject shopping;
     public Text currentGold;
-
+    public AudioClip click;
+    public AudioSource sounder;
     // Start is called before the first frame update
     void Start()
     {
         stats = FindObjectOfType<playerStatsManager>();
         moveTime = Time.timeScale;
+        
     }
 
     // Update is called once per frame
@@ -38,7 +40,13 @@ public class Shop : MonoBehaviour
     {
         shopping.SetActive(false);
         Time.timeScale = moveTime;
+        sounder.PlayOneShot(click);
         shopOpen = false;
+    }
+
+    IEnumerator stopTime()
+    {
+        yield return new WaitForSecondsRealtime(1f);
     }
 
     public void buyHealthRestore()
@@ -47,6 +55,10 @@ public class Shop : MonoBehaviour
         {
             stats.pHealth.gainHealth(10);
             stats.decreaseCurrency(5);
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
+            stopTime();
+            Time.timeScale = 0;
         }
     }
     public void buyHealthUpgrade()
@@ -55,6 +67,10 @@ public class Shop : MonoBehaviour
         {
             stats.pHealth.healthUpgrade(5);
             stats.decreaseCurrency(10);
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
+            stopTime();
+            Time.timeScale = 0;
         }
     }
     public void buyMeleeUpgrade()
@@ -63,6 +79,10 @@ public class Shop : MonoBehaviour
         {
             stats.pMelee.damageUpgrade(1);
             stats.decreaseCurrency(15);
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
+            stopTime();
+            Time.timeScale = 0;
         }
     }
     public void buyRangeUpgrade()
@@ -71,6 +91,10 @@ public class Shop : MonoBehaviour
         {
             stats.pRange.damageUpgrade(1);
             stats.decreaseCurrency(15);
+            Time.timeScale = moveTime;
+            sounder.PlayOneShot(click);
+            stopTime();
+            Time.timeScale = 0;
         }
     }
 }

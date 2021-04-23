@@ -166,7 +166,8 @@ public class playerStatsManager : MonoBehaviour
     public void increaseCurrency(int change)
     {
         currency += change;
-        currencyText.text = "X " + currency;
+        if (currencyText != null)
+            currencyText.text = "X " + currency;
     }
 
     public void decreaseCurrency(int change)
@@ -174,4 +175,17 @@ public class playerStatsManager : MonoBehaviour
         currency -= change;
         currencyText.text = "X " + currency;
     }
+
+    public void resetStats()
+    {//added this method so the player's stats reset when called
+        healthC = 10; //current health living
+        healthSC = 10; //current spectre health
+        healthM = 10; //max health
+        healthSM = 10; //max spectre health
+        meleeD = 1; //melee damage
+        rangeD = 1; //range damage
+        inSpectre = false;
+
+        currency = 0;
+}
 }

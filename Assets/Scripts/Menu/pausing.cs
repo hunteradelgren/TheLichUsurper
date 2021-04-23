@@ -9,10 +9,14 @@ public class pausing : MonoBehaviour
     //public GameObject resumer;
     public GameObject managing;
     float moveTime;
+    public AudioClip click;
+    public AudioClip laugh;
+    public AudioSource sounder;
     void Start()
     {
         //canvas = GetComponent<Canvas>();
         moveTime = Time.timeScale;
+        sounder.clip = click;
     }
 
     // Update is called once per frame
@@ -29,12 +33,21 @@ public class pausing : MonoBehaviour
     }
     public void Resume()
     {
+        sounder.Play();
         managing.SetActive(false);
-        Time.timeScale = moveTime;
         print("unpaused");
+        stopTime();
+        Time.timeScale = moveTime;
+    }
+    IEnumerator stopTime()
+    {
+        yield return new WaitForSecondsRealtime(1f);
     }
     public void Quit()
     {//quits the application if given the command
+        sounder.clip = laugh;
+        sounder.Play();
+        stopTime();
         Application.Quit();
     }
 }

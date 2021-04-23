@@ -21,10 +21,11 @@ public class PlayerHealth : MonoBehaviour
     public Animator animator;
     public playerStatsManager stats;
     public Image healthBar;
+    //public Image healthBarBottom;
     public float invulnerable;
 
     public AudioSource heartbeat;
-
+    public AudioClip scream;
     public Text liveText;
     public Text specText;
 
@@ -77,6 +78,8 @@ public class PlayerHealth : MonoBehaviour
         {
             //player is dead so game will end
             Object.Destroy(gameObject);
+            heartbeat.clip = scream;
+            StartCoroutine(dramaticDeathPause());
             SceneManager.LoadScene(2);
 
         }
@@ -85,7 +88,10 @@ public class PlayerHealth : MonoBehaviour
             invulnerable -= Time.deltaTime;
         }
     }
-   
+    IEnumerator dramaticDeathPause()
+    {
+        yield return new WaitForSecondsRealtime(5f);
+    }
     IEnumerator becomeSpectre()
     {
         heartbeat.Stop();
@@ -97,10 +103,14 @@ public class PlayerHealth : MonoBehaviour
         //currentHealth = specSlider.value;
         currentHealth = stats.healthSM;
         healthBar.fillAmount = (currentHealth / maxSpectreHealth);
+        
+            //healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth);
+        
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
         GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         healthBar.GetComponent<Image>().color = specColor;
+        //healthBarBottom.GetComponent<Image>().color = specColor;
         yield return new WaitForSecondsRealtime(1f);
         
         Time.timeScale = 1;
@@ -166,7 +176,7 @@ public class PlayerHealth : MonoBehaviour
             invulnerable = .5f;
         }
 
-        if((hpSlider.value/hpSlider.maxValue)<= .25f && !inSpectralForm)
+        if(healthBar.fillAmount < .25f && !inSpectralForm)
         {
             print("Play1");
             heartbeat.Play();
@@ -200,12 +210,12 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-            //hpSlider.value = maxHealth;
-            healthBar.fillAmount = (maxHealth / maxHealth);
+            currentHealth = maxHealth;
+            healthBar.fillAmount = (currentHealth / maxHealth);
             liveText.text = currentHealth + "/" + maxHealth;
         }
 
-        if (hpSlider.value / hpSlider.maxValue <= .25f && !inSpectralForm)
+        if (healthBar.fillAmount < .25f && !inSpectralForm)
         {
             print("Play");
             heartbeat.Play();
