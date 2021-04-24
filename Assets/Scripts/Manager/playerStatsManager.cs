@@ -28,7 +28,7 @@ public class playerStatsManager : MonoBehaviour
     public Scene cScene;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (manager != null)
         {
@@ -71,14 +71,9 @@ public class playerStatsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneAt(0))
+        if (SceneManager.GetActiveScene().name == "GameOverScene")
         {
-            healthM = 10;
-            healthC = 10;
-            healthSM = 10;
-            healthSC = 10;
-            inSpectre = false;
-            currency = 0;
+            Object.Destroy(gameObject);
         }
 
         if (SceneManager.GetActiveScene().Equals(cScene))
