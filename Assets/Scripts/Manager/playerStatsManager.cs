@@ -71,6 +71,16 @@ public class playerStatsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneAt(0))
+        {
+            healthM = 10;
+            healthC = 10;
+            healthSM = 10;
+            healthSC = 10;
+            inSpectre = false;
+            currency = 0;
+        }
+
         if (SceneManager.GetActiveScene().Equals(cScene))
         {
             levelchanged = false;
@@ -137,29 +147,32 @@ public class playerStatsManager : MonoBehaviour
             pHealth = FindObjectOfType<PlayerHealth>();
             pMelee = FindObjectOfType<charMAttacks>();
             pRange = FindObjectOfType<charRAttacks>();
-            pHealth.maxHealth = healthM;
-            
-            pHealth.maxSpectreHealth = healthSM;
-            pMelee.damage = meleeD;
-            pRange.damage = rangeD;
+            if (pHealth != null)
+            {
+                pHealth.maxHealth = healthM;
 
-            pHealth.inSpectralForm = inSpectre;
-            pHealth.specSlider.maxValue = healthSM;
-            pHealth.specSlider.value = healthSC;
-            pHealth.hpSlider.maxValue = healthM;
-            if (!inSpectre)
-            {
-                pHealth.currentHealth = healthC;
-                pHealth.hpSlider.value = healthC;
+                pHealth.maxSpectreHealth = healthSM;
+                pMelee.damage = meleeD;
+                pRange.damage = rangeD;
+
+                pHealth.inSpectralForm = inSpectre;
+                pHealth.specSlider.maxValue = healthSM;
+                pHealth.specSlider.value = healthSC;
+                pHealth.hpSlider.maxValue = healthM;
+                if (!inSpectre)
+                {
+                    pHealth.currentHealth = healthC;
+                    pHealth.hpSlider.value = healthC;
+                }
+                else
+                {
+                    pHealth.currentHealth = healthSC;
+                    pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
+                    pHealth.hpSlider.value = 0f;
+                }
+                cScene = SceneManager.GetActiveScene();
+                first = false;
             }
-            else
-            {
-                pHealth.currentHealth = healthSC;
-                pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
-                pHealth.hpSlider.value = 0f;
-            }
-            cScene = SceneManager.GetActiveScene();
-            first = false;
         }
     }
 

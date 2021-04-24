@@ -76,12 +76,15 @@ public class PlayerHealth : MonoBehaviour
         //player has run out of health in the undead state
         else if (currentHealth <= 0 && inSpectralForm)
         {
+            animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+            animator.SetTrigger("DiedSpectre");
+            GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, .5f);
+            Time.timeScale = 0;
+            
             //player is dead so game will end
-            Object.Destroy(gameObject);
+            
             heartbeat.clip = scream;
             StartCoroutine(dramaticDeathPause());
-            SceneManager.LoadScene(2);
-
         }
         if(invulnerable>0)
         {
@@ -91,11 +94,14 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator dramaticDeathPause()
     {
         yield return new WaitForSecondsRealtime(5f);
+        SceneManager.LoadScene(2);
     }
     IEnumerator becomeSpectre()
     {
         heartbeat.Stop();
         Time.timeScale = 0;
+        animator.updateMode = AnimatorUpdateMode.UnscaledTime;
+        animator.SetTrigger("DiedLiving");
         print("Player has entered Spectral Form");
 
         //sets the player to spectral state
@@ -108,11 +114,10 @@ public class PlayerHealth : MonoBehaviour
         
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
-        GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth-.5f) / maxSpectreHealth));
         healthBar.GetComponent<Image>().color = specColor;
         //healthBarBottom.GetComponent<Image>().color = specColor;
-        yield return new WaitForSecondsRealtime(1f);
-        
+        yield return new WaitForSecondsRealtime(3f);
+        animator.updateMode = AnimatorUpdateMode.Normal;
         Time.timeScale = 1;
     }
    
@@ -233,5 +238,9 @@ public class PlayerHealth : MonoBehaviour
         maxHealth += amount;
         hpSlider.maxValue = maxHealth;
         gainHealth(amount);
+    }
+    public void SetToSpectreColor()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((currentHealth - .5f) / maxSpectreHealth));
     }
 }

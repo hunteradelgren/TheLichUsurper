@@ -41,7 +41,7 @@ public class RoomTemplate : MonoBehaviour
     public AudioSource sounder;
     public AudioClip clip;
     Time time;
-    void Start()
+    void Awake()
     {
         //sets the player Stats manager
         pStats = FindObjectOfType<playerStatsManager>();
