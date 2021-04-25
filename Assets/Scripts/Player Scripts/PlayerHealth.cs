@@ -14,17 +14,16 @@ public class PlayerHealth : MonoBehaviour
     public float currentHealth;
     //true  if in undead state and false if in living state
     public bool inSpectralForm;
-    //References to health Slider bars
-    public Slider hpSlider;
-    public Slider specSlider;
     public bool status;
     public Animator animator;
     public playerStatsManager stats;
     public Image healthBar;
     //public Image healthBarBottom;
     public float invulnerable;
-
+    public AudioClip beating;
     public AudioSource heartbeat;
+    public AudioSource psource;
+    public AudioClip laugh;
     public AudioClip scream;
     public Text liveText;
     public Text specText;
@@ -35,6 +34,8 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         stats = FindObjectOfType<playerStatsManager>();
+        beating = heartbeat.clip;
+        psource = GetComponent<AudioSource>();
         //starts the player off in living state with the associated max health 
         //inSpectralForm = false;
         //currentHealth = maxHealth;
@@ -76,34 +77,45 @@ public class PlayerHealth : MonoBehaviour
         //player has run out of health in the undead state
         else if (currentHealth <= 0 && inSpectralForm)
         {
+            psource.clip = scream;
+            psource.Play();
             animator.updateMode = AnimatorUpdateMode.UnscaledTime;
             animator.SetTrigger("DiedSpectre");
             GetComponent<SpriteRenderer>().color = new Color(0.25f, .9f, 1f, .5f);
+            
             Time.timeScale = 0;
             
             //player is dead so game will end
             
-            heartbeat.clip = scream;
+            
             StartCoroutine(dramaticDeathPause());
         }
         if(invulnerable>0)
         {
             invulnerable -= Time.deltaTime;
         }
+        if (Input.GetKeyDown(KeyCode.Space))//temp code to test damge taking things
+            takeDamage(1f);
     }
     IEnumerator dramaticDeathPause()
     {
+        
         yield return new WaitForSecondsRealtime(5f);
+        
         SceneManager.LoadScene(2);
     }
     IEnumerator becomeSpectre()
     {
         heartbeat.Stop();
+        heartbeat.clip = laugh;
+        heartbeat.loop = false;
+        
         Time.timeScale = 0;
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
         animator.SetTrigger("DiedLiving");
         print("Player has entered Spectral Form");
-
+        yield return new WaitForSecondsRealtime(1f);
+        heartbeat.Play();
         //sets the player to spectral state
         inSpectralForm = true;
         //currentHealth = specSlider.value;
@@ -119,6 +131,9 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         animator.updateMode = AnimatorUpdateMode.Normal;
         Time.timeScale = 1;
+        heartbeat.Stop();
+        heartbeat.clip = beating;
+        heartbeat.loop = true;
     }
    
     public void changeHealth()
@@ -139,19 +154,7 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= 5;
             print("health downed");
         }
-        if (!inSpectralForm)
-        {
-            hpSlider.maxValue = maxHealth;
-            specSlider.maxValue = maxSpectreHealth;
-            specSlider.value = maxSpectreHealth;
-            hpSlider.value = currentHealth;
-        }
-        else
-        {
-            hpSlider.maxValue = maxHealth;
-            specSlider.maxValue = maxSpectreHealth;
-            specSlider.value = currentHealth;
-        }
+        
     }
     
     public void takeDamage(float damage)
@@ -236,7 +239,6 @@ public class PlayerHealth : MonoBehaviour
     public void healthUpgrade(float amount)
     {
         maxHealth += amount;
-        hpSlider.maxValue = maxHealth;
         gainHealth(amount);
     }
     public void SetToSpectreColor()

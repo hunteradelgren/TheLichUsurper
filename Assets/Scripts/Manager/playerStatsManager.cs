@@ -51,19 +51,14 @@ public class playerStatsManager : MonoBehaviour
         pRange.damage = rangeD;
 
         pHealth.inSpectralForm = inSpectre;
-        pHealth.specSlider.maxValue = healthSM;
-        pHealth.specSlider.value = healthSC;
-        pHealth.hpSlider.maxValue = healthM;
         if (!inSpectre)
         {
             pHealth.currentHealth = healthC;
-            pHealth.hpSlider.value = healthC;
         }
         else
         {
             pHealth.currentHealth = healthSC;
             pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
-            pHealth.hpSlider.value = 0f;
         }
         
     }
@@ -120,19 +115,14 @@ public class playerStatsManager : MonoBehaviour
             pRange.damage = rangeD;
 
             pHealth.inSpectralForm = inSpectre;
-            pHealth.specSlider.maxValue = healthSM;
-            pHealth.specSlider.value = healthSC;
-            pHealth.hpSlider.maxValue = healthM;
             if (!inSpectre)
             {
                 pHealth.currentHealth = healthC;
-                pHealth.hpSlider.value = healthC;
             }
             else
             {
                 pHealth.currentHealth = healthSC;
                 pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
-                pHealth.hpSlider.value = 0f;
             }
             cScene = SceneManager.GetActiveScene();
             first = false;
@@ -151,19 +141,16 @@ public class playerStatsManager : MonoBehaviour
                 pRange.damage = rangeD;
 
                 pHealth.inSpectralForm = inSpectre;
-                pHealth.specSlider.maxValue = healthSM;
-                pHealth.specSlider.value = healthSC;
-                pHealth.hpSlider.maxValue = healthM;
+
                 if (!inSpectre)
                 {
                     pHealth.currentHealth = healthC;
-                    pHealth.hpSlider.value = healthC;
                 }
                 else
                 {
                     pHealth.currentHealth = healthSC;
                     pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
-                    pHealth.hpSlider.value = 0f;
+
                 }
                 cScene = SceneManager.GetActiveScene();
                 first = false;
