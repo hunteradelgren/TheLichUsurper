@@ -34,9 +34,10 @@ public class pausing : MonoBehaviour
     public void Resume()
     {
         sounder.Play();
-        managing.SetActive(false);
+        
         print("unpaused");
         stopTime();
+        managing.SetActive(false);
         Time.timeScale = moveTime;
     }
     IEnumerator stopTime()

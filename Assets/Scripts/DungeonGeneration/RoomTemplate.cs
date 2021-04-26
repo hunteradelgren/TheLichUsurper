@@ -39,6 +39,7 @@ public class RoomTemplate : MonoBehaviour
     
     public CameraMechanics cam;
     public AudioSource sounder;
+    public AudioSource BGm;
     public AudioClip clip;
     Time time;
     void Start()
@@ -103,6 +104,7 @@ public class RoomTemplate : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.5f);
         startButton.SetActive(true);
         LoadLabel.text = "Loaded";
+        BGm.Play();
     }
 
     public void OnPlayerEnterRoom(Room room) //changes camera when player enters the room
