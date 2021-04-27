@@ -15,15 +15,14 @@ public class RoomSpawner : MonoBehaviour
 
     private bool spawned = false;
     
-    private RoomTemplate template;
+    public RoomTemplate template;
     
     int rand;
     
     void Start()
     {
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
-        Invoke("Spawn",.1f);
-        
+        Invoke("Spawn", .1f);
     }
 
     // Update is called once per frame

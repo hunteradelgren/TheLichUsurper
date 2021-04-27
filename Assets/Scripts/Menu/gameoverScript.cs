@@ -10,7 +10,7 @@ public class gameoverScript : MonoBehaviour
     public AudioClip click;
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame

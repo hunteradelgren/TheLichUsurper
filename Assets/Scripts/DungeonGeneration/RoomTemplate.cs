@@ -42,6 +42,7 @@ public class RoomTemplate : MonoBehaviour
     public AudioSource BGm;
     public AudioClip clip;
     Time time;
+
     void Start()
     {
         //sets the player Stats manager
@@ -57,10 +58,9 @@ public class RoomTemplate : MonoBehaviour
 
     }
 
-
     private void DifficultyTester() //compares totals rooms to min max values and rebuilds if there are too many or too few rooms, also sets the boss and shop room code
     {
-
+        
         //Time.timeScale = 0;
         roomCount = GameObject.FindGameObjectsWithTag("Room");
 
