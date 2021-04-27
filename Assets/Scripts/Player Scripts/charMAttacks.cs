@@ -9,7 +9,7 @@ public class charMAttacks : MonoBehaviour
     float timer;//time tracking field
     public float timeBetweenAttacks = .2f;//constant to track how long should be between each attack
     public GameObject attackBox;
-    public float damage;//Now relies totally on the reference in the public inspector
+    public float damage;
     public Animator animator;
     public GameObject target;
     public bool hitSomething;
