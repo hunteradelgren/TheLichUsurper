@@ -66,6 +66,11 @@ public class FinalBoss : MonoBehaviour
     public Vector2 upPortal;
     public Vector2 downPortal;
 
+    public AudioClip laughClip;
+    public AudioClip swingClip;
+    public AudioClip hitClip;
+    public AudioSource sound;
+
     //name of the projectile in the resources folder
     [SerializeField]
     string projectileName;
@@ -90,6 +95,8 @@ public class FinalBoss : MonoBehaviour
         rightPortal = new Vector2(center.transform.position.x - 2, center.transform.position.y);
         upPortal = new Vector2(center.transform.position.x, center.transform.position.y + 2);
         downPortal = new Vector2(center.transform.position.x, center.transform.position.y - 2);
+
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -168,6 +175,7 @@ public class FinalBoss : MonoBehaviour
 
             else if (!spawnedPortals)
             {
+                sound.PlayOneShot(laughClip);
                 print("spawn portals");
                 animator.SetTrigger("SpawnPortals");
                 spawnedPortals = true;
@@ -288,6 +296,7 @@ public class FinalBoss : MonoBehaviour
 
     public void swingAttack()
     {
+        sound.PlayOneShot(swingClip);
         //player is in range for swing attack
         if (Vector2.Distance(Player.transform.position,transform.position)<=swingDist)
         {
@@ -356,6 +365,7 @@ public class FinalBoss : MonoBehaviour
     {
         if (isVulnerable)
         {
+            sound.PlayOneShot(hitClip);
             currentHealth -= amount;
             bossSprite.color = new Color(1, 0, 0);
             wasHit = true;

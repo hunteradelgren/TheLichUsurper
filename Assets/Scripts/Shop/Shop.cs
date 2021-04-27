@@ -25,7 +25,7 @@ public class Shop : MonoBehaviour
     {
         if (shopOpen)
         {
-            currentGold.text = "Current Gold: " + stats.currency;
+            currentGold.text = "Current Gems: " + stats.currency;
         }
     }
 
