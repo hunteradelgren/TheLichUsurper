@@ -85,6 +85,8 @@ public class EnemyHealth : MonoBehaviour
 
     public void Death()
     {
+        GameObject gem = Instantiate<GameObject>(Resources.Load<GameObject>("Gem"));
+        gem.transform.position = transform.position;
         Destroy(gameObject);
     }
 

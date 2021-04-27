@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 2985363300453435458}
   - component: {fileID: 4701424482417478631}
   - component: {fileID: 6560605934848613853}
-  - component: {fileID: -3986533503362952871}
   - component: {fileID: -831279587765278955}
   m_Layer: 0
   m_Name: TestRanged
@@ -247,20 +246,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.19
---- !u!114 &-3986533503362952871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554052697694655672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c348bb556977941ba7cc58fe56fba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currencyToGive: 1
-  stats: {fileID: 0}
 --- !u!82 &-831279587765278955
 AudioSource:
   m_ObjectHideFlags: 0

@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 6614282642674443242}
   - component: {fileID: -3965376418490007857}
   - component: {fileID: 580343035472959956}
-  - component: {fileID: 4387263522407737516}
   m_Layer: 0
   m_Name: TestMelee
   m_TagString: Enemy
@@ -344,17 +343,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4387263522407737516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4913516908430734104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c348bb556977941ba7cc58fe56fba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currencyToGive: 1
-  stats: {fileID: 0}

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8280543144875376795}
   - component: {fileID: 5982541459667962517}
   - component: {fileID: -1388335241529686543}
-  - component: {fileID: 5336490690565038400}
   - component: {fileID: -6585311866454506461}
   - component: {fileID: 4675420315024156288}
   m_Layer: 0
@@ -256,20 +255,6 @@ MonoBehaviour:
   upPortal: {x: 0, y: 0}
   downPortal: {x: 0, y: 0}
   projectileName: OrbProjectile
---- !u!114 &5336490690565038400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4178424619410667578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c348bb556977941ba7cc58fe56fba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currencyToGive: 10
-  stats: {fileID: 0}
 --- !u!50 &-6585311866454506461
 Rigidbody2D:
   serializedVersion: 4

@@ -8,8 +8,6 @@ public class giveCurrency : MonoBehaviour
     public int currencyToGive = 1;
     public playerStatsManager stats;
 
-    private float wait = 0;
-
     void Start()
     {
         stats = FindObjectOfType<playerStatsManager>();
@@ -18,15 +16,19 @@ public class giveCurrency : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (wait <= 2)
-        {
-            wait += Time.deltaTime;
-        }
+        
     }
 
     private void OnDestroy()
     {
-        if(wait>=2)
         stats.increaseCurrency(currencyToGive);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.GetComponent<PlayerHealth>() != null)
+        {
+            GameObject.Destroy(gameObject);
+        }
     }
 }

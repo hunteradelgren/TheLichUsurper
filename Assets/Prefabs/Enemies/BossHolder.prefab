@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5183293658640590762}
   - component: {fileID: 2556567612065558157}
   - component: {fileID: 5185505740440333488}
-  - component: {fileID: 1093452655650748045}
   - component: {fileID: -5131129760056094854}
   m_Layer: 0
   m_Name: BossHolder
@@ -218,20 +217,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1093452655650748045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7203231651071004758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63c348bb556977941ba7cc58fe56fba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currencyToGive: 10
-  stats: {fileID: 0}
 --- !u!82 &-5131129760056094854
 AudioSource:
   m_ObjectHideFlags: 0
