@@ -19,9 +19,12 @@ public class EnemyHealth : MonoBehaviour
     public AudioClip hit;
     public AudioClip poof;
 
+    public SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         hitStun = 0;
@@ -62,6 +65,8 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        if(!hasDied)
+            sprite.color = new Color(1, 0, 0);
         currentHealth -= amount;
         animator.SetTrigger("wasHit");
         hitStun = HitStunTime;
@@ -93,5 +98,9 @@ public class EnemyHealth : MonoBehaviour
     public void playPoof()
     {
         sound.PlayOneShot(poof);
+    }
+    public void ResetColor()
+    {
+        sprite.color = new Color(1, 1, 1);
     }
 }
