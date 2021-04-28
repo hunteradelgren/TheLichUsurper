@@ -14,7 +14,7 @@ public class playerStatsManager : MonoBehaviour
     public float healthSC = 10; //current spectre health
     public float healthM = 10; //max health
     public float healthSM = 10; //max spectre health
-    public float meleeD = 1; //melee damage
+    public float meleeD = 2; //melee damage
     public float rangeD = 1; //range damage
     public bool inSpectre = false;
 
@@ -60,12 +60,14 @@ public class playerStatsManager : MonoBehaviour
             pHealth.currentHealth = healthSC;
             pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
         }
-        
+        currencyText.text = "X " + currency;
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*if (Input.GetKeyDown(KeyCode.M))//temp code to test currency changes to text output
+            increaseCurrency(1);*/
         if (SceneManager.GetActiveScene().name == "GameOverScene")
         {
             Object.Destroy(gameObject);
@@ -182,5 +184,5 @@ public class playerStatsManager : MonoBehaviour
         inSpectre = false;
 
         currency = 0;
-}
+    }
 }
