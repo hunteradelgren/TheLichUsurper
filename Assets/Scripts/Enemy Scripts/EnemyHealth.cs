@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     public AudioSource sound;
     public AudioClip hit;
     public AudioClip poof;
-
+    public Color startingColor;
     public SpriteRenderer sprite;
 
     // Start is called before the first frame update
@@ -30,6 +30,8 @@ public class EnemyHealth : MonoBehaviour
         hitStun = 0;
         IsStunned = false;
         sound = GetComponent<AudioSource>();
+
+        startingColor = GetComponent<SpriteRenderer>().color;
     }
 
     // Update is called once per frame
@@ -101,6 +103,6 @@ public class EnemyHealth : MonoBehaviour
     }
     public void ResetColor()
     {
-        sprite.color = new Color(1, 1, 1);
+        sprite.color = startingColor;
     }
 }

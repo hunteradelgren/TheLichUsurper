@@ -85,8 +85,8 @@ public class PlayerHealth : MonoBehaviour
         {
             invulnerable -= Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.Space))//temp code to test damge taking things
-            takeDamage(1f);
+        //if (Input.GetKeyDown(KeyCode.Space))//temp code to test damge taking things
+           // takeDamage(1f);
     }
     IEnumerator dramaticDeathPause()
     {
@@ -212,6 +212,7 @@ public class PlayerHealth : MonoBehaviour
             healthBar.fillAmount = (currentHealth / maxHealth);
             liveText.text = currentHealth + "/" + maxHealth;
         }
+        stats.ItemPickedUp();
 
         if (healthBar.fillAmount < .25f && !inSpectralForm)
         {
@@ -228,6 +229,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void healthUpgrade(float amount)
     {
+        stats.ItemPickedUp();
         maxHealth += amount;
         gainHealth(amount);
     }

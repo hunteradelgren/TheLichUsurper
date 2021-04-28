@@ -513,7 +513,7 @@ public class FirstBoss : MonoBehaviour
     public void Death()
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
     public void Transition()

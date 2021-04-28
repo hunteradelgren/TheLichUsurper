@@ -27,6 +27,9 @@ public class playerStatsManager : MonoBehaviour
     public bool first = true;
     public Scene cScene;
 
+    public AudioSource sound;
+    public AudioClip itemPickup;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -39,8 +42,8 @@ public class playerStatsManager : MonoBehaviour
         
         manager = this;
         DontDestroyOnLoad(gameObject);
-
-        
+        sound = GetComponent<AudioSource>();
+        currencyText = GameObject.FindGameObjectWithTag("CurrencyText").GetComponent<Text>();
         pHealth = FindObjectOfType<PlayerHealth>();
         pMelee = FindObjectOfType<charMAttacks>();
         pRange = FindObjectOfType<charRAttacks>();
@@ -68,7 +71,7 @@ public class playerStatsManager : MonoBehaviour
     {
         /*if (Input.GetKeyDown(KeyCode.M))//temp code to test currency changes to text output
             increaseCurrency(1);*/
-        if (SceneManager.GetActiveScene().name == "GameOverScene")
+        if (SceneManager.GetActiveScene().name == "GameOverScene" || SceneManager.GetActiveScene().name == "VictoryScreen")
         {
             Object.Destroy(gameObject);
         }
@@ -162,6 +165,7 @@ public class playerStatsManager : MonoBehaviour
 
     public void increaseCurrency(int change)
     {
+        ItemPickedUp();
         currency += change;
         if (currencyText != null)
             currencyText.text = "X " + currency;
@@ -184,5 +188,10 @@ public class playerStatsManager : MonoBehaviour
         inSpectre = false;
 
         currency = 0;
+    }
+
+    public void ItemPickedUp()
+    {
+        sound.PlayOneShot(itemPickup);
     }
 }

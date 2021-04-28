@@ -67,7 +67,8 @@ public class FinalBoss : MonoBehaviour
     public Vector2 downPortal;
 
     public AudioClip laughClip;
-    public AudioClip swingClip;
+    public AudioClip swingClipHit;
+    public AudioClip swingClipMiss;
     public AudioClip hitClip;
     public AudioSource sound;
 
@@ -142,12 +143,16 @@ public class FinalBoss : MonoBehaviour
                 meleeStance = !meleeStance;
                 stanceTimer = 0;
             }
-
-            if(spawnRoom.enemyCount == 1 && spawnedPortals && !isVulnerable)
+            if (spawnRoom.enemyCount > 1)
+            {
+                isVulnerable = false;
+            }
+            if (spawnRoom.enemyCount == 1 && spawnedPortals && !isVulnerable)
             {
                 vulnerableTimer += Time.deltaTime;
-                if (vulnerableTimer > 3)
+                if (vulnerableTimer > 5)
                 {
+                    
                     isVulnerable = true;
                     vulnerableTimer = 0;
                     print("isvulnerable");
@@ -296,12 +301,17 @@ public class FinalBoss : MonoBehaviour
 
     public void swingAttack()
     {
-        sound.PlayOneShot(swingClip);
+        
         //player is in range for swing attack
         if (Vector2.Distance(Player.transform.position,transform.position)<=swingDist)
         {
+            sound.PlayOneShot(swingClipHit);
             Player.GetComponent<PlayerHealth>().takeDamage(swingDamage);
             print("hit player with swing");
+        }
+        else
+        {
+            sound.PlayOneShot(swingClipMiss);
         }
         animator.SetBool("isAttacking", false);
         isAttacking = false;
@@ -433,5 +443,11 @@ public class FinalBoss : MonoBehaviour
         portal = Instantiate<GameObject>(portal4, transform.parent);
         portal.transform.position = downPortal;
         portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene(3);
     }
 }

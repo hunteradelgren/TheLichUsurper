@@ -54,6 +54,7 @@ public class charRAttacks : MonoBehaviour
 
     public void damageUpgrade(float amount)
     {
+        GetComponent<PlayerHealth>().stats.ItemPickedUp();
         damage += amount;
         display.text = ("RA = " + damage);
     }
