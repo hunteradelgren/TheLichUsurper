@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3786,6 +3786,7 @@ MonoBehaviour:
   currentRoom: {fileID: 0}
   cam: {fileID: 214899392}
   sounder: {fileID: 1398109519}
+  BGm: {fileID: 0}
   clip: {fileID: 8300000, guid: b7eb6478f1452764c8c10fff8fdf05ad, type: 3}
 --- !u!4 &1398109518
 Transform:
@@ -6108,6 +6109,10 @@ PrefabInstance:
       propertyPath: specSlider
       value: 
       objectReference: {fileID: 1330173925}
+    - target: {fileID: 4854067756715089869, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
+      propertyPath: currentHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4854067756715089870, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
       propertyPath: m_Name
       value: Player
