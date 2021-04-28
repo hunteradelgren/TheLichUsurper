@@ -289,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDir: 3
+  template: {fileID: 0}
 --- !u!65 &4339996961052254414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -522,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDir: 2
+  template: {fileID: 0}
 --- !u!65 &4462223312732594936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2356,6 +2358,10 @@ PrefabInstance:
     - target: {fileID: 4913516908430734306, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
       propertyPath: chargeTime
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913516908430734306, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
+      propertyPath: attackRange
+      value: 1.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4adc01e72cf53ed4eb7dc795c327c194, type: 3}
