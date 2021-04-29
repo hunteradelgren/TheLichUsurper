@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3896,55 +3896,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottomDoorRooms:
-  - {fileID: 6891753683389735098, guid: babba8383d70f7a40813f39444e35634, type: 3}
-  - {fileID: 559664304040297133, guid: be4dfba9b1ccab74ab1a1e72e668c69d, type: 3}
-  - {fileID: 5967025792215675787, guid: 06eadacf8561f234ebf0af2f00b001a2, type: 3}
-  - {fileID: 9190512894558581388, guid: 75db1a84030c2dc45b70171bf4af4e19, type: 3}
-  - {fileID: 9190512894558581388, guid: 0d1352548765198438afe76625346f86, type: 3}
-  - {fileID: 559664304040297133, guid: dc120eccc7c98544d9d054a426e9ac3d, type: 3}
-  - {fileID: 5967025792215675787, guid: 0d89045764649b649a3511e09ff52626, type: 3}
-  - {fileID: 5967025792215675787, guid: 314f1d740e6c5dd4c9cff262538b1395, type: 3}
-  - {fileID: 6891753683389735098, guid: 01b0748020eb80b418013b39cfcf2be8, type: 3}
-  - {fileID: 6891753683389735098, guid: 30c0eb96052870746b05f26155ba9b74, type: 3}
+  - {fileID: 8939651812124946734, guid: d97013141d17aed44b9bc0400982b6a8, type: 3}
+  - {fileID: 8939651812124946734, guid: 9681075839ade6842bf56753fd9e4e49, type: 3}
+  - {fileID: 8939651812124946734, guid: 95e5f944c244e5e428bf1ce9e2050759, type: 3}
+  - {fileID: 8939651812124946734, guid: d6b7288efdadb17469f19492573e7a8c, type: 3}
   topDoorRooms:
-  - {fileID: 2724029123028736777, guid: a25e930fba65bb746bffee527c9d5e5b, type: 3}
-  - {fileID: 6794591998168691894, guid: 3e5eec89e4904b149b1c1627ec08eaf4, type: 3}
-  - {fileID: 6203706249822585842, guid: 8c2b032d0488b2f4a9619a51598e6ff6, type: 3}
-  - {fileID: 6794591998168691894, guid: c4a130bf5fc8ed949b5c32829b5b39bd, type: 3}
-  - {fileID: 6203706249822585842, guid: 97854419d97743346a3b30fa30ce15c2, type: 3}
-  - {fileID: 2724029123028736777, guid: 72f2887491ad15a47aedd7f40751e601, type: 3}
-  - {fileID: 2724029123028736777, guid: dd15d2af1befadb4e8ccaf9337ee88fa, type: 3}
-  - {fileID: 9190512894558581388, guid: 75db1a84030c2dc45b70171bf4af4e19, type: 3}
-  - {fileID: 9190512894558581388, guid: 0d1352548765198438afe76625346f86, type: 3}
+  - {fileID: 8939651812124946734, guid: afadeefef010ed648a2ed3b97b53e38b, type: 3}
+  - {fileID: 8939651812124946734, guid: d6b7288efdadb17469f19492573e7a8c, type: 3}
+  - {fileID: 8939651812124946734, guid: 14a5847cf97efdf44b52011fc2ea7db0, type: 3}
+  - {fileID: 8939651812124946734, guid: 0cc05153bd1d8334dbbb17c2fc1c877f, type: 3}
   leftDoorRooms:
-  - {fileID: 6794591998168691894, guid: 3e5eec89e4904b149b1c1627ec08eaf4, type: 3}
-  - {fileID: 831339192956681084, guid: 9fea8b5d6ca2e7244843315313356d6e, type: 3}
-  - {fileID: 9067622717441677169, guid: bfb99b4ecb1aab646af35bce6e9228b2, type: 3}
-  - {fileID: 6891753683389735098, guid: 01b0748020eb80b418013b39cfcf2be8, type: 3}
-  - {fileID: 6891753683389735098, guid: 30c0eb96052870746b05f26155ba9b74, type: 3}
-  - {fileID: 831339192956681084, guid: c3bc27ea010619a4cad5a72e6637037b, type: 3}
-  - {fileID: 831339192956681084, guid: 616d6a647daa6b64fa3288e241fe3054, type: 3}
-  - {fileID: 6891753683389735098, guid: babba8383d70f7a40813f39444e35634, type: 3}
-  - {fileID: 6794591998168691894, guid: c4a130bf5fc8ed949b5c32829b5b39bd, type: 3}
-  - {fileID: 6891753683389735098, guid: 30c0eb96052870746b05f26155ba9b74, type: 3}
-  - {fileID: 6891753683389735098, guid: 01b0748020eb80b418013b39cfcf2be8, type: 3}
+  - {fileID: 8939651812124946734, guid: 9681075839ade6842bf56753fd9e4e49, type: 3}
+  - {fileID: 8939651812124946734, guid: 8b6691b0db4af594098c4b06affa8595, type: 3}
+  - {fileID: 8939651812124946734, guid: 077efd31b0ad55e4bac06ee86a3dce6b, type: 3}
+  - {fileID: 8939651812124946734, guid: 14a5847cf97efdf44b52011fc2ea7db0, type: 3}
   rightDoorRooms:
-  - {fileID: 4639899189256924457, guid: f10f208b58a15084f9c3eb5c7dd16725, type: 3}
-  - {fileID: 6203706249822585842, guid: 8c2b032d0488b2f4a9619a51598e6ff6, type: 3}
-  - {fileID: 831339192956681084, guid: 9fea8b5d6ca2e7244843315313356d6e, type: 3}
-  - {fileID: 5967025792215675787, guid: 06eadacf8561f234ebf0af2f00b001a2, type: 3}
-  - {fileID: 6203706249822585842, guid: ff9e1d521f1ee9143ad226c369bcddb3, type: 3}
-  - {fileID: 6203706249822585842, guid: 97854419d97743346a3b30fa30ce15c2, type: 3}
-  - {fileID: 831339192956681084, guid: c3bc27ea010619a4cad5a72e6637037b, type: 3}
-  - {fileID: 831339192956681084, guid: 616d6a647daa6b64fa3288e241fe3054, type: 3}
-  - {fileID: 5967025792215675787, guid: 0d89045764649b649a3511e09ff52626, type: 3}
-  - {fileID: 5967025792215675787, guid: 314f1d740e6c5dd4c9cff262538b1395, type: 3}
-  - {fileID: 4639899189256924457, guid: edc0147d4abc70045ae20fcbda023a6d, type: 3}
-  - {fileID: 4639899189256924457, guid: 41ecd8894547b28468de5f539d39b157, type: 3}
-  roomRangeMin: 15
-  roomRangeMax: 25
+  - {fileID: 8939651812124946734, guid: 95e5f944c244e5e428bf1ce9e2050759, type: 3}
+  - {fileID: 8939651812124946734, guid: 077efd31b0ad55e4bac06ee86a3dce6b, type: 3}
+  - {fileID: 8939651812124946734, guid: f5dfda2d54fd5cc4e91ec0d6291a0f52, type: 3}
+  - {fileID: 8939651812124946734, guid: 0cc05153bd1d8334dbbb17c2fc1c877f, type: 3}
+  roomRangeMin: 12
+  roomRangeMax: 20
   boss: {fileID: 5226369739275038655, guid: f681cc7cee95a1d479d3f878ce2205eb, type: 3}
-  shop: {fileID: 2724029123028736777, guid: 7437e76cb170d9a4f887b8e5267d5bcb, type: 3}
+  shop: {fileID: 8939651812124946734, guid: e25379fffd0190f4b88a02b2a2a827ab, type: 3}
   startButton: {fileID: 1518862787}
   LoadCanv: {fileID: 634772345}
   LoadLabel: {fileID: 2004845602}
