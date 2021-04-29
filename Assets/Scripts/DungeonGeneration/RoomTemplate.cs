@@ -54,7 +54,7 @@ public class RoomTemplate : MonoBehaviour
         sounder = GetComponent<AudioSource>();
         
         //checks to see if the dungeon has the required amount of rooms after 1.5 seconds
-        Invoke("DifficultyTester", 1.5f); 
+        Invoke("DifficultyTester", 2f); 
 
     }
 
