@@ -8,6 +8,8 @@ public class SpikeTrap : MonoBehaviour
     public float damage = 1;
     private float timer = 0;
 
+    public bool isEnabled = true;
+
     public List<GameObject> Colliding;
     public Animator anim;
     // Start is called before the first frame update
@@ -20,11 +22,14 @@ public class SpikeTrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (Colliding.Count > 0 && timer >= damageRate)
+        if (isEnabled)
         {
-            timer = 0;
-            anim.SetTrigger("Extend");
+            timer += Time.deltaTime;
+            if (Colliding.Count > 0 && timer >= damageRate)
+            {
+                timer = 0;
+                anim.SetTrigger("Extend");
+            }
         }
     }
 
