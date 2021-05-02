@@ -27,12 +27,12 @@ public class TeleportPortal : MonoBehaviour
         if(collision.tag.Equals("Player"))
         {
             collision.gameObject.SetActive(false);
-            portal.SetBool("spinning", false);
+            portal.SetTrigger("spinoff");
         }
     }
     public void nextLevel()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
     public void DestroyPortal()
     {
@@ -40,12 +40,14 @@ public class TeleportPortal : MonoBehaviour
     }
     public void playOpen()
     {
-        if(GetComponentInParent<Room>() == FindObjectOfType<RoomTemplate>().currentRoom)
-            sound.PlayOneShot(open);
+        sound.PlayOneShot(open);
     }
     public void playSpin()
     {
-        sound.PlayOneShot(spin);
+        if (GetComponentInParent<Room>() == FindObjectOfType<RoomTemplate>().currentRoom)
+            sound.PlayOneShot(spin);
+        else
+            sound.Stop();
     }
 }
 
