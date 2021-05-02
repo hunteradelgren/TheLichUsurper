@@ -63,6 +63,7 @@ public class FirstBoss : MonoBehaviour
     private RoomTemplate template;
     public Room spawnRoom;
     public bool transitioning = false;
+    private GameObject port;
 
     public AudioSource sound;
     [SerializeField]
@@ -82,6 +83,7 @@ public class FirstBoss : MonoBehaviour
         animator = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
         sound = GetComponent<AudioSource>();
+        port = Resources.Load<GameObject>("PlayerPortal");
     }
 
     // Update is called once per frame
@@ -512,8 +514,10 @@ public class FirstBoss : MonoBehaviour
 
     public void Death()
     {
+
+        GameObject p = Instantiate<GameObject>(port, template.currentRoom.transform);
         Destroy(gameObject);
-        SceneManager.LoadScene(4);
+        //SceneManager.LoadScene(4);
     }
 
     public void Transition()

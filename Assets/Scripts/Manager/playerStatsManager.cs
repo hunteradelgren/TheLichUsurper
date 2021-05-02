@@ -29,6 +29,7 @@ public class playerStatsManager : MonoBehaviour
 
     public AudioSource sound;
     public AudioClip itemPickup;
+    public AudioClip gemPickup;
 
     // Start is called before the first frame update
     void Awake()
@@ -165,7 +166,7 @@ public class playerStatsManager : MonoBehaviour
 
     public void increaseCurrency(int change)
     {
-        ItemPickedUp();
+        sound.PlayOneShot(gemPickup);
         currency += change;
         if (currencyText != null)
             currencyText.text = "X " + currency;
