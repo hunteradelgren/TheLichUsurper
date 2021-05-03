@@ -21,7 +21,7 @@ public class charMAttacks : MonoBehaviour
     void Start()
     {
         sound = GetComponent<AudioSource>();
-        display.text = ("MA = " + damage);
+        display.text = damage.ToString();
         started = false;
     }
 
@@ -51,7 +51,7 @@ public class charMAttacks : MonoBehaviour
     {
         GetComponent<PlayerHealth>().stats.ItemPickedUp();
         damage = damage + amount;
-        display.text = ("MA = " + damage);
+        display.text = damage.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

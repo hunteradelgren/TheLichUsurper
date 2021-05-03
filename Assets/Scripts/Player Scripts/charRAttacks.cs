@@ -24,7 +24,7 @@ public class charRAttacks : MonoBehaviour
     {
         projectilePrefab = Resources.Load<GameObject>(projectileName);
         animator = GetComponent<Animator>();
-        display.text = ("RA = " + damage);
+        display.text = damage.ToString();
         started = false;
     }
 
@@ -56,7 +56,7 @@ public class charRAttacks : MonoBehaviour
     {
         GetComponent<PlayerHealth>().stats.ItemPickedUp();
         damage += amount;
-        display.text = ("RA = " + damage);
+        display.text = damage.ToString();
     }
 
     public void Shoot()
