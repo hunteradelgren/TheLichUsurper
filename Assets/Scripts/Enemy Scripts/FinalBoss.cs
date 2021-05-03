@@ -70,7 +70,10 @@ public class FinalBoss : MonoBehaviour
     public AudioClip swingClipHit;
     public AudioClip swingClipMiss;
     public AudioClip hitClip;
+    public AudioClip poof;
     public AudioSource sound;
+
+    public bool hasDied = false;
 
     //name of the projectile in the resources folder
     [SerializeField]
@@ -106,8 +109,15 @@ public class FinalBoss : MonoBehaviour
         //is boss dead
         if (currentHealth <= 0)
         {
-            Object.Destroy(gameObject);
-            SceneManager.LoadScene(3);
+            if (!hasDied)
+            {
+                animator.SetTrigger("Died");
+                hasDied = true;
+            }
+            else
+            {
+                return;
+            }
         }
         //boss sprite is colored red if hit
         if (wasHit)
@@ -445,9 +455,13 @@ public class FinalBoss : MonoBehaviour
         portal.GetComponent<SpawnFromPortal>().spawnroom = spawnRoom;
     }
 
+    public void playPoof()
+    {
+        sound.PlayOneShot(poof);
+    }
     public void Death()
     {
         Destroy(gameObject);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }
