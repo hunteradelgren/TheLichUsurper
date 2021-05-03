@@ -33,8 +33,7 @@ public class pausing : MonoBehaviour
     }
     public void Resume()
     {
-        sounder.Play();
-        
+        sounder.PlayOneShot(click);        
         print("unpaused");
         stopTime();
         managing.SetActive(false);
@@ -46,8 +45,7 @@ public class pausing : MonoBehaviour
     }
     public void Quit()
     {//quits the application if given the command
-        sounder.clip = laugh;
-        sounder.Play();
+        sounder.PlayOneShot(laugh);
         stopTime();
         Application.Quit();
     }
