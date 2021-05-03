@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1042,7 +1042,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237105436
 GameObject:
@@ -1342,7 +1342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8939651812124946735, guid: a020326a927139b41be7e8ac86ffec18, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8939651812124946735, guid: a020326a927139b41be7e8ac86ffec18, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2157,7 +2157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 15 Gold
+  m_Text: 15 Gems
 --- !u!222 &586515756
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2515,7 +2515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10 Gold
+  m_Text: 10 Gems
 --- !u!222 &730464476
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2867,7 +2867,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5 Gold
+  m_Text: 5 Gems
 --- !u!222 &995427709
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3019,6 +3019,7 @@ MonoBehaviour:
     m_Handle: 0
   sound: {fileID: 0}
   itemPickup: {fileID: 8300000, guid: f98e047558567a14a98114e1ff3e4245, type: 3}
+  gemPickup: {fileID: 8300000, guid: d2ca58e48c9560148a38c612229863d6, type: 3}
 --- !u!82 &1110729059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4110,7 +4111,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Current Gold: 0'
+  m_Text: 'Current Gems: 0'
 --- !u!222 &1417548689
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6039,7 +6040,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 15 Gold
+  m_Text: 15 Gems
 --- !u!222 &2114148531
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6292,7 +6293,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4854067756715089856, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4854067756715089856, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
       propertyPath: m_LocalPosition.x

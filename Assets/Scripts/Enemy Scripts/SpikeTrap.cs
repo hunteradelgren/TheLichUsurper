@@ -12,11 +12,16 @@ public class SpikeTrap : MonoBehaviour
 
     public List<GameObject> Colliding;
     public Animator anim;
+
+    public AudioSource sound;
+    public AudioClip extend;
+    public AudioClip miss;
     // Start is called before the first frame update
     void Start()
     {
         Colliding = new List<GameObject>();
         anim = GetComponent<Animator>();
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -53,6 +58,14 @@ public class SpikeTrap : MonoBehaviour
             {
                 p.GetComponent<EnemyHealth>().TakeTrapDamage(damage * .4f);
             }
+        }
+        if(Colliding.Count == 0)
+        {
+            sound.PlayOneShot(miss);
+        }
+        else
+        {
+            sound.PlayOneShot(extend);
         }
     }
 
