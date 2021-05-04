@@ -59,8 +59,6 @@ public class basicProjectileBehavior : MonoBehaviour
             hit = true;
         }
 
-        
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -90,12 +88,10 @@ public class basicProjectileBehavior : MonoBehaviour
             hit = true;
         }
 
-        if (collision.transform.tag == "Playerprojectile")
+        if (collision.transform.tag == "Playerprojectile" || collision.transform.tag == "projectile")
         {
             hit = true;
         }
-
-
     }
 
     public void destroyProjectile()
