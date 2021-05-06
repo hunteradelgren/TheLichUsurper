@@ -28,8 +28,8 @@ public class PlayerHealth : MonoBehaviour
     public Text liveText;
     public Text specText;
 
-    Color livecolor;
-    Color specColor;
+    public Color livecolor;
+    public Color specColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
         
         yield return new WaitForSecondsRealtime(5f);
         
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     public void playNo()
     {
@@ -118,7 +118,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = stats.healthSM;
         healthBar.fillAmount = (currentHealth / maxSpectreHealth);
         
-            //healthBarBottom.fillAmount = (currentHealth / maxSpectreHealth);
         
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits

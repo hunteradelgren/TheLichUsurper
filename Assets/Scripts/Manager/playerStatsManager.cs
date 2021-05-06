@@ -138,25 +138,32 @@ public class playerStatsManager : MonoBehaviour
             pHealth = FindObjectOfType<PlayerHealth>();
             pMelee = FindObjectOfType<charMAttacks>();
             pRange = FindObjectOfType<charRAttacks>();
+            currencyText = GameObject.FindGameObjectWithTag("CurrencyText").GetComponent<Text>();
+            currencyText.text = "X " + currency;
             if (pHealth != null)
             {
                 pHealth.maxHealth = healthM;
-
+                
                 pHealth.maxSpectreHealth = healthSM;
                 pMelee.damage = meleeD;
                 pRange.damage = rangeD;
+
+                pRange.display.text = pRange.damage.ToString();
+                pMelee.display.text = pMelee.damage.ToString();
 
                 pHealth.inSpectralForm = inSpectre;
 
                 if (!inSpectre)
                 {
                     pHealth.currentHealth = healthC;
+                    pHealth.healthBar.fillAmount = healthC / healthM;
                 }
                 else
                 {
                     pHealth.currentHealth = healthSC;
+                    pHealth.healthBar.fillAmount = healthSC / healthSM;
                     pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
-
+                    pHealth.healthBar.color = pHealth.specColor;
                 }
                 cScene = SceneManager.GetActiveScene();
                 first = false;
