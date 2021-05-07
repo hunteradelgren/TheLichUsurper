@@ -1230,6 +1230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestTurret
       objectReference: {fileID: 0}
+    - target: {fileID: 7261687509472637770, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
+      propertyPath: spawnRoom
+      value: 
+      objectReference: {fileID: 1604656207521093562}
     - target: {fileID: 7261687509472637771, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1287,8 +1291,16 @@ PrefabInstance:
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7261687509472637774, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261687509472637774, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
+      propertyPath: spawnRoom
+      value: 
+      objectReference: {fileID: 1604656207521093562}
+    - target: {fileID: 7261687509472637774, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
       propertyPath: attackRate
-      value: 0.25
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7261687509472637774, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
       propertyPath: chargeTime
