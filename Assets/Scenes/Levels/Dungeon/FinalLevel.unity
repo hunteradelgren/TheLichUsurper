@@ -284,7 +284,7 @@ MonoBehaviour:
   stats: {fileID: 1110729058}
   moveTime: 0
   shopping: {fileID: 653749043}
-  currentGold: {fileID: 653749042}
+  currentGold: {fileID: 653749044}
   click: {fileID: 8300000, guid: b7eb6478f1452764c8c10fff8fdf05ad, type: 3}
   sounder: {fileID: 160569038}
 --- !u!4 &160569037
@@ -1302,6 +1302,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7506490466995466124, guid: 62491b469e02f3e4e86d63d7fd8082b7, type: 3}
   m_PrefabInstance: {fileID: 653749035}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &653749044 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7506490467272133809, guid: 62491b469e02f3e4e86d63d7fd8082b7, type: 3}
+  m_PrefabInstance: {fileID: 653749035}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &864955229
 GameObject:
   m_ObjectHideFlags: 0

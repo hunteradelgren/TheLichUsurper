@@ -254,12 +254,13 @@ MonoBehaviour:
   rightPortal: {x: 0, y: 0}
   upPortal: {x: 0, y: 0}
   downPortal: {x: 0, y: 0}
-  laughClip: {fileID: 8300000, guid: 2a755aa53ee776442ad3d57e7b7dd9a9, type: 3}
+  laughClip: {fileID: 8300000, guid: 86020802fedc01844b5ffc707d76190d, type: 3}
   swingClipHit: {fileID: 8300000, guid: 7282ca5a2495791438d14a92c68afd17, type: 3}
   swingClipMiss: {fileID: 8300000, guid: 6b50bafaa2ac38c43a8bd2a002b7cfe0, type: 3}
   hitClip: {fileID: 8300000, guid: c9e50d2268437884f8be4f084c01c29c, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
   sound: {fileID: 0}
+  hasDied: 0
   projectileName: BossOrbProjectile
 --- !u!50 &-6585311866454506461
 Rigidbody2D:

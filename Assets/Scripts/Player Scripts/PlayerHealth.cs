@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
     public Color livecolor;
     public Color specColor;
     // Start is called before the first frame update
+
     void Start()
     {
         stats = FindObjectOfType<playerStatsManager>();
@@ -51,8 +52,11 @@ public class PlayerHealth : MonoBehaviour
             liveText.text = stats.healthC + "/" + stats.healthM;
             //print("Showing alive health");
         }
-        livecolor = new Color(245, 101, 101, 255);
-        specColor = new Color(160, 141, 141, 255);
+        livecolor = new Color(1f, .5f, .5f, 1f);
+
+        specColor = new Color(.75f, .7f, .7f, 1f);
+
+        
     }
 
     // Update is called once per frame
@@ -86,7 +90,7 @@ public class PlayerHealth : MonoBehaviour
             invulnerable -= Time.deltaTime;
         }
         //if (Input.GetKeyDown(KeyCode.Space))//temp code to test damge taking things
-           // takeDamage(1f);
+        // takeDamage(1f);
     }
     IEnumerator dramaticDeathPause()
     {
@@ -122,7 +126,6 @@ public class PlayerHealth : MonoBehaviour
         liveText.text = "0/" + maxHealth;
         //makes character see thru, then waits
         healthBar.GetComponent<Image>().color = specColor;
-        //healthBarBottom.GetComponent<Image>().color = specColor;
         yield return new WaitForSecondsRealtime(3f);
         animator.updateMode = AnimatorUpdateMode.Normal;
         Time.timeScale = 1;
@@ -204,12 +207,14 @@ public class PlayerHealth : MonoBehaviour
             currentHealth += boost;
             healthBar.fillAmount = (currentHealth / maxHealth);
             liveText.text = currentHealth + "/" + maxHealth;
+            healthBar.GetComponent<Image>().color = livecolor;
         }
         else
         {
             currentHealth = maxHealth;
             healthBar.fillAmount = (currentHealth / maxHealth);
             liveText.text = currentHealth + "/" + maxHealth;
+            healthBar.GetComponent<Image>().color = livecolor;
         }
         stats.ItemPickedUp();
 

@@ -132,6 +132,7 @@ public class playerStatsManager : MonoBehaviour
             }
             cScene = SceneManager.GetActiveScene();
             first = false;
+            
         }
         else
         {
@@ -157,13 +158,14 @@ public class playerStatsManager : MonoBehaviour
                 {
                     pHealth.currentHealth = healthC;
                     pHealth.healthBar.fillAmount = healthC / healthM;
+                    pHealth.healthBar.GetComponent<Image>().color = pHealth.livecolor;
                 }
                 else
                 {
                     pHealth.currentHealth = healthSC;
                     pHealth.healthBar.fillAmount = healthSC / healthSM;
                     pHealth.GetComponent<SpriteRenderer>().color = new Color(.25f, .9f, 1f, ((pHealth.currentHealth - .5f) / pHealth.maxSpectreHealth));
-                    pHealth.healthBar.color = pHealth.specColor;
+                    pHealth.healthBar.GetComponent<Image>().color = pHealth.specColor;
                 }
                 cScene = SceneManager.GetActiveScene();
                 first = false;
