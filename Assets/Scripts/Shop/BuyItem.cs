@@ -25,34 +25,34 @@ public playerStatsManager stats;
     {
      if(itemType == 1)
       {
-         if (stats.currency >= 5)
+         if (stats.currency >= 10)
          {
-           stats.pHealth.gainHealth(10);
-           stats.decreaseCurrency(5);
+           stats.pHealth.healPercent(.3f);
+           stats.decreaseCurrency(10);
          }
       }
       else if (itemType == 2)
          {
-           if (stats.currency >= 10)
+           if (stats.currency >= 20)
              {
                stats.pHealth.healthUpgrade(5);
-               stats.decreaseCurrency(10);
+               stats.decreaseCurrency(20);
             }
          }
       else if (itemType == 3)
       {
-           if (stats.currency >= 15)
+           if (stats.currency >= 35)
            {
             stats.pMelee.damageUpgrade(1);
-            stats.decreaseCurrency(15);
+            stats.decreaseCurrency(35);
            }
       }
       else if (itemType == 4)
       {
-            if (stats.currency >= 15)
+            if (stats.currency >= 35)
             {
              stats.pRange.damageUpgrade(1);
-             stats.decreaseCurrency(15);
+             stats.decreaseCurrency(35);
             }
       }
        

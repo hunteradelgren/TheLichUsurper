@@ -6,8 +6,8 @@ public class HealthRestore : MonoBehaviour
 {
     // Start is called before the first frame update
     private PlayerHealth player;
-    [SerializeField]
-    float healthGain = 5;
+   // [SerializeField]
+   // float healthGain = 5;
 
     void Start()
     {
