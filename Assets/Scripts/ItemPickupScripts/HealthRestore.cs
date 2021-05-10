@@ -24,7 +24,7 @@ public class HealthRestore : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            player.gainHealth(healthGain);
+            player.healPercent(.3f);
             Object.Destroy(gameObject);
         }
     }

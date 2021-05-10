@@ -231,6 +231,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void healPercent(float percent)
+    {
+        float boost = maxHealth * percent;
+        gainHealth(boost);
+    }
+
     public void healthUpgrade(float amount)
     {
         stats.ItemPickedUp();

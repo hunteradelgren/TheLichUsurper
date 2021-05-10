@@ -53,7 +53,7 @@ public class Shop : MonoBehaviour
     {
         if(stats.currency >= 5)
         {
-            stats.pHealth.gainHealth(10);
+            stats.pHealth.healPercent(.3f);
             stats.decreaseCurrency(5);
             Time.timeScale = moveTime;
             sounder.PlayOneShot(click);
