@@ -51,10 +51,10 @@ public class Shop : MonoBehaviour
 
     public void buyHealthRestore()
     {
-        if(stats.currency >= 5)
+        if(stats.currency >= 10)
         {
             stats.pHealth.healPercent(.3f);
-            stats.decreaseCurrency(5);
+            stats.decreaseCurrency(10);
             Time.timeScale = moveTime;
             sounder.PlayOneShot(click);
             stopTime();
@@ -63,10 +63,10 @@ public class Shop : MonoBehaviour
     }
     public void buyHealthUpgrade()
     { 
-        if(stats.currency >= 10)
+        if(stats.currency >= 20)
         {
             stats.pHealth.healthUpgrade(5);
-            stats.decreaseCurrency(10);
+            stats.decreaseCurrency(20);
             Time.timeScale = moveTime;
             sounder.PlayOneShot(click);
             stopTime();
@@ -75,10 +75,10 @@ public class Shop : MonoBehaviour
     }
     public void buyMeleeUpgrade()
     {
-        if(stats.currency >= 15)
+        if(stats.currency >= 35)
         {
             stats.pMelee.damageUpgrade(1);
-            stats.decreaseCurrency(15);
+            stats.decreaseCurrency(35);
             Time.timeScale = moveTime;
             sounder.PlayOneShot(click);
             stopTime();
@@ -87,10 +87,10 @@ public class Shop : MonoBehaviour
     }
     public void buyRangeUpgrade()
     {
-        if(stats.currency >= 15)
+        if(stats.currency >= 35)
         {
             stats.pRange.damageUpgrade(1);
-            stats.decreaseCurrency(15);
+            stats.decreaseCurrency(35);
             Time.timeScale = moveTime;
             sounder.PlayOneShot(click);
             stopTime();
