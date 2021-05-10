@@ -156,11 +156,12 @@ public class FinalBoss : MonoBehaviour
             if (spawnRoom.enemyCount > 1)
             {
                 isVulnerable = false;
+                animator.SetBool("isVulnerable", false);
             }
             if (spawnRoom.enemyCount == 1 && spawnedPortals && !isVulnerable)
             {
                 vulnerableTimer += Time.deltaTime;
-                if (vulnerableTimer > 5)
+                if (vulnerableTimer > 10)
                 {
                     
                     isVulnerable = true;
