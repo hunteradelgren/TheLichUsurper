@@ -40,7 +40,8 @@ public class RoomTemplate : MonoBehaviour
     public CameraMechanics cam;
     public AudioSource sounder;
     public AudioSource BGm;
-    public AudioClip clip;
+    public AudioClip clickclip;
+    public AudioClip bosstheme;
     Time time;
 
     void Start()
@@ -119,7 +120,7 @@ public class RoomTemplate : MonoBehaviour
         pStats.currencyText = currencyText;
         pStats.currencyText.text = "X " + pStats.currency;
         //player.SetActive(true);
-        sounder.PlayOneShot(clip);
+        sounder.PlayOneShot(clickclip);
         player.GetComponent<charMAttacks>().started = true;
         player.GetComponent<charRAttacks>().started = true;
         player.GetComponent<Movement>().started = true;
