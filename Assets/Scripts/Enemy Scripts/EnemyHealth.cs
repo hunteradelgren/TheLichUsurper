@@ -20,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
     public AudioClip poof;
     public Color startingColor;
     public SpriteRenderer sprite;
+    public bool CanBeStunned;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +52,8 @@ public class EnemyHealth : MonoBehaviour
             }
         }
     
-        if(hitStun>0)
+        
+        else if(hitStun>0 && CanBeStunned)
         {
             IsStunned = true;
             hitStun -= Time.deltaTime;

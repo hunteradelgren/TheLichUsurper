@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDir: 3
+  template: {fileID: 0}
 --- !u!65 &7312830934466324537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -672,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openingDir: 4
+  template: {fileID: 0}
 --- !u!65 &6508816519616471595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1466,6 +1468,10 @@ PrefabInstance:
     - target: {fileID: 8510619005108363876, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
       propertyPath: maxHealth
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510619005108363876, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
+      propertyPath: CanBeStunned
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 750028fa0054cfd449f602a7099235c6, type: 3}
