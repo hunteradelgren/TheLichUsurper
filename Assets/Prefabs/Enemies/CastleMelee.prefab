@@ -52,13 +52,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa89916484822054587c16bba6dca9dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 15
   animator: {fileID: 0}
-  HitStunTime: 1
+  HitStunTime: 0.5
   IsStunned: 0
   sound: {fileID: 0}
   hit: {fileID: 8300000, guid: 5b5c9f6365ca91e4ab493527380eeab3, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
   sprite: {fileID: 0}
 --- !u!114 &4913516908430734110
 MonoBehaviour:
@@ -102,7 +103,7 @@ MonoBehaviour:
   attackRange: 0.8
   chargeTime: 0.4
   attackRate: 1
-  damage: 1
+  damage: 3
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
   swingHit: {fileID: 8300000, guid: 7282ca5a2495791438d14a92c68afd17, type: 3}
@@ -218,8 +219,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1029629015
-  m_SortingLayer: 1
+  m_SortingLayerID: 1961196263
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: -7079442491253901328, guid: 2eb438ddbf286eb449a88f05336e9732, type: 3}
   m_Color: {r: 0.8962264, g: 0.5284354, b: 0.5284354, a: 1}
