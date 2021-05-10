@@ -248,7 +248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &32494784
 GameObject:
@@ -503,6 +503,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 979956676819785535, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818180, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: helping
       value: 
@@ -563,8 +567,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2654908732155718414, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033008628926675703, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+--- !u!224 &192567084 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+  m_PrefabInstance: {fileID: 192567083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &214899391
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +805,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &277131845
 GameObject:
@@ -1045,7 +1062,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0.9
-  m_Text: "Having heard the tales of the powers of the Elder Phylactory this \npowerful\r
+  m_Text: "Having heard the tales of the powers of the Elder Phylactery this \npowerful\r
     fledgling Lich seeked to seize the powers for itself. \nIt searched through dusty\r
     tomes until it discovered an old account of a brutal war \nwaged at a now deserted\r
     castle. Stories circulated about horrors unknown \nlurking within the musty stone\r
@@ -1307,7 +1324,7 @@ RectTransform:
   - {fileID: 2004845601}
   - {fileID: 1518862788}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2080,7 +2097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344429422 stripped
 GameObject:
@@ -2454,8 +2471,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479092148}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.78358287}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 541842604}
@@ -2466,12 +2483,12 @@ RectTransform:
   - {fileID: 125703167}
   - {fileID: 149096539}
   - {fileID: 813160702}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 192567084}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.1100001, y: -3.4425855}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1481545631 stripped
@@ -2801,7 +2818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1544060041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,8 +2893,8 @@ RectTransform:
   m_Children:
   - {fileID: 968419508}
   - {fileID: 277131846}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1156926040883758292}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3036,7 +3053,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3061,6 +3078,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 28
       objectReference: {fileID: 0}
+    - target: {fileID: 979956676819785535, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818180, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: helping
       value: 
@@ -3076,6 +3097,14 @@ PrefabInstance:
     - target: {fileID: 1156926040932818181, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156926040932818185, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156926040932818185, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818186, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_RootOrder
@@ -3137,8 +3166,21 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2654908732155718414, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033008628926675703, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+--- !u!224 &1156926040883758292 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+  m_PrefabInstance: {fileID: 1156926040883758291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4854067758096719930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3146,6 +3188,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3494865708335471939, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494865708335471939, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4854067756715089856, guid: 855b7d76c34f95d41afe4651bb7d6022, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3590,7 +3640,7 @@ PrefabInstance:
       objectReference: {fileID: 417833011}
     - target: {fileID: 7558698804814000301, guid: 8152464ad4e2ae4448293474f63db113, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7558698804814000301, guid: 8152464ad4e2ae4448293474f63db113, type: 3}
       propertyPath: m_LocalPosition.x

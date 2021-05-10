@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class HelpSignScript : MonoBehaviour
 {
     public GameObject helpcanvas;
-    public TextAsset helping;
+   // public TextAsset helping;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class HelpSignScript : MonoBehaviour
         if(collision.tag.Equals("Player"))
         {
             helpcanvas.SetActive(true);
-            helpcanvas.GetComponentInChildren<Text>().text = helping.ToString();
+            //helpcanvas.GetComponentInChildren<Text>().text = helping.ToString();
         }
     }
     
