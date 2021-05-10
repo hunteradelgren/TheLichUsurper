@@ -118,6 +118,7 @@ MonoBehaviour:
   hitTimer: 0
   wasHit: 0
   hasDied: 0
+  startedM: 0
   spawnRoom: {fileID: 0}
   transitioning: 0
   sound: {fileID: -5131129760056094854}
@@ -126,6 +127,9 @@ MonoBehaviour:
   hit: {fileID: 8300000, guid: c9e50d2268437884f8be4f084c01c29c, type: 3}
   miss: {fileID: 8300000, guid: 8bba8ae9185484a468d47ef118798752, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
+  fightmusic: {fileID: 8300000, guid: 34dc47e640cb2d74baf129b815ca4c24, type: 3}
+  regularmusic: {fileID: 8300000, guid: cf7ad1e1d11e8a64e961db58b539c92c, type: 3}
+  BGm: {fileID: 0}
 --- !u!95 &5183293658640590762
 Animator:
   serializedVersion: 3
@@ -183,7 +187,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029629015
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2e35a95c5b6fd7f489fe9133fce336a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

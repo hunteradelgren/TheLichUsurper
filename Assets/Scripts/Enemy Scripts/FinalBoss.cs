@@ -71,9 +71,12 @@ public class FinalBoss : MonoBehaviour
     public AudioClip swingClipMiss;
     public AudioClip hitClip;
     public AudioClip poof;
+    public AudioClip fightmusic;
+    public AudioSource BGm;
     public AudioSource sound;
 
     public bool hasDied = false;
+    public bool startedM = false;
 
     //name of the projectile in the resources folder
     [SerializeField]
@@ -89,6 +92,7 @@ public class FinalBoss : MonoBehaviour
         template = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplate>();
         animator = GetComponent<Animator>();
         bossSprite = GetComponent<SpriteRenderer>();
+        BGm = GameObject.FindGameObjectWithTag("BGm").GetComponent<AudioSource>();
 
         portal1 = Resources.Load<GameObject>(portalName1);
         portal2 = Resources.Load<GameObject>(portalName2);
@@ -145,6 +149,15 @@ public class FinalBoss : MonoBehaviour
         /////////////////////////////////////////////////////////////
         if (spawnRoom == template.currentRoom)
         {
+            //boss starts theme when player enters room
+            if (!startedM)
+            { 
+                BGm.clip = fightmusic;
+                BGm.Play();
+                startedM = true;
+            }
+            
+            
             //boss switches stances every 10 seconds
             stanceTimer += Time.deltaTime;
             if (stanceTimer >= 10)

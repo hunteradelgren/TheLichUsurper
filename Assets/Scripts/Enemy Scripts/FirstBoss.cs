@@ -59,6 +59,7 @@ public class FirstBoss : MonoBehaviour
     public float hitTimer = 0f;
     public bool wasHit = false;
     public bool hasDied = false;
+    public bool startedM = false;
 
     private RoomTemplate template;
     public Room spawnRoom;
@@ -72,6 +73,9 @@ public class FirstBoss : MonoBehaviour
     public AudioClip hit;
     public AudioClip miss;
     public AudioClip poof;
+    public AudioClip fightmusic;
+    public AudioClip regularmusic;
+    public AudioSource BGm;
 
     // Start is called before the first frame update
     void Start()
@@ -84,6 +88,7 @@ public class FirstBoss : MonoBehaviour
         bossSprite = GetComponent<SpriteRenderer>();
         sound = GetComponent<AudioSource>();
         port = Resources.Load<GameObject>("PlayerPortal");
+        BGm = GameObject.FindGameObjectWithTag("BGm").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -127,6 +132,13 @@ public class FirstBoss : MonoBehaviour
         distPos3 = Vector2.Distance(pos3.position, transform.position);
         if (spawnRoom == template.currentRoom)
         {
+            //boss starts theme song when player is in room
+            if (!startedM)
+            {
+                BGm.clip = fightmusic;
+                BGm.Play();
+                startedM = true;
+            }
 
             //boss is over 30% health and so will use 1st phase of behavior
             if (currentHealth >= maxhealth * .3)
@@ -516,6 +528,8 @@ public class FirstBoss : MonoBehaviour
     {
 
         GameObject p = Instantiate<GameObject>(port, template.currentRoom.transform);
+        BGm.clip = regularmusic;
+        BGm.Play();
         Destroy(gameObject);
         //SceneManager.LoadScene(4);
     }
