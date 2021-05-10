@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -339,6 +339,69 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &333887475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333887477}
+  - component: {fileID: 333887476}
+  m_Layer: 0
+  m_Name: CursorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &333887476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333887475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535eb06eb5710f244aa9340e65730f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameCount: 0
+  frameRate: 0
+  cursorAnimationList:
+  - cursorType: 0
+    textureArray:
+    - {fileID: 2800000, guid: 8e7a9adb1657bb14081183b6d89ded09, type: 3}
+    - {fileID: 2800000, guid: 8e7a9adb1657bb14081183b6d89ded09, type: 3}
+    - {fileID: 2800000, guid: 8e7a9adb1657bb14081183b6d89ded09, type: 3}
+    frameRate: 0.05
+    offset: {x: 23, y: 17}
+  - cursorType: 1
+    textureArray:
+    - {fileID: 2800000, guid: 8e7a9adb1657bb14081183b6d89ded09, type: 3}
+    - {fileID: 2800000, guid: f7cdad41024904d49bc59764eaf7cbb9, type: 3}
+    - {fileID: 2800000, guid: 07a2ccaa566bca14781d96a0bd1f3bc7, type: 3}
+    - {fileID: 2800000, guid: 9053085585ff00e4fbc3fddb827ac793, type: 3}
+    frameRate: 0.05
+    offset: {x: 23, y: 17}
+  currentFrame: 0
+  frameTimer: 0
+--- !u!4 &333887477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333887475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 459.01413, y: 343.63184, z: -113.91565}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416749363
 GameObject:
   m_ObjectHideFlags: 0
