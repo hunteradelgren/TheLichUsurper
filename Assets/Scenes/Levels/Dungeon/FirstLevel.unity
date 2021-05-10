@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -499,6 +499,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818180, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: helping
       value: 
@@ -813,7 +817,7 @@ RectTransform:
   m_GameObject: {fileID: 277131845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5889, y: 1.5889, z: 1.5889}
+  m_LocalScale: {x: 0.45822436, y: 1.0942615, z: 0.71874946}
   m_Children: []
   m_Father: {fileID: 1544060044}
   m_RootOrder: 1
@@ -845,18 +849,25 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
+    m_FontSize: 23
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Help Text Here
+  m_Text: "How To Play:\r\nMelee Attacks are stronger and are performed with the
+    Left Mouse Button\r\nRanged attacks offer safety to attack from a distance but
+    are weaker, they are performed with the right mouse Button\r\nAfter you clear
+    a room be sure to pick up you rewards. There are four types of pickups:\r\n\tHealth
+    restore will restore you health, but it wont restore your spirit\r\n\tHealth
+    upgrade will increase you max health along with restoring some health\r\n\tMelee
+    damage upgrade increases your sword damage by one point\r\n\tSpell power upgrade
+    strengthens your spells by one point"
 --- !u!222 &277131848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2679,8 +2690,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c4c7eeb574f3474ba27cf234d74fd01, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2790,7 +2801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1544060041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3023,10 +3034,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 518002285493929838, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 817098042450957284, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_Text
+      value: "How To Play:\r\nMelee Attacks are stronger and are performed with the
+        Left Mouse Button\r\nRanged attacks offer safety to attack from a distance
+        but are weaker, they are performed with the right mouse Button\r\nAfter you
+        clear a room be sure to pick up you rewards. There are four types of pickups:\r\n\tHealth
+        restore will restore you health, but it wont restore your spirit\r\n\tHealth
+        upgrade will increase you max health along with restoring some health\r\n\tMelee
+        damage upgrade increases your sword damage by one point\r\n\tSpell power
+        upgrade strengthens your spells by one point"
+      objectReference: {fileID: 0}
+    - target: {fileID: 817098042450957284, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 817098042450957284, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 28
+      objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818180, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: helping
       value: 
-      objectReference: {fileID: 4900000, guid: f3846fdbc96091d4585aa53f42cea01c, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818180, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: helpcanvas
       value: 
@@ -3037,7 +3075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818181, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1156926040932818186, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_RootOrder
@@ -3082,6 +3120,22 @@ PrefabInstance:
     - target: {fileID: 1156926040932818186, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156926040932818187, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_Size.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156926040932818187, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_Size.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156926040932818187, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8a1ac2c3b78117447bdeac6564f2d814, type: 3}
+    - target: {fileID: 1156926040932818187, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 523322f549ca84040b15bd076c4a7f92, type: 3}
@@ -3421,10 +3475,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 864955230}
-    - target: {fileID: 7506490467834663279, guid: 62491b469e02f3e4e86d63d7fd8082b7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7506490467944237717, guid: 62491b469e02f3e4e86d63d7fd8082b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
