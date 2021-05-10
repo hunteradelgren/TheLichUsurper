@@ -51,7 +51,7 @@ public class Shop : MonoBehaviour
 
     public void buyHealthRestore()
     {
-        if(stats.currency >= 5)
+        if(stats.currency >= 10)
         {
             stats.pHealth.healPercent(.3f);
             stats.decreaseCurrency(10);
@@ -63,7 +63,7 @@ public class Shop : MonoBehaviour
     }
     public void buyHealthUpgrade()
     { 
-        if(stats.currency >= 10)
+        if(stats.currency >= 20)
         {
             stats.pHealth.healthUpgrade(5);
             stats.decreaseCurrency(20);
@@ -75,7 +75,7 @@ public class Shop : MonoBehaviour
     }
     public void buyMeleeUpgrade()
     {
-        if(stats.currency >= 15)
+        if(stats.currency >= 35)
         {
             stats.pMelee.damageUpgrade(1);
             stats.decreaseCurrency(35);
@@ -87,7 +87,7 @@ public class Shop : MonoBehaviour
     }
     public void buyRangeUpgrade()
     {
-        if(stats.currency >= 15)
+        if(stats.currency >= 35)
         {
             stats.pRange.damageUpgrade(1);
             stats.decreaseCurrency(35);
