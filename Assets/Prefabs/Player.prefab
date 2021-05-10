@@ -39,8 +39,8 @@ Transform:
   m_LocalPosition: {x: 0.71, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.54}
   m_Children:
-  - {fileID: 4854067757463617675}
   - {fileID: 3494865708335471939}
+  - {fileID: 4854067757463617675}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1961196263
-  m_SortingLayer: 2
+  m_SortingLayerID: -293485371
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: -4890071400878984484, guid: c2e14c80fe34f414f8ba75d3b3a39027, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5177,7 +5177,7 @@ Transform:
   m_Children:
   - {fileID: 4854067757653086414}
   m_Father: {fileID: 4854067756715089856}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 29.12}
 --- !u!1 &4854067757653086409
 GameObject:
@@ -5247,7 +5247,7 @@ GameObject:
   - component: {fileID: 3494865708335471939}
   - component: {fileID: 7195686349873281699}
   - component: {fileID: 7921548139438578539}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5266,7 +5266,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4854067756715089856}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &7195686349873281699
 ParticleSystem:
