@@ -56,7 +56,10 @@ public class charRAttacks : MonoBehaviour
     {
         GetComponent<PlayerHealth>().stats.ItemPickedUp();
         damage += amount;
-        display.text = damage.ToString();
+        if (damage >= 10)
+            display.text = damage.ToString("00.0");
+        else
+            display.text = damage.ToString("0.0");
     }
 
     public void Shoot()

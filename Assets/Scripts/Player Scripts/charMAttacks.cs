@@ -51,7 +51,10 @@ public class charMAttacks : MonoBehaviour
     {
         GetComponent<PlayerHealth>().stats.ItemPickedUp();
         damage = damage + amount;
-        display.text = damage.ToString();
+        if(damage >= 10)
+            display.text = damage.ToString("00.0");
+        else
+            display.text = damage.ToString("0.0");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
