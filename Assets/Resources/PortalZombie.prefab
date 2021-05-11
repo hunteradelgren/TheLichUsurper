@@ -56,9 +56,14 @@ MonoBehaviour:
   animator: {fileID: 0}
   HitStunTime: 1
   IsStunned: 0
+  hasDied: 0
   sound: {fileID: 0}
   hit: {fileID: 8300000, guid: 5b5c9f6365ca91e4ab493527380eeab3, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: 0}
+  CanBeStunned: 0
+  mover: {fileID: 0}
 --- !u!114 &4987305794020553520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +174,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029629015
-  m_SortingLayer: 1
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: -7079442491253901328, guid: 2eb438ddbf286eb449a88f05336e9732, type: 3}
   m_Color: {r: 0.7971517, g: 1, b: 0.2688679, a: 1}
@@ -336,7 +341,7 @@ MonoBehaviour:
   attackRange: 0.8
   chargeTime: 0.4
   attackRate: 1
-  damage: 0.5
+  damage: 3
   playerTarget: {fileID: 0}
   animator: {fileID: 0}
   swingHit: {fileID: 8300000, guid: 7282ca5a2495791438d14a92c68afd17, type: 3}

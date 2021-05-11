@@ -100,15 +100,15 @@ MonoBehaviour:
   moveSpeed2: 5
   lungeSpeed: 15
   attackDamage: 2
-  lungeDamage: 2
+  lungeDamage: 3
   attackRate: 2
   chargeTime: 1
   lungeTime: 0.8
   attackRange: 1
   maxLungeTime: 0.5
-  maxhealth: 50
+  maxhealth: 75
   targetChaseDist: 0.5
-  currentHealth: 50
+  currentHealth: 75
   isAttacking: 0
   isLunging: 0
   center: {fileID: 0}
@@ -187,7 +187,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029629015
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2e35a95c5b6fd7f489fe9133fce336a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

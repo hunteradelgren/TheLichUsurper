@@ -81,12 +81,14 @@ MonoBehaviour:
   animator: {fileID: 0}
   HitStunTime: 1
   IsStunned: 0
+  hasDied: 0
   sound: {fileID: 0}
   hit: {fileID: 8300000, guid: 5c358a7f900e1724f89df4bd36e91825, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   sprite: {fileID: 0}
   CanBeStunned: 1
+  mover: {fileID: 0}
 --- !u!114 &7261687509472637774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +107,7 @@ MonoBehaviour:
   chargeTime: 0
   attackRate: 2
   projectileName: OrbProjectile
-  damage: 1.75
+  damage: 1.8
   playerTarget: {fileID: 0}
   spawnRoom: {fileID: 0}
   animator: {fileID: 0}

@@ -56,9 +56,14 @@ MonoBehaviour:
   animator: {fileID: 0}
   HitStunTime: 1
   IsStunned: 0
+  hasDied: 0
   sound: {fileID: 0}
   hit: {fileID: 8300000, guid: 5c358a7f900e1724f89df4bd36e91825, type: 3}
   poof: {fileID: 8300000, guid: 8cc2f9580ef07c54b86e63b3e234726b, type: 3}
+  startingColor: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: 0}
+  CanBeStunned: 0
+  mover: {fileID: 0}
 --- !u!114 &324903827732886148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +155,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1029629015
-  m_SortingLayer: 1
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 9079572633458621205, guid: 5ed7de2ddf159c94fa4c60f51a7591e3, type: 3}
   m_Color: {r: 0.9245283, g: 0.4927059, b: 0, a: 1}
@@ -241,7 +246,7 @@ MonoBehaviour:
   chargeTime: 0
   attackRate: 1.5
   projectileName: BoneProjectile
-  damage: 0.5
+  damage: 2
   playerTarget: {fileID: 0}
   spawnRoom: {fileID: 0}
   animator: {fileID: 0}
