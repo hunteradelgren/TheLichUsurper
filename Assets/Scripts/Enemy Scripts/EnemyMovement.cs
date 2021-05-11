@@ -63,7 +63,7 @@ public class EnemyMovement : MonoBehaviour
             Debug.Log("stunned");
         }
         
-        else if (spawnRoom == template.currentRoom)
+        else if (spawnRoom == template.currentRoom && !hp.hasDied)
         {
             
             //if enemy is not attacking

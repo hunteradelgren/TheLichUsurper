@@ -14,14 +14,14 @@ public class EnemyHealth : MonoBehaviour
     float hitStun;
 
     public bool IsStunned;
-    bool hasDied = false;
+    public bool hasDied = false;
     public AudioSource sound;
     public AudioClip hit;
     public AudioClip poof;
     public Color startingColor;
     public SpriteRenderer sprite;
     public bool CanBeStunned;
-
+    public EnemyMovement mover;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
         hitStun = 0;
         IsStunned = false;
         sound = GetComponent<AudioSource>();
-
+        mover = GetComponent<EnemyMovement>();
         startingColor = GetComponent<SpriteRenderer>().color;
     }
 
